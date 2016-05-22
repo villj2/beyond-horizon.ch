@@ -6731,9 +6731,9 @@ html {
 }
 body {
   /* Margin bottom by footer height */
-  margin-bottom: 60px;
+  margin-bottom: 110px;
 }
-.footer {
+footer {
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -6743,26 +6743,29 @@ body {
 }
 /* -------- Sticky Footer END -------- */
 /* -------- Custom Styling -------- */
+.container {
+  /*padding-bottom: 50px;*/
+}
 @media (max-width: 767px) {
-  .footer .row .content-left {
+  footer .row .content-left {
     text-align: center;
   }
 }
 @media (min-width: 768px) {
-  .footer .row .content-left {
+  footer .row .content-left {
     text-align: left;
   }
 }
-.footer .row .content-center {
+footer .row .content-center {
   text-align: center;
 }
 @media (max-width: 767px) {
-  .footer .row .content-right {
+  footer .row .content-right {
     text-align: center;
   }
 }
 @media (min-width: 768px) {
-  .footer .row .content-right {
+  footer .row .content-right {
     text-align: right;
   }
 }
