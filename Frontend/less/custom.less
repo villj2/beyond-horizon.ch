@@ -1,3 +1,75 @@
-.container {
-	
+/* -------- Sticky Footer -------- */
+
+html {
+  position: relative;
+  min-height: 100%;
 }
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 91px;
+  background-color: #231f20;
+}
+
+/* -------- Sticky Footer END -------- */
+
+/* -------- Custom Styling -------- */
+
+.footer {
+	.row {
+
+		.content-left {
+			@media(max-width:@screen-xs-max){
+				text-align: center;
+			}
+
+			@media(min-width:@screen-sm-min){
+				text-align: left;
+			}
+		}
+
+		.content-center {
+			text-align: center;
+		}
+
+		.content-right {
+
+			@media(max-width:@screen-xs-max){
+				text-align: center;
+			}
+
+			@media(min-width:@screen-sm-min){
+				text-align: right;
+			}
+		}
+	}
+}
+
+.jumbotron {
+	/*width: 100%;
+	background: #ffffff url("../../img/bay-of-fires.jpg") no-repeat center center;*/
+	background: url(../../img/bay-of-fires.jpg) no-repeat center center;
+	height: 500px;
+	background-size:cover;
+	padding-bottom: 0;
+
+	.page-header{
+		border: none;
+	}
+
+	.label {
+		text-align: center;
+
+		h1{
+			margin-top: 130px;
+		}
+	}
+}
+
+/* -------- Custom Styling END -------- */

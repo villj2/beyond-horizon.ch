@@ -17,9 +17,6 @@
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <link href="../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
 
-    <!-- Custom styles for this template -->
-    <link href="sticky-footer.css" rel="stylesheet">
-
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
     <script src="../assets/js/ie-emulation-modes-warning.js"></script>
@@ -42,19 +39,17 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Project name</a>
+          <a class="navbar-brand" href="/">Beyond Horizon</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
-          <form class="navbar-form navbar-right">
-            <div class="form-group">
-              <input type="text" placeholder="Email" class="form-control">
-            </div>
-            <div class="form-group">
-              <input type="password" placeholder="Password" class="form-control">
-            </div>
-            <button type="submit" class="btn btn-success">Sign in</button>
-          </form>
-        </div><!--/.navbar-collapse -->
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active"><a href="/">Home</a></li>
+            <li><a href="/">Journey</a></li>
+            <li><a href="/">Gallery</a></li>
+            <li><a href="/">Map</a></li>
+            <li><a href="/">About</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
       </div>
     </nav>
 
@@ -62,12 +57,9 @@
     <div class="jumbotron">
       <div class="page-header">
         <div class="container">
-
-
-
-          <h1>Hello, world!</h1>
-          <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
-          <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
+          <div class="label">
+            <h1>Bay of Fires, Tasmania</h1>
+          </div>
         </div>
       </div>
     </div>
@@ -75,28 +67,56 @@
     <!-- Begin page content -->
     <div class="container">
 
-        <div class="page-header">
-          <h1>wtf</h1>
-        </div>
-
+      <div class="page-header">
+        <h1></h1>
+      </div>
 
       <div class="row">
-        <div class="col-md-8">.col-md-8</div>
-        <div class="col-md-4">.col-md-4</div>
+        <div class="col-xs-4">.col-xs-4</div>
+        <div class="col-xs-8">.col-xs-8</div>
       </div>
-      
-      <p class="lead">Pin a fixed-height footer to the bottom of the viewport in desktop browsers with this custom HTML and CSS.</p>
-      <p>Use <a href="../sticky-footer-navbar">the sticky footer with a fixed navbar</a> if need be, too.</p>
+
+      <div class="row">
+        <div class="col-sm-4">.col-sm-4</div>
+        <div class="col-sm-8">.col-sm-8</div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-4">.col-md-4</div>
+        <div class="col-md-8">.col-md-8</div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-4">.col-lg-4</div>
+        <div class="col-lg-8">.col-lg-8</div>
+      </div>
+
     </div>
 
     <footer class="footer">
-      <div class="container">
-        <p class="text-muted">Discover the world</p>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-4 content-left">
+            <p class="text-muted">Discover the world</p>
+          </div>
+          <div class="col-sm-4 content-center">
+            <p class="text-muted">We love travel</p>
+          </div>
+          <div class="col-sm-4 content-right">
+            <p class="text-muted">© Schatz & Schatzi</p>
+          </div>
+        </div>
       </div>
     </footer>
 
-
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="../dist/js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="../assets/js/ie10-viewport-bug-workaround.js"></script>
+
   </body>
 </html>

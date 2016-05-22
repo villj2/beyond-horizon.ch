@@ -6724,4 +6724,64 @@ button.close {
     display: none !important;
   }
 }
+/* -------- Sticky Footer -------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 91px;
+  background-color: #231f20;
+}
+/* -------- Sticky Footer END -------- */
+/* -------- Custom Styling -------- */
+@media (max-width: 767px) {
+  .footer .row .content-left {
+    text-align: center;
+  }
+}
+@media (min-width: 768px) {
+  .footer .row .content-left {
+    text-align: left;
+  }
+}
+.footer .row .content-center {
+  text-align: center;
+}
+@media (max-width: 767px) {
+  .footer .row .content-right {
+    text-align: center;
+  }
+}
+@media (min-width: 768px) {
+  .footer .row .content-right {
+    text-align: right;
+  }
+}
+.jumbotron {
+  /*width: 100%;
+	background: #ffffff url("../../img/bay-of-fires.jpg") no-repeat center center;*/
+  background: url(../../img/bay-of-fires.jpg) no-repeat center center;
+  height: 500px;
+  background-size: cover;
+  padding-bottom: 0;
+}
+.jumbotron .page-header {
+  border: none;
+}
+.jumbotron .label {
+  text-align: center;
+}
+.jumbotron .label h1 {
+  margin-top: 130px;
+}
+/* -------- Custom Styling END -------- */
 /*# sourceMappingURL=bootstrap.css.map */
