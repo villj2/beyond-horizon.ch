@@ -83,15 +83,24 @@ footer {
 	}
 
 	.teaser-image {
-		width:100%;
-		max-width:400px;
+		width: 100%;
+		max-width: 400px;
 	}
 }
 
-.container.container-teaser{
+.container.container-teaser {
 
-	/* INSERT MEDIA QUERIES */
-	width: 1024px;
+	/*@media (min-width: @screen-sm-min){
+	    width: 750px;
+	}*/
+
+	@media (min-width: @screen-md-min){
+	    width: 900px;
+	}
+
+	@media (min-width: @screen-lg-min){
+	    width: 1024px;
+	}
 }
 
 /* -------- Custom Styling END -------- */
