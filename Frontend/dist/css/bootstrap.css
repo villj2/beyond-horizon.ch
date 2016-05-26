@@ -6743,6 +6743,12 @@ footer {
 }
 /* -------- Sticky Footer END -------- */
 /* -------- Custom Styling -------- */
+h1,
+h2,
+h3,
+h4 {
+  white-space: normal;
+}
 .container {
   /*padding-bottom: 50px;*/
 }
@@ -6777,6 +6783,11 @@ footer .row .content-center {
   background-size: cover;
   padding-bottom: 0;
 }
+@media (min-width: 768px) {
+  .jumbotron {
+    margin-top: 117px;
+  }
+}
 .jumbotron .page-header {
   border: none;
 }
@@ -6807,6 +6818,35 @@ footer .row .content-center {
 @media (min-width: 1200px) {
   .container.container-teaser {
     width: 1024px;
+  }
+}
+.navbar-inverse .navbar-nav {
+  font-weight: bold;
+}
+.navbar-inverse .navbar-nav > .active > a {
+  color: #01b195;
+  background: none;
+}
+.navbar-inverse .navbar-nav > .active > a:hover {
+  color: #01b195;
+  background: none;
+}
+.navbar-inverse .navbar-nav > .active > a:focus {
+  color: #01b195;
+  background: none;
+}
+ul.nav a:hover {
+  color: #01b195 !important;
+}
+@media (min-width: 768px) {
+  .navbar-inner {
+    min-height: 0px;
+  }
+  .navbar-brand,
+  .navbar-nav li a {
+    line-height: 117px;
+    height: 117px;
+    padding-top: 10px;
   }
 }
 /* -------- Custom Styling END -------- */

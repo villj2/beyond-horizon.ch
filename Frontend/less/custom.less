@@ -21,6 +21,10 @@ footer {
 
 /* -------- Custom Styling -------- */
 
+h1, h2, h3, h4 {
+	white-space: normal;
+}
+
 .container {
 	/*padding-bottom: 50px;*/
 }
@@ -58,6 +62,11 @@ footer {
 .jumbotron {
 	/*width: 100%;
 	background: #ffffff url("../../img/bay-of-fires.jpg") no-repeat center center;*/
+
+	@media(min-width:@screen-sm-min){
+		margin-top: @header-height;
+	}
+
 	background: url(../../img/bay-of-fires.jpg) no-repeat center center;
 	height: 500px;
 	background-size:cover;
@@ -100,6 +109,49 @@ footer {
 
 	@media (min-width: @screen-lg-min){
 	    width: 1024px;
+	}
+}
+
+.navbar-inverse {
+
+	.navbar-nav {
+
+		font-weight: bold;
+
+		> .active{
+
+			> a {
+				color: #01b195;
+				background: none;
+			}
+
+			> a:hover {
+				color: #01b195;
+				background: none;
+			}
+
+			> a:focus {
+				color: #01b195;
+				background: none;
+			}
+		}
+	}
+}
+
+ul.nav a:hover { color: #01b195 !important; }
+
+@media(min-width:@screen-sm-min){
+
+	.navbar-inner {
+    	min-height: 0px;
+	}
+
+	.navbar-brand,
+	.navbar-nav li a {
+
+	    line-height: @header-height;
+	    height: @header-height;
+	    padding-top: 10px;
 	}
 }
 
