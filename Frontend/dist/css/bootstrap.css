@@ -6803,7 +6803,6 @@ footer .row .content-center {
 }
 .teaser .teaser-image {
   width: 100%;
-  max-width: 400px;
 }
 .container.container-teaser {
   /*@media (min-width: @screen-sm-min){
@@ -6819,6 +6818,66 @@ footer .row .content-center {
   .container.container-teaser {
     width: 1024px;
   }
+}
+.container.container-teaser .teaser-image-container {
+  position: relative;
+}
+.container.container-teaser .helper {
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+.container.container-teaser a {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.container.container-teaser a .darkener,
+.container.container-teaser a img,
+.container.container-teaser a .teaser-text {
+  opacity: 0;
+  -o-transition: .5s;
+  -ms-transition: .5s;
+  -moz-transition: .5s;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+.container.container-teaser a .darkener {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.container.container-teaser a img {
+  position: absolute;
+  display: inline-block;
+  top: 30%;
+  left: 36.5%;
+  height: 100%;
+  vertical-align: middle;
+  max-height: 40%;
+  max-width: 40%;
+}
+.container.container-teaser a .teaser-text {
+  width: 100%;
+  position: absolute;
+  bottom: 20%;
+  left: 0;
+  color: white;
+  font-size: 20px;
+}
+.container.container-teaser a:hover .darkener {
+  background: black;
+  opacity: 0.5;
+}
+.container.container-teaser a:hover img,
+.container.container-teaser a:hover .teaser-text {
+  opacity: 1;
 }
 .navbar-inverse .navbar-nav {
   font-weight: bold;
