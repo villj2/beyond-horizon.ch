@@ -6725,6 +6725,30 @@ button.close {
   }
 }
 /* -------- Sticky Footer -------- */
+@font-face {
+  font-family: 'amaticbold';
+  src: url('../../fonts/amatic-bold-webfont.woff2') format('woff2'), url('../../fonts/amatic-bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'ralewaysemibold';
+  src: url('../../fonts/raleway-semibold-webfont.woff2') format('woff2'), url('../../fonts/raleway-semibold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'ralewayextralight';
+  src: url('../../fonts/raleway-extralight-webfont.woff2') format('woff2'), url('../../fonts/raleway-extralight-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'ralewaylight';
+  src: url('../../fonts/raleway-light-webfont.woff2') format('woff2'), url('../../fonts/raleway-light-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
 html {
   position: relative;
   min-height: 100%;
@@ -6732,6 +6756,24 @@ html {
 body {
   /* Margin bottom by footer height */
   margin-bottom: 110px;
+}
+body h1 {
+  font-size: 80px !important;
+  font-family: 'amaticbold';
+}
+body h2 {
+  font-family: 'ralewaysemibold';
+  font-size: 1.7em;
+}
+body h3 {
+  font-family: 'ralewaysemibold';
+  margin-top: 40px;
+  font-size: 1.4em;
+}
+body p {
+  font-family: 'ralewaylight';
+  font-size: 1.15em;
+  color: black;
 }
 footer {
   position: absolute;
@@ -6779,7 +6821,7 @@ footer .row .content-center {
   /*width: 100%;
 	background: #ffffff url("../../img/bay-of-fires.jpg") no-repeat center center;*/
   background: url(../../img/bay-of-fires.jpg) no-repeat center center;
-  height: 500px;
+  height: 450px;
   background-size: cover;
   padding-bottom: 0;
 }
@@ -6795,7 +6837,7 @@ footer .row .content-center {
   text-align: center;
 }
 .jumbotron .label h1 {
-  margin-top: 130px;
+  margin-top: 100px;
 }
 .teaser > div {
   text-align: center;
@@ -6907,6 +6949,27 @@ ul.nav a:hover {
     height: 117px;
     padding-top: 10px;
   }
+}
+.blog-entry .blog-cal {
+  position: relative;
+  left: -20px;
+  width: 100%;
+  max-width: 68px;
+  margin-top: 20px;
+}
+@media (max-width: 991px) {
+  .blog-entry .blog-cal {
+    left: 0;
+  }
+}
+.blog-entry .blog-map {
+  position: relative;
+  top: -100px;
+  width: 100%;
+}
+.polaroid-container {
+  background-color: gray;
+  width: 100%;
 }
 /* -------- Custom Styling END -------- */
 /*# sourceMappingURL=bootstrap.css.map */
