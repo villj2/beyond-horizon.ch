@@ -301,9 +301,41 @@ ul.nav a:hover { color: #01b195 !important; }
 	}
 }
 
-.polaroid-container {
-	background-color: gray;
-	width: 100%;
+.polaroid-section {
+
+	margin: 40px -5px;
+
+	.col-sm-4 {
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+
+
+	.polaroid-container {
+		/*position: relative;*/
+
+		.polaroid-background-container {
+
+			position: relative;
+			text-align: center;
+			max-width: 300px;
+			margin: 0 auto;
+
+			img.polaroid-background {
+				width: 100%;
+			}
+
+			img.polaroid-image {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 90%;
+				margin-left: 4%;
+				margin-top: 5%;
+			}
+		}
+	}
 }
+
 
 /* -------- Custom Styling END -------- */

@@ -6967,9 +6967,32 @@ ul.nav a:hover {
   top: -100px;
   width: 100%;
 }
-.polaroid-container {
-  background-color: gray;
+.polaroid-section {
+  margin: 40px -5px;
+}
+.polaroid-section .col-sm-4 {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.polaroid-section .polaroid-container {
+  /*position: relative;*/
+}
+.polaroid-section .polaroid-container .polaroid-background-container {
+  position: relative;
+  text-align: center;
+  max-width: 300px;
+  margin: 0 auto;
+}
+.polaroid-section .polaroid-container .polaroid-background-container img.polaroid-background {
   width: 100%;
+}
+.polaroid-section .polaroid-container .polaroid-background-container img.polaroid-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 90%;
+  margin-left: 4%;
+  margin-top: 5%;
 }
 /* -------- Custom Styling END -------- */
 /*# sourceMappingURL=bootstrap.css.map */
