@@ -6994,5 +6994,35 @@ ul.nav a:hover {
   margin-left: 4%;
   margin-top: 5%;
 }
+.grid img {
+  width: 100%;
+  padding: 0 10px 0;
+  /*padding-bottom: 20px;*/
+  position: relative;
+}
+.grid img.big {
+  /*padding-bottom: 40px;*/
+  /*padding-bottom: 0px;
+		margin-bottom: 20px;*/
+}
+.grid-sizer,
+.grid-item {
+  width: 25%;
+}
+@media (max-width: 991px) {
+  .grid-sizer,
+  .grid-item {
+    width: 50%;
+  }
+}
+.grid-item {
+  /*padding: 10px;*/
+}
+.grid-item--width2 {
+  width: 50%;
+}
+.grid-item--height2 {
+  height: 200px;
+}
 /* -------- Custom Styling END -------- */
 /*# sourceMappingURL=bootstrap.css.map */
