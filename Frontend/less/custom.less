@@ -137,6 +137,12 @@ footer {
 			margin-top: 100px;
 		}
 	}
+
+	&.empty {
+		height: 0;
+		padding-top: 0;
+		background: none !important;
+	}
 }
 
 .teaser {
@@ -232,6 +238,29 @@ footer {
 
 		img, .teaser-text {
 			opacity: 1;
+		}
+	}
+
+	&.map {
+		margin: 0;
+		padding: 0;
+		width: 100%;
+
+		.row {
+			margin: 0;
+		}
+
+		.col-md-12 {
+			padding: 0;
+		}
+
+		#map-overview{
+			@media(max-width:@screen-xs-max){
+				margin-top: 20px;
+				height: 815px !important;
+			}
+
+			margin-bottom: -20px;
 		}
 	}
 }
@@ -343,7 +372,6 @@ ul.nav a:hover { color: #01b195 !important; }
 		padding: 0 10px 0;
 		/*padding-bottom: 20px;*/
 		position: relative;
-
 	}
 
 	img.big {
@@ -367,3 +395,4 @@ ul.nav a:hover { color: #01b195 !important; }
 .grid-item--height2 { height: 200px; }
  
 /* -------- Custom Styling END -------- */
+
