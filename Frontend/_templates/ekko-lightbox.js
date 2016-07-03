@@ -421,8 +421,10 @@ License: https://github.com/ashleydw/lightbox/blob/master/LICENSE
 
   $.fn.ekkoLightbox.defaults = {
     gallery_parent_selector: 'document.body',
-    left_arrow_class: '.glyphicon .glyphicon-menu-left',
-    right_arrow_class: '.glyphicon .glyphicon-menu-right',
+    /*left_arrow_class: '.glyphicon .glyphicon-menu-left',
+    right_arrow_class: '.glyphicon .glyphicon-menu-right',*/
+    left_arrow_class: '.icon-arrow-left',
+    right_arrow_class: '.icon-arrow-right',
     directional_arrows: true,
     type: null,
     always_show_close: true,

@@ -7077,14 +7077,14 @@ time.icon strong {
   top: 0;
   padding: 0.4em 0;
   color: #fff;
-  background-color: #fd9f1b;
-  border-bottom: 1px dashed #f37302;
-  box-shadow: 0 2px 0 #fd9f1b;
+  background-color: #888888;
+  border-bottom: 1px dashed #555555;
+  box-shadow: 0 2px 0 #888888;
 }
 time.icon em {
   position: absolute;
   bottom: 0.3em;
-  color: #fd9f1b;
+  color: #333333;
 }
 time.icon span {
   width: 100%;
@@ -7212,17 +7212,21 @@ time.icon:focus {
   text-decoration: none;
   opacity: 1;
 }
-.ekko-lightbox .glyphicon-menu-left {
+/*.ekko-lightbox .glyphicon-menu-left {*/
+.ekko-lightbox .icon-arrow-left {
   left: 0;
   float: left;
   padding-left: 15px;
   text-align: left;
+  background: url("../../img/prev.png") no-repeat left center;
 }
-.ekko-lightbox .glyphicon-menu-right {
+/*.ekko-lightbox .glyphicon-menu-right {*/
+.ekko-lightbox .icon-arrow-right {
   right: 0;
   float: right;
   padding-right: 15px;
   text-align: right;
+  background: url("../../img/next.png") no-repeat right center;
 }
 .ekko-lightbox .modal-footer {
   text-align: left;
@@ -7274,6 +7278,7 @@ time.icon:focus {
 }
 .ekko-lightbox .modal-body {
   padding: 0;
+  padding-bottom: 20px;
 }
 .ekko-lightbox .modal-footer {
   -webkit-opacity: 0.9;

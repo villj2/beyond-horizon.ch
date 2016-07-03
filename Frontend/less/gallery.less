@@ -6,7 +6,7 @@
  */
 
 .ekko-lightbox-container {
-    position: relative
+    position: relative;
 }
 .ekko-lightbox-nav-overlay {
     position: absolute;
@@ -42,19 +42,23 @@
 }
 .ekko-lightbox a:hover {
     text-decoration: none;
-    opacity: 1
+    opacity: 1;
 }
-.ekko-lightbox .glyphicon-menu-left {
+/*.ekko-lightbox .glyphicon-menu-left {*/
+.ekko-lightbox .icon-arrow-left {
     left: 0;
     float: left;
     padding-left: 15px;
-    text-align: left
+    text-align: left;
+    background: url("../../img/prev.png") no-repeat left center;
 }
-.ekko-lightbox .glyphicon-menu-right {
+/*.ekko-lightbox .glyphicon-menu-right {*/
+.ekko-lightbox .icon-arrow-right {
     right: 0;
     float: right;
     padding-right: 15px;
-    text-align: right
+    text-align: right;
+    background: url("../../img/next.png") no-repeat right center;
 }
 .ekko-lightbox .modal-footer {
     text-align: left
@@ -110,6 +114,7 @@
 }
 .ekko-lightbox .modal-body {
     padding: 0;
+    padding-bottom: 20px;
 }
 .ekko-lightbox .modal-footer {
     -webkit-opacity: 0.9;
