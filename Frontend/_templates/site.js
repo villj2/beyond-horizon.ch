@@ -161,7 +161,7 @@ $( document ).ready(function() {
 
 	  	var infoBubble = new InfoBubble({
           maxWidth: 300,
-          content: '<div id="content" style="overflow: hidden;"><img src="../img/cangs.jpg" /><h2>Very Schatzi</h2></div>',
+          content: '<div id="content" style="overflow: hidden;"><a href="http://www.google.ch/" target="_self"><img src="../img/cangs.jpg" /><h2>Very Schatzi</h2></div></a>',
           padding: 0,
           backgroundColor: 'rgb(230,230,230)',
           borderRadius: 0,
@@ -174,7 +174,7 @@ $( document ).ready(function() {
 
         var infoBubble2 = new InfoBubble({
           maxWidth: 300,
-          content: '<div id="content" style="overflow: hidden;"><img src="../img/somesyds.jpg" /><h2>Very Schatzi syds</h2></div>',
+          content: '<div id="content" style="overflow: hidden;"><a href="" target="_self"><img src="../img/somesyds.jpg" /><h2>Very Schatzi syds</h2></div></a>',
           padding: 0,
           backgroundColor: 'rgb(230,230,230)',
           borderRadius: 0,
@@ -198,7 +198,18 @@ $( document ).ready(function() {
         });
 	}
 
-	initMap();
+	if($('#map-overview').length){
+		initMap();
+	}
 
-	
+	$(document).delegate('*[data-toggle="lightbox"]', 'click', function(event) {
+	    event.preventDefault();
+
+	    var options = {
+	    	left_arrow_class: 'glyphicon glyphicon-menu-left',
+	    	right_arrow_class: 'glyphicon glyphicon-menu-right'
+	    }
+
+	    $(this).ekkoLightbox();
+	}); 
 });

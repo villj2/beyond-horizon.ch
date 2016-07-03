@@ -1,7 +1,42 @@
-.gm-style-iw {
+/*.gm-style-iw {
     width: 200px!important;
     top: 0!important;
     left: 0!important;
     border: 0;
     border-radius: 0;
+}*/
+
+.container {
+	&.map {
+		margin: 0;
+		padding: 0;
+		width: 100%;
+
+		.row {
+			margin: 0;
+		}
+
+		.col-md-12 {
+			padding: 0;
+		}
+
+		#map-overview{
+			@media(max-width:@screen-xs-max){
+				margin-top: 20px;
+				height: 815px !important;
+			}
+
+			margin-bottom: -20px;
+		}
+
+		a {
+			&:hover {
+				text-decoration: none;
+			}
+		}
+
+		h2 {
+			color: @map-link-color;
+		}
+	}
 }
