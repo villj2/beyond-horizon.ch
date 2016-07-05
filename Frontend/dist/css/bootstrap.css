@@ -7041,6 +7041,31 @@ ul.nav a:hover {
   height: 200px;
 }
 /* -------- Custom Styling END -------- */
+/* -------- Scroll to top -------- */
+.scrollToTop {
+  width: 56px;
+  height: 50px;
+  /*padding:10px; */
+  text-align: center;
+  /*background: red;*/
+  /*font-weight: bold;*/
+  /*color: #444;*/
+  text-decoration: none;
+  position: fixed;
+  bottom: 15%;
+  right: 0;
+  display: none;
+  background: url('../../img/scroll-to-top-arrow.png') no-repeat top left;
+}
+@media (max-width: 767px) {
+  .scrollToTop {
+    bottom: 0;
+  }
+}
+.scrollToTop:hover {
+  text-decoration: none;
+}
+/* -------- Scroll to top END -------- */
 /* -------- Blog Calendar Icon -------- */
 time.icon {
   font-size: 0.7em;

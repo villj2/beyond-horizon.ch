@@ -384,6 +384,35 @@ ul.nav a:hover { color: #01b195 !important; }
 }
 .grid-item--width2 { width: 50%; }
 .grid-item--height2 { height: 200px; }
+
  
 /* -------- Custom Styling END -------- */
 
+/* -------- Scroll to top -------- */
+
+.scrollToTop {
+
+	width:56px; 
+	height:50px;
+	/*padding:10px; */
+	text-align:center; 
+	/*background: red;*/
+	/*font-weight: bold;*/
+	/*color: #444;*/
+	text-decoration: none;
+	position:fixed;
+	bottom: 15%;
+	right: 0;
+	display:none;
+	background: url('../../img/scroll-to-top-arrow.png') no-repeat top left;
+
+	@media(max-width:@screen-xs-max){
+		bottom: 0;
+	}
+
+	&:hover {
+		text-decoration:none;
+	}
+}
+
+/* -------- Scroll to top END -------- */
