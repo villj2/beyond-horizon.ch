@@ -6299,6 +6299,13 @@ button.close {
   text-align: center;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
   background-color: rgba(0, 0, 0, 0);
+  /*&:hover,
+  &:focus {
+    outline: 0;
+    color: @carousel-control-color;
+    text-decoration: none;
+    .opacity(.9);
+  }*/
 }
 .carousel-control.left {
   background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.0001) 100%);
@@ -6315,14 +6322,6 @@ button.close {
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.5) 100%);
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);
-}
-.carousel-control:hover,
-.carousel-control:focus {
-  outline: 0;
-  color: #fff;
-  text-decoration: none;
-  opacity: 0.9;
-  filter: alpha(opacity=90);
 }
 .carousel-control .icon-prev,
 .carousel-control .icon-next,
@@ -6831,15 +6830,13 @@ footer .row .content-center {
 .jumbotron {
   /*width: 100%;
 	background: #ffffff url("../../img/bay-of-fires.jpg") no-repeat center center;*/
+  /*@media(min-width:@screen-sm-min){
+		margin-top: @header-height;
+	}*/
   background: url(../../img/bay-of-fires.jpg) no-repeat center center;
   height: 450px;
   background-size: cover;
   padding-bottom: 0;
-}
-@media (min-width: 768px) {
-  .jumbotron {
-    margin-top: 117px;
-  }
 }
 .jumbotron .page-header {
   border: none;
@@ -6861,6 +6858,45 @@ footer .row .content-center {
 }
 .teaser .teaser-image {
   width: 100%;
+}
+.jumbotron-slider {
+  height: 450px;
+}
+@media (min-width: 768px) {
+  .jumbotron-slider {
+    margin-top: 117px;
+  }
+}
+.jumbotron-slider .carousel-inner {
+  height: 100%;
+}
+.jumbotron-slider .arrow-left {
+  position: absolute;
+  left: 20px;
+  width: 100%;
+  height: 100%;
+  background: url('../../img/prev.png') no-repeat center left;
+}
+@media (max-width: 767px) {
+  .jumbotron-slider .arrow-left {
+    left: 0;
+    height: 400px;
+    margin-top: 50px;
+  }
+}
+.jumbotron-slider .arrow-right {
+  position: absolute;
+  right: 20px;
+  width: 100%;
+  height: 100%;
+  background: url('../../img/next.png') no-repeat center right;
+}
+@media (max-width: 767px) {
+  .jumbotron-slider .arrow-right {
+    right: 0;
+    height: 400px;
+    margin-top: 50px;
+  }
 }
 .container.container-teaser {
   /*@media (min-width: @screen-sm-min){
