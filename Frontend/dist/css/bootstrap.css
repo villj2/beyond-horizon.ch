@@ -6921,7 +6921,7 @@ footer .row .content-center {
   height: 100%;
   vertical-align: middle;
 }
-.container.container-teaser a {
+.container.container-teaser .teaser-image-container a {
   display: block;
   position: absolute;
   top: 0;
@@ -6929,9 +6929,9 @@ footer .row .content-center {
   width: 100%;
   height: 100%;
 }
-.container.container-teaser a .darkener,
-.container.container-teaser a img,
-.container.container-teaser a .teaser-text {
+.container.container-teaser .teaser-image-container a .darkener,
+.container.container-teaser .teaser-image-container a img,
+.container.container-teaser .teaser-image-container a .teaser-text {
   opacity: 0;
   -o-transition: .5s;
   -ms-transition: .5s;
@@ -6939,7 +6939,7 @@ footer .row .content-center {
   -webkit-transition: .5s;
   transition: .5s;
 }
-.container.container-teaser a .darkener {
+.container.container-teaser .teaser-image-container a .darkener {
   display: inline-block;
   position: absolute;
   top: 0;
@@ -6947,7 +6947,7 @@ footer .row .content-center {
   width: 100%;
   height: 100%;
 }
-.container.container-teaser a img {
+.container.container-teaser .teaser-image-container a img {
   position: absolute;
   display: inline-block;
   top: 30%;
@@ -6957,7 +6957,7 @@ footer .row .content-center {
   max-height: 40%;
   max-width: 40%;
 }
-.container.container-teaser a .teaser-text {
+.container.container-teaser .teaser-image-container a .teaser-text {
   width: 100%;
   position: absolute;
   bottom: 20%;
@@ -6965,12 +6965,12 @@ footer .row .content-center {
   color: white;
   font-size: 20px;
 }
-.container.container-teaser a:hover .darkener {
+.container.container-teaser .teaser-image-container a:hover .darkener {
   background: black;
   opacity: 0.5;
 }
-.container.container-teaser a:hover img,
-.container.container-teaser a:hover .teaser-text {
+.container.container-teaser .teaser-image-container a:hover img,
+.container.container-teaser .teaser-image-container a:hover .teaser-text {
   opacity: 1;
 }
 .navbar-inverse .navbar-nav {
@@ -7102,6 +7102,20 @@ ul.nav a:hover {
   text-decoration: none;
 }
 /* -------- Scroll to top END -------- */
+.menu-teaser-container {
+  margin-bottom: 100px;
+}
+.menu-teaser-container h2,
+.menu-teaser-container h3 {
+  text-align: center;
+}
+.menu-teaser-container .menu-teaser {
+  display: block;
+  position: relative;
+  width: 235px;
+  height: 235px;
+  background: #e5e5e5 no-repeat center center;
+}
 /* -------- Blog Calendar Icon -------- */
 time.icon {
   font-size: 0.7em;
