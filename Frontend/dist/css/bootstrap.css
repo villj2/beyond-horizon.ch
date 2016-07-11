@@ -6793,12 +6793,20 @@ h4 {
 .container {
   /*padding-bottom: 50px;*/
 }
+.container.no-jumbotron {
+  margin-top: 50px;
+}
+@media (min-width: 768px) {
+  .container.no-jumbotron {
+    margin-top: 117px;
+  }
+}
 .container .btn-more {
   border: 1px solid black;
   background: none;
   padding: 10px 20px;
   border-radius: 0;
-  margin: 15px 0 30px;
+  margin: 15px 0 130px;
 }
 .container .btn:focus,
 .container .btn:active {
@@ -6833,10 +6841,16 @@ footer .row .content-center {
   /*@media(min-width:@screen-sm-min){
 		margin-top: @header-height;
 	}*/
+  margin-top: 50px;
   background: url(../../img/bay-of-fires.jpg) no-repeat center center;
   height: 450px;
   background-size: cover;
   padding-bottom: 0;
+}
+@media (min-width: 768px) {
+  .jumbotron {
+    margin-top: 117px;
+  }
 }
 .jumbotron .page-header {
   border: none;
@@ -6859,6 +6873,9 @@ footer .row .content-center {
 .teaser .teaser-image {
   width: 100%;
 }
+.teaser .menu-teaser img {
+  width: 100%;
+}
 .jumbotron-slider {
   height: 450px;
 }
@@ -6869,6 +6886,9 @@ footer .row .content-center {
 }
 .jumbotron-slider .carousel-inner {
   height: 100%;
+}
+.jumbotron-slider .jumbotron {
+  margin-top: 0 !important;
 }
 .jumbotron-slider .arrow-left {
   position: absolute;
@@ -6902,6 +6922,8 @@ footer .row .content-center {
   /*@media (min-width: @screen-sm-min){
 	    width: 750px;
 	}*/
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 @media (min-width: 992px) {
   .container.container-teaser {
@@ -7042,9 +7064,23 @@ ul.nav a:hover {
   position: absolute;
   top: 0;
   left: 0;
-  width: 90%;
-  margin-left: 4%;
-  margin-top: 5%;
+  width: 84%;
+  margin-left: 8%;
+  margin-top: 14%;
+}
+.polaroid-section .polaroid-container .polaroid-background-container img.polaroid-image.middle {
+  transform: rotate(0.5deg);
+  -ms-transform: rotate(0.5deg);
+  -moz-transform: rotate(0.5deg);
+  -webkit-transform: rotate(0.5deg);
+  -o-transform: rotate(0.5deg);
+}
+.polaroid-section .polaroid-container .polaroid-background-container img.polaroid-image.right {
+  transform: rotate(-0.5deg);
+  -ms-transform: rotate(-0.5deg);
+  -moz-transform: rotate(-0.5deg);
+  -webkit-transform: rotate(-0.5deg);
+  -o-transform: rotate(-0.5deg);
 }
 .grid img {
   width: 100%;
@@ -7102,20 +7138,7 @@ ul.nav a:hover {
   text-decoration: none;
 }
 /* -------- Scroll to top END -------- */
-.menu-teaser-container {
-  margin-bottom: 100px;
-}
-.menu-teaser-container h2,
-.menu-teaser-container h3 {
-  text-align: center;
-}
-.menu-teaser-container .menu-teaser {
-  display: block;
-  position: relative;
-  width: 235px;
-  height: 235px;
-  background: #e5e5e5 no-repeat center center;
-}
+/**/
 /* -------- Blog Calendar Icon -------- */
 time.icon {
   font-size: 0.7em;

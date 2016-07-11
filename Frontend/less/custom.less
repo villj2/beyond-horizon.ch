@@ -81,6 +81,15 @@ h1, h2, h3, h4 {
 
 .container {
 	/*padding-bottom: 50px;*/
+
+	&.no-jumbotron {
+
+		margin-top: @header-height-mobile;
+
+		@media(min-width:@screen-sm-min){
+			margin-top: @header-height;
+		}
+	}
 }
 
 .container {
@@ -89,7 +98,7 @@ h1, h2, h3, h4 {
 	    background: none;
 	    padding: 10px 20px;
 	    border-radius: 0;
-	    margin: 15px 0 30px;
+	    margin: 15px 0 130px;
 	}
 
 	.btn:focus,.btn:active {
@@ -135,6 +144,12 @@ footer {
 		margin-top: @header-height;
 	}*/
 
+	margin-top: @header-height-mobile;
+
+	@media(min-width:@screen-sm-min){
+		margin-top: @header-height;
+	}
+
 	background: url(../../img/bay-of-fires.jpg) no-repeat center center;
 	height: 450px;
 	background-size:cover;
@@ -168,6 +183,12 @@ footer {
 	.teaser-image {
 		width: 100%;
 	}
+
+	.menu-teaser {
+		img {
+			width: 100%;
+		}
+	}
 }
 
 .jumbotron-slider {
@@ -180,6 +201,10 @@ footer {
 
 	.carousel-inner {
 		height: 100%;
+	}
+
+	.jumbotron {
+		margin-top: 0 !important;
 	}
 
 	.arrow-left {
@@ -216,6 +241,9 @@ footer {
 	/*@media (min-width: @screen-sm-min){
 	    width: 750px;
 	}*/
+
+	padding-top: 50px;
+	padding-bottom: 50px;
 
 	@media (min-width: @screen-md-min){
 	    width: 900px;
@@ -393,9 +421,25 @@ ul.nav a:hover { color: #01b195 !important; }
 				position: absolute;
 				top: 0;
 				left: 0;
-				width: 90%;
-				margin-left: 4%;
-				margin-top: 5%;
+				width: 84%;
+				margin-left: 8%;
+				margin-top: 14%;
+
+				&.middle {
+					transform:          rotate(0.5deg);
+					-ms-transform:      rotate(0.5deg);
+					-moz-transform:     rotate(0.5deg);
+					-webkit-transform:  rotate(0.5deg);
+					-o-transform:       rotate(0.5deg);
+				}
+
+				&.right {
+					transform:          rotate(-0.5deg);
+					-ms-transform:      rotate(-0.5deg);
+					-moz-transform:     rotate(-0.5deg);
+					-webkit-transform:  rotate(-0.5deg);
+					-o-transform:       rotate(-0.5deg);
+				}
 			}
 		}
 	}
@@ -460,19 +504,4 @@ ul.nav a:hover { color: #01b195 !important; }
 }
 
 /* -------- Scroll to top END -------- */
-
-.menu-teaser-container {
-	h2, h3 {
-		text-align: center;
-	}
-
-	.menu-teaser {
-		display: block;
-		position: relative;
-		width: 235px;
-		height: 235px;
-		background: #e5e5e5 no-repeat center center;
-	}
-
-	margin-bottom: 100px;
-}
+/**/
