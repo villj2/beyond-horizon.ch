@@ -1,33 +1,64 @@
 /* -------- Sticky Footer -------- */
 
-@font-face {
+/*@font-face {
     font-family: 'amaticbold';
     src: url('../../fonts/amatic-bold-webfont.woff2') format('woff2'),
          url('../../fonts/amatic-bold-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+}*/
+@font-face {
+    font-family: 'amaticbold';
+    src: url('../../fonts/amatic-bold-webfont.eot');
+    src: url('../../fonts/amatic-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../../fonts/amatic-bold-webfont.woff2') format('woff2'),
+         url('../../fonts/amatic-bold-webfont.woff') format('woff'),
+         url('../../fonts/amatic-bold-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
-@font-face {
+/*@font-face {
     font-family: 'ralewaysemibold';
     src: url('../../fonts/raleway-semibold-webfont.woff2') format('woff2'),
          url('../../fonts/raleway-semibold-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+}*/
+@font-face {
+    font-family: 'ralewaysemibold';
+    src: url('../../fonts/raleway-semibold-webfont.eot');
+    src: url('../../fonts/raleway-semibold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../../fonts/raleway-semibold-webfont.woff2') format('woff2'),
+         url('../../fonts/raleway-semibold-webfont.woff') format('woff'),
+         url('../../fonts/raleway-semibold-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
 }
 
-@font-face {
+/*@font-face {
     font-family: 'ralewayextralight';
     src: url('../../fonts/raleway-extralight-webfont.woff2') format('woff2'),
          url('../../fonts/raleway-extralight-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-}
+}*/
 
-@font-face {
+/*@font-face {
     font-family: 'ralewaylight';
     src: url('../../fonts/raleway-light-webfont.woff2') format('woff2'),
          url('../../fonts/raleway-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}*/
+@font-face {
+    font-family: 'ralewaylight';
+    src: url('../../fonts/raleway-light-webfont.eot');
+    src: url('../../fonts/raleway-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../../fonts/raleway-light-webfont.woff2') format('woff2'),
+         url('../../fonts/raleway-light-webfont.woff') format('woff'),
+         url('../../fonts/raleway-light-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -334,6 +365,12 @@ footer {
 
 		font-weight: bold;
 
+		a {
+			text-transform: uppercase;
+			padding-top: 5px;
+			font-size: 0.95em;
+		}
+
 		> .active{
 
 			> a {
@@ -350,6 +387,21 @@ footer {
 				color: #01b195;
 				background: none;
 			}
+		}
+	}
+
+	.navbar-brand {
+		img {
+
+			width: 250px;
+			margin-top: 30px;
+
+			@media(max-width:@screen-xs-max){
+				width: 125px;
+				margin-top: 0px;
+			}
+
+			
 		}
 	}
 }
@@ -504,4 +556,8 @@ ul.nav a:hover { color: #01b195 !important; }
 }
 
 /* -------- Scroll to top END -------- */
-/**/
+/* -------- Image Map -------- */
+img.map, map area {
+    outline: none;
+}
+/* -------- Image Map END -------- */

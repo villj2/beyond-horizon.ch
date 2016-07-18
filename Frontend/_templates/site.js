@@ -228,15 +228,29 @@ $( document ).ready(function() {
 		return false;
 	});
 
+	// Smooth scrolling a-tags
 	$('a[href^=#]').on("click",function(e){
 	    var t= $(this.hash);
 	    var t=t.length&&t||$('[name='+this.hash.slice(1)+']');
 	    if(t.length){
 	        var tOffset=t.offset().top;
-	        $('html,body').animate({scrollTop:tOffset-20},'slow');
+	        $('html,body').animate({scrollTop:tOffset-140},'slow');
 	        e.preventDefault();
 	    }
 	});
 
+	// Smooth scrolling area-tags
+	$('area[href^=#]').on("click",function(e){
+	    var t= $(this.hash);
+	    var t=t.length&&t||$('[name='+this.hash.slice(1)+']');
+	    if(t.length){
+	        var tOffset=t.offset().top;
+	        $('html,body').animate({scrollTop:tOffset-140},'slow');
+	        e.preventDefault();
+	    }
+	});
+
+	/*$('img[usemap]').rwdImageMaps();*/
+	$('map').imageMapResize();
 
 });

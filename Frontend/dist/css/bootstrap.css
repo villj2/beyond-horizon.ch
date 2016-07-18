@@ -6724,27 +6724,52 @@ button.close {
   }
 }
 /* -------- Sticky Footer -------- */
+/*@font-face {
+    font-family: 'amaticbold';
+    src: url('../../fonts/amatic-bold-webfont.woff2') format('woff2'),
+         url('../../fonts/amatic-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}*/
 @font-face {
   font-family: 'amaticbold';
-  src: url('../../fonts/amatic-bold-webfont.woff2') format('woff2'), url('../../fonts/amatic-bold-webfont.woff') format('woff');
+  src: url('../../fonts/amatic-bold-webfont.eot');
+  src: url('../../fonts/amatic-bold-webfont.eot?#iefix') format('embedded-opentype'), url('../../fonts/amatic-bold-webfont.woff2') format('woff2'), url('../../fonts/amatic-bold-webfont.woff') format('woff'), url('../../fonts/amatic-bold-webfont.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
+/*@font-face {
+    font-family: 'ralewaysemibold';
+    src: url('../../fonts/raleway-semibold-webfont.woff2') format('woff2'),
+         url('../../fonts/raleway-semibold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}*/
 @font-face {
   font-family: 'ralewaysemibold';
-  src: url('../../fonts/raleway-semibold-webfont.woff2') format('woff2'), url('../../fonts/raleway-semibold-webfont.woff') format('woff');
+  src: url('../../fonts/raleway-semibold-webfont.eot');
+  src: url('../../fonts/raleway-semibold-webfont.eot?#iefix') format('embedded-opentype'), url('../../fonts/raleway-semibold-webfont.woff2') format('woff2'), url('../../fonts/raleway-semibold-webfont.woff') format('woff'), url('../../fonts/raleway-semibold-webfont.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
-@font-face {
-  font-family: 'ralewayextralight';
-  src: url('../../fonts/raleway-extralight-webfont.woff2') format('woff2'), url('../../fonts/raleway-extralight-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
+/*@font-face {
+    font-family: 'ralewayextralight';
+    src: url('../../fonts/raleway-extralight-webfont.woff2') format('woff2'),
+         url('../../fonts/raleway-extralight-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}*/
+/*@font-face {
+    font-family: 'ralewaylight';
+    src: url('../../fonts/raleway-light-webfont.woff2') format('woff2'),
+         url('../../fonts/raleway-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}*/
 @font-face {
   font-family: 'ralewaylight';
-  src: url('../../fonts/raleway-light-webfont.woff2') format('woff2'), url('../../fonts/raleway-light-webfont.woff') format('woff');
+  src: url('../../fonts/raleway-light-webfont.eot');
+  src: url('../../fonts/raleway-light-webfont.eot?#iefix') format('embedded-opentype'), url('../../fonts/raleway-light-webfont.woff2') format('woff2'), url('../../fonts/raleway-light-webfont.woff') format('woff'), url('../../fonts/raleway-light-webfont.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -6998,6 +7023,11 @@ footer .row .content-center {
 .navbar-inverse .navbar-nav {
   font-weight: bold;
 }
+.navbar-inverse .navbar-nav a {
+  text-transform: uppercase;
+  padding-top: 5px;
+  font-size: 0.95em;
+}
 .navbar-inverse .navbar-nav > .active > a {
   color: #01b195;
   background: none;
@@ -7009,6 +7039,16 @@ footer .row .content-center {
 .navbar-inverse .navbar-nav > .active > a:focus {
   color: #01b195;
   background: none;
+}
+.navbar-inverse .navbar-brand img {
+  width: 250px;
+  margin-top: 30px;
+}
+@media (max-width: 767px) {
+  .navbar-inverse .navbar-brand img {
+    width: 125px;
+    margin-top: 0px;
+  }
 }
 ul.nav a:hover {
   color: #01b195 !important;
@@ -7138,7 +7178,12 @@ ul.nav a:hover {
   text-decoration: none;
 }
 /* -------- Scroll to top END -------- */
-/**/
+/* -------- Image Map -------- */
+img.map,
+map area {
+  outline: none;
+}
+/* -------- Image Map END -------- */
 /* -------- Blog Calendar Icon -------- */
 time.icon {
   font-size: 0.7em;
@@ -7415,5 +7460,15 @@ time.icon:focus {
 .grid {
   margin-top: 20px;
   margin-bottom: 30px;
+}
+.about .polaroid {
+  margin-top: 50px;
+  width: 100%;
+  max-width: 240px;
+}
+@media (max-width: 1199px) {
+  .about .center-max-md {
+    text-align: center;
+  }
 }
 /*# sourceMappingURL=bootstrap.css.map */
