@@ -34,9 +34,8 @@
          url('../../fonts/raleway-semibold-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
-
 }
-
+ 
 /*@font-face {
     font-family: 'ralewayextralight';
     src: url('../../fonts/raleway-extralight-webfont.woff2') format('woff2'),
@@ -168,8 +167,8 @@ footer {
 }
 
 .jumbotron {
-	/*width: 100%;
-	background: #ffffff url("../../img/bay-of-fires.jpg") no-repeat center center;*/
+	width: 100%;
+	background: #ffffff no-repeat center center;
 
 	/*@media(min-width:@screen-sm-min){
 		margin-top: @header-height;
@@ -181,7 +180,7 @@ footer {
 		margin-top: @header-height;
 	}
 
-	background: url(../../img/bay-of-fires.jpg) no-repeat center center;
+	/*background: url(../../img/bay-of-fires.jpg) no-repeat center center;*/
 	height: 450px;
 	background-size:cover;
 	padding-bottom: 0;
@@ -401,7 +400,10 @@ footer {
 				margin-top: 0px;
 			}
 
-			
+			@media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
+				width: 175px;
+				margin-top: 38px;
+			}
 		}
 	}
 }
