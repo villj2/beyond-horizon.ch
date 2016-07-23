@@ -9,5 +9,5 @@ password: >
 language: en
 role: admin
 history:
-  - goat
-  - goat/goatproject1
+  - posts/japan/tokyo
+  - home

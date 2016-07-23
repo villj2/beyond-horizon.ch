@@ -229,7 +229,8 @@ $( document ).ready(function() {
 	});
 
 	// Smooth scrolling a-tags
-	$('a[href^=#]').on("click",function(e){
+	// FIXME conflict with scroll to top button
+	/*$('a[href^=#]').on("click",function(e){
 	    var t= $(this.hash);
 	    var t=t.length&&t||$('[name='+this.hash.slice(1)+']');
 	    if(t.length){
@@ -237,7 +238,7 @@ $( document ).ready(function() {
 	        $('html,body').animate({scrollTop:tOffset-140},'slow');
 	        e.preventDefault();
 	    }
-	});
+	});*/
 
 	// Smooth scrolling area-tags
 	$('area[href^=#]').on("click",function(e){

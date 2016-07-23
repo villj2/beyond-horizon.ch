@@ -1,5 +1,13 @@
 title: Site
-pages: default
+#pages: default
+pages:
+  template:
+    - page
+    - posts
+    - journey
+    - gallery
+    - map
+    - about
 fields:
   title:
     label: Title

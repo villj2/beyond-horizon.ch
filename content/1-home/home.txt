@@ -1,0 +1,13 @@
+Title: Home
+
+----
+
+Intro: 
+
+## Entdecke lö Schatzi
+
+Hier findest du unsere neusten Posts. Lass dich inspirieren.
+
+----
+
+Introbuttons: Entdecke mehr.

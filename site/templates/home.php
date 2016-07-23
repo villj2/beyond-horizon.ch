@@ -82,8 +82,7 @@
 
       <div class="row">
         <div class="col-md-12" style="text-align: center;">
-          <h2>Entdecke lö Schatzi</h2>
-          <p>Hier findest du unsere neusten Posts. Lass dich inspirieren.</p>
+          <?php echo $page->intro()->kirbytext() ?>
           <br />
         </div>
       </div>
@@ -180,7 +179,7 @@
 
       <div class="row">
         <div class="col-sm-12" style="text-align: center;">
-          <h2>Sehr der Text, aber undefiniert.</h2>
+          <h2><?php echo $page->introbuttons()->text() ?></h2>
         </div>
       </div>
 

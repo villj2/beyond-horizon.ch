@@ -9,7 +9,9 @@
     <meta name="author" content="">
     <link rel="icon" href="/beyond-horizon.ch/favicon.ico">
 
-    <title>Sticky Footer Template for Bootstrap</title>
+    <title><?php echo $site->title()->html() ?> | <?php echo $page->title()->html() ?></title>
+
+    <link href="/beyond-horizon.ch/Frontend/dist/css/ekko-lightbox.min.css" rel="stylesheet">
 
     <!-- Bootstrap core CSS -->
     <link href="/beyond-horizon.ch/Frontend/dist/css/bootstrap.css" rel="stylesheet">
@@ -45,11 +47,11 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li class="active"><a href="/">Home</a></li>
-            <li><a href="/">Journey</a></li>
-            <li><a href="/">Gallery</a></li>
-            <li><a href="/">Map</a></li>
-            <li><a href="/">About</a></li>
+            <?php foreach($pages->visible() as $p): ?>
+              <li <?php e($p->isOpen(), ' class="active"') ?> >
+                <a href="<?php echo $p->url() ?>"><?php echo $p->title()->html() ?></a>
+              </li>
+            <?php endforeach ?>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
