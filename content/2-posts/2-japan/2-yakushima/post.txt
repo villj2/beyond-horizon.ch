@@ -11,3 +11,7 @@ Text:
 ----
 
 Tags: 
+
+----
+
+Teaserimage: beachers.jpg

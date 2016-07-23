@@ -18,7 +18,7 @@
 	      		<div class="col-sm-4">
 	          		<div class="teaser-image-container">
 	            		<p>
-				      		<img src="/beyond-horizon.ch/Frontend/img/cangs.jpg" class="teaser-image" />
+				      		<img src="<?php echo $post->contentURL() ?>/<?php echo $post->imageteaser() ?>" class="teaser-image" />
 			              	<a class="" href="<?php echo $post->url() ?>" style="">
 				                <span class="darkener"></span>
 				                <span class="helper"></span>

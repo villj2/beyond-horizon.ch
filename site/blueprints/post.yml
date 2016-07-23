@@ -1,17 +1,22 @@
 title: Post
-pages: false
-files:
-  sortable: true
+pages: Gallery
+files: true
 fields:
   title:
     label: Title
     type:  text
-  year:
-    label: Year
-    type:  text
+  date:
+    label: Datum
+    type:  date
   text:
     label: Text
     type:  textarea
-  tags:
-    label: Tags
-    type:  tags
+  imagejumbotron:
+    label: Jumbotron
+    type: image
+  imageteaser:
+    label: Teaser Image
+    type: image
+  imagemap:
+    label: Map Image
+    type: image
