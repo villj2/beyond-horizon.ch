@@ -20,3 +20,9 @@ fields:
   imagemap:
     label: Map Image
     type: image
+  lat:
+    label: Breitengrade (lat)
+    type: text
+  lng:
+    label: Längengrade (lng)
+    type: text

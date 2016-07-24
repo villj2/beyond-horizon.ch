@@ -6,10 +6,13 @@ kirbytext::$tags['polaroid'] = array(
   ),
   'html' => function($tag) {
 
-    $img = $tag->attr('polaroid');
+    $url     = $tag->attr('polaroid');
     $type    = $tag->attr('type');
+    $file    = $tag->file($url);
 
     //return '<a href="' . $url . '/' . $article . '">' . $text . '</a>';
+
+    $url = $file ? $file->url() : url($url);
 
     $alignment = '';
     $bgimage = '/Frontend/img/polaroid_1.png';
@@ -17,19 +20,19 @@ kirbytext::$tags['polaroid'] = array(
     switch ($type) {
 	    case 2:
 	    	$alignment = 'middle';
-	        $bgimage = '/Frontend/img/polaroid_2.png';
-	        break;
+	      $bgimage = '/Frontend/img/polaroid_2.png';
+	      break;
 	    case 3:
 	    	$alignment = 'right';
-	        $bgimage = '/Frontend/img/polaroid_3.png';
-	        break;
+	      $bgimage = '/Frontend/img/polaroid_3.png';
+	      break;
 	}
 
     return '<div class="col-sm-4">
               <div class="polaroid-container">
                 <div class="polaroid-background-container">
                   <img class="polaroid-background" src="' . $bgimage . '" />
-                  <img class="polaroid-image ' . $alignment . '" src="' . $img . '" />
+                  <img class="polaroid-image ' . $alignment . '" src="' . $url . '" />
                 </div>
               </div>
             </div>';

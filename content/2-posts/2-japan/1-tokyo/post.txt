@@ -15,9 +15,9 @@ Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod 
 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
 
 (polaroidstart: )
-(polaroid: /content/2-posts/2-japan/1-tokyo/whitsunday_polaroid.jpg type: 1)
-(polaroid: /content/2-posts/2-japan/1-tokyo/whitsunday_polaroid.jpg type: 2)
-(polaroid: /content/2-posts/2-japan/1-tokyo/whitsunday_polaroid.jpg type: 3)
+(polaroid: whitsunday_polaroid.jpg type: 1)
+(polaroid: whitsunday_polaroid.jpg type: 2)
+(polaroid: whitsunday_polaroid.jpg type: 3)
 (polaroidend: )
 
 ###Zwischentitel
@@ -54,3 +54,11 @@ Imageteaser: cangs.jpg
 ----
 
 Imagemap: australie.png
+
+----
+
+Lng: 46.933726295824336
+
+----
+
+Ltd: 7.442593574523926

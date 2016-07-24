@@ -97,7 +97,7 @@
                 <a class="" href="<?php echo $post->url() ?>">
                   <span class="darkener"></span>
                   <span class="helper"></span>
-                  <img src="/Frontend/img/icon_<?php echo $post->parent()->teasericon() ?>.svg" onerror="this.src='/Frontend/img/icon_placeholder.png'" />
+                  <img src="/Frontend/img/icon_<?php echo $post->parent()->teasericon() ?>.svg" onerror="this.src='/Frontend/img/placeholder.png'" />
                   <span class="teaser-text"><?php echo $post->title()->html() ?></span>
                 </a>
               </p>

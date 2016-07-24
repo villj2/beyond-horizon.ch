@@ -138,14 +138,14 @@ $( document ).ready(function() {
 		    map: map,
 		    position: myLatLng,
 		    title: 'Totoro!',
-          	icon: new google.maps.MarkerImage('../img/location-pin.svg', null, null, null, new google.maps.Size(32,32)),
+          	icon: new google.maps.MarkerImage('/Frontend/img/location-pin.svg', null, null, null, new google.maps.Size(32,32)),
 		  });
 
 	  	var marker2 = new google.maps.Marker({
 		    map: map,
 		    position: {lat: -16.909683615558635, lng: 145.755615234375},
 		    title: 'Totoro! 2',
-          	icon: new google.maps.MarkerImage('../img/location-pin.svg', null, null, null, new google.maps.Size(32,32)),
+          	icon: new google.maps.MarkerImage('/Frontend/img/location-pin.svg', null, null, null, new google.maps.Size(32,32)),
 		  });
 
 	  	/* Window */
@@ -161,27 +161,27 @@ $( document ).ready(function() {
 
 	  	var infoBubble = new InfoBubble({
           maxWidth: 300,
-          content: '<div id="content" style="overflow: hidden;"><a href="http://www.google.ch/" target="_self"><img src="../img/cangs.jpg" /><h2>Very Schatzi</h2></div></a>',
+          content: '<div id="content" style="overflow: hidden;"><a href="http://www.google.ch/" target="_self"><img src="/Frontend/img/cangs.jpg" /><h2>Very Schatzi</h2></div></a>',
           padding: 0,
           backgroundColor: 'rgb(230,230,230)',
           borderRadius: 0,
           arrowSize: 10,
           borderWidth: 0,
           borderColor: '#2c2c2c',
-          closeSrc: '../img/maps_infowindow_close.png',
+          closeSrc: '/Frontend/img/maps_infowindow_close.png',
           arrowStyle: 0
         });
 
         var infoBubble2 = new InfoBubble({
           maxWidth: 300,
-          content: '<div id="content" style="overflow: hidden;"><a href="" target="_self"><img src="../img/somesyds.jpg" /><h2>Very Schatzi syds</h2></div></a>',
+          content: '<div id="content" style="overflow: hidden;"><a href="" target="_self"><img src="/Frontend/img/somesyds.jpg" /><h2>Very Schatzi syds</h2></div></a>',
           padding: 0,
           backgroundColor: 'rgb(230,230,230)',
           borderRadius: 0,
           arrowSize: 10,
           borderWidth: 0,
           borderColor: '#2c2c2c',
-          closeSrc: '../img/maps_infowindow_close.png',
+          closeSrc: '/Frontend/img/maps_infowindow_close.png',
           arrowStyle: 0
         });
 
