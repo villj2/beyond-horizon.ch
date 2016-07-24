@@ -13,8 +13,8 @@
         <!-- Wrapper for slides -->
         <div class="carousel-inner" role="listbox">
           <div class="item active">
-            <!-- <img src="/beyond-horizon.ch/Frontend/img/bay-of-fires.jpg" alt="Chania"> -->
-            <div class="jumbotron" style="background-image: url(/beyond-horizon.ch/Frontend/img/bay-of-fires.jpg);">
+            <!-- <img src="/Frontend/img/bay-of-fires.jpg" alt="Chania"> -->
+            <div class="jumbotron" style="background-image: url(/Frontend/img/bay-of-fires.jpg);">
               <div class="page-header">
                 <div class="container">
                   <div class="label">
@@ -26,7 +26,7 @@
           </div>
 
           <div class="item">
-            <div class="jumbotron" style="background-image: url(/beyond-horizon.ch/Frontend/img/bay-of-fires.jpg);">
+            <div class="jumbotron" style="background-image: url(/Frontend/img/bay-of-fires.jpg);">
               <div class="page-header">
                 <div class="container">
                   <div class="label">
@@ -38,7 +38,7 @@
           </div>
 
           <div class="item">
-            <div class="jumbotron" style="background-image: url(/beyond-horizon.ch/Frontend/img/bay-of-fires.jpg);">
+            <div class="jumbotron" style="background-image: url(/Frontend/img/bay-of-fires.jpg);">
               <div class="page-header">
                 <div class="container">
                   <div class="label">
@@ -50,7 +50,7 @@
           </div>
 
           <div class="item">
-            <div class="jumbotron" style="background-image: url(/beyond-horizon.ch/Frontend/img/bay-of-fires.jpg);">
+            <div class="jumbotron" style="background-image: url(/Frontend/img/bay-of-fires.jpg);">
               <div class="page-header">
                 <div class="container">
                   <div class="label">
@@ -88,92 +88,29 @@
       </div>
 
       <div class="row teaser">
-        <div class="col-sm-4">
-          <div class="teaser-image-container">
-            <p>
-              <img src="/beyond-horizon.ch/Frontend/img/cangs.jpg" class="teaser-image" />
-              <a class="" href="#" style="">
-                <span class="darkener"></span>
-                <span class="helper"></span>
-                <img style="" src="/beyond-horizon.ch/Frontend/img/icon_australia.svg" onerror="this.src='/beyond-horizon.ch/Frontend/img/icon_australia.png'" />
-                <span style="" class="teaser-text">Ghängs</span>
-              </a>
-            </p>
-          </div>
-        </div>
-        <div class="col-sm-4">
-          <div class="teaser-image-container">
-            <p>
-              <img src="/beyond-horizon.ch/Frontend/img/beachers.jpg" class="teaser-image" />
-              <a href="#" style="">
-                <span class="darkener"></span>
-                <span class="helper"></span>
-                <img style="" src="/beyond-horizon.ch/Frontend/img/icon_australia.svg" onerror="this.src='/beyond-horizon.ch/Frontend/img/icon_australia.png'" />
-                <span style="" class="teaser-text">Beachners</span>
-              </a>
-            </p>
-          </div>
-       </div>
-        <div class="col-sm-4">
-          <div class="teaser-image-container">
-            <p>
-              <img src="/beyond-horizon.ch/Frontend/img/somesyds.jpg" class="teaser-image" />
-              <a href="#" style="">
-                <span class="darkener"></span>
-                <span class="helper"></span>
-                <img style="" src="/beyond-horizon.ch/Frontend/img/icon_australia.svg" onerror="this.src='/beyond-horizon.ch/Frontend/img/icon_australia.png'" />
-                <span style="" class="teaser-text">Some Syds</span>
-              </a>
-            </p>
-          </div>
-        </div>
-      </div>
 
-      <div class="row teaser">
-        <div class="col-sm-4">
-          <div class="teaser-image-container">
-            <p>
-              <img src="/beyond-horizon.ch/Frontend/img/cangs.jpg" class="teaser-image" />
-              <a href="#" style="">
-                <span class="darkener"></span>
-                <span class="helper"></span>
-                <img style="" src="/beyond-horizon.ch/Frontend/img/icon_australia.svg" onerror="this.src='/beyond-horizon.ch/Frontend/img/icon_australia.png'" />
-                <span style="" class="teaser-text">Ghängs</span>
-              </a>
-            </p>
+        <?php foreach($page->parent()->index()->filterBy('template', 'post')->sortBy('date', 'desc')->limit(6) as $post): ?>
+          <div class="col-sm-4">
+            <div class="teaser-image-container">
+              <p>
+                <img src="<?php echo $post->contentURL() ?>/<?php echo $post->imageteaser() ?>" class="teaser-image" />
+                <a class="" href="<?php echo $post->url() ?>">
+                  <span class="darkener"></span>
+                  <span class="helper"></span>
+                  <img src="/Frontend/img/icon_<?php echo $post->parent()->teasericon() ?>.svg" onerror="this.src='/Frontend/img/icon_placeholder.png'" />
+                  <span class="teaser-text"><?php echo $post->title()->html() ?></span>
+                </a>
+              </p>
+            </div>
           </div>
-        </div>
-        <div class="col-sm-4">
-          <div class="teaser-image-container">
-            <p>
-              <img src="/beyond-horizon.ch/Frontend/img/beachers.jpg" class="teaser-image" />
-              <a href="#" style="">
-                <span class="darkener"></span>
-                <span class="helper"></span>
-                <img style="" src="/beyond-horizon.ch/Frontend/img/icon_australia.svg" onerror="this.src='/beyond-horizon.ch/Frontend/img/icon_australia.png'" />
-                <span style="" class="teaser-text">Beachners</span>
-              </a>
-            </p>
-          </div>
-       </div>
-        <div class="col-sm-4">
-          <div class="teaser-image-container">
-            <p>
-              <img src="/beyond-horizon.ch/Frontend/img/somesyds.jpg" class="teaser-image" />
-              <a href="#" style="">
-                <span class="darkener"></span>
-                <span class="helper"></span>
-                <img style="" src="/beyond-horizon.ch/Frontend/img/icon_australia.svg" onerror="this.src='/beyond-horizon.ch/Frontend/img/icon_australia.png'" />
-                <span style="" class="teaser-text">Some Syds</span>
-              </a>
-            </p>
-          </div>
-        </div>
+        <?php endforeach ?>
+
+        
       </div>
 
       <div class="row">
         <div class="col-sm-12" style="text-align: center;">
-          <button type="button" class="btn btn-secondary btn-more">Mehr anzeigen</button>
+          <button type="button" class="btn btn-secondary btn-more" onclick="location.href='/posts'">Mehr anzeigen</button>
         </div>
       </div>
 
@@ -186,26 +123,26 @@
       <div class="row teaser">
         <div class="col-sm-3 col-xs-6 menu-teaser">
           <h4>Journey</h4>
-          <a href="#">
-            <img src="/beyond-horizon.ch/Frontend/img/menu-teaser-journey.png" />
+          <a href="/journey">
+            <img src="/Frontend/img/menu-teaser-journey.png" />
           </a>
         </div>
         <div class="col-sm-3 col-xs-6 menu-teaser">
           <h4>Gallery</h4>
-          <a href="#">
-            <img src="/beyond-horizon.ch/Frontend/img/menu-teaser-gallery.png" />
+          <a href="/gallery">
+            <img src="/Frontend/img/menu-teaser-gallery.png" />
           </a>
         </div>
         <div class="col-sm-3 col-xs-6 menu-teaser">
           <h4>Map</h4>
-          <a href="#">
-            <img src="/beyond-horizon.ch/Frontend/img/menu-teaser-map.png" />
+          <a href="/map">
+            <img src="/Frontend/img/menu-teaser-map.png" />
           </a>
         </div>
         <div class="col-sm-3 col-xs-6 menu-teaser">
           <h4>About</h4>
-          <a href="#">
-            <img src="/beyond-horizon.ch/Frontend/img/menu-teaser-about.png" />
+          <a href="/about">
+            <img src="/Frontend/img/menu-teaser-about.png" />
           </a>
         </div>
       </div>

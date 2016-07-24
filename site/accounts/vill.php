@@ -10,5 +10,7 @@ language: en
 role: admin
 history:
   - posts/japan/tokyo
+  - posts/japan/yakushima-japan
   - posts/japan/yakushima
-  - home
+  - posts/preparation/packing
+  - posts/japan

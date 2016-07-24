@@ -13,7 +13,7 @@
 
 	      <div class="row teaser">
 
-	      	<?php foreach($category->children()->visible() as $post): ?>
+	      	<?php foreach($category->children()->visible()->sortBy('sort', 'asc') as $post): ?>
 
 	      		<div class="col-sm-4">
 	          		<div class="teaser-image-container">
@@ -22,8 +22,8 @@
 			              	<a class="" href="<?php echo $post->url() ?>" style="">
 				                <span class="darkener"></span>
 				                <span class="helper"></span>
-				                <img style="" src="/beyond-horizon.ch/Frontend/img/icon_australia.svg" onerror="this.src='/beyond-horizon.ch/Frontend/img/icon_australia.png'" />
-				                <span style="" class="teaser-text"><?php echo $post->title()->html() ?></span>
+				                <img src="/Frontend/img/icon_<?php echo $category->teasericon() ?>.svg" onerror="this.src='/Frontend/img/placeholder.png'" />
+				                <span class="teaser-text"><?php echo $post->title()->html() ?></span>
 			              	</a>
 			            </p>
 	        		</div>

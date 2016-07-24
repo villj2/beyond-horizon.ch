@@ -6,3 +6,13 @@ fields:
   title:
     label: Title
     type:  text
+  teasericon:
+    label: Teaser Icon
+    type: select
+    default: preparation
+    options:
+      preparation: Preparation
+      japan: Japan
+      australia: Australia
+      tasmania: Tasmania
+      newzealand: New Zealand

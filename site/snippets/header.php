@@ -7,21 +7,21 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="/beyond-horizon.ch/favicon.ico">
+    <link rel="icon" href="/favicon.ico">
 
     <title><?php echo $site->title()->html() ?> | <?php echo $page->title()->html() ?></title>
 
-    <link href="/beyond-horizon.ch/Frontend/dist/css/ekko-lightbox.min.css" rel="stylesheet">
+    <link href="/Frontend/dist/css/ekko-lightbox.min.css" rel="stylesheet">
 
     <!-- Bootstrap core CSS -->
-    <link href="/beyond-horizon.ch/Frontend/dist/css/bootstrap.css" rel="stylesheet">
+    <link href="/Frontend/dist/css/bootstrap.css" rel="stylesheet">
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <link href="/beyond-horizon.ch/Frontend/dist/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+    <link href="/Frontend/dist/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-    <script src="/beyond-horizon.ch/Frontend/dist/js/ie-emulation-modes-warning.js"></script>
+    <script src="/Frontend/dist/js/ie-emulation-modes-warning.js"></script>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -42,7 +42,7 @@
             <span class="icon-bar"></span>
           </button>
           <a class="navbar-brand" href="/">
-            <img src="/beyond-horizon.ch/Frontend/img/logo.png" />
+            <img src="/Frontend/img/logo.png" />
           </a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">

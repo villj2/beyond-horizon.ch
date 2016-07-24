@@ -16,44 +16,16 @@
 
       <div class="row">
         <div class="col-md-1">
-          <!--<img src="../img/Apple_Calendar_Icon.png" class="blog-cal" />-->
-          <time datetime="2014-09-20" class="icon">
-            <em>Samstag</em>
-            <strong>Juli</strong>
-            <span>2</span>
+
+          <time datetime="<?php echo $page->date('Y-m-d') ?>" class="icon">
+            <em><?php echo $page->date('l') ?></em>
+            <strong><?php echo $page->date('F') ?></strong>
+            <span><?php echo $page->date('d') ?></span>
           </time>
         </div>
         <div class="col-md-8">
 
         	<?php echo $page->text()->kirbytext() ?>
-
-          
-          <div class="row polaroid-section">
-            <div class="col-sm-4">
-              <div class="polaroid-container">
-                <div class="polaroid-background-container">
-                  <img class="polaroid-background" src="../img/polaroid_1.png" />
-                  <img class="polaroid-image" src="../img/whitsunday_polaroid.jpg" />
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-4">
-              <div class="polaroid-container">
-                <div class="polaroid-background-container">
-                  <img class="polaroid-background" src="../img/polaroid_2.png" />
-                  <img class="polaroid-image middle" src="../img/whitsunday_polaroid.jpg" />
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-4">
-              <div class="polaroid-container">
-                <div class="polaroid-background-container">
-                  <img class="polaroid-background" src="../img/polaroid_3.png" />
-                  <img class="polaroid-image right" src="../img/whitsunday_polaroid.jpg" />
-                </div>
-              </div>
-            </div>
-          </div>
           
           <div class="grid wrapper-parent">
             
@@ -61,7 +33,7 @@
 
             <?php foreach($page->children() as $subpage): ?>
 
-            	<?php foreach($subpage->images()->sortBy('sort', 'asc')->limit(10) as $image): ?>
+            	<?php foreach($subpage->images()->sortBy('sort', 'asc')->limit($subpage->postlimit()->value() * 2) as $image): ?>
 
             		<!-- make sure not showing double images -->
             		<?php if (strpos($image->filename(), 'preview') == false): ?>
@@ -74,9 +46,9 @@
 			            </div>
             		<?php endif ?>
 
-		      	<?php endforeach ?>
+		      	  <?php endforeach ?>
 
-			<?php endforeach ?>
+			      <?php endforeach ?>
 
           </div>
           <br />
@@ -87,9 +59,23 @@
       </div>
 
       <div class="row">
-        <div class="col-md-12">
-          
+
+        <div class="col-md-1"></div>
+        <div class="col-md-8">
+          <div class="row">
+            <div class="col-xs-6 post-button-navigate" style="text-align: left;">
+              <?php if($page->hasPrevVisible()): ?>
+                <a href="<?php echo $page->prevVisible()->url() ?>"><img src="/Frontend/img/left-arrow-posts.png"/> letzter Beitrag</a>
+              <?php endif ?>
+            </div>
+            <div class="col-xs-6 post-button-navigate" style="text-align: right;">
+              <?php if($page->hasNextVisible()): ?>
+                <a href="<?php echo $page->nextVisible()->url() ?>">nächster Beitrag <img src="/Frontend/img/right-arrow-posts.png"/></a>
+              <?php endif ?>
+            </div>
+          </div>
         </div>
+        <div class="col-md-3"></div>
       </div>
 
     </div>
