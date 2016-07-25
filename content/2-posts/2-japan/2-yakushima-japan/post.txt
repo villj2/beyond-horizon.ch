@@ -26,3 +26,11 @@ Imageteaser: teaser_yaku.jpg
 ----
 
 Imagemap: australie.png
+
+----
+
+Lat: 30.339694848974247
+
+----
+
+Lng: 130.5230712890625

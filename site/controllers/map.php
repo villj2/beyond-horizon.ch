@@ -8,6 +8,7 @@ return function($site, $pages, $page) {
 	    public $lat;
 	    public $lng;
 	    public $url;
+	    public $date;
 	}
 
 	$pinArray = array();
@@ -20,6 +21,7 @@ return function($site, $pages, $page) {
 		$pin->lat = $post->lat()->value();
 		$pin->lng = $post->lng()->value();
 		$pin->url = $post->url();
+		$pin->date = $post->date('F d, Y');
 
 		array_push($pinArray, $pin);
 	}

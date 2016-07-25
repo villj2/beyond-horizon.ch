@@ -114,6 +114,7 @@ $( document ).ready(function() {
 	];
 
 	function initMap() {
+
 	  // Create a map object and specify the DOM element for display.
 	  var map = new google.maps.Map(document.getElementById('map-overview'), {
 	    /*center: {lat: 5.9657536710655235, lng: 84.7265625},*/
@@ -132,70 +133,49 @@ $( document ).ready(function() {
 		    console.log("lat: " + lat + ", lng: " + lng + ", zoom: " + map.getZoom() + ", center: " + center);
 		});
 
-	  	/* Marker */
-	  	var myLatLng = {lat: 34.043556504127444, lng: 135.8514404296875};
-	  	var marker = new google.maps.Marker({
-		    map: map,
-		    position: myLatLng,
-		    title: 'Totoro!',
-          	icon: new google.maps.MarkerImage('/Frontend/img/location-pin.svg', null, null, null, new google.maps.Size(32,32)),
-		  });
+	  	// Read JSON
+	  	var jsonString = $('#container-map-posts').data('pins');
+	  	var markers = [];
+	  	var infobubbles = [];
 
-	  	var marker2 = new google.maps.Marker({
-		    map: map,
-		    position: {lat: -16.909683615558635, lng: 145.755615234375},
-		    title: 'Totoro! 2',
-          	icon: new google.maps.MarkerImage('/Frontend/img/location-pin.svg', null, null, null, new google.maps.Size(32,32)),
-		  });
+	  	for(var i = 0; i < jsonString.length; i++) {
 
-	  	/* Window */
-	  	/*var contentString = '<div class="map-custom-window">'+
-	      '<img src="../img/cangs.jpg" />'
-	      '</div>';
-	  	var infowindow = new google.maps.InfoWindow({
-		    content: contentString
-		  });
-	  	marker.addListener('click', function() {
-		    infowindow.open(map, marker);
-		  });*/
+	  		//console.log(jsonString[i].title);
 
-	  	var infoBubble = new InfoBubble({
-          maxWidth: 300,
-          content: '<div id="content" style="overflow: hidden;"><a href="http://www.google.ch/" target="_self"><img src="/Frontend/img/cangs.jpg" /><h2>Very Schatzi</h2></div></a>',
-          padding: 0,
-          backgroundColor: 'rgb(230,230,230)',
-          borderRadius: 0,
-          arrowSize: 10,
-          borderWidth: 0,
-          borderColor: '#2c2c2c',
-          closeSrc: '/Frontend/img/maps_infowindow_close.png',
-          arrowStyle: 0
-        });
+	  		/* Marker */
+	  		markers.push(new google.maps.Marker({
+			    map: map,
+			    position: {lat: parseFloat(jsonString[i].lat), lng: parseFloat(jsonString[i].lng)},
+			    title: jsonString[i].title,
+	          	icon: new google.maps.MarkerImage('/Frontend/img/location-pin.svg', null, null, null, new google.maps.Size(32,32)),
+	          	leWildIndex: i
+			  }));
 
-        var infoBubble2 = new InfoBubble({
-          maxWidth: 300,
-          content: '<div id="content" style="overflow: hidden;"><a href="" target="_self"><img src="/Frontend/img/somesyds.jpg" /><h2>Very Schatzi syds</h2></div></a>',
-          padding: 0,
-          backgroundColor: 'rgb(230,230,230)',
-          borderRadius: 0,
-          arrowSize: 10,
-          borderWidth: 0,
-          borderColor: '#2c2c2c',
-          closeSrc: '/Frontend/img/maps_infowindow_close.png',
-          arrowStyle: 0
-        });
+	  		/* Infobubbles */
+	  		infobubbles.push(new InfoBubble({
+	          maxWidth: 300,
+	          maxHeight: 220,
+	          content: '<div class="infobubble" style="overflow: hidden;"><a href="' + jsonString[i].url + '" target="_self"><img src="' + jsonString[i].img + '" /><h2>' + jsonString[i].title + '</h2><p>' + jsonString[i].date + '</p></div></a>',
+	          padding: 0,
+	          backgroundColor: 'rgb(230,230,230)',
+	          borderRadius: 0,
+	          arrowSize: 10,
+	          borderWidth: 0,
+	          borderColor: '#2c2c2c',
+	          closeSrc: '/Frontend/img/maps_infowindow_close.png',
+	          arrowStyle: 0,
+	          leWildIndex: i
+	        }));
 
-        google.maps.event.addListener(marker, 'click', function() {
-          if (!infoBubble.isOpen()) {
-            infoBubble.open(map, marker);
-          }
-        });
+	        google.maps.event.addListener(markers[i], 'click', function(e) {
 
-        google.maps.event.addListener(marker2, 'click', function() {
-          if (!infoBubble2.isOpen()) {
-            infoBubble2.open(map, marker2);
-          }
-        });
+	        	var bubble = infobubbles[this.leWildIndex];
+
+	          	if (!bubble.isOpen()) {
+	            	bubble.open(map, markers[this.leWildIndex]);
+	          	}
+        	});
+	  	}
 	}
 
 	if($('#map-overview').length){

@@ -1,5 +1,5 @@
 title: Post
-pages: Gallery
+pages: Postgallery
 files: true
 fields:
   title:
@@ -22,7 +22,7 @@ fields:
     type: image
   lat:
     label: Breitengrade (lat)
-    type: text
+    type: number
   lng:
     label: Längengrade (lng)
-    type: text
+    type: number

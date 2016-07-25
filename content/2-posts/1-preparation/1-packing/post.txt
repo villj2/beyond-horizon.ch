@@ -29,3 +29,11 @@ Imageteaser: packing_teaser.jpg
 ----
 
 Imagemap: australie.png
+
+----
+
+Lat: 46.93372888599876
+
+----
+
+Lng: 7.442588210105896

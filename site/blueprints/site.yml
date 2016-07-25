@@ -5,7 +5,7 @@ pages:
     - page
     - posts
     - journey
-    - gallery
+    - postgallery
     - map
     - about
 fields:

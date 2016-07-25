@@ -41,3 +41,11 @@ Imageteaser: beachers.jpg
 ----
 
 Imagemap: australie.png
+
+----
+
+Lat: 35.005253150047466
+
+----
+
+Lng: 135.75668334960938
