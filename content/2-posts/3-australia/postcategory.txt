@@ -3,3 +3,7 @@ Title: Australia
 ----
 
 Teasericon: australia
+
+----
+
+Showingallery: 1

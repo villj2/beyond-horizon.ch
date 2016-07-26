@@ -6,6 +6,9 @@ fields:
   title:
     label: Title
     type:  text
+  showingallery:
+    label: Show In Gallery
+    type: checkbox
   teasericon:
     label: Teaser Icon
     type: select

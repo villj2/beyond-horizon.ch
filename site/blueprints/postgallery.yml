@@ -9,3 +9,12 @@ fields:
   postlimit:
   	label: Limit in Post
   	type:  number
+  info:
+    label: Bildrichtlinien
+    type: info
+    text: >
+      <strong>bild_horizontal.jpg</strong> -> Max Width 1960px <br />
+      <strong>bild_horizontal_preview.jpg</strong> -> 360 x 252px (+ unten 20px weisser Rand)
+      <br /><br />
+      <strong>bild_vertikal.jpg</strong> -> Max width 1960px <br />
+      <strong>bild_vertikal_preview</strong> -> 360 x 524 (+ unten 20px weisser Rand)

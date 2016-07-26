@@ -1,0 +1,5 @@
+Title: Gallery
+
+----
+
+Postlimit: 6

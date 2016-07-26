@@ -2,198 +2,60 @@
 
     <div class="container container-teaser no-jumbotron">
 
-      <div class="row">
-        <div class="col-md-12">
-          <h2>Kyoto, Japan</h2>
-        </div>
-      </div>
+        <?php /* echo $pages->index()->filterBy('intendedTemplate', 'postcategory') */ ?>
+        <?php
 
-        <?php echo $site->index()->filterBy('template', 'post') ?>
+          $postcategories = $pages->index()->filterBy('intendedTemplate', 'postcategory');
 
-        <br /><br />
+          foreach($postcategories as $postcategory):
 
-        <?php echo $pages->index()->filterBy('template', 'map') ?>
+            $posts = $postcategory->children()->filterBy('intendedTemplate', 'post');
 
-        <?php foreach($page->parent()->index()->filterBy('template', 'country')->sortBy('sort', 'desc') as $post): ?>
+            if($posts == "" || !$postcategory->showingallery()->value()) continue;
 
-          <!--<h2>what: <?php echo $post->parent()->title() ?></h2>-->
+            echo '<div class="row">
+              <div class="col-md-12">
+                <h2>' . $postcategory->title() . '</h2>
+              </div>
+            </div>';
 
-          <div class="col-sm-4">
-            <div class="teaser-image-container">
-              <p>
-                <img src="<?php echo $post->contentURL() ?>/<?php echo $post->imageteaser() ?>" class="teaser-image" />
-                <a class="" href="<?php echo $post->url() ?>">
-                  <span class="darkener"></span>
-                  <span class="helper"></span>
-                  <img src="/Frontend/img/icon_<?php echo $post->parent()->teasericon() ?>.svg" onerror="this.src='/Frontend/img/placeholder.png'" />
-                  <span class="teaser-text"><?php echo $post->title()->html() ?></span>
-                </a>
-              </p>
-            </div>
-          </div>
+            foreach($posts as $post):
 
-        <?php endforeach ?>
+              $gallery = $post->children()->filterBy('intendedTemplate', 'postgallery');
 
+              if($gallery == "") continue;
 
-      <div class="grid wrapper-parent">
-            <!-- width of .grid-sizer used for columnWidth -->
-        <div class="grid-sizer"></div>
+              echo
+              '<div class="row">
+                <div class="col-md-12">
+                  <h4>' . $post->title() . '</h4>
+                </div>
+              </div>
+              <div class="grid wrapper-parent">
+                <div class="grid-sizer"></div>';
 
-        <div class="grid-item">
-          <div class="grid-content-container">
-            <a href="/Frontend/img/bay-of-fires.jpg" data-toggle="lightbox" data-gallery="multiimages" data-parent=".grid">
-              <img src="/Frontend/img/cangs_margin_bottom_20px.jpg" />
-            </a>
-          </div>
-        </div>
-        <div class="grid-item">
-          <div class="grid-content-container">
-            <a href="/Frontend/img/some_greens_padding_bottom_20px.jpg" data-toggle="lightbox" data-gallery="multiimages" data-parent=".grid">
-              <img src="/Frontend/img/some_greens_padding_bottom_20px.jpg" />
-            </a>
-          </div>
-        </div>
-        <div class="grid-item">
-          <div class="grid-content-container">
-            <a href="/Frontend/img/cangs_margin_bottom_20px.jpg" data-toggle="lightbox" data-gallery="multiimages" data-title="tche schatzi 3" data-parent=".grid">
-              <img src="/Frontend/img/cangs_margin_bottom_20px.jpg" />
-            </a>
-          </div>
-        </div>
-        <div class="grid-item">
-          <div class="grid-content-container">
-            <a href="/Frontend/img/bay-of-fires.jpg" data-toggle="lightbox" data-gallery="multiimages" data-title="tche schatzi 4" data-parent=".grid">
-              <img src="/Frontend/img/cangs_margin_bottom_20px.jpg" />
-            </a>
-          </div>
-        </div>
-        <div class="grid-item">
-          <div class="grid-content-container">
-            <a href="/Frontend/img/some_greens_padding_bottom_20px.jpg" data-toggle="lightbox" data-gallery="multiimages" data-title="tche schatzi 5 GCHO" data-parent=".grid">
-              <img src="/Frontend/img/some_greens_padding_bottom_20px.jpg" />
-            </a>
-          </div>
-        </div>
-        <div class="grid-item">
-          <div class="grid-content-container">
-            <a href="/Frontend/img/cangs_margin_bottom_20px.jpg" data-toggle="lightbox" data-gallery="multiimages" data-title="tche schatzi 6" data-parent=".grid">
-              <img src="/Frontend/img/cangs_margin_bottom_20px.jpg" />
-            </a>
-          </div>
-        </div>
-        <div class="grid-item">
-          <div class="grid-content-container">
-            <a href="/Frontend/img/cangs_margin_bottom_20px.jpg" data-toggle="lightbox" data-gallery="multiimages" data-title="tche schatzi 7" data-parent=".grid">
-              <img src="/Frontend/img/cangs_margin_bottom_20px.jpg" />
-            </a>
-          </div>
-        </div>
-        <div class="grid-item">
-          <div class="grid-content-container">
-            <a href="/Frontend/img/cangs_margin_bottom_20px.jpg" data-toggle="lightbox" data-gallery="multiimages" data-title="tche schatzi 8" data-parent=".grid">
-              <img src="/Frontend/img/cangs_margin_bottom_20px.jpg" />
-            </a>
-          </div>
-        </div>
-        <div class="grid-item">
-          <div class="grid-content-container">
-            <a href="/Frontend/img/cangs_margin_bottom_20px.jpg" data-toggle="lightbox" data-gallery="multiimages" data-title="tche schatzi 9" data-parent=".grid">
-              <img src="/Frontend/img/cangs_margin_bottom_20px.jpg" />
-            </a>
-          </div>
-        </div>
-        <div class="grid-item">
-          <div class="grid-content-container">
-            <a href="/Frontend/img/cangs_margin_bottom_20px.jpg" data-toggle="lightbox" data-gallery="multiimages" data-title="tche schatzi 10" data-parent=".grid">
-              <img src="/Frontend/img/cangs_margin_bottom_20px.jpg" />
-            </a>
-          </div>
-        </div>
+              foreach($gallery->images()->sortBy('sort', 'asc') as $image):
 
-      </div>
+                if(strpos($image->filename(), 'preview') == false){
 
-      <div class="row">
-        <div class="col-md-12">
-          <h2>Vorbereitung, Schweiz</h2>
-        </div>
-      </div>
+                  echo '<div class="grid-item">
+                          <div class="grid-content-container">
+                            <a href="' . $image->url() . '" data-toggle="lightbox" data-gallery="' . $post->date() . '" data-parent=".grid">
+                              <img src="' . str_replace(".jpg", "_preview.jpg", $image->url()) . '" />
+                            </a>
+                          </div>
+                        </div>';
+                }
 
-      <div class="grid wrapper-parent">
-            <!-- width of .grid-sizer used for columnWidth -->
-        <div class="grid-sizer"></div>
+              endforeach;
 
-        <div class="grid-item">
-          <div class="grid-content-container">
-            <a href="/Frontend/img/bay-of-fires.jpg" data-toggle="lightbox" data-gallery="prep-ch" data-title="prep-ch-1" data-parent=".grid">
-              <img src="/Frontend/img/cangs_margin_bottom_20px.jpg" />
-            </a>
-          </div>
-        </div>
-        <div class="grid-item">
-          <div class="grid-content-container">
-            <a href="/Frontend/img/some_greens_padding_bottom_20px.jpg" data-toggle="lightbox" data-gallery="prep-ch" data-title="prep-ch-2" data-parent=".grid">
-              <img src="/Frontend/img/some_greens_padding_bottom_20px.jpg" />
-            </a>
-          </div>
-        </div>
-        <div class="grid-item">
-          <div class="grid-content-container">
-            <a href="/Frontend/img/cangs_margin_bottom_20px.jpg" data-toggle="lightbox" data-gallery="prep-ch" data-title="prep-ch-3" data-parent=".grid">
-              <img src="/Frontend/img/cangs_margin_bottom_20px.jpg" />
-            </a>
-          </div>
-        </div>
-        <div class="grid-item">
-          <div class="grid-content-container">
-            <a href="/Frontend/img/bay-of-fires.jpg" data-toggle="lightbox" data-gallery="prep-ch" data-title="tche schatzi 4" data-parent=".grid">
-              <img src="/Frontend/img/cangs_margin_bottom_20px.jpg" />
-            </a>
-          </div>
-        </div>
-        <div class="grid-item">
-          <div class="grid-content-container">
-            <a href="/Frontend/img/some_greens_padding_bottom_20px.jpg" data-toggle="lightbox" data-gallery="prep-ch" data-title="tche schatzi 5 GCHO" data-parent=".grid">
-              <img src="/Frontend/img/some_greens_padding_bottom_20px.jpg" />
-            </a>
-          </div>
-        </div>
-        <div class="grid-item">
-          <div class="grid-content-container">
-            <a href="/Frontend/img/cangs_margin_bottom_20px.jpg" data-toggle="lightbox" data-gallery="prep-ch" data-title="tche schatzi 6" data-parent=".grid">
-              <img src="/Frontend/img/cangs_margin_bottom_20px.jpg" />
-            </a>
-          </div>
-        </div>
-        <div class="grid-item">
-          <div class="grid-content-container">
-            <a href="/Frontend/img/cangs_margin_bottom_20px.jpg" data-toggle="lightbox" data-gallery="prep-ch" data-title="tche schatzi 7" data-parent=".grid">
-              <img src="/Frontend/img/cangs_margin_bottom_20px.jpg" />
-            </a>
-          </div>
-        </div>
-        <div class="grid-item">
-          <div class="grid-content-container">
-            <a href="/Frontend/img/cangs_margin_bottom_20px.jpg" data-toggle="lightbox" data-gallery="prep-ch" data-title="tche schatzi 8" data-parent=".grid">
-              <img src="/Frontend/img/cangs_margin_bottom_20px.jpg" />
-            </a>
-          </div>
-        </div>
-        <div class="grid-item">
-          <div class="grid-content-container">
-            <a href="/Frontend/img/cangs_margin_bottom_20px.jpg" data-toggle="lightbox" data-gallery="prep-ch" data-title="tche schatzi 9" data-parent=".grid">
-              <img src="/Frontend/img/cangs_margin_bottom_20px.jpg" />
-            </a>
-          </div>
-        </div>
-        <div class="grid-item">
-          <div class="grid-content-container">
-            <a href="/Frontend/img/cangs_margin_bottom_20px.jpg" data-toggle="lightbox" data-gallery="prep-ch" data-title="tche schatzi 10" data-parent=".grid">
-              <img src="/Frontend/img/cangs_margin_bottom_20px.jpg" />
-            </a>
-          </div>
-        </div>
+              echo '</div>';
 
-      </div>
+            endforeach;
+              
+          endforeach;
+
+        ?>
 
     </div>
 

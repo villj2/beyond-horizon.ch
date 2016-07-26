@@ -1,6 +1,4 @@
 title: Posts
 pages:
-  template:
-  	- postcategory
-  	- country
+  template: postcategory
 files: false
