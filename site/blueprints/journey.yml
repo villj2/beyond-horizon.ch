@@ -1,5 +1,5 @@
 title: Journey
-pages: false
+pages: journeydestination
 files: false
 fields:
   title:
@@ -8,6 +8,6 @@ fields:
   imageMapIntro:
     label: Image Map Intro
     type:  textarea
-  description:
-    label: Description
-    type:  textarea
+  imageMap:
+  	label: Image Map
+  	type:  textarea

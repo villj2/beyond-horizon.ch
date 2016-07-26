@@ -9,8 +9,8 @@ password: >
 language: en
 role: admin
 history:
+  - journey/japan
+  - journey
   - posts/preparation
   - posts/australia
   - posts/japan
-  - posts/japan/yakushima-japan/gallery
-  - posts/japan/yakushima

@@ -3,3 +3,22 @@ Title: Journey
 ----
 
 Text: 
+
+----
+
+Imagemapintro: 
+
+##Unsere Reise
+
+Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+
+----
+
+Description: 
+
+----
+
+Imagemap: 
+
+<img src="/Frontend/img/journey/map_overall.png" width="100%" height="imgheight" alt="alttext" usemap="#imgmap201671820739" hidefocus="true">
+ <map style="width:100%;" id="imgmap201671820739" name="imgmap201671820739"><area shape="poly" alt="" title="" coords="445,213,466,200,466,151,440,184,433,202,434,203" href="#title-tas" target="" style="width:100%;" />
