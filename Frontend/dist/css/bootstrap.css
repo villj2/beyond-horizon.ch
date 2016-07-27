@@ -6979,6 +6979,18 @@ footer .row .content-center {
   height: 100%;
   vertical-align: middle;
 }
+.container.container-teaser .teaser-image-container {
+  /*a:hover, a:active, a:focus {
+			.darkener {
+				background: black;
+				opacity: 0.5;
+			}
+
+			img, .teaser-text {
+				opacity: 1;
+			}
+		}*/
+}
 .container.container-teaser .teaser-image-container a {
   display: block;
   position: absolute;
@@ -7023,12 +7035,18 @@ footer .row .content-center {
   color: white;
   font-size: 20px;
 }
-.container.container-teaser .teaser-image-container a:hover .darkener {
+.container.container-teaser .teaser-image-container:hover .darkener,
+.container.container-teaser .teaser-image-container:active .darkener,
+.container.container-teaser .teaser-image-container:focus .darkener {
   background: black;
   opacity: 0.5;
 }
-.container.container-teaser .teaser-image-container a:hover img,
-.container.container-teaser .teaser-image-container a:hover .teaser-text {
+.container.container-teaser .teaser-image-container:hover img,
+.container.container-teaser .teaser-image-container:active img,
+.container.container-teaser .teaser-image-container:focus img,
+.container.container-teaser .teaser-image-container:hover .teaser-text,
+.container.container-teaser .teaser-image-container:active .teaser-text,
+.container.container-teaser .teaser-image-container:focus .teaser-text {
   opacity: 1;
 }
 .navbar-inverse .navbar-nav {

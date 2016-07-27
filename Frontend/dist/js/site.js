@@ -188,6 +188,10 @@ $( document ).ready(function() {
 
 	        google.maps.event.addListener(markers[i], 'click', function(e) {
 
+	        	for(var i = 0; i < infobubbles.length; i++){
+	        		infobubbles[i].close();
+	        	}
+
 	        	var bubble = infobubbles[this.leWildIndex];
 
 	          	if (!bubble.isOpen()) {
@@ -266,7 +270,6 @@ $( document ).ready(function() {
 	}
 
 	$('map').imageMapResize();
-
 });
 
 function getUrlVars()
