@@ -51,3 +51,15 @@ kirbytext::$tags['polaroidend'] = array(
     return '</div>';
   }
 );
+
+kirbytext::$tags['polaroidabout'] = array(
+  'html' => function($tag) {
+
+    $url     = $tag->attr('polaroidabout');
+    $file    = $tag->file($url);
+
+    $url = $file ? $file->url() : url($url);
+
+    return '<img src="' . $url . '" class="polaroid" />';
+  }
+);

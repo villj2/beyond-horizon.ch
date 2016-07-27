@@ -1,0 +1,12 @@
+title: Homeslider
+pages: false
+fields:
+  title:
+    label: Titel
+    type:  text
+  tag:
+  	label: Tag
+  	type: text
+  image:
+  	label: Bild
+  	type: image

@@ -1,4 +1,4 @@
-Title: Japan (4 Wochen)
+Title: Australien (4 Wochen)
 
 ----
 
@@ -6,7 +6,7 @@ Description:
 
 <div class="row">
      <div class="col-md-12">
-          <h3 id="title-tas">Japan (4 Wochen)</h3>
+          <h3 id="title-tas">Australien (4 Wochen)</h3>
           <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
      </div>
 </div>
@@ -24,7 +24,3 @@ Description:
           <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
      </div>
 </div>
-
-----
-
-Scrolltag: 

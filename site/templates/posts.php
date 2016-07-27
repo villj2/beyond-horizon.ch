@@ -6,7 +6,7 @@
 
 	      <div class="row">
 	        <div class="col-md-12">
-	          <h2><?php echo $category->title()->html() ?></h2>
+	          <h2 id="posts-<?php echo strtolower($category->title()->text()) ?>"><?php echo $category->title()->html() ?></h2>
 	          <br />
 	        </div>
 	      </div>

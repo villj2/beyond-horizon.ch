@@ -9,8 +9,8 @@ password: >
 language: en
 role: admin
 history:
-  - journey/japan
-  - journey
-  - posts/preparation
+  - home/japan
+  - home/packing
+  - about
   - posts/australia
   - posts/japan

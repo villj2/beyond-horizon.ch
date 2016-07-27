@@ -1,5 +1,5 @@
 title: Home
-pages: false
+pages: homeslider
 fields:
   title:
     label: Title

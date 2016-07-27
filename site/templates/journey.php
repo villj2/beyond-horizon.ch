@@ -15,7 +15,11 @@
 	        <div class="col-sm-4 col-xs-0"></div>
 	    </div>
 
-	    
+	    <?php foreach($page->index() as $journeydestination): ?>
+
+	    	<?php echo $journeydestination->description()->html() ?>
+
+		<?php endforeach ?>
 
 
 	</div>

@@ -250,6 +250,34 @@ $( document ).ready(function() {
 	    }
 	});
 
+	//console.log("hihi: " + $.inArray("scrollto", getUrlVars()));
+
+	// Smooth scrolling posts
+	if($.inArray("scrollto", getUrlVars()) >= 0){
+		
+		var destination = getUrlVars()["scrollto"];
+
+		//console.log("destination: " + destination);
+		//console.log($('#' + destination).offset().top);
+
+		tOffset = $('#' + destination).offset().top;
+
+		$('html,body').animate({scrollTop:tOffset-140},'slow');
+	}
+
 	$('map').imageMapResize();
 
 });
+
+function getUrlVars()
+{
+    var vars = [], hash;
+    var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
+    for(var i = 0; i < hashes.length; i++)
+    {
+        hash = hashes[i].split('=');
+        vars.push(hash[0]);
+        vars[hash[0]] = hash[1];
+    }
+    return vars;
+}

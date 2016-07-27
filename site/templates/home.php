@@ -2,64 +2,45 @@
 
   <!-- Main jumbotron for a primary marketing message or call to action -->
     <div id="carousel-home" class="carousel slide jumbotron-slider" data-ride="carousel">
+
         <!-- Indicators -->
         <ol class="carousel-indicators">
-          <li data-target="#carousel-home" data-slide-to="0" class="active"></li>
-          <li data-target="#carousel-home" data-slide-to="1"></li>
-          <li data-target="#carousel-home" data-slide-to="2"></li>
-          <li data-target="#carousel-home" data-slide-to="3"></li>
+
+          <?php $index = 0; ?>
+          <?php foreach($page->index()->filterBy('intendedTemplate', 'homeslider')->visible()->sortBy('sort', 'desc') as $slider): ?>
+
+            <li data-target="#carousel-home" data-slide-to="<?php echo $index ?>" class="<?php if($index == 0){ echo 'active'; } ?>"></li>
+
+            <?php $index++ ?>
+
+          <?php endforeach ?>
+
         </ol>
 
         <!-- Wrapper for slides -->
         <div class="carousel-inner" role="listbox">
-          <div class="item active">
-            <!-- <img src="/Frontend/img/bay-of-fires.jpg" alt="Chania"> -->
-            <div class="jumbotron" style="background-image: url(/Frontend/img/bay-of-fires.jpg);">
-              <div class="page-header">
-                <div class="container">
-                  <div class="label">
-                    <h1>Bay of Fires, Tasmania</h1>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
 
-          <div class="item">
-            <div class="jumbotron" style="background-image: url(/Frontend/img/bay-of-fires.jpg);">
-              <div class="page-header">
-                <div class="container">
-                  <div class="label">
-                    <h1>Bay of Fires, Tasmania</h1>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          <?php $index = 0; ?>
+          <?php foreach($page->index()->filterBy('intendedTemplate', 'homeslider')->visible()->sortBy('sort', 'desc') as $slider): ?>
 
-          <div class="item">
-            <div class="jumbotron" style="background-image: url(/Frontend/img/bay-of-fires.jpg);">
-              <div class="page-header">
-                <div class="container">
-                  <div class="label">
-                    <h1>Bay of Fires, Tasmania</h1>
+            <div class="item <?php if($index == 0){ echo 'active'; } ?>">
+              <div class="jumbotron" style="background-image: url(<?php echo $slider->image()->url(); ?>);">
+                <div class="page-header">
+                  <div class="container">
+                    <div class="label" style="text-align: center;">
+                      <h1><?php echo $slider->title() ?></h1>
+                      <div>
+                        <button type="button" class="btn btn-secondary btn-more btn-slider" onclick="location.href='/posts?scrollto=posts-<?php echo $slider->tag() ?>'">Mehr anzeigen</button>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
 
-          <div class="item">
-            <div class="jumbotron" style="background-image: url(/Frontend/img/bay-of-fires.jpg);">
-              <div class="page-header">
-                <div class="container">
-                  <div class="label">
-                    <h1>Bay of Fires, Tasmania</h1>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+            <?php $index++ ?>
+
+          <?php endforeach ?>
 
         <a class="left carousel-control" href="#carousel-home" role="button" data-slide="prev">
           <span class="arrow-left" aria-hidden="true"></span>

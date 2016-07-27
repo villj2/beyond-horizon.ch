@@ -1,0 +1,13 @@
+title: Journey
+pages: false
+files: true
+fields:
+  title:
+    label: Title
+    type:  text
+  text:
+    label: Text
+    type:  textarea
+  faces:
+  	label: Image
+  	type:  text

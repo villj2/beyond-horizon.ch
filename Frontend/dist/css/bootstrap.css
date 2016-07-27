@@ -6840,6 +6840,10 @@ h4 {
   border-radius: 0;
   margin: 15px 0 130px;
 }
+.container .btn-more.btn-slider {
+  border-color: white;
+  color: white;
+}
 .container .btn:focus,
 .container .btn:active {
   outline: none;
@@ -7062,6 +7066,14 @@ footer .row .content-center {
     width: 175px;
     margin-top: 38px;
   }
+}
+nav {
+  padding-top: 100px;
+  margin-top: -100px;
+}
+footer {
+  padding-bottom: 100px;
+  /*margin-bottom: -200px;*/
 }
 ul.nav a:hover {
   color: #01b195 !important;
@@ -7333,7 +7345,7 @@ time.icon:focus {
 }
 @media (max-width: 767px) {
   .container.map #map-overview {
-    margin-top: 20px;
+    /*margin-top: 20px;*/
     height: 815px !important;
   }
 }
