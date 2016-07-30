@@ -6920,11 +6920,21 @@ footer .row .content-center {
     margin-top: 117px;
   }
 }
+@media (max-width: 767px) {
+  .jumbotron-slider {
+    height: 500px;
+  }
+}
 .jumbotron-slider .carousel-inner {
   height: 100%;
 }
 .jumbotron-slider .jumbotron {
   margin-top: 0 !important;
+}
+@media (max-width: 767px) {
+  .jumbotron-slider .jumbotron {
+    margin-top: 50px !important;
+  }
 }
 .jumbotron-slider .arrow-left {
   position: absolute;
@@ -7520,6 +7530,21 @@ time.icon:focus {
 .grid {
   margin-top: 20px;
   margin-bottom: 30px;
+}
+/* Make Fullscreen images vertically centered */
+.modal {
+  text-align: center;
+}
+.modal:before {
+  display: inline-block;
+  vertical-align: middle;
+  content: " ";
+  height: 90%;
+}
+.modal-dialog {
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
 }
 .about .polaroid {
   margin-top: 50px;

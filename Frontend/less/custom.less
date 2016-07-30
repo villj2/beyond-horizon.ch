@@ -239,12 +239,20 @@ footer {
 
 	height: 450px;
 
+	@media(max-width:@screen-xs-max){
+		height: 500px;
+	}
+
 	.carousel-inner {
 		height: 100%;
 	}
 
 	.jumbotron {
 		margin-top: 0 !important;
+
+		@media(max-width:@screen-xs-max){
+			margin-top: 50px !important;
+		}
 	}
 
 	.arrow-left {
