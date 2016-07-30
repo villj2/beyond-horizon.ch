@@ -143,6 +143,21 @@
 .grid {
     margin-top: 20px;
     margin-bottom: 30px;
+
+    img {
+
+        @media(max-width:@screen-xs-max){
+            padding: 0 5px 0;
+        }
+
+        @media (min-width: @screen-xs-min) and (max-width: @screen-md-max) {
+            padding: 0 10px 0;
+        }
+
+        @media(min-width:@screen-md-min){
+            padding: 0 5px 0;
+        }
+    }
 }
 
 /* Make Fullscreen images vertically centered */
