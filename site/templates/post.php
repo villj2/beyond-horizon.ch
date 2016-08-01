@@ -5,7 +5,7 @@
       <div class="page-header">
         <div class="container">
           <div class="label">
-            <h1><?php echo $page->title() ?></h1>
+            <h1><?php if(!$page->hidetitle()->value()) echo $page->title() ?></h1>
           </div>
         </div>
       </div>
