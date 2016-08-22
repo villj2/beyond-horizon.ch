@@ -5,6 +5,9 @@ fields:
   title:
     label: Title
     type:  text
+  picsonly:
+    label: Nur Bilder
+    type:  checkbox
   hidetitle:
     label: Titel verstecken
     type:  checkbox
@@ -15,13 +18,16 @@ fields:
     label: Text
     type:  textarea
   imagejumbotron:
-    label: Jumbotron
+    label: Jumbotron <i>(ca. 1960 x 1000px)</i>
     type: image
   imageteaser:
-    label: Teaser Image
+    label: Teaser Image <i>(720 x 499px)</i>
     type: image
   imagemap:
-    label: Map Image
+    label: Map Image <i>(320 x 320px)</i>
+    type: image
+  googlemapsimage:
+    label: Google Maps Bubble Image <i>(235 x 163px)</i>
     type: image
   lat:
     label: Breitengrade (lat)

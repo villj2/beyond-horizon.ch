@@ -19,7 +19,7 @@
               </div>
             </div>';
 
-            foreach($posts as $post):
+            foreach($posts->sortBy('date', 'desc') as $post):
 
               $gallery = $post->children()->filterBy('intendedTemplate', 'postgallery');
 

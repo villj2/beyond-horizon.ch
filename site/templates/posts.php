@@ -2,7 +2,7 @@
 
 	<div class="container container-teaser no-jumbotron">
 
-		<?php foreach($categories as $category): ?>
+		<?php foreach($categories->sortBy('date', 'asc') as $category): ?>
 
 	      <div class="row">
 	        <div class="col-md-12">
@@ -13,7 +13,7 @@
 
 	      <div class="row teaser">
 
-	      	<?php foreach($category->children()->visible()->sortBy('sort', 'asc') as $post): ?>
+	      	<?php foreach($category->children()->visible()->filterBy('picsonly', '!=', '1')->sortBy('date', 'desc') as $post): ?>
 
 	      		<div class="col-sm-4">
 	          		<div class="teaser-image-container">

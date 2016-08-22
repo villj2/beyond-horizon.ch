@@ -64,13 +64,13 @@
         <div class="col-md-8">
           <div class="row">
             <div class="col-xs-6 post-button-navigate" style="text-align: left;">
-              <?php if($page->hasPrevVisible()): ?>
-                <a href="<?php echo $page->prevVisible()->url() ?>"><img src="/Frontend/img/left-arrow-posts.png"/> letzter Beitrag</a>
+              <?php if($page->hasPrevVisible('date', 'desc')): ?>
+                <a href="<?php echo $page->prevVisible('date', 'desc')->url() ?>"><img src="/Frontend/img/left-arrow-posts.png"/> letzter Beitrag</a>
               <?php endif ?>
             </div>
             <div class="col-xs-6 post-button-navigate" style="text-align: right;">
-              <?php if($page->hasNextVisible()): ?>
-                <a href="<?php echo $page->nextVisible()->url() ?>">nächster Beitrag <img src="/Frontend/img/right-arrow-posts.png"/></a>
+              <?php if($page->hasNextVisible('date', 'desc')): ?>
+                <a href="<?php echo $page->nextVisible('date', 'desc')->url() ?>">nächster Beitrag <img src="/Frontend/img/right-arrow-posts.png"/></a>
               <?php endif ?>
             </div>
           </div>

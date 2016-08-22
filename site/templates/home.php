@@ -70,7 +70,7 @@
 
       <div class="row teaser">
 
-        <?php foreach($page->parent()->index()->filterBy('template', 'post')->sortBy('date', 'desc')->limit(6) as $post): ?>
+        <?php foreach($page->parent()->index()->filterBy('template', 'post')->filterBy('picsonly', '!=', '1')->sortBy('date', 'desc')->limit(6) as $post): ?>
           <div class="col-sm-4">
             <div class="teaser-image-container">
               <p>

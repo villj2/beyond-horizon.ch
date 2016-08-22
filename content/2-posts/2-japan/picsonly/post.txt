@@ -1,0 +1,41 @@
+Title: Yokohama (pics only)
+
+----
+
+Hidetitle: 0
+
+----
+
+Date: 2016-07-05
+
+----
+
+Text: 
+
+----
+
+Imagejumbotron: 
+
+----
+
+Imageteaser: 
+
+----
+
+Imagemap: 
+
+----
+
+Lat: 
+
+----
+
+Lng: 
+
+----
+
+Googlemapsimage: 
+
+----
+
+Picsonly: 1

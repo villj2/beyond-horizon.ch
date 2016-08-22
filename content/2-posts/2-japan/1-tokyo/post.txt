@@ -70,3 +70,7 @@ Lat: 35.715298012125295
 ----
 
 Hidetitle: 0
+
+----
+
+Googlemapsimage: cangs.jpg
