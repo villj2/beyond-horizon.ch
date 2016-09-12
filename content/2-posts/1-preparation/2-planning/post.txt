@@ -1,0 +1,41 @@
+Title: Planning
+
+----
+
+Picsonly: 0
+
+----
+
+Hidetitle: 0
+
+----
+
+Date: 2016-07-02
+
+----
+
+Text: Sehr planisch.
+
+----
+
+Imagejumbotron: 
+
+----
+
+Imageteaser: 
+
+----
+
+Imagemap: 
+
+----
+
+Googlemapsimage: 
+
+----
+
+Lat: 46.65697731621612
+
+----
+
+Lng: 8.59130859375

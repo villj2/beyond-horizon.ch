@@ -201,6 +201,9 @@ $( document ).ready(function() {
 	          	}
         	});
 	  	}
+
+	  	// Open last infobubble initially
+	  	infobubbles[infobubbles.length - 1].open(map, markers[markers.length -1]);
 	}
 
 	if($('#map-overview').length){

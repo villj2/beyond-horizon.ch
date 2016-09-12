@@ -9,8 +9,8 @@ password: >
 language: en
 role: admin
 history:
+  - posts/preparation/stuff
+  - posts/preparation/planning
+  - posts/preparation/packing
   - posts/japan/picsonly
   - posts/japan/yakushima
-  - posts/japan/picsonly/gallery
-  - posts/japan/tokyo
-  - posts/preparation/packing

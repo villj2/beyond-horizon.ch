@@ -41,3 +41,11 @@ Lng: 7.442588210105896
 ----
 
 Hidetitle: 1
+
+----
+
+Picsonly: 0
+
+----
+
+Googlemapsimage: 

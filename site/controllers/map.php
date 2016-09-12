@@ -13,7 +13,7 @@ return function($site, $pages, $page) {
 
 	$pinArray = array();
 
-	foreach($page->parent()->index()->filterBy('template', 'post') as $post) {
+	foreach($page->parent()->index()->filterBy('template', 'post')->sortBy('date', 'asc') as $post) {
 
 		if(!$post->picsonly()->value())
 		{

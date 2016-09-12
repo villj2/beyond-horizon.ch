@@ -32,6 +32,8 @@ fields:
   lat:
     label: Breitengrade (lat)
     type: number
+    step: .000000000000000000001
   lng:
     label: Längengrade (lng)
     type: number
+    step: .000000000000000000001
