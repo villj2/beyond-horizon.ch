@@ -140,7 +140,8 @@ $( document ).ready(function() {
 	    center: {lat: 3.513421045640057, lng: 116.71875},
 	    scrollwheel: true,
 	    styles: styleArray,
-	    zoom: 3
+	    zoom: 3,
+	    mapTypeControl: false
 	  });
 
 	  google.maps.event.addListener(map, "click", function(event) {
@@ -166,7 +167,8 @@ $( document ).ready(function() {
 			    map: map,
 			    position: {lat: parseFloat(jsonString[i].lat), lng: parseFloat(jsonString[i].lng)},
 			    title: jsonString[i].title,
-	          	icon: new google.maps.MarkerImage('/Frontend/img/location-pin.svg', null, null, null, new google.maps.Size(32,32)),
+	          	//icon: new google.maps.MarkerImage('/Frontend/img/location-pin.svg', null, null, null, new google.maps.Size(32,32)),
+	          	icon: new google.maps.MarkerImage('/Frontend/img/location-pin.png', null, null, null, new google.maps.Size(32,32)),
 	          	leWildIndex: i
 			  }));
 
