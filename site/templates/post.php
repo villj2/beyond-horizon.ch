@@ -65,12 +65,14 @@
           <div class="row">
             <div class="col-xs-6 post-button-navigate" style="text-align: left;">
               <?php if($page->hasPrevVisible('date', 'desc')): ?>
-                <a href="<?php echo $page->prevVisible('date', 'desc')->url() ?>"><img src="/Frontend/img/left-arrow-posts.png"/> letzter Beitrag</a>
+                <button type="button" class="btn btn-secondary btn-more btn-post-sibling" onclick="location.href='<?php echo $page->prevVisible('date', 'desc')->url() ?>'">neuerer Beitrag</button>
+                <!-- <a href="<?php echo $page->prevVisible('date', 'desc')->url() ?>"><img src="/Frontend/img/left-arrow-posts.png"/> letzter Beitrag</a> -->
               <?php endif ?>
             </div>
             <div class="col-xs-6 post-button-navigate" style="text-align: right;">
               <?php if($page->hasNextVisible('date', 'desc')): ?>
-                <a href="<?php echo $page->nextVisible('date', 'desc')->url() ?>">nächster Beitrag <img src="/Frontend/img/right-arrow-posts.png"/></a>
+                <button type="button" class="btn btn-secondary btn-more btn-post-sibling" onclick="location.href='<?php echo $page->nextVisible('date', 'desc')->url() ?>'">älterer Beitrag</button>
+                <!-- <a href="<?php echo $page->nextVisible('date', 'desc')->url() ?>">nächster Beitrag <img src="/Frontend/img/right-arrow-posts.png"/></a> -->
               <?php endif ?>
             </div>
           </div>
