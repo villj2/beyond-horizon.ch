@@ -141,7 +141,8 @@ $( document ).ready(function() {
 	    scrollwheel: true,
 	    styles: styleArray,
 	    zoom: 3,
-	    mapTypeControl: false
+	    mapTypeControl: false,
+	    minZoom: 3
 	  });
 
 	  google.maps.event.addListener(map, "click", function(event) {
