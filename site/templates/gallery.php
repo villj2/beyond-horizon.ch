@@ -5,7 +5,7 @@
         <?php /* echo $pages->index()->filterBy('intendedTemplate', 'postcategory') */ ?>
         <?php
 
-          $postcategories = $pages->index()->filterBy('intendedTemplate', 'postcategory');
+          $postcategories = $pages->index()->filterBy('intendedTemplate', 'postcategory')->sortBy('sort', 'desc');
 
           foreach($postcategories as $postcategory):
 
