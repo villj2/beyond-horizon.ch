@@ -4,18 +4,20 @@
     <div id="carousel-home" class="carousel slide jumbotron-slider" data-ride="carousel">
 
         <!-- Indicators -->
-        <ol class="carousel-indicators">
+        <?php if($page->index()->filterBy('intendedTemplate', 'homeslider')->visible()->count() > 1){ ?>
+          <ol class="carousel-indicators">
 
-          <?php $index = 0; ?>
-          <?php foreach($page->index()->filterBy('intendedTemplate', 'homeslider')->visible()->sortBy('sort', 'desc') as $slider): ?>
+            <?php $index = 0; ?>
+            <?php foreach($page->index()->filterBy('intendedTemplate', 'homeslider')->visible()->sortBy('sort', 'desc') as $slider): ?>
 
-            <li data-target="#carousel-home" data-slide-to="<?php echo $index ?>" class="<?php if($index == 0){ echo 'active'; } ?>"></li>
+              <li data-target="#carousel-home" data-slide-to="<?php echo $index ?>" class="<?php if($index == 0){ echo 'active'; } ?>"></li>
 
-            <?php $index++ ?>
+              <?php $index++ ?>
 
-          <?php endforeach ?>
+            <?php endforeach ?>
 
-        </ol>
+          </ol>
+        <?php } ?>
 
         <!-- Wrapper for slides -->
         <div class="carousel-inner" role="listbox">
@@ -42,14 +44,16 @@
 
           <?php endforeach ?>
 
-        <a class="left carousel-control" href="#carousel-home" role="button" data-slide="prev">
-          <span class="arrow-left" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="right carousel-control" href="#carousel-home" role="button" data-slide="next">
-          <span class="arrow-right" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
+        <?php if($page->index()->filterBy('intendedTemplate', 'homeslider')->visible()->count() > 1){ ?>
+          <a class="left carousel-control" href="#carousel-home" role="button" data-slide="prev">
+            <span class="arrow-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#carousel-home" role="button" data-slide="next">
+            <span class="arrow-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        <?php } ?>
           
         </div>
 
