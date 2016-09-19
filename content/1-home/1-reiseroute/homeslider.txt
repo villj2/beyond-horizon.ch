@@ -1,0 +1,13 @@
+Title: Reiseroute
+
+----
+
+Tag: 
+
+----
+
+Image: reiseroute_slider.png
+
+----
+
+Textcolor: black
