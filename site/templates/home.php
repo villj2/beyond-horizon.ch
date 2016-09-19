@@ -28,9 +28,9 @@
                 <div class="page-header">
                   <div class="container">
                     <div class="label" style="text-align: center;">
-                      <h1><?php echo $slider->title() ?></h1>
+                      <h1 style="color: <?php if($slider->textcolor() == ""){echo "white";} else { echo $slider->textcolor(); } ?>;"><?php echo $slider->title() ?></h1>
                       <div>
-                        <button type="button" class="btn btn-secondary btn-more btn-slider" onclick="location.href='/posts?scrollto=posts-<?php echo $slider->tag() ?>'">Mehr anzeigen</button>
+                        <button type="button" class="btn btn-secondary btn-more btn-slider" style="<?php if($slider->textcolor() == ""){} else { echo "border-color: " . $slider->textcolor() . ";" . " color: " . $slider->textcolor() . ";"; } ?>;" onclick="location.href='/posts?scrollto=posts-<?php echo $slider->tag() ?>'">Mehr anzeigen</button>
                       </div>
                     </div>
                   </div>

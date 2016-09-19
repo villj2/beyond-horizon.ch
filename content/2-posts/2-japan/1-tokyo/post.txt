@@ -74,3 +74,11 @@ Hidetitle: 0
 ----
 
 Googlemapsimage: cangs.jpg
+
+----
+
+Textcolor: 
+
+----
+
+Picsonly: 0

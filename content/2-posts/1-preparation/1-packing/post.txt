@@ -49,3 +49,7 @@ Picsonly: 0
 ----
 
 Googlemapsimage: 
+
+----
+
+Textcolor: 

@@ -7,3 +7,7 @@ Tag: switzerland
 ----
 
 Image: packing_jumbotron.jpg
+
+----
+
+Textcolor: #000000

@@ -61,3 +61,7 @@ Hidetitle: 0
 ----
 
 Googlemapsimage: 
+
+----
+
+Textcolor: #000000

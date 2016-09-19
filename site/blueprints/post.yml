@@ -5,6 +5,9 @@ fields:
   title:
     label: Title
     type:  text
+  textcolor:
+    label: Textfarbe
+    type: text
   picsonly:
     label: Nur Bilder
     type:  checkbox

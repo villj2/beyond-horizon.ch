@@ -10,3 +10,6 @@ fields:
   image:
   	label: Bild
   	type: image
+  textcolor:
+  	label: Textfarbe
+  	type: text
