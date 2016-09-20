@@ -6,7 +6,7 @@ Tag:
 
 ----
 
-Image: reiseroute_slider.png
+Image: reiseroute_slider_panda.png
 
 ----
 
