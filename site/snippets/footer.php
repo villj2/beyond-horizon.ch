@@ -5,7 +5,7 @@
             <p class="text-muted">&nbsp;</p>
           </div>
           <div class="col-sm-4 content-center">
-            <p class="text-muted">© 2016 - Beyond Horizon</p>
+            <p class="text-muted">© 2016 - Beyond-Horizon</p>
           </div>
           <div class="col-sm-4 content-right">
             <p class="text-muted">&nbsp;</p>

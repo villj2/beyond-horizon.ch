@@ -32,6 +32,9 @@ fields:
   googlemapsimage:
     label: Google Maps Bubble Image <i>(235 x 163px)</i>
     type: image
+  googlemapstwolines:
+    label: Zweizeiliger Titel (Google Maps Bubble)
+    type: checkbox
   lat:
     label: Breitengrade (lat)
     type: number

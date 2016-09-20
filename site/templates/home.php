@@ -112,31 +112,31 @@
 
       <div class="row">
         <div class="col-sm-12" style="text-align: center;">
-          <h2><?php echo $page->introbuttons()->text() ?></h2>
+          <h2 style="margin-bottom: 20px;"><?php echo $page->introbuttons()->text() ?></h2>
         </div>
       </div>
 
       <div class="row teaser">
         <div class="col-sm-3 col-xs-6 menu-teaser">
-          <h4>Reise</h4>
+          <!-- <h4>Reise</h4> -->
           <a href="/journey">
             <img src="/Frontend/img/menu-teaser-journey.png" />
           </a>
         </div>
         <div class="col-sm-3 col-xs-6 menu-teaser">
-          <h4>Galerie</h4>
+          <!-- <h4>Galerie</h4> -->
           <a href="/gallery">
             <img src="/Frontend/img/menu-teaser-gallery.png" />
           </a>
         </div>
         <div class="col-sm-3 col-xs-6 menu-teaser">
-          <h4>Karte</h4>
+          <!-- <h4>Karte</h4> -->
           <a href="/map">
             <img src="/Frontend/img/menu-teaser-map.png" />
           </a>
         </div>
         <div class="col-sm-3 col-xs-6 menu-teaser">
-          <h4>Über uns</h4>
+          <!-- <h4>Über uns</h4> -->
           <a href="/about">
             <img src="/Frontend/img/menu-teaser-about.png" />
           </a>

@@ -9,8 +9,8 @@ password: >
 language: en
 role: admin
 history:
+  - posts/preparation/stuff
+  - posts/preparation/packing
+  - posts/preparation
   - home/reiseroute
   - journey
-  - about
-  - map
-  - gallery

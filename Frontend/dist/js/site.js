@@ -175,8 +175,8 @@ $( document ).ready(function() {
 
 	  		/* Infobubbles */
 	  		infobubbles.push(new InfoBubble({
-	          maxWidth: 300,
-	          maxHeight: 220,
+	          maxWidth: 235,
+	          maxHeight: jsonString[i].twolines == 1 ? 240 : 220,
 	          content: '<div class="infobubble" style="overflow: hidden;"><a href="' + jsonString[i].url + '" target="_self"><img src="' + jsonString[i].img + '" /><h2>' + jsonString[i].title + '</h2><p>' + jsonString[i].date + '</p></div></a>',
 	          padding: 0,
 	          backgroundColor: 'rgb(230,230,230)',

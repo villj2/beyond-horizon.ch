@@ -1,9 +1,0 @@
-Title: Switzerland
-
-----
-
-Teasericon: preparation
-
-----
-
-Showingallery: 1

@@ -24,6 +24,7 @@ return function($site, $pages, $page) {
 			$pin->lng = $post->lng()->value();
 			$pin->url = $post->url();
 			$pin->date = $post->date('F d, Y');
+			$pin->twolines = $post->googlemapstwolines()->value();
 
 			array_push($pinArray, $pin);
 		}

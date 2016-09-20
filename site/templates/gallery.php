@@ -9,7 +9,7 @@
 
           foreach($postcategories as $postcategory):
 
-            $posts = $postcategory->children()->filterBy('intendedTemplate', 'post');
+            $posts = $postcategory->children()->visible()->filterBy('intendedTemplate', 'post');
 
             if($posts == "" || !$postcategory->showingallery()->value()) continue;
 
