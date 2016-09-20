@@ -5,6 +5,9 @@ fields:
   title:
     label: Title
     type:  text
+  titlemenu:
+    label: Titel Menu
+    type:  text
   imageMapIntro:
     label: Image Map Intro
     type:  textarea

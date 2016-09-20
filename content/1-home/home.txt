@@ -2,12 +2,12 @@ Title: Home
 
 ----
 
-Intro: 
-
-## Entdecke lö Schatzi uiui tche
-
-Hier findest du unsere neusten Posts. Lass dich inspirieren.
+Intro: ## Die neuesten Beiträge
 
 ----
 
-Introbuttons: Entdecke mehr.
+Introbuttons: Entdecke mehr
+
+----
+
+Titlemenu: Home

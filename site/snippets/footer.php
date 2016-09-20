@@ -2,13 +2,13 @@
       <div class="container-fluid">
         <div class="row">
           <div class="col-sm-4 content-left">
-            <p class="text-muted">Discover the world</p>
+            <p class="text-muted">&nbsp;</p>
           </div>
           <div class="col-sm-4 content-center">
-            <p class="text-muted">We love travel</p>
+            <p class="text-muted">© 2016 - Beyond Horizon</p>
           </div>
           <div class="col-sm-4 content-right">
-            <p class="text-muted">© Schatz & Schatzi</p>
+            <p class="text-muted">&nbsp;</p>
           </div>
         </div>
       </div>

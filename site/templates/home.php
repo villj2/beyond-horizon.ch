@@ -32,7 +32,7 @@
                     <div class="label" style="text-align: center;">
                       <h1 style="color: <?php if($slider->textcolor() == ""){echo "white";} else { echo $slider->textcolor(); } ?>;"><?php echo $slider->title() ?></h1>
                       <div>
-                        <button type="button" class="btn btn-secondary btn-more btn-slider" style="<?php if($slider->textcolor() == ""){} else { echo "border-color: " . $slider->textcolor() . ";" . " color: " . $slider->textcolor() . ";"; } ?>;" onclick="location.href='/posts?scrollto=posts-<?php echo $slider->tag() ?>'">Mehr anzeigen</button>
+                        <button type="button" class="btn btn-secondary btn-more btn-slider" style="<?php if($slider->textcolor() == ""){} else { echo "border-color: " . $slider->textcolor() . ";" . " color: " . $slider->textcolor() . ";"; } ?>;" onclick="<?php if($slider->link() == ""){ echo "location.href='/posts?scrollto=posts-" . $slider->tag() . "'"; } else { echo "location.href='" . $slider->link() . "'"; } ?>">Mehr anzeigen</button>
                       </div>
                     </div>
                   </div>
@@ -74,7 +74,17 @@
 
       <div class="row teaser">
 
-        <?php foreach($page->parent()->index()->filterBy('template', 'post')->filterBy('picsonly', '!=', '1')->sortBy('date', 'desc')->limit(6) as $post): ?>
+        <?php if($page->parent()->index()->visible()->filterBy('template', 'post')->filterBy('picsonly', '!=', '1')->count() == 0){ ?>
+
+          <div class="col-sm-12">
+            <div class="teaser-image-container">
+              Noch keine Beiträge vorhanden. Schaue später vorbei.
+            </div>
+          </div>
+
+        <?php } else { ?>
+
+        <?php foreach($page->parent()->index()->visible()->filterBy('template', 'post')->filterBy('picsonly', '!=', '1')->sortBy('date', 'desc')->limit(6) as $post): ?>
           <div class="col-sm-4">
             <div class="teaser-image-container">
               <p>
@@ -89,6 +99,7 @@
             </div>
           </div>
         <?php endforeach ?>
+        <?php } ?>
 
         
       </div>
@@ -107,25 +118,25 @@
 
       <div class="row teaser">
         <div class="col-sm-3 col-xs-6 menu-teaser">
-          <h4>Journey</h4>
+          <h4>Reise</h4>
           <a href="/journey">
             <img src="/Frontend/img/menu-teaser-journey.png" />
           </a>
         </div>
         <div class="col-sm-3 col-xs-6 menu-teaser">
-          <h4>Gallery</h4>
+          <h4>Galerie</h4>
           <a href="/gallery">
             <img src="/Frontend/img/menu-teaser-gallery.png" />
           </a>
         </div>
         <div class="col-sm-3 col-xs-6 menu-teaser">
-          <h4>Map</h4>
+          <h4>Karte</h4>
           <a href="/map">
             <img src="/Frontend/img/menu-teaser-map.png" />
           </a>
         </div>
         <div class="col-sm-3 col-xs-6 menu-teaser">
-          <h4>About</h4>
+          <h4>Über uns</h4>
           <a href="/about">
             <img src="/Frontend/img/menu-teaser-about.png" />
           </a>

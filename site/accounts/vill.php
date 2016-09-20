@@ -9,8 +9,8 @@ password: >
 language: en
 role: admin
 history:
-  - posts/preparation/packing
-  - home/reiseroute
-  - posts/japan/yakushima
-  - home/packing
-  - posts/japan/tokyo
+  - about
+  - map
+  - gallery
+  - journey
+  - home

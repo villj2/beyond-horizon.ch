@@ -6854,6 +6854,8 @@ h4 {
 @media (max-width: 767px) {
   footer .row .content-left {
     text-align: center;
+    /*margin-top: 10px;
+				margin-bottom: -10px;*/
   }
 }
 @media (min-width: 768px) {
@@ -7224,6 +7226,11 @@ ul.nav a:hover {
 }
 .post-button-navigate a:hover {
   text-decoration: none;
+}
+.journey-image {
+  max-width: 700px;
+  display: block;
+  margin: 0 auto;
 }
 /* -------- Custom Styling END -------- */
 /* -------- Scroll to top -------- */

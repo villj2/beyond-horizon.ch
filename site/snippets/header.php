@@ -61,7 +61,7 @@
           <ul class="nav navbar-nav navbar-right">
             <?php foreach($pages->visible() as $p): ?>
               <li <?php e($p->isOpen(), ' class="active"') ?> >
-                <a href="<?php echo $p->url() ?>"><?php echo $p->title()->html() ?></a>
+                <a href="<?php echo $p->url() ?>"><?php echo $p->titlemenu() == "" ? $p->title()->html() : $p->titlemenu() ?></a>
               </li>
             <?php endforeach ?>
           </ul>

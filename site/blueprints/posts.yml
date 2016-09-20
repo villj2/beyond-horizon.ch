@@ -2,3 +2,7 @@ title: Posts
 pages:
   template: postcategory
 files: false
+fields:
+  titlemenu:
+    label: Titel Menu
+    type:  text

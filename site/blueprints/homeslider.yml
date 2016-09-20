@@ -7,6 +7,9 @@ fields:
   tag:
   	label: Tag
   	type: text
+  link:
+    label: Link (Alternative zu Tag)
+    type: text
   image:
   	label: Bild
   	type: image

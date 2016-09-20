@@ -11,3 +11,7 @@ Image: reiseroute_slider_panda.png
 ----
 
 Textcolor: black
+
+----
+
+Link: /journey
