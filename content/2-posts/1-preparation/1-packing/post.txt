@@ -28,7 +28,7 @@ Imageteaser: packing_teaser.jpg
 
 ----
 
-Imagemap: australie.png
+Imagemap: bern_panda.png
 
 ----
 
