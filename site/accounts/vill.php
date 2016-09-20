@@ -9,8 +9,8 @@ password: >
 language: en
 role: admin
 history:
+  - home/reiseroute
   - journey
   - about
   - map
   - gallery
-  - home
