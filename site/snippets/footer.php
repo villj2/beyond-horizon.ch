@@ -2,13 +2,13 @@
       <div class="container-fluid">
         <div class="row">
           <div class="col-sm-4 content-left">
-            <p class="text-muted">&nbsp;</p>
-          </div>
-          <div class="col-sm-4 content-center">
             <p class="text-muted">© 2016 - Beyond-Horizon</p>
           </div>
-          <div class="col-sm-4 content-right">
+          <!-- <div class="col-sm-8 content-center">
             <p class="text-muted">&nbsp;</p>
+          </div> -->
+          <div class="col-sm-8 content-right">
+            <p class="text-muted"><a href="http://bommeli.it" target="_blank" class="bommeli text-muted">Hosting sponsored by <img src="/Frontend/img/logo_bommeli_it_40px.png" /> bommeli IT GmbH</a></p>
           </div>
         </div>
       </div>

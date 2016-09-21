@@ -6854,8 +6854,8 @@ h4 {
 @media (max-width: 767px) {
   footer .row .content-left {
     text-align: center;
-    /*margin-top: 10px;
-				margin-bottom: -10px;*/
+    margin-top: 10px;
+    /*margin-bottom: -10px;*/
   }
 }
 @media (min-width: 768px) {
@@ -6882,6 +6882,22 @@ footer .row .content-center {
     text-align: right;
     margin-top: 40px;
   }
+}
+footer .row a {
+  text-decoration: none;
+}
+footer .row a:hover,
+footer .row a:active,
+footer .row a:focus {
+  text-decoration: none;
+  color: #777777;
+}
+footer .row .bommeli {
+  text-decoration: none;
+}
+footer .row .bommelia:hover {
+  text-decoration: none;
+  color: #777777;
 }
 .jumbotron {
   width: 100%;
