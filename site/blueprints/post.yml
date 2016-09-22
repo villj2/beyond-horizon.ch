@@ -20,6 +20,7 @@ fields:
   text:
     label: Text
     type:  textarea
+    help:  Polaroid -> 266 x 277px<br />customimage -> 750 x ???px
   imagejumbotron:
     label: Jumbotron <i>(ca. 1960 x 1000px)</i>
     type: image

@@ -30,7 +30,7 @@ Der Wecker klingelte bereits um Viertel nach Sieben, damit wir unseren einzigen 
 (polaroid: polaroid_venedig.jpg type: 3)
 (polaroidend: )
 
-(image: polaroid_venedig.jpg)
+(customimage: polaroid_venedig.jpg)
 
 Mit dem Wasserbus tuckerten wir den ganzen Canal Grande herauf und versuchten, einige tolle Videos zu drehen. Die Erkundungstour setzten wir daraufhin im südlichen Teil Venedigs fort, wo wir die „Basilica di Santa Maria della Salute“ fotografierten und es uns nicht nehmen liessen, den Canal Grande per Gondola zu überqueren. Wir kämpften uns durch die Menschenmassen zurück zum Hotel, wo wir uns kurz ausruhten. Anschliessend suchten wir ein Restaurant und wurden bei der Trattoria da Rino in der Nähe der Rialto-Brücke fündig. Müde kehrten wir nach dem Essen in unser Hotel zurück.
 
