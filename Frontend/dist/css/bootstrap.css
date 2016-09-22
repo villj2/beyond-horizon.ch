@@ -6813,6 +6813,7 @@ footer {
   /* Set the fixed height of the footer here */
   height: 91px;
   background-color: #231f20;
+  font-size: 0.8em;
 }
 /* -------- Sticky Footer END -------- */
 /* -------- Custom Styling -------- */
