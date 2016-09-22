@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="description" content="Reise jenseits des Horizonts. Erlebnisberichte aus Japan, Australien, Tasmanien, Neuseeland und Hongkong.">
-    <meta name="keywords" content="Travel, Blog, Reisen, Japan, Australia, Tasmania, New Zealand, Hongkong">
+    <meta name="description" content="Beyond-Horizon: Reise jenseits des Horizonts. Erlebnisberichte aus Japan, Australien, Tasmanien, Neuseeland und Hongkong.">
+    <meta name="keywords" content="Beyond, Horizon, Jenseits, Horizont, Travel, Reisen, Blog, Photos, Fotos, Japan, Australia, Tasmania, New Zealand, Hongkong">
     <meta name="author" content="Julien Villiger und Karin Lüthi">
 
     <link rel="apple-touch-icon" sizes="57x57" href="/Frontend/img/favicon/apple-icon-57x57.png">
