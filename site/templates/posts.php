@@ -2,6 +2,18 @@
 
 	<div class="container container-teaser no-jumbotron">
 
+		<?php
+
+		if($categories->sortBy('date', 'asc')->count() == 0){
+        echo '<div class="row">
+                <div class="col-md-12 text-center">
+                  Noch keine Beiträge vorhanden. Schau doch später wieder vorbei.
+                </div>
+              </div>';
+      	}
+
+      	?>
+
 		<?php foreach($categories->sortBy('date', 'asc') as $category): ?>
 
 	      <div class="row">

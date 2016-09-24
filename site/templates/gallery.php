@@ -3,9 +3,19 @@
     <div class="container container-teaser no-jumbotron">
 
         <?php /* echo $pages->index()->filterBy('intendedTemplate', 'postcategory') */ ?>
+
         <?php
 
           $postcategories = $pages->index()->visible()->filterBy('intendedTemplate', 'postcategory')->sortBy('sort', 'desc');
+
+
+          if($postcategories->count() == 0){
+            echo '<div class="row">
+                    <div class="col-md-12 text-center">
+                      Noch keine Bilder vorhanden. Schau doch später wieder vorbei.
+                    </div>
+                  </div>';
+          }
 
           foreach($postcategories as $postcategory):
 

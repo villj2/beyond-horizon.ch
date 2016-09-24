@@ -4,13 +4,19 @@ Title: About
 
 Text: 
 
+##Julien, 29
+Findet auch an abgelegensten Flecken der Erde tolle Fotosujets und Ziegen. Egal wohin der Weg ihn auch führt, es gilt jeden Moment zu geniessen. Hauptsache viel Natur, frische Luft, Tiere mit weniger als acht Beinen und eine Herde neuseeländischer Schafe.
+<br />
+##Karin, 25
+Mag keine Selfies und steht lieber hinter der Kamera. Ist fasziniert von einmaligen Landschaften und Tieren aller Art. Sie ist gespannt, welchen Tieren sie auf dieser Reise über den Weg laufen wird und hofft, dass sowohl ein Kakapo als auch ein Wombat darunter sind.
+
 ----
 
 Image: (image: wir.jpg class: polaroid)
 
 ----
 
-Faces: <!--(polaroidabout: wir.jpg)-->
+Faces: (polaroidabout: wir_bw.jpg)
 
 ----
 

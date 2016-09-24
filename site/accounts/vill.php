@@ -9,8 +9,8 @@ password: >
 language: en
 role: admin
 history:
+  - about
   - posts/australia/venedig
   - posts/preparation/stuff
   - posts/australia
   - home/australia
-  - posts/australia/venedig/gallery

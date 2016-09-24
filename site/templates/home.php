@@ -78,7 +78,7 @@
 
           <div class="col-sm-12">
             <div class="teaser-image-container">
-              Noch keine Beiträge vorhanden. Schaue später vorbei.
+              Noch keine Beiträge vorhanden. Schau doch später wieder vorbei.
             </div>
           </div>
 

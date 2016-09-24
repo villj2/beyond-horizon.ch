@@ -6773,6 +6773,13 @@ button.close {
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: 'black_jackregular';
+  src: url('../../fonts/blackjack-webfont.eot');
+  src: url('../../fonts/blackjack-webfont.eot?#iefix') format('embedded-opentype'), url('../../fonts/blackjack-webfont.woff') format('woff'), url('../../fonts/blackjack-webfont.ttf') format('truetype'), url('../../fonts/blackjack-webfont.svg#black_jackregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
 html {
   position: relative;
   min-height: 100%;
@@ -7608,5 +7615,62 @@ time.icon:focus {
   .about .center-max-md {
     text-align: center;
   }
+}
+.about .text {
+  padding-top: 50px;
+}
+@media (min-width: 768px) {
+  .about .text {
+    padding-right: 80px;
+  }
+}
+.about .quote .quote-text {
+  position: relative;
+  font-family: 'black_jackregular';
+  font-size: 2em;
+  line-height: 35px;
+  margin-top: 80px;
+}
+@media (min-width: 992px) {
+  .about .quote .quote-text {
+    margin-top: 190px;
+  }
+}
+.about .quote .quote-text .quote-start {
+  display: block;
+  position: absolute;
+  top: -8px;
+  left: -42px;
+}
+.about .quote .quote-text .quote-end {
+  margin-left: -8px;
+}
+.about .quote .quote-teller {
+  margin-top: 20px;
+  font-size: 0.9em;
+}
+@media (max-width: 991px) {
+  .about .quote {
+    margin: 0 20%;
+  }
+}
+.about .btn-contact {
+  text-align: center;
+}
+.about .btn-contact a {
+  text-decoration: none;
+  color: #000;
+  margin: 20px auto 20px;
+}
+@media (max-width: 991px) {
+  .about .btn-contact a {
+    margin-top: 40px;
+  }
+}
+.about .btn-contact a:hover,
+.about .btn-contact a:active,
+.about .btn-contact a:focus {
+  text-decoration: none;
+  color: #000;
 }
 /*# sourceMappingURL=bootstrap.css.map */
