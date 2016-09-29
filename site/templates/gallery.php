@@ -21,7 +21,16 @@
 
             $posts = $postcategory->children()->visible()->filterBy('intendedTemplate', 'post');
 
-            if($posts == "" || !$postcategory->showingallery()->value()) continue;
+            if($posts == "" || !$postcategory->showingallery()->value()) {
+
+              echo '<div class="row">
+                    <div class="col-md-12 text-center">
+                      Noch keine Bilder vorhanden. Schau doch später wieder vorbei.
+                    </div>
+                  </div>';
+              
+              continue;
+            }
 
             echo '<div class="row">
               <div class="col-md-12">

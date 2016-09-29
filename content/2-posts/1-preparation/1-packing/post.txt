@@ -1,0 +1,56 @@
+Title: Vorbereitung
+
+----
+
+Date: 2016-09-29
+
+----
+
+Text: 
+
+##Vorbereitung
+Nach monatelanger Vorbereitungszeit steht unser Aufbruch ans andere Ende der Welt nun in greifbarer Nähe. Viele Stunden haben wir damit zugebracht, die Route unseren Wünschen entsprechend festzulegen, einzigartige Unterkünfte und zweckmässige Fahrzeuge herauszusuchen sowie ungewöhnliche Ausflugsziele festzulegen.
+
+Dazu gehörte auch die Interpretation verrückter japanischer Webseiten, der Versuch, sich ein Grundverständnis von Hiragana anzueignen (gehts noch, Japan??), Testwanderungen mit der neuen Photoausrüstung zu machen, die Rucksäcke zu justieren aber hauptsächlich: sich auf die grenzenlose Freiheit und die neuen Eindrücke zu freuen!
+
+Darüber hinaus haben wir auch das Pflichtprogramm jedes Reisenden absolviert und unzählige Gespräche mit Versicherungen und Banken geführt. Die Schweiz ist ihrem Ruf als Land der Bürokratie auf alle Fälle mehr als gerecht geworden. Nun haben wir selbst die letzte Hürde des Rucksackspackens überwunden, obwohl wir uns bei dieser Aufgabe fast die Zähne ausgebissen haben. Hoffen wir, dass wir nun alles eingepackt haben. Besonders schwer ist es uns aber gefallen, uns von unseren Liebsten zu verabschieden, da wir beide noch nie eine solch lange Reise angetreten haben. Vielen Dank an alle, die uns so liebevoll verabschiedet und an uns gedacht haben!
+
+----
+
+Imagejumbotron: preparation.jpg
+
+----
+
+Imageteaser: preparation_teaser.jpg
+
+----
+
+Imagemap: bern_panda.png
+
+----
+
+Lat: 46.94794785322484
+
+----
+
+Lng: 7.44748592376709
+
+----
+
+Hidetitle: 1
+
+----
+
+Picsonly: 0
+
+----
+
+Googlemapsimage: preparation_googlemaps.jpg
+
+----
+
+Textcolor: 
+
+----
+
+Googlemapstwolines: 0
