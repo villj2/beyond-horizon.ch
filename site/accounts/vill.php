@@ -9,8 +9,8 @@ password: >
 language: en
 role: admin
 history:
-  - posts/preparation
   - posts/preparation/packing
+  - posts/preparation
   - posts/preparation/packing/gallery
   - about
   - posts/australia/venedig
