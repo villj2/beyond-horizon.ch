@@ -1,0 +1,78 @@
+Title: Tokyo
+
+----
+
+Year: 2016
+
+----
+
+Text: 
+
+##Tokyo, Japan
+Mit Jetlag rein ins Getümmel: Tokyo leuchtet, lärmt, schweigt, pulsiert, robotet, kichert, lacht. Nach einer über 24-stündigen Reise wurden alle Sinne gefordert und überfordert. Unser Hostel war dank dem gemieteten Hotspot rasch lokalisiert und der korrekte Zug durch die augenblickliche und unaufgeforderte Hilfe eines freundlichen Japaners sofort gefunden.
+
+Jede Ecke Tokyos wirkt ausserordentlich sauber, kaum ein Fetzen Abfall liegt am Boden (trotz dem Fehlen öffentlicher Abfalleimer), alles ist bis ins kleinste Detail organisiert und jede Tätigkeit wird zur Perfektion getrieben, was die unendliche Effizienz erklärt. Wie Klone eilen die Geschäftsleute mit ausschliessliech weissen Hemden und schwarzen Hosen durch die Gänge der U-Bahn und quetschen sich dicht gedrängt in die Wagen. Trotzdem ist es nicht unangenehm, während der Rush Hour zu reisen, denn jeder hält respektvoll Abstand und gliedert sich gekonnt in den unaufhörlichen Pendlerstrom ein.
+
+Beeindruckende Schreine und Tempel thronen auf den wenigen grünen Wald-Inseln, die sich jedoch hinter massiven Menschenströmen verstecken. Der Beweis für die enorme Einwohnerdichte liefert die Shibuya-Kreuzung: Bis zu 2'500 Personen kreuzen sich hier bei grüner Ampel auf etlichen Fussgängerstreifen. Und das etwa alle 2 Minuten! Neben vielen blinkenden Werbetafeln, ohrenbetäubenden Spielhallen in der Elektro Town Akihabara, hektischen Ramen-Bars, riesigen 100¥-Läden und mehrstöckigen Manga-Stores haben etliche Sehenswürdigkeiten internationales Flair. So erwecken eine Nachbildung der Freiheitsstatue sowie eine der Brooklyn Bridge nachempfundene Rainbow Bridge das Gefühl, in New York zu sein. Unzählige französische Bäckereien und der Tokyo Tower, der sein Vorbild, den Pariser Eiffelturm, um neun Meter überragt und eine atemberaubende Sicht auf die Tokioter Skyline bietet, versprühen zudem ein wenig französischen Charme.
+
+Knapp vier Tage lieferten leider nur einen oberflächlichen Einblick in diese bunte, moderne Welt Japans. Weiter geht die Reise nun in ländlichere Regionen, wo wir hoffen, die traditionelle Seite dieses Landes kennenzulernen.
+
+----
+
+Tags: 
+
+----
+
+Teaserimage: cangs.jpg
+
+----
+
+Date: 2016-10-05
+
+----
+
+Mapimage: australie.png
+
+----
+
+Imagejumbotron: tokyo_jumbotron.jpg
+
+----
+
+Imageteaser: tokyo_teaser_image.jpg
+
+----
+
+Imagemap: tokyo_map.png
+
+----
+
+Lng: 139.73785400390625
+
+----
+
+Ltd: 7.442593574523926
+
+----
+
+Lat: 35.715298012125295
+
+----
+
+Hidetitle: 0
+
+----
+
+Googlemapsimage: tokyo_google_maps.jpg
+
+----
+
+Textcolor: 
+
+----
+
+Picsonly: 0
+
+----
+
+Googlemapstwolines: 0
