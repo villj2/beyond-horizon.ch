@@ -10,7 +10,7 @@ language: en
 role: admin
 history:
   - posts/japan/tokyo
+  - posts/japan/nikko
+  - posts/japan/nikko/gallery
+  - posts/japan/fujikawaguchiko
   - posts/japan/tokyo/gallery
-  - posts/preparation/packing
-  - posts/preparation
-  - posts/preparation/packing/gallery
