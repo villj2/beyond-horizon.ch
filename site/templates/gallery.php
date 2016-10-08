@@ -19,7 +19,7 @@
 
           foreach($postcategories as $postcategory):
 
-            $posts = $postcategory->children()->visible()->filterBy('intendedTemplate', 'post');
+            $posts = $postcategory->children()->filterBy('intendedTemplate', 'post');
 
             if($posts == "" || !$postcategory->showingallery()->value()) {
 
@@ -40,7 +40,7 @@
 
             foreach($posts->sortBy('date', 'desc') as $post):
 
-              $gallery = $post->children()->filterBy('intendedTemplate', 'postgallery');
+              $gallery = $post->children()->visible()->filterBy('intendedTemplate', 'postgallery');
 
               if($gallery == "") continue;
 
