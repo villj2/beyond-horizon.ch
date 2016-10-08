@@ -1,0 +1,63 @@
+Title: Mount Fuji
+
+----
+
+Textcolor: 
+
+----
+
+Picsonly: 0
+
+----
+
+Hidetitle: 0
+
+----
+
+Date: 2016-10-05
+
+----
+
+Text: 
+
+##Mount Fuji, Japan​
+Natürlich durfte auch das berühmteste Wahrzeichen von Japan in unserem Reiseprogramm nicht fehlen: Der Touristenmagnet Mount Fuji. Mit einem Panoramazug (komplett verziert mit "Thomas die Lokomotive") schlängelten wir uns entlang der Bergkette bis nach Fujikawagutchiko. Das grosszügige Fenster und der vorteilhafte Sitzplatz ermöglichten uns direkten Blick auf eine dichte, regenverhangene Wolkenfront... Der sagenumwobene Mount Fuji versteckte sich leider grösstenteils, bloss die Spitze guckte höflichkeitshalber kurz durch. Nichtsdestotrotz steuerten wir eine wundervolle Pagode an, die bei freundlichem Wetter eine perfekte Sicht auf den Vulkan bieten würde.
+
+Auf dem Rückweg in unser Minshuku (traditionelles japanisches Gasthaus) haben wir im Fernsehen eines Tempura-Restaurants das bedrohliche Näherkommen des Typhoons Chaba in den News mitverfolgt. Könnte also dezent regnen und winden in den nächsten Tagen! In dieser Unterkunft wurde uns übrigens auch erstmals so richtig bewusst, dass es die japanische Kultur so in sich hat: Praktisch für jeden Raum gibt es spezielle Schuhe und auch das korrekte Zurechtlegen des Futonbetts folgt einem klaren Ablauf.
+
+(polaroidstart: )
+(polaroid: pola_1.jpg type: 1)
+(polaroid: pola_2.jpg type: 2)
+(polaroid: pola_3.jpg type: 3)
+(polaroidend: )
+
+Glücklicherweise hat der Sturm in der Nacht das schlechte Wetter davongefegt, weshalb wir auf unseren Schönheitsschlaf verzichtet haben und in aller Herrgottsfrühe den Hügel (umsäumt von riesigen Spinnen) der Pagode erneut bestiegen haben, um die wahre Schönheit dieses Ortes und des heiligen Berges festhalten zu können.
+<br />
+
+----
+
+Imagejumbotron: fujikawaguchiko_jumbotron2.jpg
+
+----
+
+Imageteaser: fuji_teaser.jpg
+
+----
+
+Imagemap: fuji_map.png
+
+----
+
+Googlemapsimage: fuji_googlemaps.jpg
+
+----
+
+Googlemapstwolines: 0
+
+----
+
+Lat: 35.25571238989172
+
+----
+
+Lng: 138.70101928710938

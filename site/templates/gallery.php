@@ -38,7 +38,7 @@
               </div>
             </div>';
 
-            foreach($posts->sortBy('date', 'asc') as $post):
+            foreach($posts->sortBy('date', 'desc') as $post):
 
               $gallery = $post->children()->filterBy('intendedTemplate', 'postgallery');
 

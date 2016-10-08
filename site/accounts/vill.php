@@ -9,8 +9,8 @@ password: >
 language: en
 role: admin
 history:
+  - posts/japan/fujikawaguchiko
+  - posts/japan/fujikawaguchiko/gallery
   - posts/japan/tokyo
   - posts/japan/nikko
   - posts/japan/nikko/gallery
-  - posts/japan/fujikawaguchiko
-  - posts/japan/tokyo/gallery
