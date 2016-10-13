@@ -1,0 +1,60 @@
+Title: Zentral-Honshu
+
+----
+
+Textcolor: 
+
+----
+
+Picsonly: 0
+
+----
+
+Hidetitle: 0
+
+----
+
+Date: 2016-10-12
+
+----
+
+Text: 
+
+##Zentral-Honshu, Japan
+Kleine Handwerkbetriebe, einladende Gasthäuser, schnucklige Souvenierläden, Wasserräder und gepflasterte Strassen, das ist das kleine Dörfchen Magome. Hier haben wir das wahre, traditionelle Japan gefunden, von dem wir nicht recht glauben wollten, dass es noch existiert. Wir wanderten auf der alten Fernstrasse nach Tsumago, die früher Kyoto mit Edo (früherer Name von Tokio) verband, über idyllische Waldwege und fühlten uns so richtig in der Zeit zurückversetzt. Bis uns plötzlich ein markerschütterndes Knurren wieder in die Gegenwart zurückholte: Unmittelbar vor uns liess ein Bär sein Missfallen verlauten, dass wir ungefragt in sein Revier eingedrungen sind. Wir nahmen deshalb zusammen mit zwei anderen aufgeschreckten Wanderern spontan einen Umweg in Kauf, um dem Mutzen nicht direkt ins offene Maul zu laufen.
+
+Harmloser gings Tags darauf zum heimlichen Highlight Japans, den in den heissen Quellen badenden Makaken. Nach stundenlanger Zugfahrt und voller Vorfreude mussten wir uns kurz vor dem Ziel aufklären lassen, dass sich die Affen ausgerechnet an diesem Morgen in die Wälder zurückgezogen haben, um ihr Paarungsritual ungestört und ohne Zuschauer durchführen zu können. Entsprechend blieb der Park geschlossen und uns war die Enttäuschung gross ins Gesicht geschrieben.
+
+Reges Treiben herrschte in Takayama, da dort gerade das berühmte Herbstfestival stattfand. Ausgelassen feiernde Japaner und fotohungrige Touristen bestaunten den Umzug etlicher geschmückter Festwagen. Einen angeblichen Höhepunkt bildete ein verrücktes Marionettentheater, ab dem sich die Japaner köstlich amüsierten, uns der eigentliche Sinn jedoch nach wie vor schleierhaft bleibt.
+
+Eine Perle war für uns zudem das kleine Städtchen Kinosaki Onsen, das vor allem für seine vielen Onsen berühmt ist. Hier wollten wir uns etwas vom stressigen Teil unserer Reise erholen. Maximal japanisches Ambiente liefern abends die Badehaus-Gäste, welche ausnahmslos mit Holzschuhen und in Yukata gekleidet von heisser Quelle zu heisser Quelle stöckeln.
+
+Die nächste Etappe führt uns an die südwestliche Küste Japans und auf eine wilde Inselschönheit namens Yakushima.
+
+----
+
+Imagejumbotron: jumbotron.jpg
+
+----
+
+Imageteaser: teaser.jpg
+
+----
+
+Imagemap: honshu_map.png
+
+----
+
+Googlemapsimage: bubble.jpg
+
+----
+
+Googlemapstwolines: 0
+
+----
+
+Lat: 35.74651225991851
+
+----
+
+Lng: 137.26318359375

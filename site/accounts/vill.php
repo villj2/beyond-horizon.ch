@@ -9,8 +9,8 @@ password: >
 language: en
 role: admin
 history:
+  - posts/japan/zentral-honshu
+  - posts/japan/zentral-honshu/gallery
   - posts/japan/nikko
   - posts/japan/fujikawaguchiko
   - posts/japan/fujikawaguchiko/gallery
-  - posts/japan/tokyo
-  - posts/japan/nikko/gallery

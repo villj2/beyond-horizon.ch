@@ -14,6 +14,8 @@ $( document ).ready(function() {
 
 		var masonryIntervalId = setInterval(function(){
 
+			//console.log("init gallery");
+
 			$('.grid').masonry({
 			  // set itemSelector so .grid-sizer is not used in layout
 			  itemSelector: '.grid-item',
@@ -22,7 +24,7 @@ $( document ).ready(function() {
 			  percentPosition: true
 			})
 
-			if(masonryInitCount++ >= 3){
+			if(masonryInitCount++ >= 100){
 
 				clearInterval(masonryIntervalId);
 			}
@@ -140,7 +142,7 @@ $( document ).ready(function() {
 	    center: {lat: 3.513421045640057, lng: 116.71875},
 	    scrollwheel: true,
 	    styles: styleArray,
-	    zoom: 3,
+	    zoom: 4,
 	    mapTypeControl: false,
 	    minZoom: 3
 	  });
