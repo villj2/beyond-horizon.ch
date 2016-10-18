@@ -9,8 +9,7 @@ password: >
 language: en
 role: admin
 history:
+  - posts/japan/yakushima
   - posts/japan/zentral-honshu
   - posts/japan/zentral-honshu/gallery
   - posts/japan/nikko
-  - posts/japan/fujikawaguchiko
-  - posts/japan/fujikawaguchiko/gallery
