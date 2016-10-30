@@ -1,0 +1,55 @@
+Title: Koyasan
+
+----
+
+Textcolor: 
+
+----
+
+Picsonly: 0
+
+----
+
+Hidetitle: 0
+
+----
+
+Date: 2016-10-22
+
+----
+
+Text: 
+
+##Koyasan, Japan
+Besonders freuten wir uns auf die Region Koyasan, einer abgelegenen shingon-buddhistischen Hochburg. Die traditionelle Lebensweise der auf dieser Hochebene lebenden Mönche versprach uns lang ersehnte vegetarische Kost (Shojin Ryori). Als Unterkunft diente uns eine von Mönchen betreute Tempelanlage. Wir erkundeten das Dorf mit den endlos vielen Tempeln (eigentlich sind es genau 117) und landeten plötzlich in einem Zedernwald, der von abertausenden übermoosten, spinnwabenbedeckten, vernachlässigten Steinfiguren übersät ist. Eine unheimliche, düstere Atmosphäre umgab diesen Ort und versetzte uns in vorzeitige Halloween-Stimmung. Wir hatten das befremdende Gefühl, mitten in einem Tim Burten-Streifens gelandet zu sein. Es handelte sich nämlich um den grössten Friedhof, den wir je betreten haben: unglaubliche 200'000 Gräber reihen sich auf einem fast zwei Kilometer langen Pfad aneinander, an dessen Ende sich das Mausoleum von Kobo Daishi, dem Begründer des Shingon-Buddismus befindet. Der von unzähligen Laternen beleuchtete Keller dieses Tempels beherbergt insgesamt 50'000 Buddhastatuen.
+
+Am darauffolgenden, frühen Morgen durften wir und die anderen Tempelgäste eine buddhistische Zeremonie mitverfolgen, bzw. mitmachen (falls einem der kehlige Gesang der Mönche gängig war). Jedenfalls ein bleibendes Erlebnis!
+<br />
+
+----
+
+Imagejumbotron: jumbotron_koyasan.jpg
+
+----
+
+Imageteaser: teaser_koyasan.jpg
+
+----
+
+Imagemap: map_koyasan.png
+
+----
+
+Googlemapsimage: bubble_koyasan.jpg
+
+----
+
+Googlemapstwolines: 0
+
+----
+
+Lat: 34.21861586197447
+
+----
+
+Lng: 135.59051513671875

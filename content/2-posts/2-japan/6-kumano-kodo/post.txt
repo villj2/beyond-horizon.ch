@@ -1,0 +1,56 @@
+Title: Kumano Kodo
+
+----
+
+Textcolor: 
+
+----
+
+Picsonly: 0
+
+----
+
+Hidetitle: 0
+
+----
+
+Date: 2016-10-23
+
+----
+
+Text: 
+
+##Kumano Kodo, Japan
+Auf den Spuren des spirituellen Japans verschlug es uns auf den historischen Pilgerpfad "Kumano Kodo". Die altertümlichen Wege, die schon seit über tausend Jahren benutzt werden, führen zu den drei grossen Schreinen des Kumano und schlängeln sich durch endlose Wälder und Hügel und sind gesäumt von vielen religiösen Skulpturen.
+
+Um in dieses Pilgermekka vorzudringen, nahmen wir den Bus ins winzige Dörfchen Yunomine Onsen. Durch dieses kleine Tälchen fliesst ein warmer, dampfender Fluss, der die etlichen örtlichen Onsen mit Heisswasser versorgt. Im Dorfladen fanden wir merkwürdige, in kleine Netze abgepackte rohe Eier und Süsskartoffeln. Erst als wir am unten am Flüsschen ein Becken mit kochendem Wasser entdeckten, verstanden wir den Sinn dieser sonderbar verpackten Nahrungsmittel: Sofort wurden Eier und Süsskartoffeln auf maximal natürliche Art zubereitet.
+
+Die knapp zwanzig Kilometer lange Wanderung am nächsten Tag führte zum ersten der grossen Ziele, dem Kumano Hongu Taisha. Jedoch ist hier eindeutig der Weg das Ziel. Völlig erschöpft gabs am Abend erneut einen Quellen-Snack und ein dampfendes Onsen! Ein weiterer Schrein, der Kumano Nachi Taisha, schmückt sich mit dem höchsten Wasserfall Japans und einer pitoresken Pagode. Nach dieser konzentrierten Ladung Tradition und Spiritualität gehts nun wieder zurück ins wilde Grossstadtleben.
+
+----
+
+Imagejumbotron: jumbotron_kumano.jpg
+
+----
+
+Imageteaser: teaser_kumano.jpg
+
+----
+
+Imagemap: kumano_map.png
+
+----
+
+Googlemapsimage: bubble_kumano.jpg
+
+----
+
+Googlemapstwolines: 0
+
+----
+
+Lat: 33.87269600798948
+
+----
+
+Lng: 135.83633422851562

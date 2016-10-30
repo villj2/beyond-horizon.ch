@@ -1,0 +1,49 @@
+Title: Nara
+
+----
+
+Textcolor: 
+
+----
+
+Picsonly: 1
+
+----
+
+Hidetitle: 0
+
+----
+
+Date: 2016-10-21
+
+----
+
+Text: 
+
+----
+
+Imagejumbotron: 
+
+----
+
+Imageteaser: 
+
+----
+
+Imagemap: 
+
+----
+
+Googlemapsimage: 
+
+----
+
+Googlemapstwolines: 0
+
+----
+
+Lat: 
+
+----
+
+Lng: 

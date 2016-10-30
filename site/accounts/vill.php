@@ -9,7 +9,8 @@ password: >
 language: en
 role: admin
 history:
-  - posts/japan/yakushima
-  - posts/japan/zentral-honshu
-  - posts/japan/zentral-honshu/gallery
-  - posts/japan/nikko
+  - posts/japan/kumano-kodo
+  - posts/japan/kumano-kodo/gallery
+  - posts/japan/koyasan
+  - posts/japan/koyasan/gallery
+  - posts/japan/nara/gallery
