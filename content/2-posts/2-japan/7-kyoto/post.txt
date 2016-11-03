@@ -1,0 +1,63 @@
+Title: Kyoto
+
+----
+
+Textcolor: 
+
+----
+
+Picsonly: 0
+
+----
+
+Hidetitle: 0
+
+----
+
+Date: 2016-10-28
+
+----
+
+Text: 
+
+##Kyoto, Japan
+Die Übernachtung in einem der berühmten japanischen Kapselhotels durfte auf unserer Japanreise natürlich nicht fehlen. Ganz im Stil von "The Island" erhält jeder Gast einen gleichen Schlafanzug, alles wird in schlichtem, sauberem Weiss gehalten und sämtliche Abläufe sind für die zahlreichen Gäste genau vordefiniert. Das "Zimmer" (natürlich streng nach Männlein und Weiblein unterteilt) ist lediglich eine Röhre und hat MRI-Charakter, wobei dieser Schlafplatz erstaunlich bequem und sogar durchgehend angenehm ruhig war. Nicht mal klaustrophobische Angstzustände wurden durch diese Kapseln hervorgerufen! Um ein sanftes Erwachen zu gewährleisten, ist ein spezielles Licht-Ambiente-System eingebaut, welches das Aufgehen der Sonne simulieren und einen langsam aus dem Land der Träume holen soll. Schliesslich gibt es im ganzen Hotel nicht ein einziges Fenster. Leider hatte diese Funktion teilweise eine Störung und richtete einem den Scheinwerfer frühmorgens mit voller Stärke direkt in die Augen... 
+
+(polaroidstart: )
+(polaroid: pola3.jpg type: 3)
+(polaroid: pola1.jpg type: 1)
+(polaroid: pola2.jpg type: 2)
+(polaroidend: )
+
+Hellwach erkundeten wir anschliessend die ehemalige Hauptstadt Kyoto, welche vor allem durch tausende von Tempeln besticht. Wahnsinnig eindrücklich war der goldene Tempel Kinkaku-ji. In Harmonie mit dem bilderbuchwürdigen Garten und in herrlichen herbstlichen Sonnenschein getaucht war der Anblick überwältigend. Genau solche Bilder machen eine Reise nach Japan einmalig. Ebenfalls sehr imposant war der Arashiyama Bamboo Grove sowie der nicht mehr enden wollende, rot-orange Torii-Weg beim Fushimi Inari-Taisha. Keine Ahnung, ob diese Torii jemals gezählt wurden. Es sind auf jeden Fall sehr, sehr viele. 
+
+Mehr als anderswo, gilt es im von Touristen überschwemmten Kyoto die selfieschiessenden und drängelnden Scharen zu ignorieren. Wie mühsam und respektlosen Touristen sein können, erfuhren wir während einer Vorführung verschiedener traditioneller, japanischer Darbietungen, darunter auch ein Tanz einer angehenden Geisha. Die Auftritte wurden total von fotowütigen und lärmenden Touristen kaputtgemacht, denn von den hinteren Reihen war die Show zwischen all den hochgestreckten Kameras und Handys kaum noch sichtbar. Der Tourismus scheint sich auch auf das Gemüt der Bevölkerung auszuwirken. Von der Freundlichkeit, die wir sonst überall in Japan erfahren haben, ist hier nur noch ein Hauch übrig geblieben. Das sonst so natürliche Lächeln der Leute wirkt aufgesetzt und erzwungen. Der Glanz dieser einzigartigen Stadt würde sicher in der Nebensaison weniger unter ihrer Beliebtheit leiden.
+<br />
+
+----
+
+Imagejumbotron: jumbo.jpg
+
+----
+
+Imageteaser: teaser.jpg
+
+----
+
+Imagemap: map.png
+
+----
+
+Googlemapsimage: bubble.jpg
+
+----
+
+Googlemapstwolines: 0
+
+----
+
+Lat: 35.01312680454406
+
+----
+
+Lng: 135.76766967773438

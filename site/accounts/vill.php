@@ -10,7 +10,7 @@ language: en
 role: admin
 history:
   - posts/japan/kumano-kodo
+  - posts/japan/kyoto
+  - posts/japan/kyoto/gallery
   - posts/japan/kumano-kodo/gallery
   - posts/japan/koyasan
-  - posts/japan/koyasan/gallery
-  - posts/japan/nara/gallery
