@@ -1,0 +1,69 @@
+Title: Northern Queensland
+
+----
+
+Textcolor: 
+
+----
+
+Picsonly: 0
+
+----
+
+Hidetitle: 0
+
+----
+
+Date: 2016-11-07
+
+----
+
+Text: 
+
+##Northern Queensland, Australien
+Den roten Kontinent flogen wir in einem Nachtflug von Osaka aus an. Die knapp sieben Stunden Flugzeit bis Cairns gingen zwar schnell vorbei, wir beide fanden aber keine Minute Schlaf und unsere Knie waren dank der auf japanische Körpergrössen eingestellten Bestuhlung wundgescheuert. Nach der Landung erwartete uns aber ein tropisch-feuchtes Klima mit einem herrlich rot-goldenen Sonnenaufgang. Der Bus vom Flughafen nach Cairns brachte uns direkt vor das gebuchte Hostel, jedoch mit zwanzig Minuten Verspätung. Fertig mit dem japanischen Eifer und dessen Effizienz.
+
+Cairns liegt zwar direkt am Meer, die Küste ist aber extrem den Gezeiten ausgesetzt und wirkt etwas ausladend. Der sandige Schlamm lockt keine Badetouristen an, sondern ist ein Paradies für etliche Vogelarten, die nach Krabben und Fischen picken. Als Ausgleich zum fehlenden Badestrand bietet Cairns eine wunderschöne künstliche Lagune. Allgemein ist der Ort ein verträumtes Küstendorf, welches zum Verweilen einlädt.
+
+Das eigentliche Highlight war Fitzroy Island, 45 Minuten mit der Fähre von Cairns entfernt. Gelegen am Rande des Great Barrier Reefs, mit einem 375 Meter hohen Berg, etlichen Traumständen und einem gepflegten Resort war dies der perfekte Ort, um das tropische, nördliche Queensland und die Unterwasserwelt zu erkunden. Gleich nach dem Landen der Fähre stürmten wir den Schnorchel-Verleih, um uns ins Meer zu stürzen. Doch ganz so einfach ist der Kontakt mit der Natur in Australien natürlich nicht. Von November bis März ist Stinger-Season, was bedeutet, dass hochgiftige bis tödliche Quallen Angst und Schrecken im Meer verbreiten. Darum wird wärmstens empfohlen, einen Stinger-Ganzkörperanzug zu tragen. Hochmodisch wagten wir uns dann ins warme Nass und durften die Farbenpracht des Reefs erleben. Hunderte verschiedenfarbige und glänzende Fische und faszinierende Korallenformationen raubten einem fast den Atem. Man hatte das Gefühl, in einem riesigen, gepflegten Aquarium zu schwimmen. Tags darauf haben wir bei sengenden 33° Celsius den Berg bestiegen und wurden mit einem sagenhaften Ausblick auf das Reef und das Festland belohnt. Zum Glück haben wir den Rat beherzigt, viel Wasser mitzunehmen!
+
+Weiter nördlich, tiefer im Herzen der Regenwälder, unternahmen wir eine Bootstour und gingen auf Krokodilsuche und entdeckten tatsächlich ein Babykrokodil. Leider nicht ein 7-Meter-Modell, wie sie in dieser Region vorkommen sollen. Etwas befremdend kamen uns übrigens die Rettungswesten im Boot vor: Wer will schon zur Rettung in einen Fluss springen, in dem sowohl Riesenkrokodile als auch Haie leben?
+
+(polaroidstart: )
+(polaroid: pola1.jpg type: 1)
+(polaroid: pola2.jpg type: 2)
+(polaroid: pola3.jpg type: 3)
+(polaroidend: )
+
+Etwas entspannter ging es am nächsten Tag in der Hippie-Stadt Kuranda zu und her. Wir wurden in der Australian Butterfly Sanctuary von Hunderten von wunderschönen Schmetterlingen umflogen und in der Birdworld von etlichen farbenfrohen Papageien gepickt, gebissen und zerkratzt, damit wir ihnen Nahrung abgaben (einfach traumhaft). In den Kuranda Koala Gardens konnten wir eine Wombat-Fütterung mitverfolgen, wurden von komisch umherhüpfenden Kängurus vollgesabbert und konnten einen verschlafenen und stinkenden Koala knuddeln. Irgendwie verblüffend, dass diese schnuckligen Dinger nicht vom den Eukalyptusbäumen fallen, auf denen sie während mindestens zwanzig Stunden pro Tag schlafen.
+
+Weiter ging unsere Reise Richtung Airlie Beach durch die wunderschönen, hügeligen Atherton Tablelands mit unzähligen Wasserfällen und vielen grasenden Kühen, Ziegen und Schafen, die etwas Heimweh in uns aufkeimen liessen.
+<br />
+
+----
+
+Imagejumbotron: jumbo.jpg
+
+----
+
+Imageteaser: teaser.jpg
+
+----
+
+Imagemap: map.png
+
+----
+
+Googlemapsimage: bubble.jpg
+
+----
+
+Googlemapstwolines: 0
+
+----
+
+Lat: -16.919496670212418
+
+----
+
+Lng: 145.77805995941162
