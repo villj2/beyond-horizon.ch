@@ -1,0 +1,58 @@
+Title: Whitsundays
+
+----
+
+Textcolor: 
+
+----
+
+Picsonly: 0
+
+----
+
+Hidetitle: 0
+
+----
+
+Date: 2016-11-11
+
+----
+
+Text: 
+
+##Whitsundays, Australien
+An einem strahlend sonnigen und heissen Morgen stachen wir mit einem 600 PS-Katamaran-Motorboot ins türkisfarbene Meer hinaus, mit dem Ziel, einen Teil der Whitsunday Islands zu erkunden. Unser erster Halt war die Langford Sandbar. Ein prächtiger Strand, jedoch nicht so toll wie die Unterwasserwelt, welche direkt davor im Wasser verborgen liegt. Wir schnorchelten über wunderschöne Korallen in allen erdenklichen Farben, Grössen und Formen und jagten kleinen Fischen hinterher. Uns gefiel dieser Teil des Reefs noch besser als derjenige vor der Fitzroy Island, wahrscheinlich, weil dieser noch besser erhalten, abwechslungsreicher und viel weitläufiger ist.
+
+Nur zehn Minuten davon entfernt, beim Mantaray Bay, war unser nächster Stopp. Bereits nach dem Landen umschwirrten die ersten Vorboten unseres nächsten Schnorchelganges unser Boot: Grosse, runde Fische mit einem Durchmesser von fast einem Meter. Wie aufgerichtete Teller schwammen sie unbekümmert direkt neben dem Boot. Mit dem Schlauchboot wurden wir noch etwas näher an den Strand gefahren und dann tauchten wir ein in das mit Fischen überhäufte Wasser. Was für ein Erlebnis, wenn man vor lauter Fischen weder das Korallenreef noch sonst irgendetwas sehen kann, ja sich nicht einmal bewegen kann, ohne diese zutraulichen Meeresbewohner zu berühren. Um die Bindung Fisch-Mensch weiter zu verstärken, wurde von unserem Tourguide grosszügig Futter direkt auf unseren Hinterkopf geworfen. Zwischendurch tauchten dann noch grössere, schnellere und extrem zornig blickende Tiere aus der Tiefe auf und man bekam ein etwas flaues Gefühl im Magen, wenn diese einem zu nahe kamen.
+
+Als letztes stand der Whitehaven Beach auf dem Programm, der mit einem Quarzgehalt von 99% zu einem der weissesten und schönsten Strände der Welt gehört und sich über sieben Kilometer erstreckt. Es soll sogar möglich sein, mit diesem funkelnd weissen Sand Schmuck zu polieren und da er so fein ist, kann er selbst in Elektronikgeräte eindringen. Es war auf jeden Fall schwer, sich wieder vom Sand zu befreien und noch jetzt tauchen manchmal kleine Sandkörner zwischen unseren Sachen auf.
+
+Tags darauf hoben wir bei perfekten Wetterkonditionen mit einem kleinen Flieger vom Festland ab und liessen die Schönheit der Whitsundays aus der Vogelperspektive auf uns wirken. Der Höhepunkt des Fluges bildete das Überfliegen des äusseren Great Barrier Reefs, das aus der Höhe ebenso umwerfend und faszinierend aussieht wie aus der Tiefe. Natürlich durfte auch das berühmte Heart Reef auf unserem Flug nicht fehlen.
+
+----
+
+Imagejumbotron: jumbo.jpg
+
+----
+
+Imageteaser: teaser.jpg
+
+----
+
+Imagemap: map.png
+
+----
+
+Googlemapsimage: bubble.jpg
+
+----
+
+Googlemapstwolines: 0
+
+----
+
+Lat: -20.249313504474973
+
+----
+
+Lng: 148.98147583007812

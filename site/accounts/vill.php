@@ -9,8 +9,8 @@ password: >
 language: en
 role: admin
 history:
+  - posts/australia/southern-queensland
+  - posts/australia/southern-queensland/gallery
+  - posts/australia/whitsundays
+  - posts/australia/whitsundays/gallery
   - posts/australia/northern-queensland
-  - posts/australia
-  - posts/australia/northern-queensland/gallery
-  - posts/japan/kumano-kodo
-  - posts/japan/kyoto
