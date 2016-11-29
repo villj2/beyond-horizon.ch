@@ -1,0 +1,57 @@
+Title: Blue Mountains
+
+----
+
+Textcolor: 
+
+----
+
+Picsonly: 0
+
+----
+
+Hidetitle: 0
+
+----
+
+Date: 2016-11-23
+
+----
+
+Text: 
+
+##Blue Mountains, Australien
+Nach zwei Tagen Autos, Menschenmassen und Hektik zog es uns wieder an die frische Luft. Leicht westlich der Millionenstadt Sydney liegt ein unvergleichliches Naturparadies, die Blue Mountains. Tatsächlich ist beim Blick in die Ferne ein blauer Dunst auszumachen, welcher vom abgesonderten Öl der zahlreichen Eukalyptusbäume stammt. Es reihen sich etliche faszinierende Aussichtspunkte aneinander und beim Bereisen dieses Plateaus lohnt sich bei jedem Einzelnen ein kürzerer oder längerer Fotostopp. Besonders angetan waren wir vom Fletchers Lookout, welcher einen faszinierenden Blick auf endlose Eukalyptuswälder und Felsformationen gewährt. Ähnlich geht es wohl den  Dutzenden weissen Kakadus, die im Schwarm über die Wälder fliegen und einen Riesenkrach veranstalten.
+
+Natürlich lässt sich aus so einem Naturspektakel Geld machen. Die Scenic World trumpft mit der steilsten Standseilbahn (mit 52° steiler als die Gelmerbahn) und zwei Gondeln auf, die übrigens in Thun zusammengebastelt wurden. Bei der Bergstation gibt’s tolle Lookouts und unten am Fuss des Felsen kann der Besucher die Geschichte der einstigen Kohlenmiene verfolgen oder kurze Spaziergänge über präparierte Wege durch den Regenwald unternehmen.
+
+Ein Insidertipp eines Australiers führte uns zum Hanging Rock, einer speziellen Felsformation weit weg von allen Touristenscharen. Die knapp sechs Kilometer lange Wanderung war eine Höllentortur, denn so viele nervige Fliegen  (selbstverständlich immer direkt im Gesicht) haben wir noch nie erlebt. Wild mit den Armen gestikulierend erreichten wir das Ziel dennoch und wurden tausendfach belohnt. Ohne Geländer oder sonstige Sicherungen tasteten wir uns langsam entlang eines senkrechten Abgrundes zum Hanging Rock vor und liessen die endlose, beinahe unberührte Natur und die endlose Freiheit auf uns wirken.
+<br />
+
+----
+
+Imagejumbotron: jumbo.jpg
+
+----
+
+Imageteaser: teaser.jpg
+
+----
+
+Imagemap: map.png
+
+----
+
+Googlemapsimage: bubble.jpg
+
+----
+
+Googlemapstwolines: 0
+
+----
+
+Lat: -33.43144133557529
+
+----
+
+Lng: 149.58984375

@@ -9,8 +9,8 @@ password: >
 language: en
 role: admin
 history:
+  - posts/australia/blue-mountains
+  - posts/australia/sydney
+  - posts/australia/blue-mountains/gallery
+  - posts/australia/sydney/gallery
   - posts/australia/southern-queensland
-  - posts/australia/southern-queensland/gallery
-  - posts/australia/whitsundays
-  - posts/australia/whitsundays/gallery
-  - posts/australia/northern-queensland

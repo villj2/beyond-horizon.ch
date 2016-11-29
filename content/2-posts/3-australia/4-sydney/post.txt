@@ -1,0 +1,57 @@
+Title: Sydney
+
+----
+
+Textcolor: 
+
+----
+
+Picsonly: 0
+
+----
+
+Hidetitle: 0
+
+----
+
+Date: 2016-11-21
+
+----
+
+Text: 
+
+##Sydney, Australien
+Unser erster Eindruck von Sydney wurde leider etwas von negativen Einflüssen überschattet. So kamen wir mitten im freitagabendlichen Feierabendverkehr in dieser massiv autoüberladenen Stadt an und das Wetter spielte leider auch nicht recht mit. Darüber hinaus sind wir seit Japan etwas andere Sauberkeitsverhältnisse gewohnt.
+
+Nichtsdestotrotz starteten wir am nächsten Morgen unsere Sightseeingtour beim über alles gehypten Bondi Beach. Wenn man auf Parkplätze, Graffiti, Müllcontainer und Menschenmassen abfährt, ist man hier genau richtig. Allerdings ist der Strand mit seinen hohen Wellen perfekt zum Surfen und eine willkommene Oase inmitten der sonstigen Stahl- und Betonwelt. Wir fanden Gefallen daran, die Surfer über die Wellen reiten und die riesigen, donnernden Wellen brechen zu sehen.
+
+Während unseres zweitägigen Aufenthaltes wurde das Wetter dann immer besser, so dass Sydney uns doch noch für sich gewinnen konnte. Wir machten einen (ausgedehnten) Spaziergang über die 1'149 Meter lange Harbour Bridge und genossen die herrliche Aussicht aus der Höhe. Auf den Fotos erscheint sie etwas weniger beeindruckend, aber die Brücke ist wirklich "f**king massiv", wie es die Australier ausdrücken würden. Demgegenüber wirkte das von den 70er-Jahren geprägte und gleichzeitig ausserirdisch anmutende Wahrzeichen der Stadt, das Opernhaus, direkt winzig. Da die Stadt in einer Art Fjord gelegen ist, tuckerten wir mit der Fähre vor der Stadt umher und genossen die einzigartige Sicht vom Wasser aus.
+<br />
+
+----
+
+Imagejumbotron: jumbo.jpg
+
+----
+
+Imageteaser: teaser.jpg
+
+----
+
+Imagemap: map.png
+
+----
+
+Googlemapsimage: bubble.jpg
+
+----
+
+Googlemapstwolines: 0
+
+----
+
+Lat: -33.86129311351552
+
+----
+
+Lng: 151.2158203125
