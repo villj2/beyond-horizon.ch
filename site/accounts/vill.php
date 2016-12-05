@@ -9,8 +9,8 @@ password: >
 language: en
 role: admin
 history:
+  - posts/tasmania/hobart-bruny-island
+  - posts/australia/victoria
+  - posts/tasmania
+  - posts/australia/victoria/gallery
   - posts/australia/blue-mountains
-  - posts/australia/sydney
-  - posts/australia/blue-mountains/gallery
-  - posts/australia/sydney/gallery
-  - posts/australia/southern-queensland

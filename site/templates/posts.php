@@ -14,7 +14,7 @@
 
       	?>
 
-		<?php foreach($categories->sortBy('date', 'asc') as $category): ?>
+		<?php foreach($categories->sortBy('sort', 'desc') as $category): ?>
 
 	      <div class="row">
 	        <div class="col-md-12">

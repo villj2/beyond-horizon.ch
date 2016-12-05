@@ -1,0 +1,64 @@
+Title: Victoria
+
+----
+
+Textcolor: 
+
+----
+
+Picsonly: 0
+
+----
+
+Hidetitle: 0
+
+----
+
+Date: 2016-11-30
+
+----
+
+Text: 
+
+##​Victoria, Australien
+​
+Die letzte Etappe Australiens war geprägt von längeren Autofahrten mit kurzen Übernachtungsstopps, um rechtzeitig via Great Ocean Road in Melbourne einzutreffen. Ein längerer Abstecher lohnte sich allerdings in den Wilsons Promontory National Park, welcher ein ganzes Netz an Trails mit Wildtiersichtungen versprach und mit seinen wilden Landschaften und kühleren Temperaturen stark an Skandinavien erinnert. Tatsächlich konnten wir wildlebende Kängurus (mal wieder), etliche farbenprächtige Vogelarten und Emus beobachten. Nur unsere langersehnte Wombatbegegnumg blieb leider aus, obwohl wir mehrere Wombathöhlen und ihren berühmten Square Poo entdeckten.
+
+Die Great Ocean Road hat nicht umsonst grosse Berühmtheit erlangt, die Strasse schlängelt sich hübsch entlang hoher Klippen, durch Regenwälder und über grüne Hügel. In einem der Informationszentren wurde uns der Tipp zugesteckt, dass nahe eines Campingplatzes etliche Koalas auf den Bäumen ihr Nickerchen halten sollen. Eher ohne grosse Hoffnung schlichen wir mit dem Auto auf dem Kiesweg voran und konnten tatsächlich bereits von der Strasse aus etliche graue Knollen auf den Eukalyptusbäumen ausmachen. Erstaunlicherweise waren einige Exemplare wach und waren sogar zu langsamen Bewegungen fähig! Auf dem Rückweg stiessen wir auf andere Touristen, die eine putzmuntere Koalamutter mit süssem, putzigem Baby entzückt beobachteten. Die Weiterfahrt wurde ständig durch beeindruckende Lookouts oder Küstenbesuche unterbrochen, so dass wir spätabends gerade noch rechtzeitig in unserer Unterkunft einchecken konnten.
+
+(polaroidstart: )
+(polaroid: img_3729.jpg type: 1)
+(polaroid: img_3731.jpg type: 2)
+(polaroid: img_3732.jpg type: 3)
+(polaroidend: )
+
+Nach nur wenigen Stunden Schlaf nahmen wir den letzten Strassenabschnitt Australiens Richtung Melbourne in Angriff. Da wir vor dem Montagmorgenverkehr gewarnt wurden, ging die Fahrt bereits um fünf Uhr morgens los, damit sicher genügend Zeit blieb, um das Auto rechtzeitig im Herzen der Stadt abgeben zu können. Knapp fünfundzwanzig Kilometer vor unserem Ziel standen wir dann tatsächlich im Stau und konnten uns höchstens noch im Schritttempo vorwärtsbewegen. Unfassbar, dass Melbourner diese Tortur täglich mitmachen! Wie sich aber später herausstellen sollte, gab es einen Horrorunfall auf der wichtigsten Brücke der Stadt, weshalb diese komplett abgeriegelt werden musste. Diese Verkehrsverhältnisse widerspiegelten also nicht die Normalität. Nach zwei Stunden Staustehen verloren wir jedoch langsam die Nerven und kämpften uns vom Freeway, um gleich auf den zweiten grösseren Unfall dieses Tages zu stossen. Ein Lastwagen mit Container lag quer auf der Strasse und blockierte sämtliche Linien. Das rücksichtslose und unüberlegte Fahrverhalten der Australier bleibt also nicht ohne Konsequenzen! Mit rauchenden Köpfen, grosser Verspätung und nach insgesamt 5686 gefahrenen Kilometern konnten wir das Auto immerhin unbeschadet abgeben. Die Stadt Melbourne an sich hat keine nennenswerten Sehenswürdigkeiten, weshalb wir nur eine relativ kurze Entdeckungstour unternahmen und uns lieber mal einige Stunden in der Unterkunft von dieser schier endlosen Autofahrt erholten und uns immer mehr auf unser nächstes Ziel, das Naturparadies Tasmanien freuten.
+<br />
+
+----
+
+Imagejumbotron: jumbo2.jpg
+
+----
+
+Imageteaser: teaser.jpg
+
+----
+
+Imagemap: map.png
+
+----
+
+Googlemapsimage: bubble.jpg
+
+----
+
+Googlemapstwolines: 0
+
+----
+
+Lat: -37.80544394934272
+
+----
+
+Lng: 144.9700927734375
