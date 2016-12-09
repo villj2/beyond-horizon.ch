@@ -10,7 +10,7 @@ Picsonly: 0
 
 ----
 
-Hidetitle: 1
+Hidetitle: 0
 
 ----
 
@@ -20,9 +20,10 @@ Date: 2016-12-01
 
 Text: 
 
+##Hobart & Bruny Island, Tasmanien
 Tasmanien – die wilde Insel ganz im Süden Australiens, die von den Einwohnern auch liebevoll «Tassie» genannt wird, ist die Region des roten Kontinentes, auf das wir uns wohl am meisten gefreut haben. Bereits nach ein paar Stunden merkten wir, dass wir hier in einer ganz neuen Welt gelandet waren: das Klima war plötzlich kälter, die Leute herzlicher, die Städte ländlicher und die Natur ungezähmter.
 
-Eigentlich wollten wir uns sogleich in die tasmanische Wildnis stürzen, jedoch ist Hobart vor allem für das Museum of Old and New Art (MONA) bekannt, eine Art Disneyland für Erwachsene. Das Museum selbst stellt sich mit folgenden Worten vor: «Looking at art used to be boring. It still is, maybe, but at least here at Mona you can get drunk […]” Klang vielversprechend, weshalb wir uns schlussendlich für einen Besuch entschieden und nicht enttäuscht wurden. Wir wurden zwar nicht betrunken, aber während unseres vierstündigen Aufenthaltes mit den merkwürdigsten, sehr skurrilen Kunstgegenständen konfrontiert. So zieren neben den «normalen» und meist harmlosen Gemälden und inszenierten Bildern mehrere Dutzend Gipsabdrücke weiblicher Geschlechtsteile die Wände (die übrigens auch in Form von Seifen im Souvenirshop verkauft werden) und in einem sehr übel riechenden Raum namens Cloaca Professional werden künstliche Verdauungstrakte zweimal täglich gefüttert (und natürlich auch entleert). Selbst die Toiletten entstammen den wirren Ideen irgendwelcher Designer. Das Geld in diesem $75 Millionen-Dollar-Bau absolut keine Rolle spielte, merkt man sofort. Alles ist ultramodern und wir trotteten mit einem mobilen, mit Lokalisierungsfunktion gesteuerten Audioguide durch die drei Untergrundgeschosse.
+Eigentlich wollten wir uns sogleich in die tasmanische Wildnis stürzen, jedoch ist Hobart vor allem für das Museum of Old and New Art (MONA) bekannt, eine Art Disneyland für Erwachsene. Unsicher, ob sich ein Besuch wirklich lohnt, betrachteten wir die Broschüre und wurden von folgender Textpassage spontan überzeugt: «Looking at art used to be boring. It still is, maybe, but at least here at Mona you can get drunk.” Wir wurden zwar nicht betrunken, aber während unseres vierstündigen Aufenthaltes mit den merkwürdigsten, sehr skurrilen Kunstgegenständen konfrontiert. So zieren neben den «normalen» und meist harmlosen Gemälden und inszenierten Bildern mehrere Dutzend Gipsabdrücke weiblicher Geschlechtsteile die Wände (die übrigens auch in Form von Seifen im Souvenirshop verkauft werden) und in einem sehr übel riechenden Raum namens Cloaca Professional werden künstliche Verdauungstrakte zweimal täglich gefüttert. Selbstverständlich geht die Maschine vor den Zuschauern auch aufs Töpfchen. Selbst die Toiletten entstammen den wirren Ideen irgendwelcher Designer. Das Geld in diesem $75 Millionen-Dollar-Bau absolut keine Rolle spielte, merkt man sofort. Alles ist ultramodern und wir trotteten mit einem mobilen, mit Lokalisierungsfunktion gesteuerten Audioguide durch die drei Untergrundgeschosse.
 
 (customimage: mona_photos.jpg)
 
@@ -31,19 +32,19 @@ Tags darauf ging es mit der Fähre zur nahegelegenen Bruny Island und damit endl
 
 ----
 
-Imagejumbotron: 
+Imagejumbotron: jumbo.jpg
 
 ----
 
-Imageteaser: 
+Imageteaser: teaser.jpg
 
 ----
 
-Imagemap: 
+Imagemap: map.png
 
 ----
 
-Googlemapsimage: 
+Googlemapsimage: bubble.jpg
 
 ----
 
@@ -51,8 +52,8 @@ Googlemapstwolines: 0
 
 ----
 
-Lat: 
+Lat: -42.871938424448466
 
 ----
 
-Lng: 
+Lng: 147.3211669921875

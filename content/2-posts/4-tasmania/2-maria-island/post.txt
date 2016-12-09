@@ -1,0 +1,61 @@
+Title: Maria Island
+
+----
+
+Textcolor: 
+
+----
+
+Picsonly: 0
+
+----
+
+Hidetitle: 0
+
+----
+
+Date: 2016-12-03
+
+----
+
+Text: 
+
+##Maria Island, Tasmanien
+Da Maria Island vor allem für Wildtiersichtungen und insbesondere Wombats bekannt ist, waren wir sofort Feuer und Flamme für dieses Tagesauflugsziel. Auf der Insel angekommen, schnappten wir uns sogleich ein Bike und los ging die Fahrt – direkt in das Territorium einer Tigersnake, die es sich unauffällig im Schatten des Weges gemütlich gemacht hatte. Erschrocken schlängelte die Schlange langsam davon und wir suchten uns erst einmal einen anderen Weg, der an der malerischen Küste entlangführte. Und es wurde uns nicht zuviel versprochen: Kurz nach der Mittagszeit schien das Tierreich zu erwachen.
+
+(polaroidstart: )
+(polaroid: img_3910.jpg type: 1)
+(polaroid: img_3911.jpg type: 2)
+(polaroid: img_3912.jpg type: 3)
+(polaroidend: )
+
+Echidnas und Hühnergänse wanderten umher, zwei Wallabies trugen einen wilden Kampf aus und dann endlich: der erste Wombat! Wie ein riesiges Mehrschwein (oder eher wie ein übergrosser Teddy?) watschelte er über die Rasenfläche und suchte nach Nahrung. Bis zum Abend sahen wir noch ein Dutzend weitere seiner Artgenossen. Maria Island war definitiv ein sehr lohnenswerter Ausflug mit vielen einzigartigen Highlights. Die Gewinner des Tages waren natürlich die knuddligen Wombats mit ihren süssen kurzen Beinen, dicht gefolgt von den Painted Cliffs mit ihrem verrückten Muster und die sich aneinanderreihenden, bilderbuchtauglichen Buchten.
+<br />
+
+----
+
+Imagejumbotron: jumbo.jpg
+
+----
+
+Imageteaser: teaser.jpg
+
+----
+
+Imagemap: map.png
+
+----
+
+Googlemapsimage: bubble.jpg
+
+----
+
+Googlemapstwolines: 0
+
+----
+
+Lat: -42.61981257367216
+
+----
+
+Lng: 148.08609008789062

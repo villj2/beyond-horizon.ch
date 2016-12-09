@@ -9,8 +9,8 @@ password: >
 language: en
 role: admin
 history:
-  - posts/tasmania/hobart-bruny-island
-  - posts/australia/victoria
   - posts/tasmania
-  - posts/australia/victoria/gallery
-  - posts/australia/blue-mountains
+  - posts/tasmania/maria-island
+  - posts/tasmania/maria-island/gallery
+  - posts/tasmania/hobart-bruny-island
+  - posts/tasmania/hobart-bruny-island/gallery
