@@ -1,0 +1,55 @@
+Title: Cradle Mountain
+
+----
+
+Textcolor: 
+
+----
+
+Picsonly: 0
+
+----
+
+Hidetitle: 0
+
+----
+
+Date: 2016-12-10
+
+----
+
+Text: 
+
+##Cradle Mountain, Tasmanien
+Ein abgelegener See auf einem Hochplateau ist einer der letzten Orte, wo man die höchst seltene Pencil Pine bestaunen kann. Der urtümliche Baum mag wohl eher kühles Klima, das Thermometer sank während der Anreise auf unter 8° Celsius  und ein eisiger Wind liess uns nach einem kurzen Spaziergang schnell wieder ins warme Auto flüchten. Zwei ausgewanderte Schweizer stellten uns an diesem Abend eine Unterkunft mit Blick auf das weite, unberührte Tasmanien auf der einen und das Meer auf der gegenüberliegenden Seite zur Verfügung, damit wir den Tag gemütlich und bei angenehmeren Temperaturen ausklingen lassen konnten. Zusammen mit einem goldenen Sonnenuntergang und zahlreichen, den ganzen Garten vollkackenden Wallabies, war dies erneut ein toller tasmanischer und klimatechnisch äusserst abwechslungsreicher Tag.
+
+Unweit von dort zieht der Cradle Mountain als eines der Wahrzeichen Tasmaniens scharenweise Touristen an und ist gleichzeitig Ausgangspunkt für den Overland Track, einer berühmten mehrtägigen Wanderung, die jährlich von über 8'000 wanderlustigen Personen aus aller Welt abgewandert wird. Dieser Berg war am darauffolgenden Morgen unser Ziel. Der Himmel öffnete während der Nacht jedoch seine Schleusen und entliess einen Regen, der einem Fluss alle Ehre machen würde. Begleitet wurde dieser Regenfall von Sturmböen, die all unsere Hoffnungen auf eine gemütliche Wanderung zunichte machten. Da das Hotel im Cradle Mountain-Lake St Clair National Park bereits gebucht war, machten wir uns trotzdem mit voll aufgedrehten Scheibenwischern auf den Weg dorthin. Und unglaublicherweise liess sich bei unserer Ankunft am Fusse des Berges kurz die Sonne blicken. Majestätisch thronte die auffallende Felsformation des Cradle Mountain über dem Dove Lake und liess für einige Minuten seine Schönheit durchsickern. Wir hatten gerade genügend Zeit, den Bergsee zu umrunden, bevor wieder strömender Regen einsetzte. Das gebuchte Hotel überraschte uns mit einem Gratisupgrade in eine King Suite, die auf zwei Ebenen verteilt und mit eigenem Whirlpool ausgestattet ist. Perfekt für einen genüsslichen Abend bei diesem stürmischen und tobenden Wetter. Am nächsten Tag war eine andere Wanderroute nahe des Cradle Mountains geplant, starke Winde und Schneefall liessen uns den Weg jedoch deutlich abkürzen. Trotzdem war der gesamte Nationalpark wunderschön und zu unserem Entzücken mit etlichen Wombatbegegnungen gesäumt.
+<br />
+
+----
+
+Imagejumbotron: jumbo.jpg
+
+----
+
+Imageteaser: teaser.jpg
+
+----
+
+Imagemap: map.png
+
+----
+
+Googlemapsimage: bubble.jpg
+
+----
+
+Googlemapstwolines: 0
+
+----
+
+Lat: -41.57847058443442
+
+----
+
+Lng: 145.9423828125

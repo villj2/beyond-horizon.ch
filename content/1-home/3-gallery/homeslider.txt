@@ -1,0 +1,17 @@
+Title: &nbsp;
+
+----
+
+Tag: 
+
+----
+
+Link: /gallery
+
+----
+
+Image: slider-new-photos4.jpg
+
+----
+
+Textcolor: black

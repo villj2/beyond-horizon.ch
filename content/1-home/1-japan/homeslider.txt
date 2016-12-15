@@ -1,0 +1,17 @@
+Title: Japan
+
+----
+
+Tag: Japan
+
+----
+
+Image: japan.jpg
+
+----
+
+Link: /posts
+
+----
+
+Textcolor: white

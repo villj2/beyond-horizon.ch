@@ -2,11 +2,11 @@ Title: Home
 
 ----
 
-Intro: ## Die neuesten Beiträge
+Intro: ## Die neuesten Beiträge.
 
 ----
 
-Introbuttons: Entdecke mehr
+Introbuttons: Entdecke mehr.
 
 ----
 

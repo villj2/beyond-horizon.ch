@@ -9,8 +9,8 @@ password: >
 language: en
 role: admin
 history:
-  - posts/tasmania
+  - posts/tasmania/cradle-mountain
   - posts/tasmania/maria-island
-  - posts/tasmania/maria-island/gallery
   - posts/tasmania/hobart-bruny-island
-  - posts/tasmania/hobart-bruny-island/gallery
+  - posts/tasmania/east-coast/gallery
+  - posts/tasmania/east-coast

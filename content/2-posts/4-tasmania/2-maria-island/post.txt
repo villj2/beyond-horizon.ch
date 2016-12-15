@@ -42,7 +42,7 @@ Imageteaser: teaser.jpg
 
 ----
 
-Imagemap: map.png
+Imagemap: map2.png
 
 ----
 
