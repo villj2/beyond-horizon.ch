@@ -1,0 +1,57 @@
+Title: The West
+
+----
+
+Textcolor: black
+
+----
+
+Picsonly: 0
+
+----
+
+Hidetitle: 0
+
+----
+
+Date: 2016-12-14
+
+----
+
+Text: 
+
+##The West, Tasmanien
+Im Gespräch mit dem Inhaber einer unserer Unterkünfte irgendwo im Nirgendwo bekamen wir eine echte Knüllerinformation zugespielt: Im kleinen Dorfladen ganz in der Nähe arbeite eine Frau, welche verwaiste Wildtiere pflegt, deren Eltern dem Strassenverkehr zum Opfer fielen. Zur Zeit habe sie ungefähr fünf Babywombats in ihrer Obhut. Plötzlichen hatten wir das dringende Bedürfnis, unsere Vorräte aufzustocken und machten uns sogleich auf den Weg in den besagten Laden. Und tatsächlich gab uns diese freundliche Lady die einmalige Gelegenheit, einen jungen Wombat und zwei Wallabies zu knuddeln. Diese werden noch ungefähr ein Jahr bei ihr bleiben, bevor sie alt genug sind, um an einer sicheren Stelle in die Wildnis entlassen zu werden. 
+
+Die Naturvielfalt Tasmaniens bietet neben der bemerkenswerten Fauna auch etliche Regenwälder und Wasserfälle, von denen  möglichst viele in unser Tagesprogramm aufgenommen wurden. Besonders angetan waren wir von den Snowgum Trees, welche mit ihrem weissgefleckten Stamm wie gemalt aussehen und besonders in der Morgendämmerung einen unvergleichlichen Anblick boten. Etwas fragwürdig ist allerdings, wie lange diese Biodiversität noch anzutreffen ist. Leider ist es kein Geheimnis, dass Tasmanien für die Holzwirtschaft rege genutzt wird: Wir passierten mit dem Auto immer wieder Gebiete mit riesigen, gerodeten Waldflächen. Einmal wurden wir sogar angehalten und mussten mit ansehen, wie eine Maschine binnen Minuten vier Bäume aus dem Boden riss. Was für ein entsetzlicher und alarmierender Anblick! Vor allem wenn man weiss, dass auch vor stark dezimierten Regenwäldern nicht Halt gemacht wird und viele Wälder Tasmaniens akut bedroht sind. Nur allzu verständlich, dass inselweit zum Schutze der Wälder aufgerufen wird und der Aktivismus förmlich spürbar ist.
+
+Zum Schluss unserer zwei Wochen in Tasmanien verbrachten wir einige Tage in Hobart. Da der Wetterbericht nicht allzu schlecht aussah, machten wir uns mit dem Auto auf den Weg, den Hausberg der Stadt, den kunanyi / Mount Wellington zu erklimmen. Mit zunehmenden Höhenmetern veränderte sich das Wetter während dieser etwa zwanzigminütigen Fahrt völlig und lieferte einmal mehr eine herrliche Kostprobe des äusserst unbeständigen tasmanischen Wetters. Aus dem Sonnenschein wurde erst Nieselregen und starker Wind, um dann in einen an antarktische Verhältnisse erinnernden Schneesturm überzugehen. Schnell fuhren wir wieder in die Stadt hinunter und an die wärmere Strandpromenade. Dort tauchten plötzlich wie aus dem Nichts mehrere Delfine auf und wir hatten zudem das Glück, eine Art Kugelfisch und etwa ein halbes Dutzend Seesterne zu erspähen. Man weiss wirklich nie, was einen in Tasmanien erwartet.
+<br />
+
+----
+
+Imagejumbotron: jumbo.jpg
+
+----
+
+Imageteaser: teaser.jpg
+
+----
+
+Imagemap: map.png
+
+----
+
+Googlemapsimage: bubble.jpg
+
+----
+
+Googlemapstwolines: 0
+
+----
+
+Lat: -42.081916678306314
+
+----
+
+Lng: 145.92041015625

@@ -9,8 +9,8 @@ password: >
 language: en
 role: admin
 history:
-  - posts/tasmania/cradle-mountain
-  - posts/tasmania/maria-island
-  - posts/tasmania/hobart-bruny-island
-  - posts/tasmania/east-coast/gallery
-  - posts/tasmania/east-coast
+  - posts/tasmania/the-west
+  - posts/new-zealand/aoraki-mt-cook
+  - posts/new-zealand
+  - posts/new-zealand/aoraki-mt-cook/gallery
+  - posts/new-zealand/fiordland

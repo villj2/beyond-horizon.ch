@@ -1,0 +1,61 @@
+Title: Aoraki / Mount Cook
+
+----
+
+Textcolor: 
+
+----
+
+Picsonly: 0
+
+----
+
+Hidetitle: 0
+
+----
+
+Date: 2016-12-20
+
+----
+
+Text: 
+
+##Aoraki / Mount Cook, Neuseeland
+Nach einer ziemlich unsanften Landung kamen wir mitten in der Nacht in Christchurch und somit im Land der Kiwis an. Gleich am nächsten Morgen schnappten wir uns unser neues Zuhause für die nächsten sechs Wochen: Einen Mazda E2000 Hightop Camper aus dem Jahre 2004. Obwohl das gemietete Modell wirklich alt und klapprig ist, konnten wir gleich am ersten Abend auf dem Campingplatz mit den über 420'000 gefahrenen Kilometern auf dem Tacho mächtig auftrumpfen. Offensichtlich (und zu unserem grossen Erstaunen) zählen hier unter eingefleischten Campern nicht neue und riesige Camper, sondern kleine, in die Jahre gekommene und nur noch knapp fahrtaugliche Fahrzeuge.
+
+(polaroidstart: )
+(polaroid: pola_2.jpg type: 1)
+(polaroid: pola_1.jpg type: 2)
+(polaroid: pola_3.jpg type: 3)
+(polaroidend: )
+
+Unser erster Halt war der windige, wolkenverhangene und regnerische Aoraki / Mount Cook National Park, der seinen Namen dem mit 3'724 Meter höchsten Berg Neuseelands zu verdanken hat. Wir liessen uns im Camper genüsslich von den heftigen Windböen in den Schlaf wiegen und warteten zwei Tage auf schöneres Wetter. Dieses wurde dann von einer sternenklaren und äusserst kalten Nacht eingeläutet, in der wir im Camper nur knapp dem Erfrierungstod entgangen sind. Die Strapazen haben sich aber mächtig gelohnt: Das Bergpanorama, das sich uns am Morgen bot, war von einzigartiger Schönheit. Da vierzig Prozent der Fläche des Nationalparks von Gletschern bedeckt ist, sind mehrere tiefblaue und graue Gletscherseen mit treibenden Eisschollen vorzufinden, welche uns stark an Jökulsárlón in Island erinnerten. Obwohl dieses Naturspektakel leider überwiegend auf die Klimaerwärmung zurückzuführen ist, bietet es dennoch einen herrlichen und unvergesslichen Anblick. Noch lange betrachteten wir den spektakulären Aoraki / Mount Cook im Rückspiegel, als wir Richtung Süden weiterfuhren.
+<br />
+
+----
+
+Imagejumbotron: jumbo.jpg
+
+----
+
+Imageteaser: teaser_neu.jpg
+
+----
+
+Imagemap: map.png
+
+----
+
+Googlemapsimage: bubble.jpg
+
+----
+
+Googlemapstwolines: 0
+
+----
+
+Lat: -43.89393401411193
+
+----
+
+Lng: 170.1123046875
