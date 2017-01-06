@@ -9,8 +9,9 @@ password: >
 language: en
 role: admin
 history:
-  - posts/tasmania/the-west
-  - posts/new-zealand/aoraki-mt-cook
-  - posts/new-zealand
-  - posts/new-zealand/aoraki-mt-cook/gallery
+  - >
+    posts/new-zealand/queenstown-around/gallery
+  - posts/new-zealand/queenstown-around
   - posts/new-zealand/fiordland
+  - posts/new-zealand/fiordland/gallery
+  - posts/new-zealand/moeraki-the-catlins
