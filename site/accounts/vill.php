@@ -10,8 +10,8 @@ language: en
 role: admin
 history:
   - >
-    posts/new-zealand/queenstown-around/gallery
+    posts/new-zealand/abel-tasman-marlborough
+  - posts/new-zealand/abel-tasman-marlborough/gallery
+  - posts/new-zealand/wellington-wairarapa
   - posts/new-zealand/queenstown-around
-  - posts/new-zealand/fiordland
-  - posts/new-zealand/fiordland/gallery
-  - posts/new-zealand/moeraki-the-catlins
+  - posts/new-zealand/west-coast/gallery

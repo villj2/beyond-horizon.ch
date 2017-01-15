@@ -1,0 +1,57 @@
+Title: Abel Tasman & Marlborough
+
+----
+
+Textcolor: 
+
+----
+
+Picsonly: 0
+
+----
+
+Hidetitle: 0
+
+----
+
+Date: 2017-01-08
+
+----
+
+Text: 
+
+##Abel Tasman & Marlborough, Neuseeland
+Nach äusserst viel Regen, einem Leck im Camper und mehreren grauen und wolkenverhangenen Tagen an der Westküste der neuseeländischen Südinsel waren wir äusserst froh, am nördlichen Ende wärmere Temperaturen anzutreffen. Um den zum grössten Teil nur über den Wasserweg zugänglichen Abel Tasman National Park erkunden zu können, schnappten wir uns ein Kayak und waren nach einem stündigen Crashkurs bereit für unser Ruderabenteuer. So schwierig war es zwar nicht, aber wir hätten nicht gedacht, wie anstrengend es sein kann, gegen die Brandung anzupaddeln. Auf unserer etwa siebzehn Kilometer langen Strecke gab es zwölf Traumstrände sowie zwei Inseln zu erkunden, die (wie es in Neuseeland so üblich ist) von Robben belagert werden, die zwischendurch auch ganz nah bei unserem Kayak herumtollten. In der Ferne konnten wir zudem Delfine ausmachen, die durch das Wasser glitten und gelegentlich aufsprangen. Als wäre das noch nicht perfekt genug, trieb uns eine flotte Meeresbrise zurück an den Strand (sonst wären wir wahrscheinlich immer noch am Rudern...)
+
+Am nächsten Tag flitzten wir bequem mit einem superschnellen Wassertaxi entlang der Küste des Nationalparks und liessen uns die schönsten Plätze vom Wasser aus zeigen, bevor wir eine vierstündige Wanderung auf dem Abel Tasman Coastal Track durch grüne Farnwälder unternahmen. Durch die hier sehr starken Gezeiten waren wir gezwungen, einen etwa drei Kilometer langen Umweg in Kauf zu nehmen und mussten uns ganz schön sputen, um das letzte Wassertaxi zurück nach Marahau zu erwischen. Einzige Kehrseite dieses Küstenparadieses sind die unzähligen lärmenden Boote sowie mehrere Siedlungen, die vor der Ausweisung als Nationalpark dort errichtet wurden. Nichtsdestotrotz ein sehr lohnenswerter Fleck in Neuseeland.
+
+Unser bisher grösstes Highlight von Neuseeland kam sehr unerwartet. Wir hatten das erste Mal Mühe, einen Campground zu finden, da hier im Moment neben halb Europa noch ganz Neuseeland am Campen ist. Erst beim vierten Anlauf fanden wir endlich ein Plätzchen für unser Urgestein und das erstaunlicherweise auf dem absolut tollsten Campground, den wir bis jetzt besucht haben. Wir wurden mit warmen Muffins und einem Sack Tierfutter begrüsst, das wir den Schafen und zwei äusserst aggressiven und gierigen Ziegen verfüttern konnten. Ausserdem wurden uns eine Wanderkarte und Taschenlampen für einen nächtlichen Ausflug zu einem Wasserfall ganz in der Nähe ausgehändigt, bei dem es Glühwürmchen haben soll. Wir machten uns in der Dämmerung auf den Weg und hofften, dass wir mit etwas Glück ein paar leuchtende Lichter zu Gesicht bekämen. Was wir dann sahen, haute uns völlig um: Der ganze Weg wurde förmlich von tausenden grünblauen Lichtern beleuchtet und wir hatten das Gefühl, in einer Fantasywelt à la World of Warcraft gelandet zu sein, bei der es der Motiondesigner etwas zu gut mit Spezialeffekten gemeint hat. Ein unglaubliches Naturerlebnis!
+<br />
+
+----
+
+Imagejumbotron: jumbo_2.jpg
+
+----
+
+Imageteaser: teaser.jpg
+
+----
+
+Imagemap: map.png
+
+----
+
+Googlemapsimage: bubble.jpg
+
+----
+
+Googlemapstwolines: 1
+
+----
+
+Lat: -40.969529735638325
+
+----
+
+Lng: 173.04290771484375
