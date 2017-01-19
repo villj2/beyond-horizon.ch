@@ -1,0 +1,57 @@
+Title: Tongariro Alpine Crosssing
+
+----
+
+Textcolor: black
+
+----
+
+Picsonly: 0
+
+----
+
+Hidetitle: 0
+
+----
+
+Date: 2017-01-14
+
+----
+
+Text: 
+
+##Tongariro Alpine Crossing, Neuseeland
+We simply walked into Mordor - nachdem wir zwei Tage auf besseres Wetter gewartet haben. Im Lande Mordor, wo die Schatten drohen (oder als Drehort für Herr der Ringe auch Tongariro Nationalpark genannt, wo vorwiegend schlechtes Wetter droht), befindet sich das äusserst beliebte Tongariro Alpine Crossing, einem 19.4 Kilometer langen Wanderpfad. Entlang des Schicksalsberges, dem Mount Ngauruhoe, schlängelt sich der Pfad über zwei hohe Krater und windet sich schlussendlich gemächlich zurück unter die Baumgrenze.
+
+Schon lange als Neuseeland-Highlight herausgepickt, investierten wir die verbliebene Zeit lieber in das Zentrum der nördlichen Insel und verzichteten auf einen Abstecher in den westlich gelegenen Edmont Nationalpark. Letztendlich aber auch wegen typischerweise schlechter Wetterprognosen an der Westküste. Am auserwählten Tag mit Sonne und fast wichtiger, ohne orkanähnlichen Böen, wurden wir von einem Maori gefahrenen Shuttlebus an den Start des Walks transportiert. Sogleich ging es mit den ersten Schritten auf der unwirtlichen, kargen Lava-Landschaft los. Bereits zu Beginn liegt der Mount Ngauruhoe mit der klassischen Form eines Vulkans bedrohlich und imposant neben dem Wanderpfad. Eine schier endlose Schlange von Treckern ergoss sich auf den Pfad und blockierte leider häufig tolle Fotosujets.
+
+Nach einigen Kilometern Marschieren und Erklimmen des Red Craters, bot sich uns eine atemberaubende Aussicht auf schweflige, türkis leuchtende Bergseen. Der kritisch steile Abstieg gestaltete sich jedoch relativ schwierig, weil der Untergrund bloss aus loser Asche bestand und eine akute Rutschgefahr darstellte. Nichtsdestotrotz äusserst spassig, die teils unbeholfenen Wanderer zu beobachten! Wieder mit festem Boden unter den Füssen und die mit Asche gefüllten Schuhe gereinigt, ging die Wanderung sachte absteigend zum Zielpunkt. Die insgesamt 7.5 stündige Wanderung liess uns erschöpft ins Camperbett fallen und bescherte uns ordentlichen Muskelkater in den Beinen. Diesen kleinen Preis bezahlten wir jedoch sehr gerne für solch einmalige Eindrücke! 
+<br />
+
+----
+
+Imagejumbotron: jumbo_test.jpg
+
+----
+
+Imageteaser: 
+
+----
+
+Imagemap: 
+
+----
+
+Googlemapsimage: 
+
+----
+
+Googlemapstwolines: 1
+
+----
+
+Lat: -39.0533181067413
+
+----
+
+Lng: 175.50521850585938

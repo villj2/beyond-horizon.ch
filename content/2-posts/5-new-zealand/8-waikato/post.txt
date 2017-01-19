@@ -1,4 +1,4 @@
-Title: Wellington & Wairarapa
+Title: Waikato / Hobbiton
 
 ----
 
@@ -14,15 +14,15 @@ Hidetitle: 0
 
 ----
 
-Date: 2017-01-10
+Date: 2017-01-18
 
 ----
 
-Text: ##Wellington & Wairarapa, Neuseeland
+Text: ##Waikato, Neuseeland
 
 ----
 
-Imagejumbotron: jumbo.jpg
+Imagejumbotron: somehobbs.jpg
 
 ----
 
@@ -42,8 +42,8 @@ Googlemapstwolines: 0
 
 ----
 
-Lat: 
+Lat: -37.820632846207864
 
 ----
 
-Lng: 
+Lng: 175.7757568359375

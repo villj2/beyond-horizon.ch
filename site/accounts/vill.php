@@ -9,9 +9,8 @@ password: >
 language: en
 role: admin
 history:
-  - >
-    posts/new-zealand/abel-tasman-marlborough
-  - posts/new-zealand/abel-tasman-marlborough/gallery
   - posts/new-zealand/wellington-wairarapa
-  - posts/new-zealand/queenstown-around
-  - posts/new-zealand/west-coast/gallery
+  - posts/new-zealand/rotorua
+  - posts/new-zealand/waikato
+  - posts/new-zealand/tongariro-alpine-crosssing
+  - posts/new-zealand/wellington-wairarapa/gallery

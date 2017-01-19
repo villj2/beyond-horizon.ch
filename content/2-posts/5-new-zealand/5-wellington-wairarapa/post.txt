@@ -1,0 +1,57 @@
+Title: Wellington & Wairarapa
+
+----
+
+Textcolor: 
+
+----
+
+Picsonly: 0
+
+----
+
+Hidetitle: 0
+
+----
+
+Date: 2017-01-10
+
+----
+
+Text: 
+
+##Wellington & Wairarapa, Neuseeland
+Um mit einem Camper von der Süd- auf die Nordinsel Neuseelands zu gelangen, ist es unabdingbar, eine in der Hochsaison extrem überteuerte Fähre in Anspruch zu nehmen. Immerhin hatten wir das Glück, die berüchtigte Meeresenge zwischen Picton und Wellington, den Cook Strait, an einem sonnigen und fast windstillen Tag überqueren zu können. Denn Wind gehört in Neuseeland und vor allem in Wellington zur Tagesordnung. Im Durchschnitt soll es dort an hundertdreiundsiebzig Tagen im Jahr mit über 60km/h winden und damit gehört Wellington zu einem der windigsten Orten der Welt.
+
+Wir verbrachten einen Tag in der Hauptstadt Neuseelands und waren besonders fasziniert vom Botanischen Garten. Bei morgendlichem Sonnenschein, munterem Vogelgezwitscher und köstlich duftenden, exotischen Blumen fühlten wir uns beim Spaziergang durch den gepflegten Park wie an einem herrlichen Frühlingstag. Ansonsten ist Wellington berühmt für seine Gratismuseen. Aus Zeitgründen konzentrierten wir uns auf ein einziges Museum, dem sechsstöckigen Te Papa, welches mit vielen Sonderausstellungen auftrumpft. So ist dort von Maorikunst über Naturkräfte (inkl. Erdbebensimulator) bis Kriegsausstellungen mit perfekt inszenierten Kriegsszenen für jeden etwas dabei. Alle Ausstellungen wurden mit sehr viel Liebe zum Detail arrangiert und man merkt, dass hier eindeutig Profis am Werk waren. Zum Teil dieselben, welche auch für die Spezialeffekte in Filmen wie «Der Herr der Ringe», «Der Hobbit», «Avatar» und «District 9» verantwortlich waren.
+
+Nach unserem Abstecher nach Wellington fuhren wir in die etwas weniger touristische Wairarapa-Region und genossen dort einen fantastischen Sonnenuntergang beim Cape Palliser und wurden von heftigen Windböen fast davongefegt. Am nächsten Tag unternahmen wir eine kurze Wanderung zu den Putangirua Pinnacles. Es handelt sich dabei um gespenstisch anmutende Felsformationen aus vielen kleinen, aufgetürmten Steinen. Dieser furchteinflössende Ort wurde in «Der Herr der Ringe» aus naheliegenden Gründen als «Path of the Dead» verwendet. Nach dem Erkunden des südlichen Teils der Nordinsel entschlossen wir uns, direkt ins Zentrum der Insel zu fahren und Wanderungen in den dortigen, vulkanischen Landschaften zu unternehmen.
+<br />
+
+----
+
+Imagejumbotron: jumbo2.jpg
+
+----
+
+Imageteaser: teaser.jpg
+
+----
+
+Imagemap: map.png
+
+----
+
+Googlemapsimage: bubble.jpg
+
+----
+
+Googlemapstwolines: 0
+
+----
+
+Lat: -41.294317263152564
+
+----
+
+Lng: 174.77874755859375
