@@ -2,7 +2,7 @@ Title: Rotorua
 
 ----
 
-Textcolor: black
+Textcolor: 
 
 ----
 
@@ -21,28 +21,28 @@ Date: 2017-01-16
 Text: 
 
 ##Rotorua, Neuseeland
-Das kleine Städtchen Rotorua im Herzen der Nordinsel ist vor allem für seine Maoridörfer und die geothermalen Gebiete bekannt. Als erstes erkundeten wir die extrem farbenfrohen, dampfenden, blubbernden und nach Schwefel stinkenden Quellen und Schlammlöcher von Wai-O-Tapu. Äusserst befremdend war der «Devil’s Pool» anzusehen, der uns mit seiner stechenden, neongelben Farbe an ein radioaktives Gewässer erinnerte, dem wir lieber nicht zu nahekommen wollten. 
+Das kleine Städtchen Rotorua im Herzen der Nordinsel ist vor allem für seine Maorikultur und die geothermalen Gebiete bekannt. Als erstes erkundeten wir die extrem farbenfrohen, dampfenden, blubbernden und nach Schwefel stinkenden Quellen und Schlammlöcher von Wai-O-Tapu. Äusserst befremdend war das «Devil’s Bath» anzusehen, der uns mit seiner stechenden, neongelben Farbe an ein radioaktives Gewässer erinnerte, dem wir lieber nicht zu nahekommen wollten. 
 
-Den nächsten Tag verbrachten wir im Maoridorf Te Puia, das ebenfalls viele dampfende Quellen und ein Kiwi-Haus beherrbergt. Darüber hinaus befindet sich darin der berühmte Pōhutu Geysir. Da wir in Island bereits das Original gesehen haben, haben wir uns diesen recht ähnlich vorgestellt. Wir waren dann doch etwas überrascht, dass der neuseeländische Geysir nicht in unregelmässigen Abständen Wasser unter hohem Druck herausspuckte, sondern praktisch unablässig riesige Wasserfontänen gen Himmel spieh. Um Neuseeland von der kulturellen Seite kennenzulernen, besuchten wir im Dorf eine kurze Maori-Aufführung und können uns nun (zumindest die touristische Version) von Maoritänze und kriegerische Abschreckungsmanöver der Ureinwohner etwas besser vorstellen. Eigentlich recht unterhaltsam und sehr viel besser als die Vorstellung in Kyoto, allerdings bleibt uns bis jetzt ein Rätsel, was die Gitarre auf der Bühne zu suchen hatte... 
+Den nächsten Tag verbrachten wir im Maoridorf Te Puia, das ebenfalls viele dampfende Quellen und ein Kiwi-Haus beherbergt. Darüber hinaus befindet sich darin der berühmte Pohutu Geysir. Da wir in Island bereits das Original gesehen haben, stellten wir uns diesen recht ähnlich vor. Wir waren dann doch recht überrascht, dass dieser neuseeländische Geysir nicht in Intervallen Wasser unter hohem Druck herausspuckte, sondern praktisch unablässig riesige Wasserfontänen gen Himmel spieh. Um Neuseeland von der kulturellen Seite kennenzulernen, besuchten wir im Dorf eine kurze Maorivorstellung und können uns nun (zumindest die neuzeitliche, touristische Version) von Maoritänzen und kriegerischen Abschreckungsgebärden der Ureinwohner etwas besser vorstellen. Die Aufführung überzeugte sicher mehr als die kulturelle Vorstellung in Kyoto, allerdings bleibt uns bis jetzt ein Rätsel, was die Gitarre auf der Bühne zu suchen hatte...
 
-Neben den geothermalen Gebieten hat Rotorua den Wald… zu bieten, der aus hochgewachsenen, gigantischen kalifornischen Redwoods besteht und ebenfalls einen Besuch wert war. Vor allem, wenn man nach dem intensiven Schwefelgestank wieder einmal frische Waldluft schnappen will.
+Neben den geothermalen Gebieten hat Rotorua den Whakarewarewa Forest zu bieten, der aus hochgewachsenen, gigantischen kalifornischen Redwoods besteht und ebenfalls einen Besuch wert war. Vor allem, wenn man nach dem intensiven Gestank nach faulen Eiern endlich einmal wieder frische Waldluft schnappen will. Nach soviel vulkanischen Landschaften führte uns unsere Reise weiter in fröhlichere Märchen- und Fantasywelten. Dazu mehr in unserem nächsten Bericht.
 <br />
 
 ----
 
-Imagejumbotron: somerots.jpg
+Imagejumbotron: jumbo.jpg
 
 ----
 
-Imageteaser: 
+Imageteaser: teaser.jpg
 
 ----
 
-Imagemap: 
+Imagemap: map.png
 
 ----
 
-Googlemapsimage: 
+Googlemapsimage: bubble.jpg
 
 ----
 
