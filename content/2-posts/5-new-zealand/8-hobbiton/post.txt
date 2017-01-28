@@ -1,0 +1,55 @@
+Title: Hobbiton
+
+----
+
+Textcolor: 
+
+----
+
+Picsonly: 0
+
+----
+
+Hidetitle: 0
+
+----
+
+Date: 2017-01-17
+
+----
+
+Text: 
+
+##Hobbiton, Neuseeland
+Mit der Fahrt nach Matamata begann einmal mehr eine fantastische Reise in eine andere Welt. Ein Guide führte uns in das überwältigende, in J.R.R. Tolkiens Kopf ersonnene und von Peter Jacksons Hand in die reale Welt transferierte Hobbiton. Der Eindruck, sich im Auenland zu bewegen, war perfekt. Jede der insgesamt neununddreissig Hobbithöhlen war mit so viel Liebe zum Detail mit kleinen Stühlen, Krügen, Werkzeugen, Spielsachen und Esswaren dekoriert, dass wir uns nicht gewundert hätten, wenn uns plötzlich ein echter Hobbit über den Weg gelaufen wäre. Um die Halblinge dort bereits seit langem glaubwürdig leben zu lassen, wurde das verbaute Holz absichtlich malträtiert oder mit speziellen Beschichtungen behandelt. Peter Jacksons Pingeligkeit führte zweifellos zum grossartigen Ergebnis, generierte jedoch einen gewaltigen Aufwand (und sorgte bestimmt für rote Köpfe). Laut unserem Guide wurde beispielsweise in der Umgebung nach einem geeigneten Baum für Beutelsend gesucht, in Stücke geschnitten, nach Hobbiton transportiert und wieder zusammengesetzt. Die dazugehörigen Blätter wurden in Taiwan künstlich hergestellt und einzeln angeklebt. Nach getaner Arbeit gefiel die Laubfarbe dem Regisseur plötzlich nicht mehr und musste kurzum anders bemalt werden. Vor den Dreharbeiten befreite das neuseeländische Militär das Areal von einem störenden Sumpf und eine mehrköpfige Truppe durfte einen künstlichen Hügel anlegen, welcher dankbarerweise in der Extended Edition von "der Herr der Ringe" sagenhafte drei Sekunden zu sehen ist. Ausserdem mussten die Mitarbeiter täglich mehrfach über die angelegten Pfade laufen, um sie innerhalb weniger Wochen und Monaten alt und verbraucht aussehen zu lassen. Diese Liste von Erfolgsbausteinen liesse sich wohl endlos weiterführen...
+
+Leider lässt sich keine der Behausungen von Innen betrachten, es handelt sich rein um Attrappen. Sogar die Szenen in Bilbos berühmter Wohnung Beutelsend wurden mittels einem Replika in Wellington gedreht. Streng genommen sogar zwei, eine normal grosse und eine in sechzig prozentiger Grösse, um Figuren wie Gandalf übergross erscheinen zu lassen. Zum Abschluss wurde uns im Green Dragon Inn ein Ginger Beer ausgeschenkt. Selbst diese Taverne, die für spezielle Anlässe gemietet werden kann, ist von vorne bis hinten in Hobbitmanier authentisch eingerichtet. Somit war die zweistündige Tour auch schon beendet und wir wurden wieder an den Ausgangspunkt chauffiert, um dem nicht endenden Strom an neuen Besuchern Platz zu machen.
+<br />
+
+----
+
+Imagejumbotron: jumbo.jpg
+
+----
+
+Imageteaser: teaser.jpg
+
+----
+
+Imagemap: hobbiton.png
+
+----
+
+Googlemapsimage: bubble.jpg
+
+----
+
+Googlemapstwolines: 0
+
+----
+
+Lat: -37.820632846207864
+
+----
+
+Lng: 175.7757568359375

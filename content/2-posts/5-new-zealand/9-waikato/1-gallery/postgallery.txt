@@ -1,0 +1,9 @@
+Title: Gallery
+
+----
+
+Postlimit: 99
+
+----
+
+Info: 

@@ -1,0 +1,61 @@
+Title: Waikato
+
+----
+
+Textcolor: 
+
+----
+
+Picsonly: 0
+
+----
+
+Hidetitle: 0
+
+----
+
+Date: 2017-01-18
+
+----
+
+Text: 
+
+##Waikato, Neuseeland
+Nach der sagenhaften Welt von Hobbiton führte uns unsere Reise an weitere zauberhafte Orte, allen voran die berühmten Waitomo Glowworm Caves. Erst wurden wir von einem Maoriguide durch ein Labyrinth aus riesigen Kalksteinhöhlen und -formationen mit speziell geformten Stalaktiten und Stalagmiten geführt, bevor unsere Gruppe mit einem kleinen Boot lautlos auf einem kleinen Grottensee unter abertausenden von kleinen, funkelnden Glühwürmchen entlang glitt. Es sah fast so aus, als ob das Firmament direkt über unseren Köpfen leuchten würde. Tatsächlich sind die Lichter nicht von Würmchen im eigentlichen Sinn, sondern von einer Larve eines zweiflügeligen Insekts, welches während dem neunmonatigen Larvenstadium zur Anlockung von Nahrung Licht abgibt. Diese Glühwürmchenart (Arachnocampa Luminosa) ist nur in Neuseeland anzutreffen. Beim anschliessenden Besuch einer zweiten Höhle, den Ruakuri Caves, konnten wir diese Glühwürmchenlarven aus der Nähe betrachten und stellten fest, dass diese lange, klebrige und spinnennetzartige Seidenfäden aushängen, um ihre Beute einzufangen. 
+
+(polaroidstart: )
+(polaroid: pola_2.jpg type: 1)
+(polaroid: pola_1.jpg type: 2)
+(polaroid: pola_3.jpg type: 3)
+(polaroidend: )
+
+Wieder im strahlenden und blendenden Tageslicht besuchten wir eine nahegelegene kleine Lavendelfarm und die äusserst perfekt arrangierten Hamilton Gardens, die zurecht preisgekrönt sind. Den Gärtnern ist es gelungen, den Besucher innert kurzer Zeit in verschiedene Welten eintauchen zu lassen. Im Japanese Garden of Contemplation hatten wir tatsächlich das Gefühl, wieder in Japan zu sein, so authentisch wirkte dieser gepflegte Zen-Garten. Er erweckte in uns auf jeden Fall wehmütige Erinnerung an den Beginn unserer Reise. Ausserdem unternahmen wir einen kurzen Abstecher nach China, Italien zur Renaissance-Zeit, Indien und in einen englischen Blumengarten sowie viele weitere exotische Orte.
+<br />
+
+----
+
+Imagejumbotron: jumbo_waikato.jpg
+
+----
+
+Imageteaser: teaser_waikato.jpg
+
+----
+
+Imagemap: waikato.png
+
+----
+
+Googlemapsimage: bubble_waikato.jpg
+
+----
+
+Googlemapstwolines: 0
+
+----
+
+Lat: -37.78781053362778
+
+----
+
+Lng: 175.27896881103516

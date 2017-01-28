@@ -9,9 +9,8 @@ password: >
 language: en
 role: admin
 history:
-  - >
-    posts/new-zealand/tongariro-alpine-crosssing
+  - posts/new-zealand/hobbiton
+  - posts/new-zealand/coromandel-peninsula/gallery
+  - posts/new-zealand/coromandel-peninsula
   - posts/new-zealand/waikato
-  - posts/new-zealand/rotorua
-  - posts/new-zealand/wellington-wairarapa
-  - posts/new-zealand/wellington-wairarapa/gallery
+  - posts/new-zealand/waikato/gallery
