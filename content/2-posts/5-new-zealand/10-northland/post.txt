@@ -1,0 +1,59 @@
+Title: Northland
+
+----
+
+Textcolor: 
+
+----
+
+Picsonly: 0
+
+----
+
+Hidetitle: 0
+
+----
+
+Date: 2017-01-26
+
+----
+
+Text: 
+
+##Northland, Neuseeland
+Inmitten dichter Blechlawinen ging die Reise weiter durch Auckland Richtung Northland. Wir waren froh, bereits nach kurzer Zeit aus dem Grossstadtgetümmel rauszukommen. Der erste Stopp war ein hübsches Hafenstädtchen namens Whangarei. Die europäisch anmutende Promenade lud zu einer Kaffeepause ein und wir konnten so richtig die Sommersonne geniessen. Natürlich mit dem fiesen Hintergedanken, wie frostig das Klima in der Schweiz ist.
+
+Eine aussergewöhnliche Sehenswürdigkeit bietet das kleine Kaff Kawakawa. Bereits auf dem Highway ausgeschildert, führen die Wegweiser zu einer von Friedensreich Hundertwasser gestalteten öffentlichen Toilette. Dabei handelt es sich wohl um den meistfotografierten Abort Neuseelands. Das gesamte Dorf wurde stark vom österreichischen Künstler beeinflusst, welcher seinen letzten Lebensabschnitt hier verbracht hat. An vielen Ecken sind die typischen Formationen und Farben zu erkennen, welche seinen Kunstwerken seine besondere Note verleihen.
+
+In Neuseeland scheint man jeder Klimazone begegnen zu können. Von frostigen Bergen über tropische Wälder bis Steppenlandschaften haben wir bereits alles erlebt. Weiter im Norden erheben sich auf der gegenüberliegenden Seite einer Bucht sogar riesige Sanddünen. Unweit davon gab es nochmals die Möglichkeit, nahezu perfekt ballförmig geschliffene Steine am Strand zu betrachten.
+
+Besonders gefreut haben wir uns auf das abschliessende Highlight, den Waipoua Forest. Hier gibt es die letzten, riesigen Kauri-Bäume, welche vor nicht allzu langer Zeit noch den grössten Teil des nördlichen Neuseelands bedeckt haben. Der starke Rückgang des Bestandes ist nebst dem Holzfällen auf ein Bakterium zurückzuführen, welches die oberirdischen Wurzeln der Baumgiganten attackiert und zu ihrem Tode führt. Deshalb müssen vor dem Bewandern der Pfade an extra eingerichteten Putzstationen erst die Schuhe intensiv gereinigt und desinfiziert werden. Wobei sich bei weitem nicht alle Touristen daran halten… Die Bäume jedenfalls sind ein gewaltiger Anblick. Der grösste noch lebende Baum namens „Tane Mahuta“ hat eine Höhe von über fünfzig Metern, einen Umfang von über dreizehn Metern und wird auf über 1500 Jahre geschätzt. Auf dessen überwucherter Krone sollen über siebzig verschiedene Pflanzenarten wachsen.
+<br />
+
+----
+
+Imagejumbotron: jumbo2_sharpened.jpg
+
+----
+
+Imageteaser: teaser.jpg
+
+----
+
+Imagemap: map.png
+
+----
+
+Googlemapsimage: bubble.jpg
+
+----
+
+Googlemapstwolines: 0
+
+----
+
+Lat: -35.648369157374255
+
+----
+
+Lng: 173.968505859375

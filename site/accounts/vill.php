@@ -9,8 +9,8 @@ password: >
 language: en
 role: admin
 history:
+  - posts/new-zealand/northland
+  - posts/new-zealand/northland/gallery
   - posts/new-zealand/hobbiton
   - posts/new-zealand/coromandel-peninsula/gallery
   - posts/new-zealand/coromandel-peninsula
-  - posts/new-zealand/waikato
-  - posts/new-zealand/waikato/gallery
