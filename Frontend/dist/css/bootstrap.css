@@ -6907,6 +6907,10 @@ footer .row .bommelia:hover {
   text-decoration: none;
   color: #777777;
 }
+footer .row .socialbutton.pinterest {
+  height: 21px;
+  background-position-y: 5px;
+}
 .jumbotron {
   width: 100%;
   background: #ffffff no-repeat center center;

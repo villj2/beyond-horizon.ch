@@ -60,6 +60,6 @@ kirbytext::$tags['polaroidabout'] = array(
 
     $url = $file ? $file->url() : url($url);
 
-    return '<img src="' . $url . '" class="polaroid" />';
+    return '<img src="' . $url . '" class="polaroid" alt="Julien &amp; Karin" title="Julien &amp; Karin" />';
   }
 );

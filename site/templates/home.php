@@ -88,11 +88,11 @@
           <div class="col-sm-4">
             <div class="teaser-image-container">
               <p>
-                <img src="<?php echo $post->contentURL() ?>/<?php echo $post->imageteaser() ?>" class="teaser-image" />
+                <img src="<?php echo $post->contentURL() ?>/<?php echo $post->imageteaser() ?>" class="teaser-image" alt="<?php echo $post->title() ?>" title="<?php echo $post->title() ?>" />
                 <a class="" href="<?php echo $post->url() ?>">
                   <span class="darkener"></span>
                   <span class="helper"></span>
-                  <img src="/Frontend/img/icon_<?php echo $post->parent()->teasericon() ?>.svg" onerror="this.src='/Frontend/img/placeholder.png'" />
+                  <img src="/Frontend/img/icon_<?php echo $post->parent()->teasericon() ?>.svg" onerror="this.src='/Frontend/img/placeholder.png'" alt="<?php echo $post->title() ?>" title="<?php echo $post->title() ?>" />
                   <span class="teaser-text"><?php echo $post->title()->html() ?></span>
                 </a>
               </p>
@@ -120,25 +120,25 @@
         <div class="col-sm-3 col-xs-6 menu-teaser">
           <!-- <h4>Reise</h4> -->
           <a href="/journey">
-            <img src="/Frontend/img/menu-teaser-journey.png" />
+            <img src="/Frontend/img/menu-teaser-journey.png" alt="Reise" title="Reise" />
           </a>
         </div>
         <div class="col-sm-3 col-xs-6 menu-teaser">
           <!-- <h4>Galerie</h4> -->
           <a href="/gallery">
-            <img src="/Frontend/img/menu-teaser-gallery.png" />
+            <img src="/Frontend/img/menu-teaser-gallery.png" alt="Galerie" title="Galerie" />
           </a>
         </div>
         <div class="col-sm-3 col-xs-6 menu-teaser">
           <!-- <h4>Karte</h4> -->
           <a href="/map">
-            <img src="/Frontend/img/menu-teaser-map.png" />
+            <img src="/Frontend/img/menu-teaser-map.png" alt="Karte" title="Karte" />
           </a>
         </div>
         <div class="col-sm-3 col-xs-6 menu-teaser">
           <!-- <h4>Über uns</h4> -->
           <a href="/about">
-            <img src="/Frontend/img/menu-teaser-about.png" />
+            <img src="/Frontend/img/menu-teaser-about.png" alt="Über uns" title="Über uns" />
           </a>
         </div>
       </div>

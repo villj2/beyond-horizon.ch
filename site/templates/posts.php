@@ -30,11 +30,11 @@
 	      		<div class="col-sm-4">
 	          		<div class="teaser-image-container">
 	            		<p>
-				      		<img src="<?php echo $post->contentURL() ?>/<?php echo $post->imageteaser() ?>" class="teaser-image" />
+				      		<img src="<?php echo $post->contentURL() ?>/<?php echo $post->imageteaser() ?>" class="teaser-image" alt="<?php echo $post->title() ?>" title="<?php echo $post->title() ?>" />
 			              	<a class="" href="<?php echo $post->url() ?>" style="">
 				                <span class="darkener"></span>
 				                <span class="helper"></span>
-				                <img src="/Frontend/img/icon_<?php echo $category->teasericon() ?>.svg" onerror="this.src='/Frontend/img/placeholder.png'" />
+				                <img src="/Frontend/img/icon_<?php echo $category->teasericon() ?>.svg" onerror="this.src='/Frontend/img/placeholder.png'" alt="<?php echo $post->title() ?>" title="<?php echo $post->title() ?>" />
 				                <span class="teaser-text"><?php echo $post->title()->html() ?></span>
 			              	</a>
 			            </p>

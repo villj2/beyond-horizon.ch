@@ -4,11 +4,14 @@
           <div class="col-sm-4 content-left">
             <p class="text-muted">© 2017 - Beyond-Horizon</p>
           </div>
-          <!-- <div class="col-sm-8 content-center">
-            <p class="text-muted">&nbsp;</p>
+          <!-- <div class="col-sm-4 content-center">
+            <p class="text-muted">
+              
+              <span class="fb-like socialbutton" data-href="http://beyond-horizon.ch" data-layout="button" data-action="like" data-show-faces="false" data-share="false"></span>
+            </p>
           </div> -->
           <div class="col-sm-8 content-right">
-            <p class="text-muted"><a href="http://bommeli.it" target="_blank" class="bommeli text-muted">Hosting sponsored by <img src="/Frontend/img/logo_bommeli_it_40px.png" /> bommeli IT GmbH</a></p>
+            <p class="text-muted"><a href="http://bommeli.it" target="_blank" class="bommeli text-muted">Hosting sponsored by <img src="/Frontend/img/logo_bommeli_it_40px.png" alt="Bommeli IT" title="Bommeli IT" /> bommeli IT GmbH</a></p>
           </div>
         </div>
       </div>
@@ -30,7 +33,7 @@
     <script src="/Frontend/dist/js/imageMapResizer.min.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCa7vKqlTpOPHkmsQjm8d3gAzUn9aEZMd4"></script>
     <script src="/Frontend/dist/js/infobubble.js"></script>
-    <script src="/Frontend/dist/js/site.js"></script>
+    <script src="/Frontend/dist/js/site.min.js"></script>
 
   </body>
 </html>

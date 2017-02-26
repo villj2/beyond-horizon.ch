@@ -33,6 +33,8 @@
 
             <?php foreach($page->children() as $subpage): ?>
 
+              <?php $picNumber = 0; ?>
+
             	<?php foreach($subpage->images()->sortBy('sort', 'asc')->limit($subpage->postlimit()->value() * 2) as $image): ?>
 
             		<!-- make sure not showing double images -->
@@ -40,7 +42,7 @@
             			<div class="grid-item">
 			              <div class="grid-content-container">
 			                <a href="<?php echo $image->url() ?>" data-toggle="lightbox" data-gallery="multiimages" data-parent=".grid">
-			                  <img src="<?php echo str_replace(".jpg", "_preview.jpg", $image->url()) ?>" />
+			                  <img src="<?php echo str_replace(".jpg", "_preview.jpg", $image->url()) ?>" alt="<?php echo $page->title() ?> Bild <?php echo ++$picNumber ?>" title="<?php echo $page->title() ?> Bild <?php echo $picNumber ?>" />
 			                </a>
 			              </div>
 			            </div>
@@ -54,7 +56,7 @@
           <br />
        </div>
         <div class="col-md-3">
-          <img class="blog-map hidden-sm hidden-xs" src="<?php echo $page->contentURL() ?>/<?php echo $page->imagemap() ?>" />
+          <img class="blog-map hidden-sm hidden-xs" alt="Karte" title="Karte" src="<?php echo $page->contentURL() ?>/<?php echo $page->imagemap() ?>" />
         </div>
       </div>
 

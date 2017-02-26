@@ -8,7 +8,7 @@
 	      		<?php echo $page->imageMapIntro()->text()->kirbytext() ?>
 	          	<br />
 
-	      		<img class="journey-image" src="/Frontend/img/journey/journey_ganz_ps_panda.png" style="width: 100%;" />
+	      		<img class="journey-image" src="/Frontend/img/journey/journey_ganz_ps_panda.png" style="width: 100%;"  alt="Reise" title="Reise" />
 
 	          	
 	        </div>

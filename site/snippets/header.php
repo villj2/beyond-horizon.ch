@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="description" content="Beyond-Horizon: Reise jenseits des Horizonts. Erlebnisberichte aus Japan, Australien, Tasmanien, Neuseeland und Hongkong.">
-    <meta name="keywords" content="Beyond, Horizon, Jenseits, Horizont, Travel, Reisen, Blog, Photos, Fotos, Japan, Australia, Tasmania, New Zealand, Hongkong">
+    <meta name="description" content="Reise jenseits des Horizonts. Erlebnisberichte und Fotos aus der reichen Kultur Japans, der schillernden Tierwelt Australiens und der imposanten Natur Neuseelands.">
+    <meta name="keywords" content="Beyond, Horizon, Jenseits, Horizont, Travel, Reisen, Blog, Photos, Fotos, Japan, Australia, Tasmania, New Zealand, Hong Kong">
     <meta name="author" content="Julien Villiger und Karin Lüthi">
 
     <link rel="apple-touch-icon" sizes="57x57" href="/Frontend/img/favicon/apple-icon-57x57.png">
@@ -28,12 +28,13 @@
     <meta name="msapplication-TileImage" content="/Frontend/img/favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
 
-    <title><?php echo $site->title()->html() ?> | <?php echo $page->title()->html() ?></title>
+    <title><?php echo $site->title()->html() ?> | Reise jenseits des Horizonts | <?php echo $page->title()->html() ?></title>
 
     <link href="/Frontend/dist/css/ekko-lightbox.min.css" rel="stylesheet">
 
     <!-- Bootstrap core CSS -->
-    <link href="/Frontend/dist/css/bootstrap.css" rel="stylesheet">
+    <link href="/Frontend/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- <link href="/Frontend/dist/css/bootstrap.css" rel="stylesheet"> -->
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <link href="/Frontend/dist/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
@@ -59,6 +60,19 @@
 
     </script>
 
+    <!-- Pinterest -->
+    <!--<script async defer src="//assets.pinterest.com/js/pinit.js"></script>-->
+
+    <!-- Facebook -->
+    <!--<div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>-->
+
   </head>
 
   <body ontouchstart="">
@@ -73,14 +87,14 @@
             <span class="icon-bar"></span>
           </button>
           <a class="navbar-brand" href="/">
-            <img src="/Frontend/img/logo.png" />
+            <img src="/Frontend/img/logo.png" alt="Logo" title="Logo" />
           </a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
             <?php foreach($pages->visible() as $p): ?>
               <li <?php e($p->isOpen(), ' class="active"') ?> >
-                <a href="<?php echo $p->url() ?>"><?php echo $p->titlemenu() == "" ? $p->title()->html() : $p->titlemenu() ?></a>
+                <a href="<?php echo $p->url() ?>" title="<?php echo $p->titlemenu() ?>"><?php echo $p->titlemenu() == "" ? $p->title()->html() : $p->titlemenu() ?></a>
               </li>
             <?php endforeach ?>
           </ul>

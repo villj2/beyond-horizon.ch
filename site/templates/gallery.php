@@ -53,6 +53,8 @@
               <div class="grid wrapper-parent">
                 <div class="grid-sizer"></div>';
 
+              $picIndex = 0;
+
               foreach($gallery->images()->sortBy('sort', 'asc') as $image):
 
                 if(strpos($image->filename(), 'preview') == false){
@@ -60,7 +62,7 @@
                   echo '<div class="grid-item">
                           <div class="grid-content-container">
                             <a href="' . $image->url() . '" data-toggle="lightbox" data-gallery="' . $post->date() . '" data-parent=".grid">
-                              <img src="' . str_replace(".jpg", "_preview.jpg", $image->url()) . '" />
+                              <img src="' . str_replace(".jpg", "_preview.jpg", $image->url()) . '" alt="' . $post->title() . ' Bild ' . ++$picIndex . '" title="' . $post->title() . ' Bild ' . $picIndex . '" />
                             </a>
                           </div>
                         </div>';

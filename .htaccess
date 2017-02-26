@@ -43,3 +43,6 @@ RewriteRule ^(.*) index.php [L]
 # AddDefaultCharset UTF-8
 #
 # php_flag short_open_tag on
+
+RewriteCond %{HTTP_HOST} ^www\.beyond-horizon\.ch$
+RewriteRule ^/?$ "http\:\/\/beyond-horizon\.ch\/" [R=301,L]
