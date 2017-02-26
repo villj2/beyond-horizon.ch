@@ -1,0 +1,55 @@
+Title: Auckland
+
+----
+
+Textcolor: 
+
+----
+
+Picsonly: 0
+
+----
+
+Hidetitle: 0
+
+----
+
+Date: 2017-01-31
+
+----
+
+Text: 
+
+##Auckland, Neuseeland
+Die letzten Tage mit dem Camper verbrachten wir in der Nähe von Auckland und besuchten mehrere bemerkenswerte Strände an der Westküste. Der Muriwai Beach beherbergt Tausende von Basstölpeln, die zurzeit gerade damit beschäftigt waren, ihre Jungen zu füttern und mit ihrem perfekten Abstand zueinander ein bemerkenswert gleichmässiges Muster bildeten. Unweit davon befindet sich ein spektakulärer Strand mit tiefschwarzem Sand, der den graziösen Namen Karekare Beach trägt und schon deshalb auf unserer „To do“-Liste stand. Tatsächlich wurde dieser Fleck weltberühmt, da der mit einem Oskar ausgezeichneten Film „The Piano“ dort gedreht wurde. Ganz in der Nähe bezogen wir unseren letzten Campingplatz. Um diesen zu bezahlen, verbrachten wir beinahe eine halbe Stunde mit der Stadtverwaltung von Auckland am Telefon. Man ist also auch auf der anderen Seite der Erdkugel nicht sicher vor einer übermässigen Bürokratie.
+
+Etwas wehmütig gaben wir am nächsten Tag nach sechs Wochen unseren Camper zurück. Wir waren aber auch etwas froh – diese alte Blechkiste hat nicht nur ein tiefes Loch in unser Budget gerissen, sondern mit seinem grenzenlosen Benzindurst leider auch einen gewaltigen CO<sup>2</sup>-Fussabdruck hinterlassen. Es folgten einige entspannte Tage in Auckland, der grössten Stadt Neuseelands, die mitten in einer Kraterlandschaft gelegen ist. Von diesen Kratern hat man fantastische Sicht auf die Metropole. Nur etwas schade, dass jeder Aussichtspunkt mit einer Strasse erschlossen wurde, damit die bequemeren Besucher selbst auf diese paar Schritte verzichten können. 
+<br />
+
+----
+
+Imagejumbotron: jumbo.jpg
+
+----
+
+Imageteaser: teaser.jpg
+
+----
+
+Imagemap: map.png
+
+----
+
+Googlemapsimage: bubble.jpg
+
+----
+
+Googlemapstwolines: 0
+
+----
+
+Lat: -36.85984517196145
+
+----
+
+Lng: 174.759521484375

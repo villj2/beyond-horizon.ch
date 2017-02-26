@@ -2,7 +2,7 @@
       <div class="container-fluid">
         <div class="row">
           <div class="col-sm-4 content-left">
-            <p class="text-muted">© 2016 - Beyond-Horizon</p>
+            <p class="text-muted">© 2017 - Beyond-Horizon</p>
           </div>
           <!-- <div class="col-sm-8 content-center">
             <p class="text-muted">&nbsp;</p>

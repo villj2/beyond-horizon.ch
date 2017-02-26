@@ -1,0 +1,61 @@
+Title: Hong Kong
+
+----
+
+Textcolor: 
+
+----
+
+Picsonly: 0
+
+----
+
+Hidetitle: 0
+
+----
+
+Date: 2017-02-06
+
+----
+
+Text: 
+
+##Hong Kong
+Nach einem kurzen Zwischenaufenthalt in Singapur und einem Flashback an unsere Indonesienreise vor zweieinhalb Jahren landeten wir mitten in einer völlig neuen Welt: Diesmal in der Stadt der Wolkenkratzer. Mit über 1‘300 Häusern, die über hundert Meter hoch sind, lässt Hong Kong das zweitplatzierte New York (mit etwas über 720 Wolkenkratzern) weit hinter sich. Und der Anblick der Skyline ist wirklich atemberaubend – sofern sie nicht von einer undurchdringlichen, dicken Smog-Schicht versteckt bleibt, was dank dem benachbarten China leider häufig der Fall ist.
+
+Obwohl die Stadt nicht gerade durch seine freundlichen und zuvorkommenden Einwohner punktete, liessen wir uns dennoch während unseren letzten sechs Reisetagen von der pulsierenden Metropole mitreissen: Wir schlenderten durch verschiedene Märkte (wo von gefälschten Markenkleidern über zappelnden, in Plastiksäcken verpackten Goldfischen und krächzenden Papageien alles angeboten wird), verirrten uns in den allgegenwärtigen und riesigen Shopping Malls, assen Dim Sum beim günstigsten Michelin-Koch Tim Ho Wan und tuckerten nicht nur mit der äusserst preiswerten Star Ferry, sondern auch noch mit einem richtigen Junk Boat im Victoria Harbour umher.  
+
+Besonders faszinierte uns aber ein kurzer Abstecher nach Tai O, einem überschaubaren Fischerdorf, das nur einen Katzensprung vom Hochhausdschungel entfernt liegt und gegensätzlicher zum Stadtleben nicht sein könnte. Das Dorf ist Heimat der Tanka, einer Gemeinde von Fischern, die seit Generationen in Stelzenhäusern auf dem Wasser lebt und ihre frischgefangenen „Köstlichkeiten“ wie sonnengetrocknete Fischblasen oder Tintenfische an die zahlreichen Touristen verkauft.
+
+Zum Schluss verbrachten wir einen Tag im nahgelegenen Macau, einer weiteren am Perlflussdelta gelegenen Sonderverwaltungszone der Volksrepublik China, die einstmals zu Portugal gehörte. Es wirkte ziemlich befremdend, zwischen mediterranen Bauten herumzulaufen und portugiesisch beschriebenen Wegweisern zu folgen. Doch wollten wir es uns nicht entgehen lassen, uns das umsatzstärkste Glücksspielparadies der Welt aus der Nähe zu betrachten, das sogar Las Vegas um Längen übertrumpft.
+
+Mit dem Warten auf unseren Flug Richtung Zürich wurde uns schmerzlich bewusst, dass sich unsere viermonatige Reise rasant ihrem unausweichlichen Ende näherte und damit ein einzigartiges Kapitel unseres Lebens schon bald der Vergangenheit angehören wird…
+<br />
+
+----
+
+Imagejumbotron: jumbo.jpg
+
+----
+
+Imageteaser: teaser.jpg
+
+----
+
+Imagemap: map.png
+
+----
+
+Googlemapsimage: bubble.jpg
+
+----
+
+Googlemapstwolines: 0
+
+----
+
+Lat: 22.276389027850755
+
+----
+
+Lng: 114.17404174804688
