@@ -39,7 +39,7 @@ RewriteRule ^(.*) index.php [L]
 RewriteCond %{HTTP_HOST} ^www\.beyond-horizon\.ch$
 RewriteRule ^/?$ "http\:\/\/beyond-horizon\.ch\/" [R=301,L]
 
-RewriteCond %{HTTP_HOST} !=localhost
+RewriteCond %{HTTP_HOST} !=beyond-horizon.local
 RewriteCond %{HTTPS} !=on
 RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R,QSA]
 
