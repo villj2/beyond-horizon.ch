@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="description" content="Reise jenseits des Horizonts. Erlebnisberichte und Fotos aus der reichen Kultur Japans, der schillernden Tierwelt Australiens und der imposanten Natur Neuseelands.">
+    <meta name="description" content="Reise jenseits des Horizonts. Erlebnisberichte und Fotos aus der reichen Kultur Japans, der schillernden Tierwelt Australiens, der imposanten Natur Neuseelands und dem hektischen Treiben Hong Kongs.">
     <meta name="keywords" content="Beyond, Horizon, Jenseits, Horizont, Travel, Reisen, Blog, Photos, Fotos, Japan, Australia, Tasmania, New Zealand, Hong Kong">
     <meta name="author" content="Julien Villiger und Karin Lüthi">
 
@@ -87,7 +87,7 @@
             <span class="icon-bar"></span>
           </button>
           <a class="navbar-brand" href="/">
-            <img src="/Frontend/img/logo.png" alt="Logo" title="Logo" />
+            <img src="/Frontend/img/logo.png" alt="Beyond Horizon Travelblog Logo" title="Beyond Horizon Travelblog Logo" />
           </a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">

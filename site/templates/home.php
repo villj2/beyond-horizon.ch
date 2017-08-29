@@ -67,6 +67,18 @@
 
       <div class="row">
         <div class="col-md-12" style="text-align: center;">
+          <h1 style="margin-top: 40px;">BEYOND HORIZON TRAVELBLOG</h1>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12" style="text-align: center; margin-bottom: 60px; margin-top: 30px;">
+            <p style="font-family: black_jackregular; font-size: 1.6em;">Reise jenseits des Horizonts. Erlebnisberichte und Fotos aus der reichen Kultur Japans, der schillernden Tierwelt Australiens, der imposanten Natur Neuseelands und dem hektischen Treiben Hong Kongs.</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12" style="text-align: center;">
           <?php echo $page->intro()->kirbytext() ?>
           <br />
         </div>
