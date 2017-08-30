@@ -67,7 +67,7 @@
 
       <div class="row">
         <div class="col-md-12" style="text-align: center;">
-          <h1 style="margin-top: 40px;">BEYOND HORIZON TRAVELBLOG</h1>
+          <h1 style="margin-top: 40px;">Beyond Horizon Travel Blog</h1>
         </div>
       </div>
 
