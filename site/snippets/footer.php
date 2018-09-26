@@ -31,7 +31,7 @@
     <script src="/Frontend/dist/js/photo-gallery.js"></script>
     <script src="/Frontend/dist/js/ekko-lightbox.js"></script>
     <script src="/Frontend/dist/js/imageMapResizer.min.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCa7vKqlTpOPHkmsQjm8d3gAzUn9aEZMd4"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyArrmeuN9cA75Muj7MM1JOXaDurFM4aKrM"></script>
     <script src="/Frontend/dist/js/infobubble.js"></script>
     <script src="/Frontend/dist/js/site.min.js"></script>
 
