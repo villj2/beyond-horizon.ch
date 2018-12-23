@@ -27,38 +27,39 @@
 
         	<?php echo $page->text()->kirbytext() ?>
           
-          <div id="horizon-gallery" style="display:none;">
+          <div id="horizon-gallery-1" style="display:none;">
 
-            <?php foreach($page->children() as $subpage): ?>
+          <?php foreach($page->children() as $subpage): ?>
 
-              <?php $picNumber = 0; ?>
+            <?php $picNumber = 0; ?>
 
-            	<?php foreach($subpage->images()->sortBy('sort', 'asc')->limit($subpage->postlimit()->value() * 2) as $image): ?>
+            <?php foreach($subpage->images()->sortBy('sort', 'asc')->limit($subpage->postlimit()->value() * 2) as $image): ?>
 
-                <?php if (strpos($image->filename(), 'preview') == false): ?>
+              <?php if (strpos($image->filename(), 'preview') == false): ?>
 
-                  <?php
-                    $dummyPicture = kirby()->urls()->index() . "/assets/images/" . ($image->isLandscape() ? "landscape" : "portrait") . "_dummy_unite.jpg";
-                    $picNumber++;
-                  ?>
+                <?php
+                  $dummyPicture = kirby()->urls()->index() . "/assets/images/" . ($image->isLandscape() ? "landscape" : "portrait") . "_dummy_unite.jpg";
+                  $picNumber++;
+                ?>
 
-                  <a href="http://unitegallery.net">
-                    <img alt="<?php echo $page->title() ?> Bild <?php echo $picNumber ?>"
-                     src="<?php echo $dummyPicture ?>"
-                     data-src="<?php echo str_replace(".jpg", "_preview.jpg", $image->url()) ?>"
-                     data-image="<?php echo $image->url() ?>"
-                     data-description=""
-                     style="display:none;">
-                  </a>
+                <a href="#">
+                  <img alt="<?php echo $page->title() ?> Bild <?php echo $picNumber ?>"
+                   src="<?php echo $dummyPicture ?>"
+                   data-src="<?php echo str_replace(".jpg", "_preview.jpg", $image->url()) ?>"
+                   data-image="<?php echo $image->url() ?>"
+                   data-description=""
+                   style="display:none;">
+                </a>
 
-                <?php endif ?>
+              <?php endif ?>
 
-		      	  <?php endforeach ?>
+            <?php endforeach ?>
 
-			      <?php endforeach ?>
+          <?php endforeach ?>
 
-          </div>
-          <br />
+        </div>
+        <br />
+        
        </div>
         <div class="col-md-3">
           <img class="blog-map hidden-sm hidden-xs" alt="Karte" title="Karte" src="<?php echo $page->contentURL() ?>/<?php echo $page->imagemap() ?>" />

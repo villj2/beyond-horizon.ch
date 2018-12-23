@@ -279,7 +279,25 @@ $( document ).ready(function() {
 
 	$('map').imageMapResize();
 
-	setTimeout(initUniteGallery, 100);
+
+
+	setTimeout(function(){
+
+		$('[id^="horizon-gallery-"]').each(function(i, gallery){
+
+			console.log(i);
+			console.log(gallery);
+			initUniteGallery(i+1);
+		});
+
+		/*$('#gallery-container .horizon-gallery').each(function(i, gallery){
+
+			console.log(obj);
+			initUniteGallery();
+		});*/
+		
+
+	}, 100);
 });
 
 function getUrlVars()
@@ -295,30 +313,22 @@ function getUrlVars()
     return vars;
 }
 
-function initUniteGallery()
+function initUniteGallery(galleryId)
 {
 	// Unite gallery
 	//console.log("init unite gallery");
+	var gallerySelector = '#horizon-gallery-' + galleryId;
 
 	// Save all data-src info in array
 	var imageSources = [];
-	$('#horizon-gallery img').each(function(){
+	$(gallerySelector + ' img').each(function(){
 
 		imageSources.push($(this).data('src'));
     });
 
 	//console.log(imageSources);
 
-	var uniteApi = jQuery("#horizon-gallery").unitegallery({
-		/*tiles_space_between_cols: 5,
-		tiles_include_padding: false,
-		tiles_min_columns: 2,
-		tiles_max_columns: 4,
-		tiles_align:"center",
-		tiles_col_width: 250*/
-
-		/*tiles_min_columns: 3,
-		tiles_max_columns: 0,*/
+	var uniteApi = jQuery(gallerySelector).unitegallery({
 		tiles_space_between_cols: 10,
 		tiles_space_between_cols_mobile: 6,
 		tiles_exact_width: false,
@@ -326,10 +336,7 @@ function initUniteGallery()
 		tiles_enable_transition: true
 	});
 
-	// Hide gallery during creation / arrangement
-	//$('#horizon-gallery').css('visibility', 'hidden');
-
-	$('#horizon-gallery img').each(function(){
+	$(gallerySelector + ' img').each(function(){
 
 		//console.log(this);
     	$(this).addClass("fillMePlz");
@@ -377,56 +384,30 @@ function initUniteGallery()
 			okToLoad = false;
 			setTimeout(function(){ okToLoad = true; }, 100);
 
-			scrollReplaceImage(Utils, imageSources);
+			scrollReplaceImage(Utils, imageSources, gallerySelector);
 
 		}
 	});
 
 	setTimeout(function(){
 
-		scrollReplaceImage(Utils, imageSources);
+		//scrollReplaceImage(Utils, imageSources, gallerySelector);
 
 	}, 100);
-
-	//scrollReplaceImage(Utils, imageSources);
-
-	//window.dispatchEvent(new Event('resize'));
-	//var uniteInitWidth = $('#horizon-gallery').width();
-
-	// resize gallery in order to re-arange pictures. They are wrong initially.
-	//uniteApi.resize(uniteInitWidth * 2);
-	//uniteApi.resize(uniteInitWidth);
-
-	//$('#horizon-gallery').width(200);
-
-	/*setTimeout(function() {
-		console.log("UniteInitWidth 2: " + uniteInitWidth);
-
-		//uniteApi.resize(uniteInitWidth);
-		//$('#horizon-gallery').width(uniteInitWidth);
-		//window.dispatchEvent(new Event('resize'));
-		//$('#horizon-gallery').css('visibility', 'visible');
-
-	}, 1000);*/
-
-	//$('#horizon-gallery').css('visibility', 'visible');
 }
 
-function scrollReplaceImage(Utils, imageSources)
+function scrollReplaceImage(Utils, imageSources, gallerySelector)
 {
-	$('#horizon-gallery img.fillMePlz').each(function()
+	$(gallerySelector + ' img.fillMePlz').each(function()
 	{
 		var isElementInView = Utils.isElementInView(this, false);
 
 		if (isElementInView) {
-		    //console.log('in view');
-		    //console.log($(this).attr('src'));
 		    $(this).removeClass('fillMePlz');
 
 		    //console.log("image replaced");
 
 		    // get index of img
-		    //var parentEl = $(this).closest('ug-thumb-wrapper');
 		    var index = $(this).parent().index();
 
 		    // replace image
