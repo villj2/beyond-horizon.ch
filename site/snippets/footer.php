@@ -27,13 +27,11 @@
     <script src="/Frontend/dist/js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="/Frontend/dist/js/ie10-viewport-bug-workaround.js"></script>
-    <script src="/Frontend/dist/js/masonry.pkgd.min.js"></script>
-    <script src="/Frontend/dist/js/photo-gallery.js"></script>
-    <script src="/Frontend/dist/js/ekko-lightbox.js"></script>
     <script src="/Frontend/dist/js/imageMapResizer.min.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyArrmeuN9cA75Muj7MM1JOXaDurFM4aKrM"></script>
+    <script type='text/javascript' src='/Frontend/dist/js/unitegallery.min.js'></script>
+    <script type='text/javascript' src='/Frontend/dist/js/ug-theme-tiles.js'></script>
     <script src="/Frontend/dist/js/infobubble.js"></script>
-    <script src="/Frontend/dist/js/site.min.js"></script>
-
+    <script src="/Frontend/dist/js/site.js"></script> <!-- /Frontend/dist/js/site.min.js -->
   </body>
 </html>

@@ -27,9 +27,7 @@
 
         	<?php echo $page->text()->kirbytext() ?>
           
-          <div class="grid wrapper-parent">
-            
-            <div class="grid-sizer"></div>
+          <div id="horizon-gallery" style="display:none;">
 
             <?php foreach($page->children() as $subpage): ?>
 
@@ -37,16 +35,23 @@
 
             	<?php foreach($subpage->images()->sortBy('sort', 'asc')->limit($subpage->postlimit()->value() * 2) as $image): ?>
 
-            		<!-- make sure not showing double images -->
-            		<?php if (strpos($image->filename(), 'preview') == false): ?>
-            			<div class="grid-item">
-			              <div class="grid-content-container">
-			                <a href="<?php echo $image->url() ?>" data-toggle="lightbox" data-gallery="multiimages" data-parent=".grid">
-			                  <img src="<?php echo str_replace(".jpg", "_preview.jpg", $image->url()) ?>" alt="<?php echo $page->title() ?> Bild <?php echo ++$picNumber ?>" title="<?php echo $page->title() ?> Bild <?php echo $picNumber ?>" />
-			                </a>
-			              </div>
-			            </div>
-            		<?php endif ?>
+                <?php if (strpos($image->filename(), 'preview') == false): ?>
+
+                  <?php
+                    $dummyPicture = kirby()->urls()->index() . "/assets/images/" . ($image->isLandscape() ? "landscape" : "portrait") . "_dummy_unite.jpg";
+                    $picNumber++;
+                  ?>
+
+                  <a href="http://unitegallery.net">
+                    <img alt="<?php echo $page->title() ?> Bild <?php echo $picNumber ?>"
+                     src="<?php echo $dummyPicture ?>"
+                     data-src="<?php echo str_replace(".jpg", "_preview.jpg", $image->url()) ?>"
+                     data-image="<?php echo $image->url() ?>"
+                     data-description=""
+                     style="display:none;">
+                  </a>
+
+                <?php endif ?>
 
 		      	  <?php endforeach ?>
 

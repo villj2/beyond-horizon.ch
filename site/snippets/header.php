@@ -29,15 +29,15 @@
     <meta name="theme-color" content="#ffffff">
 
     <title><?php echo $site->title()->html() ?> | Reise jenseits des Horizonts | <?php echo $page->title()->html() ?></title>
-
-    <link href="/Frontend/dist/css/ekko-lightbox.min.css" rel="stylesheet">
-
+    
     <!-- Bootstrap core CSS -->
-    <link href="/Frontend/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- <link href="/Frontend/dist/css/bootstrap.css" rel="stylesheet"> -->
+    <!-- <link href="/Frontend/dist/css/bootstrap.min.css" rel="stylesheet"> -->
+    <link href="/Frontend/dist/css/bootstrap.css" rel="stylesheet">
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <link href="/Frontend/dist/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <link href="/Frontend/dist/css/unite-gallery.min.css" rel="stylesheet">
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
