@@ -24,7 +24,7 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> -->
     <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
-    <!-- <script>window.jQuery || document.write('<script src="/Frontend/dist/js/jquery.min.js"><\/script>')</script> -->
+    <script>window.jQuery || document.write('<script src="/Frontend/dist/js/jquery.min.js"><\/script>')</script>
     <script src="/Frontend/dist/js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="/Frontend/dist/js/ie10-viewport-bug-workaround.js"></script>

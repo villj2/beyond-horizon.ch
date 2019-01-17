@@ -431,7 +431,7 @@ $( document ).ready(function() {
 
 	        if(continentId == selectedList[j].id) {
 
-	        	console.log("add active to: " + continentId);
+	        	//console.log("add active to: " + continentId);
 
 	          $(mapContinents[i]).addClass('active');
 	          break;
@@ -444,7 +444,8 @@ $( document ).ready(function() {
 
 	    // initially hide all countries
 	    $('#list-countries').find('.list-country').each(function(e, target){
-	        $(target).hide();
+
+	    	$(target).addClass('hide');
 	    });
 
 	    // show countries based on continents in selectedList
@@ -453,8 +454,10 @@ $( document ).ready(function() {
 	      var continentId = selectedList[i].id;
 
 	      var entries = $('#list-countries').children('[id^="' + continentId + '"]');
+
 	      entries.each(function(e, target){
-	        $(target).show();
+
+	      	$(target).removeClass('hide');
 	      });
 	    }
 
@@ -462,9 +465,11 @@ $( document ).ready(function() {
 	    $('#list-countries .list-country a').each(function(e, target){
 
 	      if(countryExistsInSelectedList($(target).data('country'))){
+
 	        $(target).addClass('active');
 	      }
 	      else{
+	      	
 	        $(target).removeClass('active');
 	      }
 
@@ -481,7 +486,8 @@ $( document ).ready(function() {
 	      // Check if continent-goup should be active
 	      if(continentExistsInSelectedList(continent)){
 
-	        $("#posts-" + continent).show();
+	        //$("#posts-" + continent).show();
+	        $("#posts-" + continent).removeClass('hide');
 
 	        if(countryExistsInSelectedList(country)){
 
@@ -489,23 +495,23 @@ $( document ).ready(function() {
 	        }
 	        else {
 	          // Hide country
-	          $("#posts-" + country).hide();
+	          $("#posts-" + country).addClass('hide');
 	        }
 	      }
 	      else {
 	        // Hide continent section
-	        $("#posts-" + continent).hide();
+	        $("#posts-" + continent).addClass('hide');
 	      }
 
 	    });
 
-	    console.log(selectedList);
+	    //console.log(selectedList);
 	  }
 
 	  function postsShowByCountry(country) {
 
 	    // Show country posts
-	    $("#posts-" + country).show();
+	    $("#posts-" + country).removeClass('hide');
 
 	    // Load pictures
 	    $("#posts-" + country).children('.posts-entry').each(function(e, target){
