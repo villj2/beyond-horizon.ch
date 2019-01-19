@@ -10,7 +10,7 @@
 			</div>
 		</div>
 
-		<div class="row">
+		<div id="continent-map-filtering" class="row">
 			<div class="col-md-12">
 				<!-- List with countries -->
 				<div id="list-countries">
@@ -19,7 +19,13 @@
 
 						<?php foreach($continent->children()->sortBy('sort', 'desc') as $country): ?>
 
-							<div id="<?php echo strtolower($continent->title()) ?>-<?php echo strtolower($country->countrycode()) ?>" class="list-country hide"><a href="#" data-continent="<?php echo strtolower($continent->title()) ?>" data-country="<?php echo strtolower($country->countrycode()) ?>"><?php echo $country->title()->html() ?></a></div>
+							<button id="<?php echo strtolower($continent->title()) ?>-<?php echo strtolower($country->countrycode()) ?>" data-continent="<?php echo strtolower($continent->title()) ?>" data-country="<?php echo strtolower($country->countrycode()) ?>" class="list-country hide">
+								<?php echo $country->title()->html() ?>
+							</button>
+
+							<!-- <div id="<?php echo strtolower($continent->title()) ?>-<?php echo strtolower($country->countrycode()) ?>" class="list-country hide">
+								<a href="#" data-continent="<?php echo strtolower($continent->title()) ?>" data-country="<?php echo strtolower($country->countrycode()) ?>"><?php echo $country->title()->html() ?></a>
+							</div> -->
 
 						<?php endforeach ?>
 

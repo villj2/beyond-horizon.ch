@@ -349,7 +349,7 @@ $( document ).ready(function() {
 	    return false;
 	  });
 
-	  $('#list-countries a').on('click', function(e) {
+	  $('#list-countries button').on('click', function(e) {
 
 	    // Modify selectedList with countries
 	    listUpdateSelectedList(e);
@@ -462,7 +462,7 @@ $( document ).ready(function() {
 	    }
 
 	    // set state of country based on country in selectedList
-	    $('#list-countries .list-country a').each(function(e, target){
+	    $('#list-countries .list-country').each(function(e, target){
 
 	      if(countryExistsInSelectedList($(target).data('country'))){
 

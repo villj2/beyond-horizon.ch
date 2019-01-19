@@ -7718,6 +7718,23 @@ time.icon:focus {
 #continent-map .hide {
   display: none;
 }
+#continent-map-filtering {
+  margin-top: 40px;
+}
+#continent-map-filtering #list-countries button {
+  display: inline-block;
+  border: 1px solid black;
+  background: none;
+  padding: 10px 20px;
+  margin: 10px 5px;
+}
+#continent-map-filtering #list-countries button.active {
+  background-color: #c1c0c0;
+}
+#continent-map-filtering #list-countries button:active,
+#continent-map-filtering #list-countries button:focus {
+  outline: none;
+}
 /* TMP */
 .list-country a.active {
   background-color: #0ff;
