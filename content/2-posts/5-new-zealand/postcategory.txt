@@ -1,9 +1,0 @@
-Title: Neuseeland
-
-----
-
-Teasericon: newzealand
-
-----
-
-Showingallery: 1

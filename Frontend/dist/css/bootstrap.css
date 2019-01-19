@@ -7693,7 +7693,7 @@ time.icon:focus {
 #continent-map #africa {
   fill: #F9AD26;
 }
-#continent-map #australia {
+#continent-map #oceania {
   fill: #CB0F1E;
 }
 #continent-map #america-north {
@@ -7719,9 +7719,6 @@ time.icon:focus {
   display: none;
 }
 /* TMP */
-#posts img {
-  max-width: 200px;
-}
 .list-country a.active {
   background-color: #0ff;
 }

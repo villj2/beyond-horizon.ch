@@ -1,0 +1,9 @@
+Titlemenu: Afrika
+
+----
+
+Title: Africa
+
+----
+
+Titlefrontend: Afrika

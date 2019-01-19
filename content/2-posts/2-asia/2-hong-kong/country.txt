@@ -1,0 +1,17 @@
+Title: Hong Kong
+
+----
+
+Showingallery: 1
+
+----
+
+Teasericon: hongkong
+
+----
+
+Countrycode: hk
+
+----
+
+Trip: oceania2016

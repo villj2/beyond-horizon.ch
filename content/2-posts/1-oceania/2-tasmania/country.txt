@@ -1,0 +1,17 @@
+Title: Tasmanien
+
+----
+
+Teasericon: tasmania
+
+----
+
+Showingallery: 1
+
+----
+
+Countrycode: tas
+
+----
+
+Trip: oceania2016

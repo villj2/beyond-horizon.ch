@@ -1,0 +1,9 @@
+title: Continent
+pages:
+  template: country
+files: false
+fields:
+  titlefrontend:
+    label: Titel
+    type:  text
+    required: true

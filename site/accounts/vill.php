@@ -9,8 +9,8 @@ password: >
 language: en
 role: admin
 history:
-  - about
-  - posts/japan/fujikawaguchiko
-  - posts/hong-kong/hong-kong
-  - posts/new-zealand/auckland
-  - posts/hong-kong/macau/gallery
+  - posts/oceania/tasmania
+  - posts/oceania/new-zealand
+  - posts/america-south
+  - posts/america-north
+  - posts/africa

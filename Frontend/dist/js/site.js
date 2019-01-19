@@ -311,7 +311,7 @@ $( document ).ready(function() {
 	var continentsSelected = [];
 	  var countriesSelected = [];
 
-	  var selectedList = [];
+	  var selectedList = [{"id":"oceania", "countries":["nz"]}, {"id":"asia", "countries":["jp"]}];
 	  /* example: 
 	  [{"id":"australia", "countries":["nz", "au"]}, {"id":"asia", "countries":["tw", "jp"]}]
 	  [{"id":"australia", "countries":["nz"]}, {"id":"asia", "countries":["jp"]}]
@@ -486,7 +486,6 @@ $( document ).ready(function() {
 	      // Check if continent-goup should be active
 	      if(continentExistsInSelectedList(continent)){
 
-	        //$("#posts-" + continent).show();
 	        $("#posts-" + continent).removeClass('hide');
 
 	        if(countryExistsInSelectedList(country)){
@@ -505,7 +504,7 @@ $( document ).ready(function() {
 
 	    });
 
-	    //console.log(selectedList);
+	    console.log(selectedList);
 	  }
 
 	  function postsShowByCountry(country) {
@@ -514,7 +513,7 @@ $( document ).ready(function() {
 	    $("#posts-" + country).removeClass('hide');
 
 	    // Load pictures
-	    $("#posts-" + country).children('.posts-entry').each(function(e, target){
+	    $("#posts-" + country + " .posts-entry").each(function(e, target){
 	      var post = $(target);
 
 	      post.children('img').each(function(e, target){

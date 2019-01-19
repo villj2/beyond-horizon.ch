@@ -1,8 +1,12 @@
 title: Posts
 pages:
-  template: postcategory
+  template: continent
 files: false
 fields:
   titlemenu:
     label: Titel Menu
     type:  text
+  map:
+    label: Karte (SVG)
+    type: textarea
+    size: large

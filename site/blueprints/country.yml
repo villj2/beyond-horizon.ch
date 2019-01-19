@@ -1,0 +1,32 @@
+title: Country
+pages:
+  template: post
+files: false
+fields:
+  title:
+    label: Title
+    type:  text
+  showingallery:
+    label: Show In Gallery
+    type: checkbox
+  countrycode:
+    label: Countrycode
+    type: text
+  teasericon:
+    label: Teaser Icon
+    type: select
+    default: preparation
+    options:
+      preparation: Preparation
+      japan: Japan
+      australia: Australia
+      tasmania: Tasmania
+      newzealand: New Zealand
+      hongkong: Hong Kong
+  trip:
+    label: Reise
+    type: select
+    default: oceania2016
+    options:
+      oceania2016: Japan / Ozeanien 2016
+      centralamerica2019: Zentralamerika 2019

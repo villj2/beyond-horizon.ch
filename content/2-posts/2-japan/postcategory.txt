@@ -1,9 +1,0 @@
-Title: Japan
-
-----
-
-Teasericon: japan
-
-----
-
-Showingallery: 1

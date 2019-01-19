@@ -2,7 +2,8 @@
 
 return function($site, $pages, $page) {
 
-	$categories = $page->children()->visible();
+	$continents = $page->children()->visible();
+	$mapsvg = $page->map()->text();
 
-	return compact('categories');
+	return compact('continents', 'mapsvg');
 };

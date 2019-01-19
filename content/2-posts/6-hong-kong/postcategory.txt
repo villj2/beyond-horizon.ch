@@ -1,9 +1,0 @@
-Title: Hong Kong
-
-----
-
-Showingallery: 1
-
-----
-
-Teasericon: hongkong

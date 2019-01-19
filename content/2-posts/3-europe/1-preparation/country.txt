@@ -1,0 +1,17 @@
+Title: Schweiz
+
+----
+
+Teasericon: preparation
+
+----
+
+Showingallery: 1
+
+----
+
+Countrycode: ch
+
+----
+
+Trip: oceania2016

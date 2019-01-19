@@ -1,0 +1,17 @@
+Title: Australien
+
+----
+
+Teasericon: australia
+
+----
+
+Showingallery: 1
+
+----
+
+Countrycode: au
+
+----
+
+Trip: oceania2016

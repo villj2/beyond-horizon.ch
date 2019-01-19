@@ -1,0 +1,9 @@
+Titlemenu: Europa
+
+----
+
+Title: Europe
+
+----
+
+Titlefrontend: Europa
