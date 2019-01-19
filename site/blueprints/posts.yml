@@ -6,7 +6,3 @@ fields:
   titlemenu:
     label: Titel Menu
     type:  text
-  map:
-    label: Karte (SVG)
-    type: textarea
-    size: large

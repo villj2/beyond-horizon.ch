@@ -9,8 +9,8 @@ password: >
 language: en
 role: admin
 history:
+  - posts
   - posts/oceania/tasmania
   - posts/oceania/new-zealand
   - posts/america-south
   - posts/america-north
-  - posts/africa

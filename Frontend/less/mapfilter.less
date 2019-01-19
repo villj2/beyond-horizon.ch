@@ -16,16 +16,19 @@
 	#america-north {fill:#006CB7;}
 	#america-south {fill:#FF6CB7;}
 	#europe {fill:#702D90;}
+
 	.active {fill:#0F0 !important;}
 
-	path:hover, circle:hover {
-		stroke-width:10px;
-		stroke-linejoin: round;
+	path.has-entries:hover, circle.has-entries:hover {
+
 		fill: #002868 !important;
 		cursor: pointer;
 	}
 
-	.hide{display: none;}
+	.no-entries {
+		cursor: default;
+		fill: #fff;
+	}
 }
 
 #continent-map-filtering {
@@ -51,11 +54,3 @@
 	}
 
 }
-
-
-/* TMP */
-
-.list-country a.active {
-  background-color: #0ff;
-}
-

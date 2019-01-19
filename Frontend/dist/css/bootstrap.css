@@ -7708,15 +7708,14 @@ time.icon:focus {
 #continent-map .active {
   fill: #0F0 !important;
 }
-#continent-map path:hover,
-#continent-map circle:hover {
-  stroke-width: 10px;
-  stroke-linejoin: round;
+#continent-map path.has-entries:hover,
+#continent-map circle.has-entries:hover {
   fill: #002868 !important;
   cursor: pointer;
 }
-#continent-map .hide {
-  display: none;
+#continent-map .no-entries {
+  cursor: default;
+  fill: #fff;
 }
 #continent-map-filtering {
   margin-top: 40px;
@@ -7734,9 +7733,5 @@ time.icon:focus {
 #continent-map-filtering #list-countries button:active,
 #continent-map-filtering #list-countries button:focus {
   outline: none;
-}
-/* TMP */
-.list-country a.active {
-  background-color: #0ff;
 }
 /*# sourceMappingURL=bootstrap.css.map */

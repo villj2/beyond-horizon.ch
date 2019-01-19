@@ -364,6 +364,9 @@ $( document ).ready(function() {
 
 	    var continentId = $(e.target).attr('id');
 
+	    // Don't do anything if continent has no entries
+	    if(!$(e.target).hasClass('has-entries')) return;
+
 	    // Add or remove selected continent
 	    var indexForRemoving = -1;
 	    for(var i = 0; i<selectedList.length; i++) {
