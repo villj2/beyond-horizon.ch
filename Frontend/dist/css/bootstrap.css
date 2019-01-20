@@ -6801,6 +6801,9 @@ body h3 {
   margin-top: 40px;
   font-size: 1.4em;
 }
+body h4 {
+  font-family: 'ralewaylight';
+}
 body p {
   font-family: 'ralewaylight';
   font-size: 1.15em;
@@ -7687,38 +7690,28 @@ time.icon:focus {
   top: 0;
   left: 0;
 }
-#continent-map #asia {
-  fill: #10C491;
+#continent-map path {
+  fill: #E6E6E6;
 }
-#continent-map #africa {
-  fill: #F9AD26;
-}
-#continent-map #oceania {
-  fill: #CB0F1E;
-}
-#continent-map #america-north {
-  fill: #006CB7;
-}
-#continent-map #america-south {
-  fill: #FF6CB7;
-}
-#continent-map #europe {
-  fill: #702D90;
+#continent-map path.has-entries {
+  fill: #c1c0c0;
 }
 #continent-map .active {
-  fill: #0F0 !important;
+  fill: #999 !important;
 }
 #continent-map path.has-entries:hover,
 #continent-map circle.has-entries:hover {
-  fill: #002868 !important;
+  fill: #777 !important;
   cursor: pointer;
 }
-#continent-map .no-entries {
-  cursor: default;
-  fill: #fff;
+@media (min-width: 768px) {
+  #continent-map {
+    margin-top: 30px;
+  }
 }
 #continent-map-filtering {
   margin-top: 40px;
+  margin-bottom: 30px;
 }
 #continent-map-filtering #list-countries button {
   display: inline-block;
@@ -7728,7 +7721,7 @@ time.icon:focus {
   margin: 10px 5px;
 }
 #continent-map-filtering #list-countries button.active {
-  background-color: #c1c0c0;
+  background-color: #E6E6E6;
 }
 #continent-map-filtering #list-countries button:active,
 #continent-map-filtering #list-countries button:focus {

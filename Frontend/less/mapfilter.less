@@ -10,32 +10,34 @@
 		left: 0;
 	}
 
-	#asia {fill:#10C491;}
-	#africa {fill:#F9AD26;}
-	#oceania {fill:#CB0F1E;}
-	#america-north {fill:#006CB7;}
-	#america-south {fill:#FF6CB7;}
-	#europe {fill:#702D90;}
+	path {
+		fill: #E6E6E6;
 
-	.active {fill:#0F0 !important;}
+		&.has-entries {
+			fill: #c1c0c0;
+		}
+	}
+
+	.active {fill:#999 !important;}
 
 	path.has-entries:hover, circle.has-entries:hover {
 
-		fill: #002868 !important;
+		fill: #777 !important;
 		cursor: pointer;
 	}
 
-	.no-entries {
-		cursor: default;
-		fill: #fff;
+	@media(min-width:@screen-sm-min) {
+		margin-top: 30px;
 	}
 }
 
 #continent-map-filtering {
 
 	margin-top: 40px;
+	margin-bottom: 30px;
 
 	#list-countries {
+
 		button {
 			display: inline-block;
 			border: 1px solid black;
@@ -44,7 +46,7 @@
 		    margin: 10px 5px;
 
 		    &.active{
-		    	background-color: #c1c0c0;
+		    	background-color: #E6E6E6;
 		    }
 
 		    &:active, &:focus {

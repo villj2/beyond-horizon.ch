@@ -4,9 +4,12 @@ return function($site, $pages, $page) {
 
 	$continents = $page->children()->visible();
 	$mapsvg = $page->map()->text();
+	$hasEntriesDict = array();
 
-	// TODO loop through children, check if has entries, create dictionary with page-name as key and pass to page
-	// $page->children()
+	foreach($page->children() as $continent) {
 
-	return compact('continents', 'mapsvg');
+		$hasEntriesDict[strtolower($continent->title())] = $continent->children()->visible()->count() > 0 ? 'has-entries' : '';
+	}
+
+	return compact('continents', 'mapsvg', 'hasEntriesDict');
 };
