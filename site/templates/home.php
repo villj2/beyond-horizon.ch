@@ -97,7 +97,7 @@
         <?php } else { ?>
 
         <?php foreach($page->parent()->index()->visible()->filterBy('template', 'post')->filterBy('picsonly', '!=', '1')->sortBy('date', 'desc')->limit(6) as $post): ?>
-          <div class="col-lg-3 col-md-4 col-sm-4 col-xs-6">
+          <div class="col-lg-3 col-md-4 col-sm-4 col-xs-6 col-xxs-12">
             <div class="teaser-image-container">
               <p>
                 <img src="<?php echo $post->contentURL() ?>/<?php echo $post->imageteaser() ?>" class="teaser-image" alt="<?php echo $post->title() ?>" title="<?php echo $post->title() ?>" />
