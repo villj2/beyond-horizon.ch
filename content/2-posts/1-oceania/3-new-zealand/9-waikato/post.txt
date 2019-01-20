@@ -38,7 +38,7 @@ Imagejumbotron: jumbo_waikato.jpg
 
 ----
 
-Imageteaser: teaser_waikato.jpg
+Imageteaser: teaser_square.jpg
 
 ----
 

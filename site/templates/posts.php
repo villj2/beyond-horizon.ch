@@ -559,7 +559,7 @@
 			          			<!-- Loop over POSTS -->
 			      				<?php foreach($country->children()->visible()->filterBy('picsonly', '!=', '1')->sortby('sort', 'desc') as $post): ?>
 
-							      	<div class="col-sm-4">
+							      	<div class="col-lg-3 col-md-4 col-sm-4 col-xs-6">
 						          		<div class="teaser-image-container">
 
 											<p class="posts-entry">
@@ -567,7 +567,7 @@
 								              	<a class="" href="<?php echo $post->url() ?>" style="">
 									                <span class="darkener"></span>
 									                <span class="helper"></span>
-									                <img src="/Frontend/img/icon_<?php echo $country->teasericon() ?>.svg" onerror="this.src='/Frontend/img/placeholder.png'" alt="<?php echo $post->title() ?>" title="<?php echo $post->title() ?>" />
+									                <!-- <img src="/Frontend/img/icon_<?php echo $country->teasericon() ?>.svg" onerror="this.src='/Frontend/img/placeholder.png'" alt="<?php echo $post->title() ?>" title="<?php echo $post->title() ?>" /> -->
 									                <span class="teaser-text"><?php echo $post->title()->html() ?></span>
 								              	</a>
 											</p>

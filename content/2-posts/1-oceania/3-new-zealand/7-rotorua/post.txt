@@ -34,7 +34,7 @@ Imagejumbotron: jumbo.jpg
 
 ----
 
-Imageteaser: teaser.jpg
+Imageteaser: teaser_square.jpg
 
 ----
 

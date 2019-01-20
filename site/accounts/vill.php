@@ -9,8 +9,8 @@ password: >
 language: en
 role: admin
 history:
-  - posts
-  - posts/oceania/tasmania
-  - posts/oceania/new-zealand
-  - posts/america-south
-  - posts/america-north
+  - posts/oceania/new-zealand/rotorua
+  - posts/oceania/new-zealand/hobbiton
+  - posts/oceania/new-zealand/waikato
+  - posts/oceania/new-zealand/northland
+  - posts/oceania/new-zealand/auckland

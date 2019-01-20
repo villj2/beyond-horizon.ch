@@ -311,10 +311,10 @@ $( document ).ready(function() {
 	var continentsSelected = [];
 	  var countriesSelected = [];
 
-	  var selectedList = [];
+	  var selectedList = [{"id":"oceania", "countries":["nz"]}];
 	  /* example: 
-	  [{"id":"australia", "countries":["nz", "au"]}, {"id":"asia", "countries":["tw", "jp"]}]
-	  [{"id":"australia", "countries":["nz"]}, {"id":"asia", "countries":["jp"]}]
+	  [{"id":"oceania", "countries":["nz", "au"]}, {"id":"asia", "countries":["tw", "jp"]}]
+	  [{"id":"oceania", "countries":["nz"]}, {"id":"asia", "countries":["jp"]}]
 	  */
 
 	  var continents = $('.continent');

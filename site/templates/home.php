@@ -97,14 +97,14 @@
         <?php } else { ?>
 
         <?php foreach($page->parent()->index()->visible()->filterBy('template', 'post')->filterBy('picsonly', '!=', '1')->sortBy('date', 'desc')->limit(6) as $post): ?>
-          <div class="col-sm-4">
+          <div class="col-lg-3 col-md-4 col-sm-4 col-xs-6">
             <div class="teaser-image-container">
               <p>
                 <img src="<?php echo $post->contentURL() ?>/<?php echo $post->imageteaser() ?>" class="teaser-image" alt="<?php echo $post->title() ?>" title="<?php echo $post->title() ?>" />
                 <a class="" href="<?php echo $post->url() ?>">
                   <span class="darkener"></span>
                   <span class="helper"></span>
-                  <img src="/Frontend/img/icon_<?php echo $post->parent()->teasericon() ?>.svg" onerror="this.src='/Frontend/img/placeholder.png'" alt="<?php echo $post->title() ?>" title="<?php echo $post->title() ?>" />
+                  <!-- <img src="/Frontend/img/icon_<?php echo $post->parent()->teasericon() ?>.svg" onerror="this.src='/Frontend/img/placeholder.png'" alt="<?php echo $post->title() ?>" title="<?php echo $post->title() ?>" /> -->
                   <span class="teaser-text"><?php echo $post->title()->html() ?></span>
                 </a>
               </p>
