@@ -543,7 +543,7 @@
 
 
 		      		<!-- Loop over COUNTRIES -->
-		      		<?php foreach($continent->children()->sortby('sort', 'desc') as $country): ?>
+		      		<?php foreach($continent->children()->sortby('title', 'asc') as $country): ?>
 
 		      			<div id="posts-<?php echo $country->countrycode()->text() ?>" data-continent="<?php echo strtolower($continent->title()->text()) ?>" data-country="<?php echo $country->countrycode()->text() ?>" class="posts-country hide">
 

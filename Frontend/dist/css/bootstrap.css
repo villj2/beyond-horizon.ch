@@ -7867,7 +7867,7 @@ time.icon:focus {
 }
 #continent-map path.has-entries:hover,
 #continent-map circle.has-entries:hover {
-  fill: #777 !important;
+  fill: #999 !important;
   cursor: pointer;
 }
 @media (min-width: 768px) {
