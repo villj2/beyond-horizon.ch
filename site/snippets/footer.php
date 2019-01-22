@@ -2,7 +2,7 @@
       <div class="container-fluid">
         <div class="row">
           <div class="col-sm-4 content-left">
-            <p class="text-muted">© 2019 - Beyond-Horizon</p>
+            <p class="text-muted">© <?php echo date("Y"); ?> - Beyond-Horizon</p>
           </div>
           <!-- <div class="col-sm-4 content-center">
             <p class="text-muted">

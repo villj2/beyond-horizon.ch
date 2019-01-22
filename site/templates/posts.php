@@ -528,7 +528,7 @@
 			</div>
 		</div>
 
-      	<div id="posts">
+      	<div id="filtered-content">
 
       		<!-- Loop over CONTINENTS -->
       		<?php foreach($continents->sortBy('titlefrontend', 'asc') as $continent): ?>

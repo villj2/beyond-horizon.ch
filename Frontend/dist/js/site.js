@@ -280,24 +280,20 @@ $( document ).ready(function() {
 	$('map').imageMapResize();
 
 
+	if($('body').data('initgallery')) {
 
-	setTimeout(function(){
+		setTimeout(function(){
 
-		$('[id^="horizon-gallery-"]').each(function(i, gallery){
+			$('[id^="horizon-gallery-"]').each(function(i, gallery){
 
-			console.log(i);
-			console.log(gallery);
-			initUniteGallery(i+1);
-		});
+				console.log(i);
+				console.log(gallery);
+				initUniteGallery(i+1);
+			});
 
-		/*$('#gallery-container .horizon-gallery').each(function(i, gallery){
-
-			console.log(obj);
-			initUniteGallery();
-		});*/
-		
-
-	}, 100);
+		}, 100);
+	}
+	
 
 
 
@@ -311,7 +307,7 @@ $( document ).ready(function() {
 	var continentsSelected = [];
 	  var countriesSelected = [];
 
-	  var selectedList = [{"id":"oceania", "countries":["nz"]}];
+	  var selectedList = [{"id":"oceania", "countries":["tas"]}];
 	  /* example: 
 	  [{"id":"oceania", "countries":["nz", "au"]}, {"id":"asia", "countries":["tw", "jp"]}]
 	  [{"id":"oceania", "countries":["nz"]}, {"id":"asia", "countries":["jp"]}]
@@ -476,7 +472,7 @@ $( document ).ready(function() {
 
 	  function postsUpdate() {
 
-	    $('#posts .posts-country').each(function(e, target){
+	    $('#filtered-content .posts-country').each(function(e, target){
 
 	      var continent = $(target).data('continent');
 	      var country = $(target).data('country');
