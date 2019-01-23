@@ -575,7 +575,7 @@
                           </div>
                           <div class="row">
                             <div class="col-md-12">
-                            <div id="horizon-gallery-' . $galleryIndex . '" style="display:none;">';
+                            <div id="horizon-gallery-' . $galleryIndex . '" style="display:none;" class="horizon-gallery-' . $country->countrycode() . '">';
 
                           $picIndex = 0;
 

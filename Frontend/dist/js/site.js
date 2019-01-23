@@ -279,8 +279,9 @@ $( document ).ready(function() {
 
 	$('map').imageMapResize();
 
-
 	if($('body').data('initgallery')) {
+
+		// init unite gallery immediately. Gallery in posts.
 
 		setTimeout(function(){
 
@@ -288,7 +289,7 @@ $( document ).ready(function() {
 
 				console.log(i);
 				console.log(gallery);
-				initUniteGallery(i+1);
+				initUniteGallery('#horizon-gallery-' + (i+1));
 			});
 
 		}, 100);
@@ -460,6 +461,16 @@ $( document ).ready(function() {
 
 	      if(countryExistsInSelectedList($(target).data('country'))){
 
+	      	// init gallery here if initially blocked
+	      	if(!$('body').data('initgallery')){
+
+	      		setTimeout(function(){
+
+					initUniteGalleryByClass('.horizon-gallery-' + $(target).data('country'));
+
+				}, 100);
+	      	}
+
 	        $(target).addClass('active');
 	      }
 	      else{
@@ -565,11 +576,26 @@ function getUrlVars()
     return vars;
 }
 
-function initUniteGallery(galleryId)
+function initUniteGalleryByClass(gallerySelector) {
+
+	$(gallerySelector).each(function(e, target){
+
+		initUniteGallery('#' + $(target).attr('id'));
+	});
+}
+
+function initUniteGallery(gallerySelector)
 {
 	// Unite gallery
 	//console.log("init unite gallery");
-	var gallerySelector = '#horizon-gallery-' + galleryId;
+	//var gallerySelector = '#horizon-gallery-' + galleryId;
+
+	// Check if already initialized
+	//console.log($(gallerySelector));
+
+	if($(gallerySelector).attr('gallery-initialized') == 'true') return;
+
+	$(gallerySelector).attr('gallery-initialized', 'true');
 
 	// Save all data-src info in array
 	var imageSources = [];
@@ -652,6 +678,8 @@ function scrollReplaceImage(Utils, imageSources, gallerySelector)
 {
 	$(gallerySelector + ' img.fillMePlz').each(function()
 	{
+		console.log("goat");
+
 		var isElementInView = Utils.isElementInView(this, false);
 
 		if (isElementInView) {
