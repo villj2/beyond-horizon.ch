@@ -308,7 +308,7 @@ $( document ).ready(function() {
 	var continentsSelected = [];
 	  var countriesSelected = [];
 
-	  var selectedList = [{"id":"oceania", "countries":["tas"]}];
+	  var selectedList = [{"id":"asia", "countries":["hk"]}];
 	  /* example: 
 	  [{"id":"oceania", "countries":["nz", "au"]}, {"id":"asia", "countries":["tw", "jp"]}]
 	  [{"id":"oceania", "countries":["nz"]}, {"id":"asia", "countries":["jp"]}]
@@ -611,7 +611,8 @@ function initUniteGallery(gallerySelector)
 		tiles_space_between_cols_mobile: 6,
 		tiles_exact_width: false,
 		tiles_include_padding: true,
-		tiles_enable_transition: true
+		tiles_enable_transition: false,
+		tiles_max_columns: 3
 	});
 
 	$(gallerySelector + ' img').each(function(){
