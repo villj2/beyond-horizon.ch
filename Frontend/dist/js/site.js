@@ -23,6 +23,7 @@ function removeFromArray(array, input) {
     });
 }
 
+var imageSourcesGallery = [];
 function initUniteGalleryByClass(gallerySelector) {
 
     console.log("initUniteGalleryByClass");
@@ -33,20 +34,39 @@ function initUniteGalleryByClass(gallerySelector) {
 
         setTimeout(function() {
 
-            initUniteGallery('#' + $(target).attr('id'));
+            initUniteGallery('#' + $(target).attr('id'), true);
 
         }, time += 100);
     });
+
+    console.log("imageSourcesGallery.length: " + imageSourcesGallery.length);
 }
 
-function initUniteGallery(gallerySelector) {
+function initUniteGallery(gallerySelector, forGallery) {
 
     if ($(gallerySelector).attr('gallery-initialized') == 'true') return;
+    if ($(gallerySelector).length <= 0) return;
 
-    console.log("initUniteGallery");
+    console.log("initUniteGallery with selector: " + gallerySelector);
+
+    //galleriesLoaded.push(gallerySelector);
+
+    // Save all data-src info in array
+    var imageSources = [];
+    $(gallerySelector + ' img').each(function(){
+
+        if(forGallery)
+        {
+            imageSourcesGallery.push($(this).data('src'));
+        }
+        else
+        {
+            imageSources.push($(this).data('src'));
+        }
+    });
 
     // Ugly hack! For some reason, sometimes initially the ordering of the pictures is wrong. So hide the gallery, change width in order to force reordering, and then show the gallery again.
-    $(gallerySelector).css("visibility", "hidden");
+    //$(gallerySelector).css("visibility", "hidden");
 
     $(gallerySelector).attr('gallery-initialized', 'true');
 
@@ -59,7 +79,9 @@ function initUniteGallery(gallerySelector) {
         tiles_max_columns: 3
     });
 
-    setTimeout(function(){
+    return imageSources;
+
+    /*setTimeout(function(){
 
         uniteApi.resize($(gallerySelector).width() - 400);
 
@@ -69,13 +91,58 @@ function initUniteGallery(gallerySelector) {
 
             $(gallerySelector).css("visibility", "visible");
 
-        }, 100);
+        }, 500);
 
-    }, 100);
+    }, 500);*/
 }
 
+var galleriesLoaded = [];
+
+function replaceImagesInGallery() {
+
+    $('.horizon-gallery').each(function(e, target){
+
+        if($(target).attr('gallery-initialized') == 'true') {
+
+            //var imageSources = $(target).data('image-sources');
+            var imageSources = $(target).data('image-sources').split('|');
+
+            //console.log(imageSources);
+
+            $(target).find('img').each(function(e, target){
+
+                $(target).attr('src', imageSources[e]);
+            });
+        }
+    });
+}
 
 $(document).ready(function() {
+
+    jQuery(window).load(function () {
+
+        /*var time = 100;
+        
+        galleriesLoaded.forEach(function(entry) {
+            //$(entry).css("visibility", "visible");
+
+            setTimeout(function(){
+
+                uniteApi.resize($(gallerySelector).width() - 400);
+
+                setTimeout(function(){
+
+                    // FIXME uniteApi not available
+                    uniteApi.resize($(gallerySelector).width() + 400);
+
+                    $(entry).css("visibility", "visible");
+
+                }, time);
+
+            }, time += 100);
+        });*/
+
+    });
 
     /* ------ Google Maps -------- */
 
@@ -301,31 +368,6 @@ $(document).ready(function() {
         return false;
     });
 
-    // Smooth scrolling a-tags
-    // FIXME conflict with scroll to top button
-    /*$('a[href^=#]').on("click",function(e){
-        var t= $(this.hash);
-        var t=t.length&&t||$('[name='+this.hash.slice(1)+']');
-        if(t.length){
-            var tOffset=t.offset().top;
-            $('html,body').animate({scrollTop:tOffset-140},'slow');
-            e.preventDefault();
-        }
-    });*/
-
-    // Smooth scrolling area-tags
-    /*$('area[href^=#]').on("click",function(e){
-        var t= $(this.hash);
-        var t=t.length&&t||$('[name='+this.hash.slice(1)+']');
-        if(t.length){
-            var tOffset=t.offset().top;
-            $('html,body').animate({scrollTop:tOffset-140},'slow');
-            e.preventDefault();
-        }
-    });*/
-
-    //console.log("hihi: " + $.inArray("scrollto", getUrlVars()));
-
     // Smooth scrolling posts
     if ($.inArray("scrollto", getUrlVars()) >= 0) {
 
@@ -350,21 +392,21 @@ $(document).ready(function() {
 
     if ($('body').data('initgallery')) {
 
-    	var time = 100;
+    	var imageSources = initUniteGallery('#horizon-gallery-1');
 
-        // Initialize unite gallery immediately. Gallery in posts.
-    	setTimeout(function() {
+        setTimeout(function(){
 
             $("#horizon-gallery-1 img").each(function(e, target) {
 
-                var img = $(target);
-                img.attr('src', img.data('src'));
+                // get index of img
+                var index = $(target).parent().index();
+
+                // replace image
+                $(target).attr('src', imageSources[index]);
+
             });
 
-        	initUniteGallery('#horizon-gallery-1');
-
-        }, time += 100);
-
+        }, 100);
     }
 
     // -------- UNITE GALLERY END ---------
@@ -532,13 +574,14 @@ $(document).ready(function() {
         // set state of country based on country in selectedList
         $('#list-countries .list-country').each(function(e, target) {
 
-            if (countryExistsInSelectedList($(target).data('country'))) {
+            var country = $(target).data('country');
+
+            if (countryExistsInSelectedList(country)) {
 
                 // init gallery here if initially blocked
                 if (!$('body').data('initgallery')) {
 
                 	initUniteGalleryByClass('.horizon-gallery-' + $(target).data('country'));
-
                 }
 
                 $(target).addClass('active');
@@ -597,11 +640,11 @@ $(document).ready(function() {
         console.log("load pictures for gallery");
 
         // Load pictures for gallery
-        $(".horizon-gallery-" + country + " img").each(function(e, target) {
+        /*$(".horizon-gallery-" + country + " img").each(function(e, target) {
 
             var img = $(target);
             img.attr('src', img.data('src'));
-        });
+        });*/
 
     }
 

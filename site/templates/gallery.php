@@ -567,6 +567,15 @@
 
                         $galleryIndex++;
 
+                        $imagesources = array();
+                        foreach($gallery->images()->sortBy('sort', 'asc') as $image):
+
+                            if(strpos($image->filename(), 'preview') == true){
+                                array_push($imagesources, $image->url());
+                            }
+
+                        endforeach;
+
                         echo
                           '<div class="row">
                             <div class="col-md-12">
@@ -575,7 +584,7 @@
                           </div>
                           <div class="row">
                             <div class="col-md-12">
-                                <div id="horizon-gallery-' . $galleryIndex . '" style="display:none;" class="horizon-gallery-' . $country->countrycode() . '">';
+                                <div id="horizon-gallery-' . $galleryIndex . '" style="display:none;" data-image-sources="'. implode("|", $imagesources) . '" class="horizon-gallery horizon-gallery-' . $country->countrycode() . '">';
 
                                   $picIndex = 0;
 
