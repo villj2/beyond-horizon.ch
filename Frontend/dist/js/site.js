@@ -27,7 +27,7 @@ function initUniteGalleryByClass(gallerySelector) {
 
     console.log("initUniteGalleryByClass");
 
-    var time = 10;
+    var time = 100;
 
     $(gallerySelector).each(function(e, target) {
 
@@ -35,17 +35,18 @@ function initUniteGalleryByClass(gallerySelector) {
 
             initUniteGallery('#' + $(target).attr('id'));
 
-        }, time += 10);
+        }, time += 100);
     });
 }
 
 function initUniteGallery(gallerySelector) {
 
-    console.log("initUniteGallery");
-
     if ($(gallerySelector).attr('gallery-initialized') == 'true') return;
 
-    //console.log(gallerySelector);
+    console.log("initUniteGallery");
+
+    // Ugly hack! For some reason, sometimes initially the ordering of the pictures is wrong. So hide the gallery, change width in order to force reordering, and then show the gallery again.
+    $(gallerySelector).css("visibility", "hidden");
 
     $(gallerySelector).attr('gallery-initialized', 'true');
 
@@ -57,6 +58,20 @@ function initUniteGallery(gallerySelector) {
         tiles_enable_transition: false,
         tiles_max_columns: 3
     });
+
+    setTimeout(function(){
+
+        uniteApi.resize($(gallerySelector).width() - 400);
+
+        setTimeout(function(){
+
+            uniteApi.resize($(gallerySelector).width() + 400);
+
+            $(gallerySelector).css("visibility", "visible");
+
+        }, 100);
+
+    }, 100);
 }
 
 
