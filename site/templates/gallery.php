@@ -575,29 +575,29 @@
                           </div>
                           <div class="row">
                             <div class="col-md-12">
-                            <div id="horizon-gallery-' . $galleryIndex . '" style="display:none;" class="horizon-gallery-' . $country->countrycode() . '">';
+                                <div id="horizon-gallery-' . $galleryIndex . '" style="display:none;" class="horizon-gallery-' . $country->countrycode() . '">';
 
-                          $picIndex = 0;
+                                  $picIndex = 0;
 
-                          foreach($gallery->images()->sortBy('sort', 'asc') as $image):
+                                  foreach($gallery->images()->sortBy('sort', 'asc') as $image):
 
-                            if(strpos($image->filename(), 'preview') == false){
+                                    if(strpos($image->filename(), 'preview') == false){
 
-                              $dummyPicture = kirby()->urls()->index() . "/assets/images/" . ($image->isLandscape() ? "landscape" : "portrait") . "_dummy_unite.jpg";
-                              $picIndex++;
-                              
-                              echo
-                              '<a href="#">
-                                <img alt="' . $post->title() . ' Bild ' . $picIndex . '"
-                                 src="' . $dummyPicture . '"
-                                 data-src="' . str_replace(".jpg", "_preview.jpg", $image->url()) . '"
-                                 data-image="' . $image->url() . '"
-                                 data-description=""
-                                 style="display:none;">
-                              </a>';
-                            }
+                                      $dummyPicture = kirby()->urls()->index() . "/assets/images/" . ($image->isLandscape() ? "landscape" : "portrait") . "_dummy_unite.jpg";
+                                      $picIndex++;
+                                      
+                                      echo
+                                      '<a href="#">
+                                        <img alt="' . $post->title() . ' Bild ' . $picIndex . '"
+                                         src="' . $dummyPicture . '"
+                                         data-src="' . str_replace(".jpg", "_preview.jpg", $image->url()) . '"
+                                         data-image="' . $image->url() . '"
+                                         data-description=""
+                                         style="display:none;">
+                                      </a>';
+                                    }
 
-                          endforeach;
+                                  endforeach;
 
                           echo '</div></div></div>';
 

@@ -23,7 +23,41 @@ function removeFromArray(array, input) {
     });
 }
 
+function initUniteGalleryByClass(gallerySelector) {
 
+    console.log("initUniteGalleryByClass");
+
+    var time = 10;
+
+    $(gallerySelector).each(function(e, target) {
+
+        setTimeout(function() {
+
+            initUniteGallery('#' + $(target).attr('id'));
+
+        }, time += 10);
+    });
+}
+
+function initUniteGallery(gallerySelector) {
+
+    console.log("initUniteGallery");
+
+    if ($(gallerySelector).attr('gallery-initialized') == 'true') return;
+
+    //console.log(gallerySelector);
+
+    $(gallerySelector).attr('gallery-initialized', 'true');
+
+    var uniteApi = jQuery(gallerySelector).unitegallery({
+        tiles_space_between_cols: 10,
+        tiles_space_between_cols_mobile: 6,
+        tiles_exact_width: false,
+        tiles_include_padding: true,
+        tiles_enable_transition: false,
+        tiles_max_columns: 3
+    });
+}
 
 
 $(document).ready(function() {
@@ -299,92 +333,22 @@ $(document).ready(function() {
 
     // -------- UNITE GALLERY START ---------
 
-    withinviewport.defaults.top = -500;
-    withinviewport.defaults.bottom = -500;
-
-    function initUniteGalleryByClass(gallerySelector) {
-
-    	var time = 100;
-
-        $(gallerySelector).each(function(e, target) {
-
-        	setTimeout(function() {
-
-            	initUniteGallery('#' + $(target).attr('id'));
-
-            }, time += 100);
-        });
-    }
-
-    function initUniteGallery(gallerySelector) {
-
-        if ($(gallerySelector).attr('gallery-initialized') == 'true') return;
-
-    	//console.log("initUniteGallery");
-
-        $(gallerySelector).attr('gallery-initialized', 'true');
-
-        // Save all data-src info in array
-        var imageSources = [];
-        $(gallerySelector + ' img').each(function() {
-
-            imageSources.push($(this).data('src'));
-        });
-
-        var uniteApi = jQuery(gallerySelector).unitegallery({
-            tiles_space_between_cols: 10,
-            tiles_space_between_cols_mobile: 6,
-            tiles_exact_width: false,
-            tiles_include_padding: true,
-            tiles_enable_transition: false,
-            tiles_max_columns: 3
-        });
-
-        $(gallerySelector + ' img').each(function() {
-
-            $(this).addClass("fillMePlz");
-        });
-
-        $(window).scroll(function() {
-
-            scrollReplaceImage(imageSources, gallerySelector);
-            
-        });
-
-        setTimeout(function() {
-
-        	scrollReplaceImage(imageSources, gallerySelector);
-
-        }, 100);
-    }
-
-    function scrollReplaceImage(imageSources, gallerySelector) {
-        $(gallerySelector + ' img.fillMePlz').withinviewport().each(function(e, target) {
-            //console.log(target);
-
-            $(target).removeClass('fillMePlz');
-
-            // get index of img
-            var index = $(this).parent().index();
-
-            // replace image
-            $(this).attr('src', imageSources[index]);
-        });
-    }
-
     if ($('body').data('initgallery')) {
 
     	var time = 100;
 
-        // init unite gallery immediately. Gallery in posts.
-        $('[id^="horizon-gallery-"]').each(function(i, gallery) {
+        // Initialize unite gallery immediately. Gallery in posts.
+    	setTimeout(function() {
 
-        	setTimeout(function() {
+            $("#horizon-gallery-1 img").each(function(e, target) {
 
-            	initUniteGallery('#horizon-gallery-' + (i + 1));
+                var img = $(target);
+                img.attr('src', img.data('src'));
+            });
 
-            }, time += 100);
-        });
+        	initUniteGallery('#horizon-gallery-1');
+
+        }, time += 100);
 
     }
 
@@ -398,7 +362,7 @@ $(document).ready(function() {
     var continentsSelected = [];
     var countriesSelected = [];
 
-    var selectedList = [{"id":"oceania", "countries":["nz", "au"]}, {"id":"asia", "countries":["tw", "jp"]}];
+    var selectedList = [{"id":"asia", "countries":["hk", "jp"]}];
     /* example: 
     [{"id":"oceania", "countries":["nz", "au"]}, {"id":"asia", "countries":["tw", "jp"]}]
     [{"id":"oceania", "countries":["nz"]}, {"id":"asia", "countries":["jp"]}]
@@ -529,6 +493,8 @@ $(document).ready(function() {
 
     function listUpdate() {
 
+        console.log("listUpdate");
+
         // initially hide all countries
         $('#list-countries').find('.list-country').each(function(e, target) {
 
@@ -603,15 +569,23 @@ $(document).ready(function() {
         // Show country posts
         $("#posts-" + country).removeClass('hide');
 
-        // Load pictures
+        // Load pictures for posts preview
         $("#posts-" + country + " .posts-entry").each(function(e, target) {
             var post = $(target);
 
             post.children('img').each(function(e, target) {
                 var img = $(target);
-
                 img.attr('src', img.data('src'));
             });
+        });
+
+        console.log("load pictures for gallery");
+
+        // Load pictures for gallery
+        $(".horizon-gallery-" + country + " img").each(function(e, target) {
+
+            var img = $(target);
+            img.attr('src', img.data('src'));
         });
 
     }
