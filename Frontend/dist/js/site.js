@@ -55,7 +55,7 @@ function initUniteGalleryByClass(gallerySelector) {
     var timeInitGallery = initDelay;
 
     // calculate initDelay for next gallery
-    initDelay = initDelay + (galleryAmount * 100);
+    initDelay = initDelay + (galleryAmount * 300);
 
     var loopCount = 0;
     
@@ -76,15 +76,15 @@ function initUniteGalleryByClass(gallerySelector) {
     });
 
     // Sobald hier alles initialisiert wurde, einfach replaceImagesInInitializedGallery() aufrufen! SO VERDAMMT SIMPEL!
-    console.log("[" + new Date().getTime() + "] new initDelay: " + initDelay);
+    console.log("[" + new Date().getTime() + "] new initDelay: " + initDelay + " for " + galleryAmount + " galleries");
     clearTimeout(initTimeoutId);
     initTimeoutId = setTimeout(function(e){
 
-        //console.log("[" + new Date().getTime() + "] NOW ;D");
+        console.log("[" + new Date().getTime() + "] NOW ;D");
 
         replaceImagesInInitializedGallery();
 
-    }, initDelay + (galleryAmount * 100) + 100);
+    }, initDelay + 500);
 }
 
 function initUniteGallery(gallerySelector, forGallery, replaceImages) {
@@ -92,7 +92,7 @@ function initUniteGallery(gallerySelector, forGallery, replaceImages) {
     if ($(gallerySelector).attr('gallery-initialized') == 'true') return;
     if ($(gallerySelector).length <= 0) return;
 
-    //console.log("[" + new Date().getTime() + "] initUniteGallery with selector: " + gallerySelector);
+    console.log("[" + new Date().getTime() + "] initUniteGallery with selector: " + gallerySelector);
 
     $(gallerySelector).attr('gallery-initialized', 'true');
 
