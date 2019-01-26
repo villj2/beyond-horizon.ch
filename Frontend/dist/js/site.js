@@ -28,7 +28,6 @@ function test(activeGallery) {
     console.log(activeGallery);
 }
 
-var imageSourcesGallery = [];
 var initDelay = 0;
 var initTimeoutId;
 function initUniteGalleryByClass(gallerySelector, delayIndex) {
@@ -42,11 +41,7 @@ function initUniteGalleryByClass(gallerySelector, delayIndex) {
     // calculate initDelay for next gallery
     initDelay = initDelay + (galleryAmount * 100);
 
-    //console.log("[" + new Date().getTime() + "] timeInitGallery: " + timeInitGallery);
-    //console.log("[" + new Date().getTime() + "] galleryAmount: " + galleryAmount);
-
     var loopCount = 0;
-    //return;
     
     $(gallerySelector).each(function(e, target) {
 
@@ -69,30 +64,11 @@ function initUniteGalleryByClass(gallerySelector, delayIndex) {
     clearTimeout(initTimeoutId);
     initTimeoutId = setTimeout(function(e){
 
-        console.log("[" + new Date().getTime() + "] NOW ;D");
+        //console.log("[" + new Date().getTime() + "] NOW ;D");
 
         replaceImagesInInitializedGallery();
 
     }, initDelay + (galleryAmount * 100) + 100);
-
-
-    /*$(gallerySelector).each(function(e, target) {
-
-        $loopCount++;
-
-        setTimeout(function() {
-
-            console.log("$loopCount: " + $loopCount);
-            console.log("$maxLoops: " + $maxLoops);
-
-            initUniteGallery('#' + $(target).attr('id'), true, $loopCount == $maxLoops);
-
-        }, timeInitGallery += 200);
-
-    });*/
-
-    // TODO always after 100ms, replace images for the just initialized gallery.
-    //replaceImagesInInitializedGallery();
 }
 
 function initUniteGallery(gallerySelector, forGallery, replaceImages) {
@@ -100,26 +76,7 @@ function initUniteGallery(gallerySelector, forGallery, replaceImages) {
     if ($(gallerySelector).attr('gallery-initialized') == 'true') return;
     if ($(gallerySelector).length <= 0) return;
 
-    console.log("[" + new Date().getTime() + "] initUniteGallery with selector: " + gallerySelector);
-
-    //galleriesLoaded.push(gallerySelector);
-
-    // Save all data-src info in array
-    var imageSources = [];
-    $(gallerySelector + ' img').each(function(){
-
-        /*if(forGallery)
-        {
-            imageSourcesGallery.push($(this).data('src'));
-        }
-        else
-        {
-            imageSources.push($(this).data('src'));
-        }*/
-    });
-
-    // Ugly hack! For some reason, sometimes initially the ordering of the pictures is wrong. So hide the gallery, change width in order to force reordering, and then show the gallery again.
-    //$(gallerySelector).css("visibility", "hidden");
+    //console.log("[" + new Date().getTime() + "] initUniteGallery with selector: " + gallerySelector);
 
     $(gallerySelector).attr('gallery-initialized', 'true');
 
@@ -131,32 +88,7 @@ function initUniteGallery(gallerySelector, forGallery, replaceImages) {
         tiles_enable_transition: false,
         tiles_max_columns: 3
     });
-
-    if(replaceImages) {
-
-        setTimeout(function(e){
-            //replaceImagesInInitializedGallery(gallerySelector);
-        }, 200);
-    }
-
-    return imageSources;
-
-    /*setTimeout(function(){
-
-        uniteApi.resize($(gallerySelector).width() - 400);
-
-        setTimeout(function(){
-
-            uniteApi.resize($(gallerySelector).width() + 400);
-
-            $(gallerySelector).css("visibility", "visible");
-
-        }, 500);
-
-    }, 500);*/
 }
-
-var galleriesLoaded = [];
 
 function replaceImagesInInitializedGallery() {
 
@@ -179,31 +111,6 @@ function replaceImagesInInitializedGallery() {
 }
 
 $(document).ready(function() {
-
-    jQuery(window).load(function () {
-
-        /*var time = 100;
-        
-        galleriesLoaded.forEach(function(entry) {
-            //$(entry).css("visibility", "visible");
-
-            setTimeout(function(){
-
-                uniteApi.resize($(gallerySelector).width() - 400);
-
-                setTimeout(function(){
-
-                    // FIXME uniteApi not available
-                    uniteApi.resize($(gallerySelector).width() + 400);
-
-                    $(entry).css("visibility", "visible");
-
-                }, time);
-
-            }, time += 100);
-        });*/
-
-    });
 
     /* ------ Google Maps -------- */
 
@@ -451,7 +358,7 @@ $(document).ready(function() {
 
     // -------- UNITE GALLERY START ---------
 
-    // Initialize gallery in post.
+    // Initialize gallery in post
     if ($('body').data('initgallery')) {
 
     	var imageSources = initUniteGallery('#horizon-gallery-1');
@@ -459,16 +366,6 @@ $(document).ready(function() {
         setTimeout(function(){
 
             replaceImagesInInitializedGallery();
-
-            /*$("#horizon-gallery-1 img").each(function(e, target) {
-
-                // get index of img
-                var index = $(target).parent().index();
-
-                // replace image
-                $(target).attr('src', imageSources[index]);
-
-            });*/
 
         }, 100);
     }
@@ -483,7 +380,7 @@ $(document).ready(function() {
     var continentsSelected = [];
     var countriesSelected = [];
 
-    var selectedList = [{"id":"oceania", "countries":["nz"]}]
+    var selectedList = [];
     /* example: 
     [{"id":"oceania", "countries":["nz", "au"]}, {"id":"asia", "countries":["hk", "jp"]}]
     [{"id":"oceania", "countries":["nz"]}, {"id":"asia", "countries":["jp"]}]
@@ -711,7 +608,7 @@ $(document).ready(function() {
 
         //console.log("load pictures for gallery");
 
-        // Load pictures for gallery
+        // Load pictures for gallery - use this code if replacing img-src still fails. This works, but with wrong ordering.
         /*$(".horizon-gallery-" + country + " img").each(function(e, target) {
 
             var img = $(target);
