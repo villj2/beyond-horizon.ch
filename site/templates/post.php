@@ -26,8 +26,24 @@
         <div class="col-md-8">
 
         	<?php echo $page->text()->kirbytext() ?>
+
+          <?php
+            $imagesources = array();
+          ?>
+
+          <?php foreach($page->children() as $subpage): ?>
+            <?php foreach($subpage->images()->sortBy('sort', 'asc')->limit($subpage->postlimit()->value() * 2) as $image): ?>
+              <?php if (strpos($image->filename(), 'preview') == false): ?>
+
+                <?php
+                  array_push($imagesources, str_replace(".jpg", "_preview.jpg", $image->url()));
+                ?>
+                
+              <?php endif ?>
+            <?php endforeach ?>
+          <?php endforeach ?>
           
-          <div id="horizon-gallery-1" style="display:none;">
+          <div id="horizon-gallery-1" data-image-sources="<?php echo implode("|", $imagesources) ?>" style="display:none;" class="horizon-gallery" data-images-replaced="false">
 
           <?php foreach($page->children() as $subpage): ?>
 

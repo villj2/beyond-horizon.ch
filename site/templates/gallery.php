@@ -570,8 +570,8 @@
                         $imagesources = array();
                         foreach($gallery->images()->sortBy('sort', 'asc') as $image):
 
-                            if(strpos($image->filename(), 'preview') == true){
-                                array_push($imagesources, $image->url());
+                            if(strpos($image->filename(), 'preview') == false){
+                                array_push($imagesources, str_replace(".jpg", "_preview.jpg", $image->url()));
                             }
 
                         endforeach;
@@ -584,7 +584,7 @@
                           </div>
                           <div class="row">
                             <div class="col-md-12">
-                                <div id="horizon-gallery-' . $galleryIndex . '" style="display:none;" data-image-sources="'. implode("|", $imagesources) . '" class="horizon-gallery horizon-gallery-' . $country->countrycode() . '">';
+                                <div id="horizon-gallery-' . $galleryIndex . '" gallery-initialized="false" data-images-replaced="false" style="display:none;" data-image-sources="'. implode("|", $imagesources) . '" class="horizon-gallery horizon-gallery-' . $country->countrycode() . '">';
 
                                   $picIndex = 0;
 
@@ -594,6 +594,8 @@
 
                                       $dummyPicture = kirby()->urls()->index() . "/assets/images/" . ($image->isLandscape() ? "landscape" : "portrait") . "_dummy_unite.jpg";
                                       $picIndex++;
+
+                                      /* Keep in mind that every data-attributes gets deleted while initializing the gallery with UniteGallery. BUT you can misuse the alt-attribute to pass data. This is persistent. */
                                       
                                       echo
                                       '<a href="#">

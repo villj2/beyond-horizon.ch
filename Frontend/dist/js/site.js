@@ -23,31 +23,84 @@ function removeFromArray(array, input) {
     });
 }
 
+function test(activeGallery) {
+
+    console.log(activeGallery);
+}
+
 var imageSourcesGallery = [];
-function initUniteGalleryByClass(gallerySelector) {
+var initDelay = 0;
+var initTimeoutId;
+function initUniteGalleryByClass(gallerySelector, delayIndex) {
 
-    console.log("initUniteGalleryByClass");
+    //console.log("[" + new Date().getTime() + "] initUniteGalleryByClass with delayIndex: " + delayIndex);
+    //console.log("[" + new Date().getTime() + "] gallerySelector: " + gallerySelector);
 
-    var time = 100;
+    var galleryAmount = $(gallerySelector).length;
+    var timeInitGallery = initDelay;
 
+    // calculate initDelay for next gallery
+    initDelay = initDelay + (galleryAmount * 100);
+
+    //console.log("[" + new Date().getTime() + "] timeInitGallery: " + timeInitGallery);
+    //console.log("[" + new Date().getTime() + "] galleryAmount: " + galleryAmount);
+
+    var loopCount = 0;
+    //return;
+    
     $(gallerySelector).each(function(e, target) {
+
+        loopCount++;
+
+        setTimeout(function(){
+
+            //console.log("[" + new Date().getTime() + "] init gallery: " + $(target).attr('id'));
+
+            // Init gallery here
+            initUniteGallery('#' + $(target).attr('id'), true, loopCount == galleryAmount);
+
+        }, timeInitGallery);
+
+        timeInitGallery += 100;
+    });
+
+    // TODO sobald hier alles initialisiert wurde, einfach replaceImagesInInitializedGallery() aufrufen! SO VERDAMMT SIMPEL!
+    console.log("[" + new Date().getTime() + "] new initDelay: " + initDelay);
+    clearTimeout(initTimeoutId);
+    initTimeoutId = setTimeout(function(e){
+
+        console.log("[" + new Date().getTime() + "] NOW ;D");
+
+        replaceImagesInInitializedGallery();
+
+    }, initDelay + (galleryAmount * 100) + 100);
+
+
+    /*$(gallerySelector).each(function(e, target) {
+
+        $loopCount++;
 
         setTimeout(function() {
 
-            initUniteGallery('#' + $(target).attr('id'), true);
+            console.log("$loopCount: " + $loopCount);
+            console.log("$maxLoops: " + $maxLoops);
 
-        }, time += 100);
-    });
+            initUniteGallery('#' + $(target).attr('id'), true, $loopCount == $maxLoops);
 
-    console.log("imageSourcesGallery.length: " + imageSourcesGallery.length);
+        }, timeInitGallery += 200);
+
+    });*/
+
+    // TODO always after 100ms, replace images for the just initialized gallery.
+    //replaceImagesInInitializedGallery();
 }
 
-function initUniteGallery(gallerySelector, forGallery) {
+function initUniteGallery(gallerySelector, forGallery, replaceImages) {
 
     if ($(gallerySelector).attr('gallery-initialized') == 'true') return;
     if ($(gallerySelector).length <= 0) return;
 
-    console.log("initUniteGallery with selector: " + gallerySelector);
+    console.log("[" + new Date().getTime() + "] initUniteGallery with selector: " + gallerySelector);
 
     //galleriesLoaded.push(gallerySelector);
 
@@ -55,14 +108,14 @@ function initUniteGallery(gallerySelector, forGallery) {
     var imageSources = [];
     $(gallerySelector + ' img').each(function(){
 
-        if(forGallery)
+        /*if(forGallery)
         {
             imageSourcesGallery.push($(this).data('src'));
         }
         else
         {
             imageSources.push($(this).data('src'));
-        }
+        }*/
     });
 
     // Ugly hack! For some reason, sometimes initially the ordering of the pictures is wrong. So hide the gallery, change width in order to force reordering, and then show the gallery again.
@@ -78,6 +131,13 @@ function initUniteGallery(gallerySelector, forGallery) {
         tiles_enable_transition: false,
         tiles_max_columns: 3
     });
+
+    if(replaceImages) {
+
+        setTimeout(function(e){
+            //replaceImagesInInitializedGallery(gallerySelector);
+        }, 200);
+    }
 
     return imageSources;
 
@@ -98,21 +158,22 @@ function initUniteGallery(gallerySelector, forGallery) {
 
 var galleriesLoaded = [];
 
-function replaceImagesInGallery() {
+function replaceImagesInInitializedGallery() {
+
+    console.log("[" + new Date().getTime() + "] replaceImagesInInitializedGallery");
 
     $('.horizon-gallery').each(function(e, target){
 
-        if($(target).attr('gallery-initialized') == 'true') {
+        if($(target).attr('gallery-initialized') == 'true' && $(target).data('images-replaced') == false) {
 
-            //var imageSources = $(target).data('image-sources');
             var imageSources = $(target).data('image-sources').split('|');
 
-            //console.log(imageSources);
+            $(target).find('img').each(function(e, targetimg){
 
-            $(target).find('img').each(function(e, target){
-
-                $(target).attr('src', imageSources[e]);
+                $(targetimg).attr('src', imageSources[e]);
             });
+
+            $(target).attr('data-images-replaced', 'true');
         }
     });
 }
@@ -390,13 +451,16 @@ $(document).ready(function() {
 
     // -------- UNITE GALLERY START ---------
 
+    // Initialize gallery in post.
     if ($('body').data('initgallery')) {
 
     	var imageSources = initUniteGallery('#horizon-gallery-1');
 
         setTimeout(function(){
 
-            $("#horizon-gallery-1 img").each(function(e, target) {
+            replaceImagesInInitializedGallery();
+
+            /*$("#horizon-gallery-1 img").each(function(e, target) {
 
                 // get index of img
                 var index = $(target).parent().index();
@@ -404,7 +468,7 @@ $(document).ready(function() {
                 // replace image
                 $(target).attr('src', imageSources[index]);
 
-            });
+            });*/
 
         }, 100);
     }
@@ -419,9 +483,9 @@ $(document).ready(function() {
     var continentsSelected = [];
     var countriesSelected = [];
 
-    var selectedList = [{"id":"asia", "countries":["hk", "jp"]}];
+    var selectedList = [{"id":"oceania", "countries":["nz"]}]
     /* example: 
-    [{"id":"oceania", "countries":["nz", "au"]}, {"id":"asia", "countries":["tw", "jp"]}]
+    [{"id":"oceania", "countries":["nz", "au"]}, {"id":"asia", "countries":["hk", "jp"]}]
     [{"id":"oceania", "countries":["nz"]}, {"id":"asia", "countries":["jp"]}]
     [{"id": "asia", "countries": ["hk"]}]
     */
@@ -550,7 +614,7 @@ $(document).ready(function() {
 
     function listUpdate() {
 
-        console.log("listUpdate");
+        //console.log("listUpdate");
 
         // initially hide all countries
         $('#list-countries').find('.list-country').each(function(e, target) {
@@ -572,6 +636,8 @@ $(document).ready(function() {
         }
 
         // set state of country based on country in selectedList
+        var index = 0;
+        initDelay = 0;
         $('#list-countries .list-country').each(function(e, target) {
 
             var country = $(target).data('country');
@@ -581,7 +647,13 @@ $(document).ready(function() {
                 // init gallery here if initially blocked
                 if (!$('body').data('initgallery')) {
 
-                	initUniteGalleryByClass('.horizon-gallery-' + $(target).data('country'));
+                    // Check if already initialized
+                    var gallery = $('.horizon-gallery-' + $(target).data('country'));
+
+                    if($(gallery).attr('gallery-initialized') == "false") {
+
+                        initUniteGalleryByClass('.horizon-gallery-' + $(target).data('country'), index++);
+                    }
                 }
 
                 $(target).addClass('active');
@@ -619,7 +691,7 @@ $(document).ready(function() {
 
         });
 
-        console.log(selectedList);
+        //console.log(selectedList);
     }
 
     function postsShowByCountry(country) {
@@ -637,7 +709,7 @@ $(document).ready(function() {
             });
         });
 
-        console.log("load pictures for gallery");
+        //console.log("load pictures for gallery");
 
         // Load pictures for gallery
         /*$(".horizon-gallery-" + country + " img").each(function(e, target) {
