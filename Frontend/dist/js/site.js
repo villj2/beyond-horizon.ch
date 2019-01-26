@@ -23,17 +23,27 @@ function removeFromArray(array, input) {
     });
 }
 
-function test(activeGallery) {
+function setFilterButtonsActive(active) {
 
-    console.log(activeGallery);
+    $('#list-countries button').each(function(e, target){
+
+        if(active)
+        {
+            $(target).removeAttr('disabled');
+        }
+        else
+        {
+            $(target).attr('disabled', 'disabled');
+        }
+
+    });
 }
 
 var initDelay = 0;
 var initTimeoutId;
-function initUniteGalleryByClass(gallerySelector, delayIndex) {
+function initUniteGalleryByClass(gallerySelector) {
 
-    //console.log("[" + new Date().getTime() + "] initUniteGalleryByClass with delayIndex: " + delayIndex);
-    //console.log("[" + new Date().getTime() + "] gallerySelector: " + gallerySelector);
+    console.log("[" + new Date().getTime() + "] gallerySelector: " + gallerySelector);
 
     var galleryAmount = $(gallerySelector).length;
     var timeInitGallery = initDelay;
@@ -59,7 +69,7 @@ function initUniteGalleryByClass(gallerySelector, delayIndex) {
         timeInitGallery += 100;
     });
 
-    // TODO sobald hier alles initialisiert wurde, einfach replaceImagesInInitializedGallery() aufrufen! SO VERDAMMT SIMPEL!
+    // Sobald hier alles initialisiert wurde, einfach replaceImagesInInitializedGallery() aufrufen! SO VERDAMMT SIMPEL!
     console.log("[" + new Date().getTime() + "] new initDelay: " + initDelay);
     clearTimeout(initTimeoutId);
     initTimeoutId = setTimeout(function(e){
@@ -108,6 +118,8 @@ function replaceImagesInInitializedGallery() {
             $(target).attr('data-images-replaced', 'true');
         }
     });
+
+    setFilterButtonsActive(true);
 }
 
 $(document).ready(function() {
@@ -416,6 +428,10 @@ $(document).ready(function() {
 
     $('#list-countries button').on('click', function(e) {
 
+        if(!$(this).hasClass('active')) {
+            setFilterButtonsActive(false);
+        }
+
         // Modify selectedList with countries
         listUpdateSelectedList(e);
 
@@ -533,7 +549,7 @@ $(document).ready(function() {
         }
 
         // set state of country based on country in selectedList
-        var index = 0;
+        var initGalleryAmount = 0;
         initDelay = 0;
         $('#list-countries .list-country').each(function(e, target) {
 
@@ -549,7 +565,8 @@ $(document).ready(function() {
 
                     if($(gallery).attr('gallery-initialized') == "false") {
 
-                        initUniteGalleryByClass('.horizon-gallery-' + $(target).data('country'), index++);
+                        initGalleryAmount++;
+                        initUniteGalleryByClass('.horizon-gallery-' + $(target).data('country'));
                     }
                 }
 
@@ -560,6 +577,11 @@ $(document).ready(function() {
             }
 
         });
+
+        // Enable country list button if no galleries were initialized
+        if(initGalleryAmount == 0) {
+            setFilterButtonsActive(true);
+        }
     }
 
     function postsUpdate() {

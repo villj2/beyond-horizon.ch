@@ -7893,4 +7893,7 @@ time.icon:focus {
 #continent-map-filtering #list-countries button:focus {
   outline: none;
 }
+#continent-map-filtering #list-countries button:disabled {
+  opacity: 0.4;
+}
 /*# sourceMappingURL=bootstrap.css.map */
