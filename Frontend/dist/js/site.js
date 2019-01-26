@@ -39,6 +39,12 @@ function setFilterButtonsActive(active) {
     });
 }
 
+function qs(key) {
+    key = key.replace(/[*+?^$.\[\]{}()|\\\/]/g, "\\$&"); // escape RegEx meta chars
+    var match = location.search.match(new RegExp("[?&]"+key+"=([^&]+)(&|$)"));
+    return match && decodeURIComponent(match[1].replace(/\+/g, " "));
+}
+
 var initDelay = 0;
 var initTimeoutId;
 function initUniteGalleryByClass(gallerySelector) {
@@ -398,6 +404,13 @@ $(document).ready(function() {
     [{"id":"oceania", "countries":["nz"]}, {"id":"asia", "countries":["jp"]}]
     [{"id": "asia", "countries": ["hk"]}]
     */
+
+
+    var queryStringFilter = qs('filter');
+    if(queryStringFilter) {
+
+        selectedList = jQuery.parseJSON(queryStringFilter);
+    }
 
     var continents = $('.continent');
 

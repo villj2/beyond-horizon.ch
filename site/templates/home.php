@@ -113,12 +113,93 @@
         <?php endforeach ?>
         <?php } ?>
 
-        
       </div>
 
       <div class="row">
         <div class="col-sm-12" style="text-align: center;">
           <button type="button" class="btn btn-secondary btn-more" onclick="location.href='/posts'">Mehr anzeigen</button>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-12" style="text-align: center;">
+          <h2>Galerie</h2>
+        </div>
+      </div>
+
+       <div class="row">
+        <div class="col-sm-12" style="">
+
+          <?php
+
+            //[{"id":"oceania", "countries":["nz", "au"]}, {"id":"asia", "countries":["hk", "jp"]}]
+
+            $filterDict = array();
+
+            foreach ($page->parent()->index()->visible()->filterBy('template', 'post')->sortBy('date', 'desc')->limit(2) as $post) {
+
+              $continent = strtolower($post->parent()->parent()->title());
+              $country = strtolower($post->parent()->countrycode());
+
+              if(!array_key_exists($continent, $filterDict)) {
+
+                // Adding continent if not already in dict
+                $filterDict[$continent] = $country;
+              }
+              else {
+
+                if(\strpos($filterDict[$continent], $country) !== false) {
+                  // country already added
+                }
+                else {
+
+                  // Add new country to already existing continent with at least 1 country-entry
+                  $filterDict[$continent] = $filterDict[$continent] . "|" . $country;
+                }
+              }
+
+            }
+
+            echo "<br/>";
+
+            $indexContinent = 0;
+            $filterString = '[';
+
+            foreach ($filterDict as $key=>$value) {
+
+              //echo $key . " - " . $value . "<br />";
+
+              if($indexContinent > 0) {
+                $filterString .= ', ';
+              }
+
+              $filterString .= '{"id":"' . $key . '", "countries":[';
+
+              // TODO split countries
+              $indexCountry = 0;
+              $explodedCountries = explode('|', $value);
+              foreach ($explodedCountries as $country) {
+
+                if($indexCountry > 0) {
+                  $filterString .= ', ';
+                }
+
+                $filterString .= '"' . $country . '"';
+
+                $indexCountry++;
+              }
+
+              $filterString .= ']}';
+              $indexContinent++;
+            }
+
+            $filterString .= ']';
+
+            //echo $filterString;
+
+          ?>
+
+          <button type="button" class="btn btn-secondary btn-more" onclick="location.href='/gallery?filter=<?php echo urlencode($filterString) ?>'">Mehr anzeigen</button>
         </div>
       </div>
 
