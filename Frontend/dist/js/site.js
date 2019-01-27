@@ -55,7 +55,7 @@ function initUniteGalleryByClass(gallerySelector) {
     var timeInitGallery = initDelay;
 
     // calculate initDelay for next gallery
-    initDelay = initDelay + (galleryAmount * 300);
+    initDelay = initDelay + (galleryAmount * 500);
 
     var loopCount = 0;
     

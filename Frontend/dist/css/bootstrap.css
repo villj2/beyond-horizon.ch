@@ -7461,6 +7461,43 @@ map area {
   outline: none;
 }
 /* -------- Image Map END -------- */
+#home-gallery-teaser {
+  position: relative;
+  margin-bottom: 50px;
+}
+#home-gallery-teaser .text-box {
+  position: absolute;
+  top: 0;
+  left: 18%;
+  width: 30%;
+}
+#home-gallery-teaser img {
+  width: 100%;
+}
+#home-gallery-teaser .col-xs-3 {
+  padding-left: 0.5%;
+  padding-right: 0.5%;
+}
+#home-gallery-teaser #button-container {
+  position: relative;
+  margin-top: 10%;
+  margin-left: 5%;
+}
+#home-gallery-teaser #button-container button {
+  margin: 0;
+}
+#home-gallery-teaser #button-container #arrow {
+  position: absolute;
+  top: 100%;
+  left: 15%;
+  width: 50%;
+}
+#home-gallery-teaser #button-container #click-teaser {
+  position: absolute;
+  top: 60%;
+  left: 100%;
+  width: 150%;
+}
 /* -------- Blog Calendar Icon -------- */
 time.icon {
   font-size: 0.7em;
