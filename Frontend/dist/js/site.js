@@ -45,46 +45,57 @@ function qs(key) {
     return match && decodeURIComponent(match[1].replace(/\+/g, " "));
 }
 
-var initDelay = 0;
-var initTimeoutId;
-function initUniteGalleryByClass(gallerySelector) {
+function initUniteGalleryByClassArray(galleryClassesForInit) {
 
-    console.log("[" + new Date().getTime() + "] gallerySelector: " + gallerySelector);
+    console.log("[" + new Date().getTime() + "] galleryClassesForInit: " + galleryClassesForInit);
 
-    var galleryAmount = $(gallerySelector).length;
-    var timeInitGallery = initDelay;
+    var gallerySelectors = [];
 
-    // calculate initDelay for next gallery
-    initDelay = initDelay + (galleryAmount * 500);
+    for(var i = 0; i<galleryClassesForInit.length; i++) {
 
-    var loopCount = 0;
-    
-    $(gallerySelector).each(function(e, target) {
+        var galleryClass = galleryClassesForInit[i];
 
-        loopCount++;
+        $(galleryClass).each(function(e, target){
 
-        setTimeout(function(){
+            gallerySelectors.push('#' + $(target).attr('id'));
 
-            //console.log("[" + new Date().getTime() + "] init gallery: " + $(target).attr('id'));
+        });
+    }
 
-            // Init gallery here
-            initUniteGallery('#' + $(target).attr('id'), true, loopCount == galleryAmount);
+    console.log("[" + new Date().getTime() + "] gallerySelectors: " + gallerySelectors);
 
-        }, timeInitGallery);
+    // Result is an array of all gallery ids (#horizon-gallery-1, #horizon-gallery-2, #horizon-gallery-3, ...)
+    // Init ONE GALLERY at a time, wait, replace images for that gallery.
+    // Wait, init the next gallery.
 
-        timeInitGallery += 100;
-    });
+    var delay = 100;
+    var index = 0;
+    for(var i = 0; i<gallerySelectors.length; i++) {
 
-    // Sobald hier alles initialisiert wurde, einfach replaceImagesInInitializedGallery() aufrufen! SO VERDAMMT SIMPEL!
-    console.log("[" + new Date().getTime() + "] new initDelay: " + initDelay + " for " + galleryAmount + " galleries");
-    clearTimeout(initTimeoutId);
-    initTimeoutId = setTimeout(function(e){
+        // init gallery
+        setTimeout(function(e){
 
-        console.log("[" + new Date().getTime() + "] NOW ;D");
+            //console.log(gallerySelectors[index]);
+            //console.log("[" + new Date().getTime() + "] initGallery: " + gallerySelectors[index]);
+            initUniteGallery(gallerySelectors[index]);
 
-        replaceImagesInInitializedGallery();
+            index++;
 
-    }, initDelay + 500);
+        }, delay);
+
+        delay += 300;
+
+        // replace images
+        setTimeout(function(e){
+
+            //console.log("[" + new Date().getTime() + "] replaceImagesInInitializedGallery()");
+            replaceImagesInInitializedGallery();
+
+        }, delay);
+
+        delay += 300;
+    }
+
 }
 
 function initUniteGallery(gallerySelector, forGallery, replaceImages) {
@@ -385,7 +396,7 @@ $(document).ready(function() {
 
             replaceImagesInInitializedGallery();
 
-        }, 100);
+        }, 200);
     }
 
     // -------- UNITE GALLERY END ---------
@@ -563,6 +574,7 @@ $(document).ready(function() {
 
         // set state of country based on country in selectedList
         var initGalleryAmount = 0;
+        var galleryClassesForInit = [];
         initDelay = 0;
         $('#list-countries .list-country').each(function(e, target) {
 
@@ -579,7 +591,7 @@ $(document).ready(function() {
                     if($(gallery).attr('gallery-initialized') == "false") {
 
                         initGalleryAmount++;
-                        initUniteGalleryByClass('.horizon-gallery-' + $(target).data('country'));
+                        galleryClassesForInit.push('.horizon-gallery-' + $(target).data('country'));
                     }
                 }
 
@@ -590,6 +602,9 @@ $(document).ready(function() {
             }
 
         });
+
+        // Init gallery based on array with classes (.horizon-gallery-hk, .horizon-gallery-nz, ...)
+        initUniteGalleryByClassArray(galleryClassesForInit);
 
         // Enable country list button if no galleries were initialized
         if(initGalleryAmount == 0) {
