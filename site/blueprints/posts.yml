@@ -6,3 +6,6 @@ fields:
   titlemenu:
     label: Titel Menu
     type:  text
+  arrowtext:
+    label: Text Pfeil
+    type: text

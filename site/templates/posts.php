@@ -513,7 +513,7 @@
 				<div id="arrow" class="hide">
 		          <img src="/Frontend/img/arrow_gallery_teaser_mirrored.png" />
 		          <div id="click-teaser">
-		            Klicke auf einen Kontinent und wähle einen Post trolol
+		            <?php echo $page->arrowtext() ?>
 		          </div>
 		        </div>
 

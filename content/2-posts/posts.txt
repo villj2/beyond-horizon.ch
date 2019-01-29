@@ -7,3 +7,7 @@ Titlemenu: Beiträge
 ----
 
 Map: 
+
+----
+
+Arrowtext: Klicke auf einen Kontinent und wähle einen Post trolol cms

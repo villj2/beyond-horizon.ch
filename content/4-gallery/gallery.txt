@@ -3,3 +3,7 @@ Title: Gallery
 ----
 
 Titlemenu: Galerie
+
+----
+
+Arrowtext: Wähle einen Kontinent aus und gucke Bilder trolol aus cms

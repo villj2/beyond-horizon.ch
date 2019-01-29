@@ -9,8 +9,8 @@ password: >
 language: en
 role: admin
 history:
+  - posts
+  - gallery
   - home
   - posts/oceania/tasmania/cradle-mountain
   - posts/oceania/tasmania/east-coast
-  - posts/oceania/new-zealand/tongariro-alpine-crossing
-  - posts/oceania/new-zealand/rotorua

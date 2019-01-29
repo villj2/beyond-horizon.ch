@@ -513,7 +513,7 @@
         <div id="arrow" class="hide">
           <img src="/Frontend/img/arrow_gallery_teaser_mirrored.png" />
           <div id="click-teaser">
-            Wähle einen Kontinent aus und gucke Bilder trolol
+            <?php echo $page->arrowtext() ?>
           </div>
         </div>
 
