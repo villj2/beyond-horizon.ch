@@ -7943,7 +7943,7 @@ time.icon:focus {
   }
 }
 #continent-map-filtering {
-  margin-top: 40px;
+  margin-top: 80px;
   margin-bottom: 30px;
 }
 #continent-map-filtering #list-countries button {
@@ -7962,5 +7962,31 @@ time.icon:focus {
 }
 #continent-map-filtering #list-countries button:disabled {
   opacity: 0.4;
+}
+#continent-map-filtering #arrow {
+  position: absolute;
+  left: 55%;
+  top: -80px;
+}
+#continent-map-filtering #arrow img {
+  width: 80%;
+}
+@media (max-width: 480px) {
+  #continent-map-filtering #arrow img {
+    width: 60%;
+  }
+}
+#continent-map-filtering #arrow #click-teaser {
+  /*position: absolute;
+			top: 60%;
+			left: 90%;
+			width: 100%;*/
+  position: absolute;
+  top: 60%;
+  right: 100%;
+  width: 100%;
+}
+#filtered-content {
+  padding-bottom: 30px;
 }
 /*# sourceMappingURL=bootstrap.css.map */

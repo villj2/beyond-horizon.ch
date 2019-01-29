@@ -509,6 +509,14 @@
 
 		<div id="continent-map-filtering" class="row">
 			<div class="col-md-12">
+
+				<div id="arrow" class="hide">
+		          <img src="/Frontend/img/arrow_gallery_teaser_mirrored.png" />
+		          <div id="click-teaser">
+		            Klicke auf einen Kontinent und wähle einen Post trolol
+		          </div>
+		        </div>
+
 				<!-- List with countries -->
 				<div id="list-countries">
 

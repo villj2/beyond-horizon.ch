@@ -509,6 +509,14 @@
 
     <div id="continent-map-filtering" class="row">
       <div class="col-md-12">
+
+        <div id="arrow" class="hide">
+          <img src="/Frontend/img/arrow_gallery_teaser_mirrored.png" />
+          <div id="click-teaser">
+            Wähle einen Kontinent aus und gucke Bilder trolol
+          </div>
+        </div>
+
         <!-- List with countries -->
         <div id="list-countries">
 
@@ -528,103 +536,110 @@
       </div>
     </div>
 
-        <div id="filtered-content" data-gallery-interrupter="true">
+    <div class="row">
 
-          <!-- Loop over CONTINENTS -->
-          <?php foreach($continents->sortBy('titlefrontend', 'asc') as $continent): ?>
+        <div class="col-md-12">
 
-            <div id="posts-<?php echo strtolower($continent->title()->text()) ?>" class="hide">
-              
-              <div class="row">
-                <div class="col-md-12">
-                  <h2><?php echo $continent->titlefrontend()->html() ?></h2>
-                </div>
-              </div>
+            <div id="filtered-content" data-gallery-interrupter="true">
 
+              <!-- Loop over CONTINENTS -->
+              <?php foreach($continents->sortBy('titlefrontend', 'asc') as $continent): ?>
 
-              <!-- Loop over COUNTRIES -->
-              <?php foreach($continent->children()->sortby('title', 'asc') as $country): ?>
-
-                <div id="posts-<?php echo $country->countrycode()->text() ?>" data-continent="<?php echo strtolower($continent->title()->text()) ?>" data-country="<?php echo $country->countrycode()->text() ?>" class="posts-country hide">
-
+                <div id="posts-<?php echo strtolower($continent->title()->text()) ?>" class="hide">
+                  
                   <div class="row">
                     <div class="col-md-12">
-                      <h4><?php echo $country->title()->text() ?></h4>
-                      <br />
+                      <h2><?php echo $continent->titlefrontend()->html() ?></h2>
                     </div>
                   </div>
 
-                <div class="row teaser">
 
-                      <!-- Loop over POSTS -->
-                    <?php foreach($country->children()->visible()->filterBy('picsonly', '!=', '1')->sortby('sort', 'desc') as $post): ?>
+                  <!-- Loop over COUNTRIES -->
+                  <?php foreach($continent->children()->sortby('title', 'asc') as $country): ?>
 
-                      <?php
+                    <div id="posts-<?php echo $country->countrycode()->text() ?>" data-continent="<?php echo strtolower($continent->title()->text()) ?>" data-country="<?php echo $country->countrycode()->text() ?>" class="posts-country hide">
 
-                        $gallery = $post->children()->visible()->filterBy('intendedTemplate', 'postgallery');
+                      <div class="row">
+                        <div class="col-md-12">
+                          <h4><?php echo $country->title()->text() ?></h4>
+                          <br />
+                        </div>
+                      </div>
 
-                        if($gallery == "") continue;
+                    <div class="row teaser">
 
-                        $galleryIndex++;
+                          <!-- Loop over POSTS -->
+                        <?php foreach($country->children()->visible()->filterBy('picsonly', '!=', '1')->sortby('sort', 'desc') as $post): ?>
 
-                        $imagesources = array();
-                        foreach($gallery->images()->sortBy('sort', 'asc') as $image):
+                          <?php
 
-                            if(strpos($image->filename(), 'preview') == false){
-                                array_push($imagesources, str_replace(".jpg", "_preview.jpg", $image->url()));
-                            }
+                            $gallery = $post->children()->visible()->filterBy('intendedTemplate', 'postgallery');
 
-                        endforeach;
+                            if($gallery == "") continue;
 
-                        echo
-                          '<div class="row">
-                            <div class="col-md-12">
-                              <h4>' . $post->title() . '</h4>
-                            </div>
-                          </div>
-                          <div class="row">
-                            <div class="col-md-12">
-                                <div id="horizon-gallery-' . $galleryIndex . '" gallery-initialized="false" data-images-replaced="false" style="display:none;" data-image-sources="'. implode("|", $imagesources) . '" class="horizon-gallery horizon-gallery-' . $country->countrycode() . '">';
+                            $galleryIndex++;
 
-                                  $picIndex = 0;
+                            $imagesources = array();
+                            foreach($gallery->images()->sortBy('sort', 'asc') as $image):
 
-                                  foreach($gallery->images()->sortBy('sort', 'asc') as $image):
+                                if(strpos($image->filename(), 'preview') == false){
+                                    array_push($imagesources, str_replace(".jpg", "_preview.jpg", $image->url()));
+                                }
 
-                                    if(strpos($image->filename(), 'preview') == false){
+                            endforeach;
 
-                                      $dummyPicture = kirby()->urls()->index() . "/assets/images/" . ($image->isLandscape() ? "landscape" : "portrait") . "_dummy_unite.jpg";
-                                      $picIndex++;
+                            echo
+                              '<div class="row">
+                                <div class="col-md-12">
+                                  <h4>' . $post->title() . '</h4>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col-md-12">
+                                    <div id="horizon-gallery-' . $galleryIndex . '" gallery-initialized="false" data-images-replaced="false" style="display:none;" data-image-sources="'. implode("|", $imagesources) . '" class="horizon-gallery horizon-gallery-' . $country->countrycode() . '">';
 
-                                      /* Keep in mind that every data-attributes gets deleted while initializing the gallery with UniteGallery. BUT you can misuse the alt-attribute to pass data. This is persistent. */
-                                      
-                                      echo
-                                      '<a href="#">
-                                        <img alt="' . $post->title() . ' Bild ' . $picIndex . '"
-                                         src="' . $dummyPicture . '"
-                                         data-src="' . str_replace(".jpg", "_preview.jpg", $image->url()) . '"
-                                         data-image="' . $image->url() . '"
-                                         data-description=""
-                                         style="display:none;">
-                                      </a>';
-                                    }
+                                      $picIndex = 0;
 
-                                  endforeach;
+                                      foreach($gallery->images()->sortBy('sort', 'asc') as $image):
 
-                          echo '</div></div></div>';
+                                        if(strpos($image->filename(), 'preview') == false){
 
-                      ?>
-                    <?php endforeach ?>
-                </div>
+                                          $dummyPicture = kirby()->urls()->index() . "/assets/images/" . ($image->isLandscape() ? "landscape" : "portrait") . "_dummy_unite.jpg";
+                                          $picIndex++;
 
-                </div>
+                                          /* Keep in mind that every data-attributes gets deleted while initializing the gallery with UniteGallery. BUT you can misuse the alt-attribute to pass data. This is persistent. */
+                                          
+                                          echo
+                                          '<a href="#">
+                                            <img alt="' . $post->title() . ' Bild ' . $picIndex . '"
+                                             src="' . $dummyPicture . '"
+                                             data-src="' . str_replace(".jpg", "_preview.jpg", $image->url()) . '"
+                                             data-image="' . $image->url() . '"
+                                             data-description=""
+                                             style="display:none;">
+                                          </a>';
+                                        }
 
-              <?php endforeach ?>
+                                      endforeach;
 
-          </div>
+                              echo '</div></div></div>';
 
-      <?php endforeach ?>
+                          ?>
+                        <?php endforeach ?>
+                    </div>
+
+                    </div>
+
+                  <?php endforeach ?>
+
+              </div>
+
+          <?php endforeach ?>
+
+            </div>
 
         </div>
+    </div>
 
     </div>
 

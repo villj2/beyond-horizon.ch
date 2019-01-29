@@ -234,6 +234,13 @@ function postsUpdate() {
     });
 
     //console.log(selectedList);
+
+    // Check if any continent has been selected
+    if(selectedList.length > 0) {
+        $('#arrow').addClass('hide');
+    } else {
+        $('#arrow').removeClass('hide');
+    }
 }
 
 function postsShowByCountry(country) {

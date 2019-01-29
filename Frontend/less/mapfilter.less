@@ -33,7 +33,7 @@
 
 #continent-map-filtering {
 
-	margin-top: 40px;
+	margin-top: 80px;
 	margin-bottom: 30px;
 
 	#list-countries {
@@ -59,4 +59,34 @@
 		}
 	}
 
+	#arrow {
+		position: absolute;
+	    left: 55%;
+	    top: -80px;
+
+		img {
+			width: 80%;
+
+			@media(max-width:@screen-xs){
+				width: 60%;
+			}
+		}
+
+		#click-teaser {
+		    /*position: absolute;
+			top: 60%;
+			left: 90%;
+			width: 100%;*/
+
+			position: absolute;
+		    top: 60%;
+		    right: 100%;
+		    width: 100%;
+		}
+	}
+}
+
+#filtered-content {
+
+	padding-bottom: 30px;
 }
