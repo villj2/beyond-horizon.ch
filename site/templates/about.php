@@ -10,7 +10,20 @@
         </div>
         <div class="col-md-5 text"><!-- center-max-md -->
 
-  			 <?php echo $page->text()->kirbytext() ?>
+  			<?php 
+
+          $d1 = new DateTime();
+          $d2 = new DateTime('1986-10-14');
+          $diff = $d2->diff($d1);
+          $text = str_replace('%agejulien%', $diff->y, $page->text()->kirbytext());
+
+          $d2 = new DateTime('1990-11-29');
+          $diff = $d2->diff($d1);
+          $text = str_replace('%agekarin%', $diff->y, $text);
+
+          echo $text;
+
+        ?>
 
          
 
