@@ -6976,8 +6976,10 @@ body {
   margin-bottom: 110px;
 }
 body h1 {
-  font-size: 80px !important;
-  font-family: 'amaticbold';
+  /*font-size: 80px !important;
+  	font-family: 'amaticbold';*/
+  font-family: 'ralewaysemibold';
+  font-size: 2.6em;
 }
 body h2 {
   font-family: 'ralewaysemibold';
@@ -7471,12 +7473,31 @@ map area {
   left: 18%;
   width: 30%;
 }
+@media (min-width: 768px) and (max-width: 991px) {
+  #home-gallery-teaser .text-box {
+    top: -3%;
+    left: 14%;
+    width: 35%;
+  }
+}
+#home-gallery-teaser .gallery-col-1 {
+  padding-top: 36%;
+}
+#home-gallery-teaser .gallery-col-2 {
+  padding-top: 19.8%;
+}
+#home-gallery-teaser .gallery-col-4 {
+  padding-top: 10.8%;
+}
+#home-gallery-teaser .second-entry {
+  padding-top: 10%;
+}
 #home-gallery-teaser img {
   width: 100%;
 }
 #home-gallery-teaser .col-xs-3 {
-  padding-left: 0.5%;
-  padding-right: 0.5%;
+  padding-left: 1%;
+  padding-right: 1%;
 }
 #home-gallery-teaser #button-container {
   position: relative;
@@ -7489,14 +7510,22 @@ map area {
 #home-gallery-teaser #button-container #arrow {
   position: absolute;
   top: 100%;
-  left: 15%;
-  width: 50%;
+  left: 25%;
+  width: 40%;
 }
 #home-gallery-teaser #button-container #click-teaser {
   position: absolute;
   top: 60%;
   left: 100%;
-  width: 150%;
+  width: 200%;
+}
+.container-teaser .home {
+  padding-left: 0.9%;
+  padding-right: 0.9%;
+}
+.container-teaser .teaser {
+  margin-left: -5px;
+  margin-right: -5px;
 }
 /* -------- Blog Calendar Icon -------- */
 time.icon {

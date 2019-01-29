@@ -78,17 +78,17 @@
       </div>
 
       <div class="row">
-        <div class="col-md-12" style="text-align: center;">
+        <div class="col-md-12">
           <?php echo $page->intro()->kirbytext() ?>
           <br />
         </div>
       </div>
 
-      <div class="row teaser">
+      <div class="row teaser ">
 
         <?php if($page->parent()->index()->visible()->filterBy('template', 'post')->filterBy('picsonly', '!=', '1')->count() == 0){ ?>
 
-          <div class="col-sm-12">
+          <div class="col-sm-12 home">
             <div class="teaser-image-container">
               Noch keine Beiträge vorhanden. Schau doch später wieder vorbei.
             </div>
@@ -97,7 +97,7 @@
         <?php } else { ?>
 
         <?php foreach($page->parent()->index()->visible()->filterBy('template', 'post')->filterBy('picsonly', '!=', '1')->sortBy('date', 'desc')->limit(3) as $post): ?>
-          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 col-xxs-12">
+          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 col-xxs-12 home">
             <div class="teaser-image-container">
               <p>
                 <img src="<?php echo $post->contentURL() ?>/<?php echo $post->imageteaser() ?>" class="teaser-image" alt="<?php echo $post->title() ?>" title="<?php echo $post->title() ?>" />
@@ -123,120 +123,48 @@
 
     </div>
 
-
-
-
     <div class="container">
 
-      <?php
-
-        //[{"id":"oceania", "countries":["nz", "au"]}, {"id":"asia", "countries":["hk", "jp"]}]
-
-        $filterDict = array();
-
-        foreach ($page->parent()->index()->visible()->filterBy('template', 'post')->sortBy('date', 'desc')->limit(3) as $post) {
-
-          $continent = strtolower($post->parent()->parent()->title());
-          $country = strtolower($post->parent()->countrycode());
-
-          if(!array_key_exists($continent, $filterDict)) {
-
-            // Adding continent if not already in dict
-            $filterDict[$continent] = $country;
-          }
-          else {
-
-            if(\strpos($filterDict[$continent], $country) !== false) {
-              // country already added
-            }
-            else {
-
-              // Add new country to already existing continent with at least 1 country-entry
-              $filterDict[$continent] = $filterDict[$continent] . "|" . $country;
-            }
-          }
-
-        }
-
-        echo "<br/>";
-
-        $indexContinent = 0;
-        $filterString = '[';
-
-        foreach ($filterDict as $key=>$value) {
-
-          //echo $key . " - " . $value . "<br />";
-
-          if($indexContinent > 0) {
-            $filterString .= ', ';
-          }
-
-          $filterString .= '{"id":"' . $key . '", "countries":[';
-
-          // split countries
-          $indexCountry = 0;
-          $explodedCountries = explode('|', $value);
-          foreach ($explodedCountries as $country) {
-
-            if($indexCountry > 0) {
-              $filterString .= ', ';
-            }
-
-            $filterString .= '"' . $country . '"';
-
-            $indexCountry++;
-          }
-
-          $filterString .= ']}';
-          $indexContinent++;
-        }
-
-        $filterString .= ']';
-
-        //echo $filterString;
-
-      ?>
-
       <div class="row">
-        <div class="col-sm-12 hidden-md hidden-lg" style="margin-bottom: 20px;">
-          <h2>Galerie</h2>
+        <div class="col-sm-12 hidden-sm hidden-md hidden-lg" style="margin-bottom: 20px;">
+          <h1>Galerie</h2>
           <p>Entdecke unsere Galerie und lass dich von unseren Reisefotos inspirieren!</p>
         </div>
       </div>
 
       <div id="home-gallery-teaser" class="clearfix">
-        <div class="text-box hidden-xs hidden-sm">
-          <h2>Galerie</h2>
+        <div class="text-box hidden-xs">
+          <h1>Galerie</h1>
           <p>Entdecke unsere Galerie und lass dich von unseren Reisefotos inspirieren!</p>
         </div>
-        <div class="col-xs-3" style="padding-top: 36%;">
-          <img src="/Frontend/img/teaser_square.jpg" />
+        <div class="col-xs-3 gallery-col-1">
+          <img src="<?php echo $galleryTeasers[0] ?>" />
         </div>
-        <div class="col-xs-3" style="padding-top: 19.8%">
-          <img src="/Frontend/img/teaser_square.jpg" />
-          <img src="/Frontend/img/teaser_square.jpg" style="padding-top: 5%;" />
+        <div class="col-xs-3 gallery-col-2">
+          <img src="<?php echo $galleryTeasers[1] ?>" />
+          <img src="<?php echo $galleryTeasers[2] ?>" class="second-entry" />
         </div>
         <div class="col-xs-3">
-          <img src="/Frontend/img/teaser_square.jpg" />
-          <img src="/Frontend/img/teaser_square.jpg" style="padding-top: 5%;" />
-          <div id="button-container" class="hidden-xs hidden-sm">
+          <img src="<?php echo $galleryTeasers[3] ?>" />
+          <img src="<?php echo $galleryTeasers[4] ?>" class="second-entry" />
+          <div id="button-container" class="hidden-xs">
             <button type="button" class="btn btn-secondary btn-more" onclick="location.href='/gallery?filter=<?php echo urlencode($filterString) ?>'">Tolle Bilder goat</button>
             <div id="arrow">
               <img src="/Frontend/img/arrow_gallery_teaser.png" />
               <div id="click-teaser">
-                Hier klicken um mehr von <strong>Hong Kong</strong> und <strong>Neuseeland</strong> zu sehen!
+                Hier klicken um mehr von <strong><?php echo $lastLocations[0] ?></strong> und <strong><?php echo $lastLocations[1] ?></strong> zu sehen!
               </div>
             </div>
 
           </div>
         </div>
-        <div class="col-xs-3" style="padding-top: 10.8%">
-          <img src="/Frontend/img/teaser_square.jpg" />
+        <div class="col-xs-3 gallery-col-4">
+          <img src="<?php echo $galleryTeasers[5] ?>" />
         </div>
       </div>
 
       <div class="row">
-        <div class="col-sm-12 hidden-md hidden-lg" style="text-align: center;">
+        <div class="col-sm-12 hidden-sm hidden-md hidden-lg" style="text-align: center;">
           <button type="button" class="btn btn-secondary btn-more" onclick="location.href='/gallery?filter=<?php echo urlencode($filterString) ?>'">Tolle Bilder goat</button>
         </div>
       </div>

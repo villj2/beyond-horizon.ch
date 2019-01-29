@@ -2,7 +2,7 @@ Title: Home
 
 ----
 
-Intro: ## Die neuesten Beiträge.
+Intro: # Beiträge
 
 ----
 
@@ -11,3 +11,27 @@ Introbuttons: Entdecke mehr.
 ----
 
 Titlemenu: Home
+
+----
+
+Galleryteaser1: teaser_beach_500x500.jpg
+
+----
+
+Galleryteaser2: teaser_forest_500x500.jpg
+
+----
+
+Galleryteaser3: teaser_mountains_500x500.jpg
+
+----
+
+Galleryteaser4: teaser_square.jpg
+
+----
+
+Galleryteaser5: teaser_mountains_500x500.jpg
+
+----
+
+Galleryteaser6: teaser_beach_500x500.jpg

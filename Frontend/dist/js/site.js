@@ -410,12 +410,11 @@ $(document).ready(function() {
     var countriesSelected = [];
 
     var selectedList = [];
-    /* example: 
+    /* examples: 
     [{"id":"oceania", "countries":["nz", "au"]}, {"id":"asia", "countries":["hk", "jp"]}]
     [{"id":"oceania", "countries":["nz"]}, {"id":"asia", "countries":["jp"]}]
     [{"id": "asia", "countries": ["hk"]}]
     */
-
 
     var queryStringFilter = qs('filter');
     if(queryStringFilter) {

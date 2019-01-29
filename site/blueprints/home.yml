@@ -13,3 +13,21 @@ fields:
   introbuttons:
   	label: Einleitungstext Buttons
   	type:  text
+  galleryteaser1:
+    label: Gallery Teaser Image 1 <i>(500 x 500px)</i>
+    type: image
+  galleryteaser2:
+    label: Gallery Teaser Image 2 <i>(500 x 500px)</i>
+    type: image
+  galleryteaser3:
+    label: Gallery Teaser Image 3 <i>(500 x 500px)</i>
+    type: image
+  galleryteaser4:
+    label: Gallery Teaser Image 4 <i>(500 x 500px)</i>
+    type: image
+  galleryteaser5:
+    label: Gallery Teaser Image 5 <i>(500 x 500px)</i>
+    type: image
+  galleryteaser6:
+    label: Gallery Teaser Image 6 <i>(500 x 500px)</i>
+    type: image
