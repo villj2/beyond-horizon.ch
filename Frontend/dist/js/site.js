@@ -1,3 +1,5 @@
+/******** GENERAL HELPER FUNCTIONS ********/
+
 function getUrlVars() {
     var vars = [],
         hash;
@@ -23,6 +25,25 @@ function removeFromArray(array, input) {
     });
 }
 
+function qs(key) {
+    key = key.replace(/[*+?^$.\[\]{}()|\\\/]/g, "\\$&"); // escape RegEx meta chars
+    var match = location.search.match(new RegExp("[?&]"+key+"=([^&]+)(&|$)"));
+    return match && decodeURIComponent(match[1].replace(/\+/g, " "));
+}
+
+
+
+
+
+/******** MAP FILTER ********/
+
+var selectedList = [];
+/* examples: 
+[{"id":"oceania", "countries":["nz", "au"]}, {"id":"asia", "countries":["hk", "jp"]}]
+[{"id":"oceania", "countries":["nz"]}, {"id":"asia", "countries":["jp"]}]
+[{"id": "asia", "countries": ["hk"]}]
+*/
+
 function setFilterButtonsActive(active) {
 
     $('#list-countries button').each(function(e, target){
@@ -39,11 +60,241 @@ function setFilterButtonsActive(active) {
     });
 }
 
-function qs(key) {
-    key = key.replace(/[*+?^$.\[\]{}()|\\\/]/g, "\\$&"); // escape RegEx meta chars
-    var match = location.search.match(new RegExp("[?&]"+key+"=([^&]+)(&|$)"));
-    return match && decodeURIComponent(match[1].replace(/\+/g, " "));
+function mapUpdateSelectedList(e) {
+
+    var continentId = $(e.target).attr('id');
+
+    // Don't do anything if continent has no entries
+    if (!$(e.target).hasClass('has-entries')) return;
+
+    // Add or remove selected continent
+    var indexForRemoving = -1;
+    for (var i = 0; i < selectedList.length; i++) {
+        var selectedObj = selectedList[i];
+
+        // Selected continent already in list -> remove
+        if (selectedObj.id == continentId) {
+            indexForRemoving = i;
+        }
+    }
+
+    if (indexForRemoving >= 0) {
+        selectedList.splice(indexForRemoving, 1);
+    } else {
+        selectedList.push({
+            "id": continentId,
+            "countries": []
+        });
+    }
 }
+
+function listUpdateSelectedList(e) {
+
+    var continent = $(e.target).data("continent");
+    var country = $(e.target).data("country");
+
+    // Add or remove selected country
+    for (var i = 0; i < selectedList.length; i++) {
+
+        if (selectedList[i].id == continent) {
+
+            // Add or remove selected country
+            var indexForRemoving = -1;
+            for (var j = 0; j < selectedList[i].countries.length; j++) {
+
+                // Selected continent already in list -> remove
+                if (selectedList[i].countries[j] == country) {
+                    indexForRemoving = j;
+                }
+            }
+
+            if (indexForRemoving >= 0) {
+                selectedList[i].countries.splice(indexForRemoving, 1);
+            } else {
+                selectedList[i].countries.push(country);
+            }
+        }
+    }
+}
+
+function mapUpdate() {
+
+    var mapContinents = $('#continent-map .continent');
+
+    for (var i = 0; i < mapContinents.length; i++) {
+
+        //console.log(mapContinents[i]);
+
+        // Remove active state initially
+        $(mapContinents[i]).removeClass('active');
+
+        var continentId = $(mapContinents[i]).attr('id');
+
+        // Add active state if in continentsSelected list
+        for (var j = 0; j < selectedList.length; j++) {
+
+            if (continentId == selectedList[j].id) {
+
+                //console.log("add active to: " + continentId);
+
+                $(mapContinents[i]).addClass('active');
+                break;
+            }
+        }
+    }
+}
+
+function listUpdate() {
+
+    //console.log("listUpdate");
+
+    // initially hide all countries
+    $('#list-countries').find('.list-country').each(function(e, target) {
+
+        $(target).addClass('hide');
+    });
+
+    // show countries based on continents in selectedList
+    for (var i = 0; i < selectedList.length; i++) {
+
+        var continentId = selectedList[i].id;
+
+        var entries = $('#list-countries').children('[id^="' + continentId + '"]');
+
+        entries.each(function(e, target) {
+
+            $(target).removeClass('hide');
+        });
+    }
+
+    // set state of country based on country in selectedList
+    var initGalleryAmount = 0;
+    var galleryClassesForInit = [];
+    initDelay = 0;
+    $('#list-countries .list-country').each(function(e, target) {
+
+        var country = $(target).data('country');
+
+        if (countryExistsInSelectedList(country)) {
+
+            // init gallery here if initially blocked
+            if (!$('body').data('initgallery')) {
+
+                // Check if already initialized
+                var gallery = $('.horizon-gallery-' + $(target).data('country'));
+
+                if($(gallery).attr('gallery-initialized') == "false") {
+
+                    initGalleryAmount++;
+                    galleryClassesForInit.push('.horizon-gallery-' + $(target).data('country'));
+                }
+            }
+
+            $(target).addClass('active');
+        } else {
+
+            $(target).removeClass('active');
+        }
+
+    });
+
+    // Init gallery based on array with classes (.horizon-gallery-hk, .horizon-gallery-nz, ...)
+    initUniteGalleryByClassArray(galleryClassesForInit);
+
+    // Enable country list button if no galleries were initialized
+    if(initGalleryAmount == 0) {
+        setFilterButtonsActive(true);
+    }
+}
+
+function postsUpdate() {
+
+    $('#filtered-content .posts-country').each(function(e, target) {
+
+        var continent = $(target).data('continent');
+        var country = $(target).data('country');
+
+        // Check if continent-goup should be active
+        if (continentExistsInSelectedList(continent)) {
+
+            $("#posts-" + continent).removeClass('hide');
+
+            if (countryExistsInSelectedList(country)) {
+
+                postsShowByCountry(country);
+            } else {
+                // Hide country
+                $("#posts-" + country).addClass('hide');
+            }
+        } else {
+            // Hide continent section
+            $("#posts-" + continent).addClass('hide');
+        }
+
+    });
+
+    //console.log(selectedList);
+}
+
+function postsShowByCountry(country) {
+
+    // Show country posts
+    $("#posts-" + country).removeClass('hide');
+
+    // Load pictures for posts preview
+    $("#posts-" + country + " .posts-entry").each(function(e, target) {
+        var post = $(target);
+
+        post.children('img').each(function(e, target) {
+            var img = $(target);
+            img.attr('src', img.data('src'));
+        });
+    });
+
+    //console.log("load pictures for gallery");
+
+    // Load pictures for gallery - use this code if replacing img-src still fails. This works, but with wrong ordering.
+    /*$(".horizon-gallery-" + country + " img").each(function(e, target) {
+
+        var img = $(target);
+        img.attr('src', img.data('src'));
+    });*/
+
+}
+
+function continentExistsInSelectedList(continent) {
+
+    for (var i = 0; i < selectedList.length; i++) {
+
+        if (selectedList[i].id == continent && selectedList[i].countries.length > 0) {
+            return true;
+        }
+    }
+
+    return false;
+}
+
+function countryExistsInSelectedList(country) {
+
+    for (var i = 0; i < selectedList.length; i++) {
+
+        for (var j = 0; j < selectedList[i].countries.length; j++) {
+
+            if (selectedList[i].countries[j] == country) {
+
+                return true;
+            }
+        }
+    }
+
+    return false;
+}
+
+
+
+
+
+/******** UNITE GALLERY ********/
 
 function initUniteGalleryByClassArray(galleryClassesForInit) {
 
@@ -139,205 +390,218 @@ function replaceImagesInInitializedGallery() {
     setFilterButtonsActive(true);
 }
 
-$(document).ready(function() {
 
-    /* ------ Google Maps -------- */
 
-    var styleArray = [{
-        "featureType": "water",
-        "stylers": [{
-            "color": "#ffffff"
-        }]
-    }, {
-        "featureType": "landscape.natural.landcover",
-        "stylers": [{
+
+
+/******** GOOGLE MAPS ********/
+
+var styleArray = [{
+    "featureType": "water",
+    "stylers": [{
+        "color": "#ffffff"
+    }]
+}, {
+    "featureType": "landscape.natural.landcover",
+    "stylers": [{
+        "color": "#c0c0c0"
+    }]
+}, {
+    "featureType": "landscape.natural.terrain",
+    "stylers": [{
+        "color": "#c0c0c0"
+    }]
+}, {
+    "featureType": "administrative",
+    "elementType": "labels.text",
+    "stylers": [{
             "color": "#c0c0c0"
-        }]
-    }, {
-        "featureType": "landscape.natural.terrain",
-        "stylers": [{
-            "color": "#c0c0c0"
-        }]
-    }, {
-        "featureType": "administrative",
-        "elementType": "labels.text",
-        "stylers": [{
-                "color": "#c0c0c0"
-            },
-            {
-                "visibility": "off"
-            }
-        ]
-    }, {
-        "elementType": "labels.icon",
-        "stylers": [{
+        },
+        {
             "visibility": "off"
-        }]
-    }, {
-        "featureType": "landscape.natural.terrain",
-        "stylers": [{
-            "color": "#c0c0c0"
-        }]
-    }, {
-        "featureType": "landscape",
-        "stylers": [{
-            "color": "#c0c0c0"
-        }]
-    }, {
-        "featureType": "poi",
-        "stylers": [{
-            "color": "#c0c0c0"
-        }]
-    }, {
-        "featureType": "road",
-        "stylers": [{
-            "visibility": "off"
-        }]
-    }, {
-        "featureType": "administrative",
-        "stylers": [{
-            "color": "#ffffff"
-        }]
-    }, {
-        "featureType": "water",
-        "elementType": "labels.text",
-        "stylers": [{
-            "visibility": "off"
-        }]
-    }, {
-        "featureType": "landscape",
-        "elementType": "labels.text",
-        "stylers": [{
-            "visibility": "off"
-        }]
-    }, {
-        "elementType": "labels.text",
-        "stylers": [{
-            "visibility": "off"
-        }]
-    }, {
-        "featureType": "administrative.country",
-        "elementType": "labels.text.stroke",
-        "stylers": [{
-                "visibility": "on"
-            },
-            {
-                "color": "#777777"
-            }
-        ]
-    }, {
-        "featureType": "administrative.province",
-        "elementType": "labels.text.stroke",
-        "stylers": [{
-                "visibility": "on"
-            },
-            {
-                "color": "#777777"
-            }
-        ]
-    }, {
-        "featureType": "administrative.locality",
-        "elementType": "labels",
-        "stylers": [{
-                "color": "#777777"
-            },
-            {
-                "visibility": "simplified"
-            }
-        ]
-    }, {
-        "featureType": "transit.line",
-        "stylers": [{
-            "visibility": "off"
-        }]
-    }, {}];
-
-    function initMap() {
-
-        // Create a map object and specify the DOM element for display.
-        var map = new google.maps.Map(document.getElementById('map-overview'), {
-            /*center: {lat: 5.9657536710655235, lng: 84.7265625},*/
-            center: {
-                lat: 3.513421045640057,
-                lng: 116.71875
-            },
-            scrollwheel: true,
-            styles: styleArray,
-            zoom: 4,
-            mapTypeControl: false,
-            minZoom: 3
-        });
-
-        google.maps.event.addListener(map, "click", function(event) {
-
-            var lat = event.latLng.lat();
-            var lng = event.latLng.lng();
-            var center = map.getCenter();
-
-            console.log("lat: " + lat + ", lng: " + lng + ", zoom: " + map.getZoom() + ", center: " + center);
-        });
-
-        // Read JSON
-        var jsonString = $('#container-map-posts').data('pins');
-        var markers = [];
-        var infobubbles = [];
-
-        for (var i = 0; i < jsonString.length; i++) {
-
-            //console.log(jsonString[i].title);
-
-            /* Marker */
-            markers.push(new google.maps.Marker({
-                map: map,
-                position: {
-                    lat: parseFloat(jsonString[i].lat),
-                    lng: parseFloat(jsonString[i].lng)
-                },
-                title: jsonString[i].title,
-                //icon: new google.maps.MarkerImage('/Frontend/img/location-pin.svg', null, null, null, new google.maps.Size(32,32)),
-                icon: new google.maps.MarkerImage('/Frontend/img/location-pin.png', null, null, null, new google.maps.Size(32, 32)),
-                leWildIndex: i
-            }));
-
-            /* Infobubbles */
-            infobubbles.push(new InfoBubble({
-                maxWidth: 235,
-                maxHeight: jsonString[i].twolines == 1 ? 240 : 220,
-                content: '<div class="infobubble" style="overflow: hidden;"><a href="' + jsonString[i].url + '" target="_self"><img src="' + jsonString[i].img + '" /><h2>' + jsonString[i].title + '</h2><p>' + jsonString[i].date + '</p></div></a>',
-                padding: 0,
-                backgroundColor: 'rgb(230,230,230)',
-                borderRadius: 0,
-                arrowSize: 10,
-                borderWidth: 0,
-                borderColor: '#2c2c2c',
-                closeSrc: '/Frontend/img/maps_infowindow_close.png',
-                arrowStyle: 0,
-                leWildIndex: i
-            }));
-
-            google.maps.event.addListener(markers[i], 'click', function(e) {
-
-                for (var i = 0; i < infobubbles.length; i++) {
-                    infobubbles[i].close();
-                }
-
-                var bubble = infobubbles[this.leWildIndex];
-
-                if (!bubble.isOpen()) {
-                    bubble.open(map, markers[this.leWildIndex]);
-                }
-            });
         }
+    ]
+}, {
+    "elementType": "labels.icon",
+    "stylers": [{
+        "visibility": "off"
+    }]
+}, {
+    "featureType": "landscape.natural.terrain",
+    "stylers": [{
+        "color": "#c0c0c0"
+    }]
+}, {
+    "featureType": "landscape",
+    "stylers": [{
+        "color": "#c0c0c0"
+    }]
+}, {
+    "featureType": "poi",
+    "stylers": [{
+        "color": "#c0c0c0"
+    }]
+}, {
+    "featureType": "road",
+    "stylers": [{
+        "visibility": "off"
+    }]
+}, {
+    "featureType": "administrative",
+    "stylers": [{
+        "color": "#ffffff"
+    }]
+}, {
+    "featureType": "water",
+    "elementType": "labels.text",
+    "stylers": [{
+        "visibility": "off"
+    }]
+}, {
+    "featureType": "landscape",
+    "elementType": "labels.text",
+    "stylers": [{
+        "visibility": "off"
+    }]
+}, {
+    "elementType": "labels.text",
+    "stylers": [{
+        "visibility": "off"
+    }]
+}, {
+    "featureType": "administrative.country",
+    "elementType": "labels.text.stroke",
+    "stylers": [{
+            "visibility": "on"
+        },
+        {
+            "color": "#777777"
+        }
+    ]
+}, {
+    "featureType": "administrative.province",
+    "elementType": "labels.text.stroke",
+    "stylers": [{
+            "visibility": "on"
+        },
+        {
+            "color": "#777777"
+        }
+    ]
+}, {
+    "featureType": "administrative.locality",
+    "elementType": "labels",
+    "stylers": [{
+            "color": "#777777"
+        },
+        {
+            "visibility": "simplified"
+        }
+    ]
+}, {
+    "featureType": "transit.line",
+    "stylers": [{
+        "visibility": "off"
+    }]
+}, {}];
 
-        // Open last infobubble initially
-        infobubbles[infobubbles.length - 1].open(map, markers[markers.length - 1]);
+function initMap() {
+
+    // Create a map object and specify the DOM element for display.
+    var map = new google.maps.Map(document.getElementById('map-overview'), {
+        /*center: {lat: 5.9657536710655235, lng: 84.7265625},*/
+        center: {
+            lat: 3.513421045640057,
+            lng: 116.71875
+        },
+        scrollwheel: true,
+        styles: styleArray,
+        zoom: 4,
+        mapTypeControl: false,
+        minZoom: 3
+    });
+
+    google.maps.event.addListener(map, "click", function(event) {
+
+        var lat = event.latLng.lat();
+        var lng = event.latLng.lng();
+        var center = map.getCenter();
+
+        console.log("lat: " + lat + ", lng: " + lng + ", zoom: " + map.getZoom() + ", center: " + center);
+    });
+
+    // Read JSON
+    var jsonString = $('#container-map-posts').data('pins');
+    var markers = [];
+    var infobubbles = [];
+
+    for (var i = 0; i < jsonString.length; i++) {
+
+        //console.log(jsonString[i].title);
+
+        /* Marker */
+        markers.push(new google.maps.Marker({
+            map: map,
+            position: {
+                lat: parseFloat(jsonString[i].lat),
+                lng: parseFloat(jsonString[i].lng)
+            },
+            title: jsonString[i].title,
+            //icon: new google.maps.MarkerImage('/Frontend/img/location-pin.svg', null, null, null, new google.maps.Size(32,32)),
+            icon: new google.maps.MarkerImage('/Frontend/img/location-pin.png', null, null, null, new google.maps.Size(32, 32)),
+            leWildIndex: i
+        }));
+
+        /* Infobubbles */
+        infobubbles.push(new InfoBubble({
+            maxWidth: 235,
+            maxHeight: jsonString[i].twolines == 1 ? 240 : 220,
+            content: '<div class="infobubble" style="overflow: hidden;"><a href="' + jsonString[i].url + '" target="_self"><img src="' + jsonString[i].img + '" /><h2>' + jsonString[i].title + '</h2><p>' + jsonString[i].date + '</p></div></a>',
+            padding: 0,
+            backgroundColor: 'rgb(230,230,230)',
+            borderRadius: 0,
+            arrowSize: 10,
+            borderWidth: 0,
+            borderColor: '#2c2c2c',
+            closeSrc: '/Frontend/img/maps_infowindow_close.png',
+            arrowStyle: 0,
+            leWildIndex: i
+        }));
+
+        google.maps.event.addListener(markers[i], 'click', function(e) {
+
+            for (var i = 0; i < infobubbles.length; i++) {
+                infobubbles[i].close();
+            }
+
+            var bubble = infobubbles[this.leWildIndex];
+
+            if (!bubble.isOpen()) {
+                bubble.open(map, markers[this.leWildIndex]);
+            }
+        });
     }
 
+    // Open last infobubble initially
+    infobubbles[infobubbles.length - 1].open(map, markers[markers.length - 1]);
+}
+
+
+
+
+
+/******** DOC READY ********/
+
+$(document).ready(function() {
+
+    // -------- GOOGLE MAPS ---------
     if ($('#map-overview').length) {
         initMap();
     }
 
-    $(document).delegate('*[data-toggle="lightbox"]', 'click', function(event) {
+    //$('map').imageMapResize();
+
+    /*$(document).delegate('*[data-toggle="lightbox"]', 'click', function(event) {
         event.preventDefault();
 
         var options = {
@@ -346,7 +610,10 @@ $(document).ready(function() {
         }
 
         $(this).ekkoLightbox();
-    });
+    });*/
+
+
+    // -------- SCROLL TO TOP ---------
 
     //Check to see if the window is top if not then display button
     $(window).scroll(function() {
@@ -380,12 +647,9 @@ $(document).ready(function() {
         }, 'slow');
     }
 
-    $('map').imageMapResize();
 
 
-
-
-    // -------- UNITE GALLERY START ---------
+    // -------- UNITE GALLERY ---------
 
     // Initialize gallery in post
     if ($('body').data('initgallery')) {
@@ -399,22 +663,10 @@ $(document).ready(function() {
         }, 200);
     }
 
-    // -------- UNITE GALLERY END ---------
 
 
 
-
-    // -------- MAP FILTER START ---------
-
-    var continentsSelected = [];
-    var countriesSelected = [];
-
-    var selectedList = [];
-    /* examples: 
-    [{"id":"oceania", "countries":["nz", "au"]}, {"id":"asia", "countries":["hk", "jp"]}]
-    [{"id":"oceania", "countries":["nz"]}, {"id":"asia", "countries":["jp"]}]
-    [{"id": "asia", "countries": ["hk"]}]
-    */
+    // -------- MAP FILTER ---------
 
     var queryStringFilter = qs('filter');
     if(queryStringFilter) {
@@ -463,238 +715,4 @@ $(document).ready(function() {
 
         return false;
     });
-
-    function mapUpdateSelectedList(e) {
-
-        var continentId = $(e.target).attr('id');
-
-        // Don't do anything if continent has no entries
-        if (!$(e.target).hasClass('has-entries')) return;
-
-        // Add or remove selected continent
-        var indexForRemoving = -1;
-        for (var i = 0; i < selectedList.length; i++) {
-            var selectedObj = selectedList[i];
-
-            // Selected continent already in list -> remove
-            if (selectedObj.id == continentId) {
-                indexForRemoving = i;
-            }
-        }
-
-        if (indexForRemoving >= 0) {
-            selectedList.splice(indexForRemoving, 1);
-        } else {
-            selectedList.push({
-                "id": continentId,
-                "countries": []
-            });
-        }
-    }
-
-    function listUpdateSelectedList(e) {
-
-        var continent = $(e.target).data("continent");
-        var country = $(e.target).data("country");
-
-        // Add or remove selected country
-        for (var i = 0; i < selectedList.length; i++) {
-
-            if (selectedList[i].id == continent) {
-
-                // Add or remove selected country
-                var indexForRemoving = -1;
-                for (var j = 0; j < selectedList[i].countries.length; j++) {
-
-                    // Selected continent already in list -> remove
-                    if (selectedList[i].countries[j] == country) {
-                        indexForRemoving = j;
-                    }
-                }
-
-                if (indexForRemoving >= 0) {
-                    selectedList[i].countries.splice(indexForRemoving, 1);
-                } else {
-                    selectedList[i].countries.push(country);
-                }
-            }
-        }
-    }
-
-    function mapUpdate() {
-
-        var mapContinents = $('#continent-map .continent');
-
-        for (var i = 0; i < mapContinents.length; i++) {
-
-            //console.log(mapContinents[i]);
-
-            // Remove active state initially
-            $(mapContinents[i]).removeClass('active');
-
-            var continentId = $(mapContinents[i]).attr('id');
-
-            // Add active state if in continentsSelected list
-            for (var j = 0; j < selectedList.length; j++) {
-
-                if (continentId == selectedList[j].id) {
-
-                    //console.log("add active to: " + continentId);
-
-                    $(mapContinents[i]).addClass('active');
-                    break;
-                }
-            }
-        }
-    }
-
-    function listUpdate() {
-
-        //console.log("listUpdate");
-
-        // initially hide all countries
-        $('#list-countries').find('.list-country').each(function(e, target) {
-
-            $(target).addClass('hide');
-        });
-
-        // show countries based on continents in selectedList
-        for (var i = 0; i < selectedList.length; i++) {
-
-            var continentId = selectedList[i].id;
-
-            var entries = $('#list-countries').children('[id^="' + continentId + '"]');
-
-            entries.each(function(e, target) {
-
-                $(target).removeClass('hide');
-            });
-        }
-
-        // set state of country based on country in selectedList
-        var initGalleryAmount = 0;
-        var galleryClassesForInit = [];
-        initDelay = 0;
-        $('#list-countries .list-country').each(function(e, target) {
-
-            var country = $(target).data('country');
-
-            if (countryExistsInSelectedList(country)) {
-
-                // init gallery here if initially blocked
-                if (!$('body').data('initgallery')) {
-
-                    // Check if already initialized
-                    var gallery = $('.horizon-gallery-' + $(target).data('country'));
-
-                    if($(gallery).attr('gallery-initialized') == "false") {
-
-                        initGalleryAmount++;
-                        galleryClassesForInit.push('.horizon-gallery-' + $(target).data('country'));
-                    }
-                }
-
-                $(target).addClass('active');
-            } else {
-
-                $(target).removeClass('active');
-            }
-
-        });
-
-        // Init gallery based on array with classes (.horizon-gallery-hk, .horizon-gallery-nz, ...)
-        initUniteGalleryByClassArray(galleryClassesForInit);
-
-        // Enable country list button if no galleries were initialized
-        if(initGalleryAmount == 0) {
-            setFilterButtonsActive(true);
-        }
-    }
-
-    function postsUpdate() {
-
-        $('#filtered-content .posts-country').each(function(e, target) {
-
-            var continent = $(target).data('continent');
-            var country = $(target).data('country');
-
-            // Check if continent-goup should be active
-            if (continentExistsInSelectedList(continent)) {
-
-                $("#posts-" + continent).removeClass('hide');
-
-                if (countryExistsInSelectedList(country)) {
-
-                    postsShowByCountry(country);
-                } else {
-                    // Hide country
-                    $("#posts-" + country).addClass('hide');
-                }
-            } else {
-                // Hide continent section
-                $("#posts-" + continent).addClass('hide');
-            }
-
-        });
-
-        //console.log(selectedList);
-    }
-
-    function postsShowByCountry(country) {
-
-        // Show country posts
-        $("#posts-" + country).removeClass('hide');
-
-        // Load pictures for posts preview
-        $("#posts-" + country + " .posts-entry").each(function(e, target) {
-            var post = $(target);
-
-            post.children('img').each(function(e, target) {
-                var img = $(target);
-                img.attr('src', img.data('src'));
-            });
-        });
-
-        //console.log("load pictures for gallery");
-
-        // Load pictures for gallery - use this code if replacing img-src still fails. This works, but with wrong ordering.
-        /*$(".horizon-gallery-" + country + " img").each(function(e, target) {
-
-            var img = $(target);
-            img.attr('src', img.data('src'));
-        });*/
-
-    }
-
-    function continentExistsInSelectedList(continent) {
-
-        for (var i = 0; i < selectedList.length; i++) {
-
-            if (selectedList[i].id == continent && selectedList[i].countries.length > 0) {
-                return true;
-            }
-        }
-
-        return false;
-    }
-
-    function countryExistsInSelectedList(country) {
-
-        for (var i = 0; i < selectedList.length; i++) {
-
-            for (var j = 0; j < selectedList[i].countries.length; j++) {
-
-                if (selectedList[i].countries[j] == country) {
-
-                    return true;
-                }
-            }
-        }
-
-        return false;
-    }
-
-    // -------- MAP FILTER END ---------
 });
-
-// ----------------- Doc Ready END ------------------
