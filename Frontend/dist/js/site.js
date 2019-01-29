@@ -521,6 +521,8 @@ function initMap() {
         minZoom: 3
     });
 
+    mapOnResize();
+
     google.maps.event.addListener(map, "click", function(event) {
 
         var lat = event.latLng.lat();
@@ -586,7 +588,9 @@ function initMap() {
     infobubbles[infobubbles.length - 1].open(map, markers[markers.length - 1]);
 }
 
-
+function mapOnResize() {
+    $('#map-overview').height($(window).innerHeight() - $('nav').innerHeight());
+}
 
 
 
@@ -598,6 +602,10 @@ $(document).ready(function() {
     if ($('#map-overview').length) {
         initMap();
     }
+
+    $(window).resize(function(e){
+        mapOnResize();
+    });
 
     //$('map').imageMapResize();
 

@@ -7502,7 +7502,8 @@ map area {
 #home-gallery-teaser #button-container {
   position: relative;
   margin-top: 10%;
-  margin-left: 5%;
+  /*margin-left: 5%;*/
+  text-align: center;
 }
 #home-gallery-teaser #button-container button {
   margin: 0;
@@ -7510,7 +7511,7 @@ map area {
 #home-gallery-teaser #button-container #arrow {
   position: absolute;
   top: 100%;
-  left: 25%;
+  left: 45%;
   width: 40%;
 }
 #home-gallery-teaser #button-container #click-teaser {
