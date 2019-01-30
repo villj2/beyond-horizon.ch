@@ -9,8 +9,8 @@ password: >
 language: en
 role: admin
 history:
+  - about
   - posts
   - gallery
   - home
   - posts/oceania/tasmania/cradle-mountain
-  - posts/oceania/tasmania/east-coast

@@ -545,7 +545,7 @@
       				
       				<div class="row">
 				        <div class="col-md-12">
-				          <h2><?php echo $continent->titlefrontend()->html() ?></h2>
+				          <h1><?php echo $continent->titlefrontend()->html() ?></h1>
 				        </div>
 				      </div>
 
@@ -557,7 +557,7 @@
 
 		      				<div class="row">
 		      					<div class="col-md-12">
-						          <h4><?php echo $country->title()->text() ?></h4>
+						          <h3><?php echo $country->title()->text() ?></h3>
 						          <br />
 						        </div>
 		      				</div>

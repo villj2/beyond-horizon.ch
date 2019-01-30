@@ -546,27 +546,22 @@
               <?php foreach($continents->sortBy('titlefrontend', 'asc') as $continent): ?>
 
                 <div id="posts-<?php echo strtolower($continent->title()->text()) ?>" class="hide">
+
+                    <h1><?php echo $continent->titlefrontend()->html() ?></h1>
                   
-                  <div class="row">
-                    <div class="col-md-12">
-                      <h2><?php echo $continent->titlefrontend()->html() ?></h2>
-                    </div>
-                  </div>
-
-
-                  <!-- Loop over COUNTRIES -->
-                  <?php foreach($continent->children()->sortby('title', 'asc') as $country): ?>
+                    <!-- Loop over COUNTRIES -->
+                    <?php foreach($continent->children()->sortby('title', 'asc') as $country): ?>
 
                     <div id="posts-<?php echo $country->countrycode()->text() ?>" data-continent="<?php echo strtolower($continent->title()->text()) ?>" data-country="<?php echo $country->countrycode()->text() ?>" class="posts-country hide">
 
-                      <div class="row">
+                      <!-- <div class="row">
                         <div class="col-md-12">
                           <h4><?php echo $country->title()->text() ?></h4>
                           <br />
                         </div>
-                      </div>
+                      </div> -->
 
-                    <div class="row teaser">
+                    <!-- <div> -->
 
                           <!-- Loop over POSTS -->
                         <?php foreach($country->children()->visible()->filterBy('picsonly', '!=', '1')->sortby('sort', 'desc') as $post): ?>
@@ -589,13 +584,10 @@
                             endforeach;
 
                             echo
-                              '<div class="row">
-                                <div class="col-md-12">
-                                  <h4>' . $post->title() . '</h4>
-                                </div>
-                              </div>
-                              <div class="row">
-                                <div class="col-md-12">
+                                '<div class="gallery-title-container">
+                                 <h2>' . $country->title()->text() . '</h2><h4>' . $post->title() . '</h4>
+                                 </div>
+                              
                                     <div id="horizon-gallery-' . $galleryIndex . '" gallery-initialized="false" data-images-replaced="false" style="display:none;" data-image-sources="'. implode("|", $imagesources) . '" class="horizon-gallery horizon-gallery-' . $country->countrycode() . '">';
 
                                       $picIndex = 0;
@@ -622,11 +614,11 @@
 
                                       endforeach;
 
-                              echo '</div></div></div>';
+                              echo '</div>';
 
                           ?>
                         <?php endforeach ?>
-                    </div>
+                    <!-- </div> -->
 
                     </div>
 
