@@ -726,12 +726,16 @@ $(document).ready(function() {
 
     $('path').on('click', function(e) {
 
-        // Modify selectedList with continents
-        mapUpdateSelectedList(e);
+        // Don't allow modifications if still loading galleries
+        if($('#list-countries-loader').hasClass('hide')) {
+            
+            // Modify selectedList with continents
+            mapUpdateSelectedList(e);
 
-        mapUpdate();
-        listUpdate();
-        postsUpdate();
+            mapUpdate();
+            listUpdate();
+            postsUpdate();
+        }
 
         return false;
     });
