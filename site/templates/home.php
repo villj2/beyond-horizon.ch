@@ -123,19 +123,22 @@
 
     </div>
 
-    <div class="container">
+    <div id="home-gallery-teaser" class="container">
 
       <div class="row">
-        <div class="col-sm-12 hidden-sm hidden-md hidden-lg" style="margin-bottom: 20px;">
+        <div class="col-sm-12 hidden-sm hidden-md hidden-lg" style="margin-bottom: 40px;">
           <h1>Galerie</h2>
           <p>Entdecke unsere Galerie und lass dich von unseren Reisefotos inspirieren!</p>
         </div>
       </div>
 
-      <div id="home-gallery-teaser" class="clearfix">
-        <div class="text-box hidden-xs">
-          <h1>Galerie</h1>
-          <p>Entdecke unsere Galerie und lass dich von unseren Reisefotos inspirieren!</p>
+      <div class="row clearfix">
+
+        <div class="col-sm-12">
+          <div class="text-box hidden-xs">
+            <h1>Galerie</h1>
+            <p>Entdecke unsere Galerie und lass dich von unseren Reisefotos inspirieren!</p>
+          </div>
         </div>
         <div class="col-xs-3 gallery-col-1">
           <img src="<?php echo $galleryTeasers[0] ?>" />
@@ -161,52 +164,27 @@
         <div class="col-xs-3 gallery-col-4">
           <img src="<?php echo $galleryTeasers[5] ?>" />
         </div>
+
       </div>
-
-      <div class="row">
-        <div class="col-sm-12 hidden-sm hidden-md hidden-lg" style="text-align: center;">
-          <button type="button" class="btn btn-secondary btn-more" onclick="location.href='/gallery?filter=<?php echo urlencode($filterString) ?>'">Tolle Bilder goat</button>
-        </div>
-      </div>
-    </div>
-
-
-
-
-    <div class="container container-teaser">
 
       <div class="row">
         <div class="col-sm-12" style="text-align: center;">
-          <h2 style="margin-bottom: 20px;"><?php echo $page->introbuttons()->text() ?></h2>
-        </div>
-      </div>
-
-      <div class="row teaser">
-        <div class="col-sm-3 col-xs-6 menu-teaser">
-          <!-- <h4>Reise</h4> -->
-          <a href="/journey">
-            <img src="/Frontend/img/menu-teaser-journey.png" alt="Reise" title="Reise" />
-          </a>
-        </div>
-        <div class="col-sm-3 col-xs-6 menu-teaser">
-          <!-- <h4>Galerie</h4> -->
-          <a href="/gallery">
-            <img src="/Frontend/img/menu-teaser-gallery.png" alt="Galerie" title="Galerie" />
-          </a>
-        </div>
-        <div class="col-sm-3 col-xs-6 menu-teaser">
-          <!-- <h4>Karte</h4> -->
-          <a href="/map">
-            <img src="/Frontend/img/menu-teaser-map.png" alt="Karte" title="Karte" />
-          </a>
-        </div>
-        <div class="col-sm-3 col-xs-6 menu-teaser">
-          <!-- <h4>Über uns</h4> -->
-          <a href="/about">
-            <img src="/Frontend/img/menu-teaser-about.png" alt="Über uns" title="Über uns" />
-          </a>
+          <div id="button-container" class="hidden-sm hidden-md hidden-lg">
+            <button type="button" class="btn btn-secondary btn-more" onclick="location.href='/gallery?filter=<?php echo urlencode($filterString) ?>'">Tolle Bilder goat</button>
+            <div id="arrow">
+              <img src="/Frontend/img/arrow_gallery_teaser.png" />
+              <div id="click-teaser">
+                Hier klicken um mehr von <strong><?php echo $lastLocations[0] ?></strong> und <strong><?php echo $lastLocations[1] ?></strong> zu sehen!
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
+
+
+
+
+    
 
 <?php snippet('footer') ?>

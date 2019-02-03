@@ -585,7 +585,7 @@
 
                             echo
                                 '<div class="gallery-title-container">
-                                 <h2>' . $country->title()->text() . '</h2><h4>' . $post->title() . '</h4>
+                                 <h2>' . $post->title() . '</h2><h4>' . $country->title()->text() . '</h4>
                                  </div>
                               
                                     <div id="horizon-gallery-' . $galleryIndex . '" gallery-initialized="false" data-images-replaced="false" style="display:none;" data-image-sources="'. implode("|", $imagesources) . '" class="horizon-gallery horizon-gallery-' . $country->countrycode() . '">';

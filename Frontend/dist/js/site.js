@@ -37,6 +37,7 @@ function qs(key) {
 
 /******** MAP FILTER ********/
 
+var lastClickedFilterButton;
 var selectedList = [];
 /* examples: 
 [{"id":"oceania", "countries":["nz", "au"]}, {"id":"asia", "countries":["hk", "jp"]}]
@@ -45,6 +46,8 @@ var selectedList = [];
 */
 
 function setFilterButtonsActive(active) {
+
+    console.log("setFilterButtonsActive active: " + active);
 
     $('#list-countries button').each(function(e, target){
 
@@ -241,6 +244,16 @@ function postsUpdate() {
     } else {
         $('#arrow').removeClass('hide');
     }
+
+
+    // If clicked button does not have 'active' class, re-enable filter buttons. Because in this case a country has been disabled.
+    if(lastClickedFilterButton != null && lastClickedFilterButton.length > 0) {
+
+        if(!lastClickedFilterButton.hasClass('active')) {
+
+            setFilterButtonsActive(true);
+        }
+    }
 }
 
 function postsShowByCountry(country) {
@@ -341,7 +354,7 @@ function initUniteGalleryByClassArray(galleryClassesForInit) {
 
         }, delay);
 
-        delay += 300;
+        delay += 200;
 
         // replace images
         setTimeout(function(e){
@@ -351,7 +364,16 @@ function initUniteGalleryByClassArray(galleryClassesForInit) {
 
         }, delay);
 
-        delay += 300;
+        delay += 200;
+
+        // After having initialized every gallery and replaced every img-src, reactivate the country buttons
+        if(i == (gallerySelectors.length - 1)) {
+
+            setTimeout(function(e){
+
+                setFilterButtonsActive(true);
+            }, delay);
+        }
     }
 
 }
@@ -393,8 +415,6 @@ function replaceImagesInInitializedGallery() {
             $(target).attr('data-images-replaced', 'true');
         }
     });
-
-    setFilterButtonsActive(true);
 }
 
 
@@ -695,15 +715,6 @@ $(document).ready(function() {
     listUpdate();
     postsUpdate();
 
-    var ios = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
-    if (ios) {
-        $('a').on('click touchend', function() {
-            var link = $(this).attr('href');
-            window.open(link, '_blank');
-            return false;
-        });
-    }
-
     $('path').on('click', function(e) {
 
         // Modify selectedList with continents
@@ -718,9 +729,9 @@ $(document).ready(function() {
 
     $('#list-countries button').on('click', function(e) {
 
-        if(!$(this).hasClass('active')) {
-            setFilterButtonsActive(false);
-        }
+        lastClickedFilterButton = $(e.target);
+
+        setFilterButtonsActive(false);
 
         // Modify selectedList with countries
         listUpdateSelectedList(e);
