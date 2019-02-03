@@ -1,0 +1,13 @@
+Title: Marokko
+
+----
+
+Countrycode: ma
+
+----
+
+Teasericon: newzealand
+
+----
+
+Trip: oceania2016

@@ -9,8 +9,8 @@ password: >
 language: en
 role: admin
 history:
+  - posts/africa
+  - posts/asia
+  - posts/africa/morocco
+  - posts/africa/morocco/marrakesch
   - posts/asia/macau/macau
-  - posts/asia/hong-kong/hong-kong
-  - posts/asia/macau
-  - about
-  - posts

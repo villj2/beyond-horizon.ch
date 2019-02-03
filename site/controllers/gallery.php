@@ -2,7 +2,7 @@
 
 return function($site, $pages, $page) {
 
-	$continents = $pages->index()->visible()->filterBy('intendedTemplate', 'continent')->sortBy('sort', 'desc');
+	$continents = $pages->index()->filterBy('intendedTemplate', 'continent')->sortBy('sort', 'desc');
 	$hasEntriesDict = array();
 	$galleryIndex = 0;
 

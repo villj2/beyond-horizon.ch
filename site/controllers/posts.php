@@ -2,7 +2,7 @@
 
 return function($site, $pages, $page) {
 
-	$continents = $page->children()->visible();
+	$continents = $page->children()->visible()->filterBy('intendedTemplate', 'continent')->filterBy('hideonmap', '<', '1'); /**/
 	$hasEntriesDict = array();
 
 	foreach($continents as $continent) {
