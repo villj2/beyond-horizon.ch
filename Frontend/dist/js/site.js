@@ -727,8 +727,8 @@ $(document).ready(function() {
     $('path').on('click', function(e) {
 
         // Don't allow modifications if still loading galleries
-        if($('#list-countries-loader').hasClass('hide')) {
-            
+        if($('#list-countries-loader').length == 0 || $('#list-countries-loader').hasClass('hide')) {
+
             // Modify selectedList with continents
             mapUpdateSelectedList(e);
 
