@@ -59,7 +59,7 @@
                 ?>
 
                 <a href="#">
-                  <img alt="<?php echo $page->title() ?> Bild <?php echo $picNumber ?>"
+                  <img alt="<?php echo $image->description() ?>"
                    src="<?php echo $dummyPicture ?>"
                    data-src="<?php echo str_replace(".jpg", "_preview.jpg", $image->url()) ?>"
                    data-image="<?php echo $image->url() ?>"

@@ -1,7 +1,14 @@
 title: Postgallery
 pages: false
-files:
+files: true
   sortable: true
+  fields:
+    description: 
+      label: Description
+      type: text
+      help: Max 40 chars
+      validate:
+        max: 40
 fields:
   title:
     label: Title

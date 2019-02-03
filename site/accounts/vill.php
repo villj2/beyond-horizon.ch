@@ -9,8 +9,8 @@ password: >
 language: en
 role: admin
 history:
+  - posts/asia/hong-kong/hong-kong
   - about
   - posts
   - gallery
   - home
-  - posts/oceania/tasmania/cradle-mountain

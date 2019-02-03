@@ -605,7 +605,7 @@
                                           
                                           echo
                                           '<a href="#">
-                                            <img alt="' . $post->title() . ' Bild ' . $picIndex . '"
+                                            <img alt="' . $image->description() . '"
                                              src="' . $dummyPicture . '"
                                              data-src="' . str_replace(".jpg", "_preview.jpg", $image->url()) . '"
                                              data-image="' . $image->url() . '"

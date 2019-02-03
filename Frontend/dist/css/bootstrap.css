@@ -7914,6 +7914,9 @@ time.icon:focus {
 .ug-lightbox-numbers {
   font-family: 'ralewaylight';
 }
+.ug-textpanel {
+  overflow: visible;
+}
 .about .polaroid {
   margin-top: 50px;
   width: 100%;
