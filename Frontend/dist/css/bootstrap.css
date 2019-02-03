@@ -8003,10 +8003,20 @@ time.icon:focus {
 #continent-map .active {
   fill: #999 !important;
 }
-#continent-map path.has-entries:hover,
-#continent-map circle.has-entries:hover {
-  fill: #999 !important;
+#continent-map path.has-entries {
   cursor: pointer;
+}
+#continent-map path:active,
+#continent-map path:focused,
+#continent-map path:visited {
+  fill: #E6E6E6 !important;
+}
+#continent-map path.has-entries:hover,
+#continent-map path.has-entries:active,
+#continent-map path.has-entries:focused,
+#continent-map path.has-entries:visited {
+  fill: #999 !important;
+  cursor: pointer !important;
 }
 @media (min-width: 768px) {
   #continent-map {

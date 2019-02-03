@@ -20,10 +20,17 @@
 
 	.active {fill:#999 !important;}
 
-	path.has-entries:hover, circle.has-entries:hover {
-
-		fill: #999 !important;
+	path.has-entries {
 		cursor: pointer;
+	}
+
+	path:active, path:focused, path:visited {
+		fill: #E6E6E6 !important;
+	}
+
+	path.has-entries:hover, path.has-entries:active, path.has-entries:focused, path.has-entries:visited {
+		fill: #999 !important;
+		cursor: pointer !important;
 	}
 
 	@media(min-width:@screen-sm-min) {
