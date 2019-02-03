@@ -49,6 +49,15 @@ function setFilterButtonsActive(active) {
 
     console.log("setFilterButtonsActive active: " + active);
 
+    if(active)
+    {
+        $('#list-countries-loader').addClass('hide');
+    }
+    else
+    {
+        $('#list-countries-loader').removeClass('hide');
+    }
+
     $('#list-countries button').each(function(e, target){
 
         if(active)

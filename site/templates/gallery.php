@@ -531,6 +531,8 @@
             <?php endforeach ?>
 
           <?php endforeach ?>
+
+          <img id="list-countries-loader" class="hide" src="/Frontend/dist/images/loader_skype_trans.gif" />
           
         </div>
       </div>

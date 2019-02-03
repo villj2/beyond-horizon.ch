@@ -8023,6 +8023,9 @@ time.icon:focus {
 #continent-map-filtering #list-countries button:disabled {
   opacity: 0.4;
 }
+#continent-map-filtering #list-countries #list-countries-loader {
+  margin-left: 10px;
+}
 #continent-map-filtering #arrow {
   position: absolute;
   left: 55%;
