@@ -18,8 +18,8 @@
         <div class="col-md-1">
 
           <time datetime="<?php echo $page->date('Y-m-d') ?>" class="icon">
-            <em><?php echo $page->date('l') ?></em>
-            <strong><?php echo $page->date('F') ?></strong>
+            <em><?php echo $page->date('F') ?></em>
+            <strong><?php echo $page->date('Y') ?></strong>
             <span><?php echo $page->date('d') ?></span>
           </time>
         </div>
