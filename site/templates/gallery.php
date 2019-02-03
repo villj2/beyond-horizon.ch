@@ -566,7 +566,7 @@
                     <!-- <div> -->
 
                           <!-- Loop over POSTS -->
-                        <?php foreach($country->children()->visible()->filterBy('picsonly', '!=', '1')->sortby('sort', 'desc') as $post): ?>
+                        <?php foreach($country->children()->sortby('title', 'asc') as $post): ?>
 
                           <?php
 
@@ -585,9 +585,14 @@
 
                             endforeach;
 
+                            $postlink = '';
+                            if(!$post->picsonly()->bool()) {
+                                $postlink = '<a href="' . $post->url() . '" target="_self" title="Zum Beitrag"><img src="/assets/images/link.png" /></a>';
+                            }
+
                             echo
                                 '<div class="gallery-title-container">
-                                 <h2>' . $post->title() . '</h2><h4>' . $country->title()->text() . '</h4>
+                                 <h2>' . $post->title() . '</h2><h4>' . $country->title()->text() . '</h4>' . $postlink . '
                                  </div>
                               
                                     <div id="horizon-gallery-' . $galleryIndex . '" gallery-initialized="false" data-images-replaced="false" style="display:none;" data-image-sources="'. implode("|", $imagesources) . '" class="horizon-gallery horizon-gallery-' . $country->countrycode() . '">';

@@ -7895,6 +7895,10 @@ time.icon:focus {
 .gallery-title-container h4 {
   display: inline;
 }
+.gallery-title-container img {
+  margin-bottom: 5px;
+  height: 15px;
+}
 #filtered-content h1 {
   padding-left: 8px;
 }
