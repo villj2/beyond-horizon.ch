@@ -6,9 +6,6 @@ fields:
   title:
     label: Title
     type:  text
-  showingallery:
-    label: Show In Gallery
-    type: checkbox
   countrycode:
     label: Countrycode
     type: text

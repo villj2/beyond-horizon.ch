@@ -9,8 +9,8 @@ password: >
 language: en
 role: admin
 history:
+  - posts/asia/macau/macau
   - posts/asia/hong-kong/hong-kong
+  - posts/asia/macau
   - about
   - posts
-  - gallery
-  - home

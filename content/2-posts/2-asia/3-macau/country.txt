@@ -1,0 +1,17 @@
+Title: Macau
+
+----
+
+Showingallery: 0
+
+----
+
+Countrycode: mo
+
+----
+
+Teasericon: hongkong
+
+----
+
+Trip: oceania2016

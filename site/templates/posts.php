@@ -524,6 +524,19 @@
 
 						<?php foreach($continent->children()->sortBy('title', 'asc') as $country): ?>
 
+							<?php
+
+								/* Check if country has pics-only-children only. If thats the case, don't add the country-filter button. */
+
+								$childrenWithoutAnyValidPosts = $country->children()->filterBy('template', 'post')->filterBy('picsonly', '!=', '0')->count();
+								$children = $country->children()->filterBy('template', 'post')->count();
+
+								if($childrenWithoutAnyValidPosts == $children) {
+									break;
+								}
+
+							?>
+
 							<button id="<?php echo strtolower($continent->title()) ?>-<?php echo strtolower($country->countrycode()) ?>" data-continent="<?php echo strtolower($continent->title()) ?>" data-country="<?php echo strtolower($country->countrycode()) ?>" class="list-country hide">
 								<?php echo $country->title()->html() ?>
 							</button>
