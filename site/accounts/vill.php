@@ -9,8 +9,8 @@ password: >
 language: en
 role: admin
 history:
+  - posts/asia/japan/tokyo
+  - posts/asia/japan/zentral-honshu
+  - posts/asia/japan/fujikawaguchiko
+  - posts/asia/hong-kong/hong-kong
   - posts/africa
-  - posts/asia
-  - posts/africa/morocco
-  - posts/africa/morocco/marrakesch
-  - posts/asia/macau/macau

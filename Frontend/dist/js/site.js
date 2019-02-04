@@ -363,7 +363,7 @@ function initUniteGalleryByClassArray(galleryClassesForInit) {
 
         }, delay);
 
-        delay += 300;
+        delay += 400;
 
         // replace images
         setTimeout(function(e){
@@ -373,7 +373,7 @@ function initUniteGalleryByClassArray(galleryClassesForInit) {
 
         }, delay);
 
-        delay += 300;
+        delay += 400;
 
         // After having initialized every gallery and replaced every img-src, reactivate the country buttons
         if(i == (gallerySelectors.length - 1)) {
