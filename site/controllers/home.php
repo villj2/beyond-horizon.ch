@@ -7,7 +7,8 @@ return function($site, $pages, $page) {
 
     $filterDict = array();
 
-    foreach ($page->parent()->index()->visible()->filterBy('template', 'post')->sortBy('date', 'desc')->limit(2) as $post) {
+    /*foreach ($page->parent()->index()->visible()->filterBy('template', 'post')->sortBy('date', 'desc')->limit(2) as $post) {*/
+    foreach ($page->parent()->index()->posts(true)->sortBy('date', 'desc')->limit(2) as $post) {
 
       $continent = strtolower($post->parent()->parent()->title());
       $country = strtolower($post->parent()->countrycode());
@@ -72,7 +73,7 @@ return function($site, $pages, $page) {
 
     /* Get last two locations of posts */
     $lastLocations = array();
-    foreach ($page->parent()->index()->visible()->filterBy('template', 'post')->sortBy('date', 'desc') as $post) {
+    foreach ($page->parent()->index()->posts(true)->sortBy('date', 'desc') as $post) {
 
     	// replace regular spaces with non breakable spaces
     	$location = str_replace(' ', "\xc2\xa0", $post->title()->html());

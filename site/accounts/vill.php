@@ -9,8 +9,8 @@ password: >
 language: en
 role: admin
 history:
+  - posts/oceania/new-zealand-north
+  - posts/oceania/new-zealand-south
   - posts/asia/japan/tokyo
   - posts/asia/japan/zentral-honshu
   - posts/asia/japan/fujikawaguchiko
-  - posts/asia/hong-kong/hong-kong
-  - posts/africa
