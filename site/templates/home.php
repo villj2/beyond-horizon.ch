@@ -185,6 +185,32 @@
 
 
 
-    
+<?php snippet('newsletter-form') ?>
+
+<?php
+// if the form was successfully submitted and the page created, show the success message
+if(isset($success)): ?>
+  <div class="message">
+    <?= $success; ?>
+  </div>
+<?php endif ?>
+
+<?php
+// if the form input does not validate, show a list of alerts
+if($alert): ?>
+  <div class="alert">
+    <ul>
+      <?php foreach($alert as $message): ?>
+        <li><?= html($message) ?></li>
+      <?php endforeach ?>
+    </ul>
+  </div>
+<?php endif ?>
+
+<?php if(!isset($success)) {
+  // if the $success variable is not set, show the form (i.e. when the page is first loaded or the form submission was not successful)
+  snippet('form', compact('data'));
+}
+?>
 
 <?php snippet('footer') ?>

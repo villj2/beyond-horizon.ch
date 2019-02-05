@@ -1,0 +1,30 @@
+Title: registrations
+
+----
+
+Tag: 
+
+----
+
+Link: 
+
+----
+
+Image: 
+
+----
+
+Textcolor: 
+
+----
+
+Registrations: 
+
+- 
+  firstname: Geilo
+  lastname: mat
+  email: askdf@ajsdf.ch
+- 
+  firstname: Harr harr :D
+  lastname: yeaahh
+  email: alsdjf@dkdkdkdkd.ch
