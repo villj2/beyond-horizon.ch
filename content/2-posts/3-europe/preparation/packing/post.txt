@@ -36,7 +36,7 @@ Lng: 7.44748592376709
 
 ----
 
-Hidetitle: 1
+Hidetitle: 0
 
 ----
 

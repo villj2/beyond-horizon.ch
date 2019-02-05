@@ -8,9 +8,4 @@ password: >
   $2a$10$HYxXXg9VREDohoS47fZL1O10pXibCqSVIuA0WusJc4oA/tC.PSWzi
 language: en
 role: admin
-history:
-  - posts/oceania/new-zealand-north
-  - posts/oceania/new-zealand-south
-  - posts/asia/japan/tokyo
-  - posts/asia/japan/zentral-honshu
-  - posts/asia/japan/fujikawaguchiko
+history: [ ]

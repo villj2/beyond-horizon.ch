@@ -1,0 +1,13 @@
+Title: Neuseeland Südinsel
+
+----
+
+Countrycode: nzs
+
+----
+
+Teasericon: newzealand
+
+----
+
+Trip: oceania2016

@@ -1,4 +1,4 @@
-Title: Neuseeland
+Title: Neuseeland Nordinsel
 
 ----
 
@@ -10,7 +10,7 @@ Showingallery: 1
 
 ----
 
-Countrycode: nz
+Countrycode: nzn
 
 ----
 

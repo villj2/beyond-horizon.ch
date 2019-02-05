@@ -7,3 +7,7 @@ Title: Europe
 ----
 
 Titlefrontend: Europa
+
+----
+
+Hideonmap: 1

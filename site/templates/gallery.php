@@ -566,11 +566,11 @@
                     <!-- <div> -->
 
                           <!-- Loop over POSTS -->
-                        <?php foreach($country->children()->sortby('title', 'asc') as $post): ?>
+                        <?php foreach($country->children()->posts(true)->sortby('title', 'asc') as $post): ?>
 
                           <?php
 
-                            $gallery = $post->children()->visible()->filterBy('intendedTemplate', 'postgallery');
+                            $gallery = $post->children()->filterBy('intendedTemplate', 'postgallery');
 
                             if($gallery == "") continue;
 
