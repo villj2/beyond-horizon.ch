@@ -1,5 +1,8 @@
 title: Home
-pages: homeslider
+pages:
+  template:
+    - homeslider
+    - newsletter
 fields:
   title:
     label: Title

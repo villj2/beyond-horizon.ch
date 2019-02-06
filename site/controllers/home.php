@@ -126,22 +126,28 @@ return function($site, $pages, $page) {
       exit;
     }
 
+    $date = new DateTime();
+    $date->setTimezone(new DateTimeZone('Europe/Zurich'));
+
     $data = array(
       'firstname' => get('firstname'),
       'lastname'  => get('lastname'),
-      'email'     => get('email')
+      'email'     => get('email'),
+      'date'      => $date->format('Y-m-d H:i:s')
     );
 
     $rules = array(
       'firstname' => array('required'),
       'lastname'  => array('required'),
       'email'     => array('required', 'email'),
+      'date'      => array('required')
     );
 
     $messages = array(
-      'firstname' => 'Please enter a valid first name',
-      'lastname'  => 'Please enter a valid last name',
-      'email'     => 'Please enter a valid email address',
+      'firstname' => 'Bitte Vorname angeben',
+      'lastname'  => 'Bitte Nachname angeben',
+      'email'     => 'Bitte eine gültige Email Adresse angeben',
+      'date'      => 'Date is missing'
     );
 
     // some of the data is invalid
@@ -152,13 +158,13 @@ return function($site, $pages, $page) {
       // everything is ok, let's try to create a new registration
       try {
 
-        addToStructure($page->find('registrations'), 'registrations', $data);
+        addToStructure($page->parent()->find('newsletter'), 'registrations', $data);
 
-        $success = 'Your registration was successful';
+        $success = 'Vielen Dank für die Anmeldung. Schon bald kriegst du spannende News!';
         $data = array();
 
       } catch(Exception $e) {
-        echo 'Your registration failed: ' . $e->getMessage();
+        echo 'Anmeldung fehlgeschlagen: ' . $e->getMessage();
       }
     }
   }

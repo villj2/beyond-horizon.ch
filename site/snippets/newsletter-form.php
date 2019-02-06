@@ -1,4 +1,4 @@
-<form class="event-registration" action="<?= $page->url() ?>" method="post">
+<form class="newsletter-registration" action="<?= $page->url() ?>" method="post">
 
   <div class="form-element">
     <label for="firstname">Vorname: *</label>
@@ -19,7 +19,6 @@
      <label for="message">If you are a human, leave this field empty</label>
      <input type="website" name="website" id="website" placeholder="http://example.com" value="<?= isset($data['website']) ? esc($data['website']) : '' ?>"/>
   </div>
-  <p>* Pflichtfeld</p>
 
   <button class="button" type="submit" name="register" value="Register">Anmelden</button>
 
