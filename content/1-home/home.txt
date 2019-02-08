@@ -14,27 +14,27 @@ Titlemenu: Home
 
 ----
 
-Galleryteaser1: teaser_beach_500x500.jpg
+Galleryteaser1: gallery-teaser-1.jpg
 
 ----
 
-Galleryteaser2: teaser_forest_500x500.jpg
+Galleryteaser2: gallery-teaser-2.jpg
 
 ----
 
-Galleryteaser3: teaser_mountains_500x500.jpg
+Galleryteaser3: gallery-teaser-3.jpg
 
 ----
 
-Galleryteaser4: teaser_square.jpg
+Galleryteaser4: gallery-teaser-4.jpg
 
 ----
 
-Galleryteaser5: teaser_mountains_500x500.jpg
+Galleryteaser5: gallery-teaser-5.jpg
 
 ----
 
-Galleryteaser6: teaser_beach_500x500.jpg
+Galleryteaser6: gallery-teaser-6.jpg
 
 ----
 
@@ -55,3 +55,19 @@ Teasertextbuttongallery: Hier klicken um mehr von %s und %s zu sehen!
 ----
 
 Textnewsletter: Jetzt anmelden, um auf dem neusten Stand zu bleiben.
+
+----
+
+Aboutus: wir_bw.jpg
+
+----
+
+Aboutuspic: wir_bw.jpg
+
+----
+
+Aboutustext: Wohnhaft in Bern, Schweiz fühlen wir uns ebenso in der weiten Welt draussen Zuhause. Wenn immer möglich lassen wir den eintönigen Alltag hinter uns und brechen zu neuen Abenteuern in neuen Ländern auf und versuchen mit unserer Kamera die besten Momente festzuhalten. Wir sind gespannt, was wir auf unseren Reisen noch alles entdecken werden. Wir sind gespannt, was wir auf unseren Reisen noch alles entdecken werden. Wir sind gespannt, was wir auf unseren Reisen noch alles entdecken werden.
+
+----
+
+Aboutusbutton: Mehr erfahren

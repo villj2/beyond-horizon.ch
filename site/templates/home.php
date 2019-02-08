@@ -63,7 +63,7 @@
 
   <!-- Begin page content -->
 
-  <div class="container container-teaser">
+  <div id="posts-teaser" class="container container-teaser">
 
     <!-- <div class="row">
       <div class="col-md-12" style="text-align: center;">
@@ -96,8 +96,11 @@
 
       <?php } else { ?>
 
-      <?php foreach($page->parent()->index()->visible()->filterBy('template', 'post')->filterBy('picsonly', '!=', '1')->sortBy('date', 'desc')->limit(3) as $post): ?>
-        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 home">
+      <?php $index = 0; ?>
+
+      <?php foreach($page->parent()->index()->visible()->filterBy('template', 'post')->filterBy('picsonly', '!=', '1')->sortBy('date', 'desc')->limit(4) as $post): ?>
+
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 <?= $index >= 3 ? 'hidden-sm hidden-md hidden-lg' : '' ?> home">
           <div class="teaser-image-container">
             <p>
               <img src="<?php echo $post->contentURL() ?>/<?php echo $post->imageteaser() ?>" class="teaser-image" alt="<?php echo $post->title() ?>" title="<?php echo $post->title() ?>" />
@@ -109,6 +112,9 @@
             </p>
           </div>
         </div>
+
+        <?php $index++ ?>
+
       <?php endforeach ?>
       <?php } ?>
 
@@ -127,7 +133,7 @@
 
 
   <!-- Gallery Teaser >= screen-sm -->
-  <div id="home-gallery-teaser-big" class="container hidden-xs">
+  <div id="home-gallery-teaser-big" class="container home-gallery-teaser hidden-xs">
 
     <div class="row clearfix">
 
@@ -179,7 +185,7 @@
   
 
   <!-- Gallery Teaser < screen-sm -->
-  <div id="home-gallery-teaser-small" class="hidden-sm hidden-md hidden-lg">
+  <div id="home-gallery-teaser-small" class="home-gallery-teaser hidden-sm hidden-md hidden-lg">
 
     </style>
 
@@ -220,7 +226,46 @@
   </div>
 
 
+  <!-- ABOUT US -->
+  <div id="home-about-us" class="container container-teaser">
 
+    <div class="row">
+      <div class="col-sm-12">
+        <h1>Über uns</h1>
+      </div>
+    </div>
+
+    <div class="row desktop">
+      <div class="col-sm-12 container">
+        <span class="part part-left">
+          <span>
+            <?= $page->aboutustext() ?>
+          </span>
+          <button type="button" class="btn btn-secondary btn-more" onclick="location.href='/about'"><?= $page->aboutusbutton() ?></button>
+        </span>
+        <span class="part part-right">
+          <img src="<?= $page->contentURL() . '/' . $page->aboutuspic() ?>" />
+        </span>
+      </div>
+    </div>
+
+    <div class="row mobile">
+      <div class="col-sm-12 part-text-mobile">
+          <?= $page->aboutustext() ?>
+      </div>
+      <div class="col-sm-12 part-picture-mobile">
+        <img src="<?= $page->contentURL() . '/' . $page->aboutuspic() ?>" />
+      </div>
+      <div class="col-sm-12 part-button-mobile">
+        <button type="button" class="btn btn-secondary btn-more" onclick="location.href='/about'"><?= $page->aboutusbutton() ?></button>
+      </div>
+    </div>
+
+  </div>
+
+
+
+  <!-- FORM -->
   <div class="container container-teaser">
     <div class="row">
       <div class="col-sm-12">

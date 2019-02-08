@@ -13,12 +13,28 @@ fields:
   intro:
   	label: Intro
   	type:  textarea
+  sectionintrospace:
+    label: 
+    type: info
+    text: <br/>
+
+  sectionposts:
+    label: Posts
+    type: info
   textbuttonposts:
   	label: Text Button Posts
   	type:  text
+  sectionpostsspace:
+    label: 
+    type: info
+    text: <br/>
+
+  sectiongallery:
+    label: Gallery Teaser
+    type: info
   introgallery:
-    label: Einleitungstext Gallery
-    type: text
+    label: Text Intro Gallery
+    type: textarea
   textbuttongallery:
     label: Text Button Gallery
     type:  text
@@ -26,24 +42,55 @@ fields:
     label: Teaser Text Button Gallery
     type: text
     help: Use %s as placeholders
+  galleryteaser1:
+    label: Gallery Teaser Image 1
+    type: image
+    help: 500 x 500px
+  galleryteaser2:
+    label: Gallery Teaser Image 2
+    type: image
+    help: 500 x 500px
+  galleryteaser3:
+    label: Gallery Teaser Image 3
+    type: image
+    help: 500 x 500px
+  galleryteaser4:
+    label: Gallery Teaser Image 4
+    type: image
+    help: 500 x 500px
+  galleryteaser5:
+    label: Gallery Teaser Image 5
+    type: image
+    help: 500 x 500px
+  galleryteaser6:
+    label: Gallery Teaser Image 6
+    type: image
+    help: 500 x 500px
+  sectiongalleryspace:
+    label: 
+    type: info
+    text: <br/>
+
+  sectionabout:
+    label: About us
+    type: info
+  aboutustext:
+    label: Text about us
+    type: textarea
+  aboutusbutton:
+    label: Button about us
+    type: text
+  aboutuspic:
+    label: About us Pic
+    type: image
+  sectionaboutspace:
+    label: 
+    type: info
+    text: <br/>
+
+  sectionnewsletter:
+    label: Newsletter
+    type: info
   textnewsletter:
     label: Text Newsletter
     type:  text
-  galleryteaser1:
-    label: Gallery Teaser Image 1 <i>(500 x 500px)</i>
-    type: image
-  galleryteaser2:
-    label: Gallery Teaser Image 2 <i>(500 x 500px)</i>
-    type: image
-  galleryteaser3:
-    label: Gallery Teaser Image 3 <i>(500 x 500px)</i>
-    type: image
-  galleryteaser4:
-    label: Gallery Teaser Image 4 <i>(500 x 500px)</i>
-    type: image
-  galleryteaser5:
-    label: Gallery Teaser Image 5 <i>(500 x 500px)</i>
-    type: image
-  galleryteaser6:
-    label: Gallery Teaser Image 6 <i>(500 x 500px)</i>
-    type: image

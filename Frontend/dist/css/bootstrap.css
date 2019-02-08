@@ -7038,7 +7038,7 @@ h4 {
   background: none;
   padding: 10px 20px;
   border-radius: 0;
-  margin: 15px 0 130px;
+  margin: 15px 0 0;
 }
 .btn-more.btn-slider {
   border-color: white;
@@ -7136,7 +7136,7 @@ footer .row .socialbutton.pinterest {
 }
 .teaser > div {
   text-align: center;
-  margin-bottom: 20px;
+  /*margin-bottom: 20px;*/
 }
 .teaser .teaser-image {
   width: 100%;
@@ -7201,7 +7201,6 @@ footer .row .socialbutton.pinterest {
 	    width: 750px;
 	}*/
   padding-top: 50px;
-  padding-bottom: 50px;
 }
 @media (min-width: 768px) {
   .container.container-teaser {
@@ -7511,11 +7510,20 @@ map area {
   outline: none;
 }
 /* -------- Image Map END -------- */
+#posts-teaser {
+  margin-top: 100px;
+  margin-bottom: 150px;
+}
 #home-gallery-teaser-big,
 #home-gallery-teaser-small {
   position: relative;
-  margin-bottom: 50px;
-  padding-bottom: 100px;
+  /*padding-bottom: 100px;*/
+}
+@media (max-width: 767px) {
+  #home-gallery-teaser-big,
+  #home-gallery-teaser-small {
+    padding-bottom: 50px;
+  }
 }
 #home-gallery-teaser-big .text-box,
 #home-gallery-teaser-small .text-box {
@@ -7624,6 +7632,9 @@ map area {
     text-align: left;
   }
 }
+.home-gallery-teaser {
+  margin-bottom: 100px;
+}
 .container-teaser .home {
   padding-left: 0.9%;
   padding-right: 0.9%;
@@ -7641,6 +7652,56 @@ map area {
   width: 150%;
   margin-left: -25%;
   background-color: red;
+}
+#home-about-us {
+  margin-bottom: 50px;
+  padding-bottom: 50px;
+}
+@media (max-width: 479px) {
+  #home-about-us .desktop {
+    display: none;
+  }
+}
+@media (min-width: 480px) {
+  #home-about-us .mobile {
+    display: none;
+  }
+}
+#home-about-us .part-left,
+#home-about-us .part-text-mobile {
+  background-color: #f1efee;
+  padding: 20px;
+}
+#home-about-us .part-left {
+  position: relative;
+  width: 60%;
+}
+#home-about-us .part-right {
+  width: 40%;
+}
+#home-about-us .part-right img {
+  max-width: 100%;
+}
+#home-about-us .part-picture-mobile,
+#home-about-us .part-button-mobile {
+  text-align: center;
+  padding-top: 20px;
+}
+#home-about-us .container {
+  display: flex;
+  align-items: center;
+}
+#home-about-us button {
+  position: absolute;
+  bottom: -60px;
+  left: 0;
+  margin: 0;
+}
+@media (max-width: 479px) {
+  #home-about-us button {
+    position: relative;
+    bottom: 0;
+  }
 }
 /* -------- Blog Calendar Icon -------- */
 time.icon {

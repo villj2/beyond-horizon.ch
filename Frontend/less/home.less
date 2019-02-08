@@ -1,8 +1,15 @@
+#posts-teaser {
+	margin-top: 100px;
+	margin-bottom: 150px;
+}
+
 #home-gallery-teaser-big, #home-gallery-teaser-small {
 
 	position: relative;
-	margin-bottom: 50px;
-	padding-bottom: 100px;
+	/*padding-bottom: 100px;*/
+	@media (max-width: @screen-xs-max) {
+		padding-bottom: 50px;
+	}
 
 	.text-box {
 		position: absolute;
@@ -104,6 +111,10 @@
 	}
 }
 
+.home-gallery-teaser {
+	margin-bottom: 100px;
+}
+
 .container-teaser {
 
 	.home {
@@ -129,4 +140,62 @@
       margin-left: -25%;
       background-color: red;
     }
+}
+
+#home-about-us {
+
+	margin-bottom: 50px;
+	padding-bottom: 50px;
+
+	@media (max-width: @screen-xxs-max) {
+		.desktop{
+			display: none;
+		}
+	}
+
+	@media (min-width: @screen-xs-min) {
+		.mobile {
+			display: none;
+		}
+	}
+
+	.part-left, .part-text-mobile {
+		background-color: #f1efee;
+		padding: 20px;
+	}
+
+	.part-left {
+		position: relative;
+		width: 60%;
+	}
+
+	.part-right {
+		width: 40%;
+
+		img {
+			max-width: 100%;
+		}
+	}
+
+	.part-picture-mobile, .part-button-mobile {
+		text-align: center;
+		padding-top: 20px;
+	}
+
+	.container {
+		display: flex;
+		align-items: center;
+	}
+
+	button {
+		position: absolute;
+		bottom: -60px;
+		left: 0;
+		margin: 0;
+
+		@media (max-width: @screen-xxs-max) {
+			position: relative;
+			bottom: 0;
+		}
+	}
 }
