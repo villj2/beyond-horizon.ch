@@ -7033,22 +7033,22 @@ h4 {
     margin-top: 117px;
   }
 }
-.container .btn-more {
+.btn-more {
   border: 1px solid black;
   background: none;
   padding: 10px 20px;
   border-radius: 0;
   margin: 15px 0 130px;
 }
-.container .btn-more.btn-slider {
+.btn-more.btn-slider {
   border-color: white;
   color: white;
 }
-.container .btn-more.btn-post-sibling {
+.btn-more.btn-post-sibling {
   margin: 0 0 10px 0;
 }
-.container .btn:focus,
-.container .btn:active {
+.btn:focus,
+.btn:active {
   outline: none;
 }
 @media (max-width: 767px) {
@@ -7203,14 +7203,19 @@ footer .row .socialbutton.pinterest {
   padding-top: 50px;
   padding-bottom: 50px;
 }
+@media (min-width: 768px) {
+  .container.container-teaser {
+    width: 580px;
+  }
+}
 @media (min-width: 992px) {
   .container.container-teaser {
-    width: 900px;
+    width: 720px;
   }
 }
 @media (min-width: 1200px) {
   .container.container-teaser {
-    width: 1024px;
+    width: 870px;
   }
 }
 .container.container-teaser .teaser-image-container {
@@ -7463,93 +7468,112 @@ map area {
   outline: none;
 }
 /* -------- Image Map END -------- */
-#home-gallery-teaser {
+#home-gallery-teaser-big,
+#home-gallery-teaser-small {
   position: relative;
   margin-bottom: 50px;
   padding-bottom: 100px;
 }
-#home-gallery-teaser .text-box {
+#home-gallery-teaser-big .text-box,
+#home-gallery-teaser-small .text-box {
   position: absolute;
   top: 0;
   left: 18%;
   width: 30%;
 }
 @media (min-width: 768px) and (max-width: 991px) {
-  #home-gallery-teaser .text-box {
+  #home-gallery-teaser-big .text-box,
+  #home-gallery-teaser-small .text-box {
     top: -3%;
     left: 14%;
     width: 35%;
   }
 }
-#home-gallery-teaser .gallery-col-1 {
+#home-gallery-teaser-big .gallery-col-1,
+#home-gallery-teaser-small .gallery-col-1 {
   padding-top: 36%;
 }
-#home-gallery-teaser .gallery-col-2 {
+#home-gallery-teaser-big .gallery-col-2,
+#home-gallery-teaser-small .gallery-col-2 {
   padding-top: 19.8%;
 }
-#home-gallery-teaser .gallery-col-4 {
+#home-gallery-teaser-big .gallery-col-4,
+#home-gallery-teaser-small .gallery-col-4 {
   padding-top: 10.8%;
 }
-#home-gallery-teaser .second-entry {
+#home-gallery-teaser-big .second-entry,
+#home-gallery-teaser-small .second-entry {
   padding-top: 10%;
 }
-#home-gallery-teaser img {
+#home-gallery-teaser-big img,
+#home-gallery-teaser-small img {
   width: 100%;
 }
-#home-gallery-teaser .col-xs-3 {
+#home-gallery-teaser-big .col-xs-3,
+#home-gallery-teaser-small .col-xs-3 {
   padding-left: 1%;
   padding-right: 1%;
 }
-#home-gallery-teaser #button-container {
+#home-gallery-teaser-big #button-container,
+#home-gallery-teaser-small #button-container {
   position: relative;
   margin-top: 10%;
   /*margin-left: 5%;*/
   text-align: center;
 }
 @media (max-width: 767px) {
-  #home-gallery-teaser #button-container {
+  #home-gallery-teaser-big #button-container,
+  #home-gallery-teaser-small #button-container {
     position: relative;
     top: 0;
     left: 0;
     margin-top: 5%;
   }
 }
-#home-gallery-teaser #button-container button {
+#home-gallery-teaser-big #button-container button,
+#home-gallery-teaser-small #button-container button {
   margin: 0;
 }
-#home-gallery-teaser #button-container #arrow {
+#home-gallery-teaser-big #button-container #arrow,
+#home-gallery-teaser-small #button-container #arrow {
   position: absolute;
   top: 110%;
   left: 40%;
   width: 40%;
 }
-#home-gallery-teaser #button-container #arrow img {
+#home-gallery-teaser-big #button-container #arrow img,
+#home-gallery-teaser-small #button-container #arrow img {
   width: 50%;
 }
 @media (max-width: 767px) {
-  #home-gallery-teaser #button-container #arrow {
+  #home-gallery-teaser-big #button-container #arrow,
+  #home-gallery-teaser-small #button-container #arrow {
     position: absolute;
     top: 120%;
     left: 33%;
   }
-  #home-gallery-teaser #button-container #arrow img {
+  #home-gallery-teaser-big #button-container #arrow img,
+  #home-gallery-teaser-small #button-container #arrow img {
     width: 20%;
   }
 }
 @media (max-width: 480px) {
-  #home-gallery-teaser #button-container #arrow {
+  #home-gallery-teaser-big #button-container #arrow,
+  #home-gallery-teaser-small #button-container #arrow {
     left: 20%;
   }
 }
-#home-gallery-teaser #button-container #click-teaser {
+#home-gallery-teaser-big #button-container #click-teaser,
+#home-gallery-teaser-small #button-container #click-teaser {
   position: absolute;
   top: 40%;
   left: 90%;
-  width: 200%;
+  width: 260%;
   text-align: left;
 }
 @media (max-width: 767px) {
-  #home-gallery-teaser #button-container #click-teaser {
+  #home-gallery-teaser-big #button-container #click-teaser,
+  #home-gallery-teaser-small #button-container #click-teaser {
     position: absolute;
     top: 20%;
     left: 65%;
@@ -7564,6 +7588,16 @@ map area {
 .container-teaser .teaser {
   margin-left: -5px;
   margin-right: -5px;
+}
+#home-gallery-teaser-small #centered-container {
+  width: 100%;
+  overflow: hidden;
+  text-align: center;
+}
+#home-gallery-teaser-small #centered-content {
+  width: 150%;
+  margin-left: -25%;
+  background-color: red;
 }
 /* -------- Blog Calendar Icon -------- */
 time.icon {

@@ -1,17 +1,17 @@
-<form class="newsletter-registration" action="<?= $page->url() ?>" method="post">
+<form id="newsletter-registration" action="<?= $page->url() ?>" method="post">
 
   <div class="form-element">
-    <label for="firstname">Vorname: *</label>
-    <input type="text" id="firstname" name="firstname" placeholder="First name" value="<?= isset($data['firstname']) ? esc($data['firstname']) : '' ?>" required/>
+    <label for="firstname">Vorname:</label>
+    <input type="text" id="firstname" name="firstname" placeholder="" value="<?= isset($data['firstname']) ? esc($data['firstname']) : '' ?>" required/>
   </div>
 
   <div class="form-element">
-    <label for="lastname">Nachname: *</label>
-    <input type="text" id="lastname" name="lastname" placeholder="Last name" value="<?= isset($data['lastname']) ? esc($data['lastname']) : '' ?>" required/>
+    <label for="lastname">Nachname:</label>
+    <input type="text" id="lastname" name="lastname" placeholder="" value="<?= isset($data['lastname']) ? esc($data['lastname']) : '' ?>" required/>
   </div>
 
   <div class="form-element">
-    <label for="email">Email: *</label>
+    <label for="email">Email:</label>
     <input type="email" name="email" id="email" placeholder="mail@example.com" value="<?= isset($data['email']) ? esc($data['email']) : '' ?>" required/>
   </div>
 

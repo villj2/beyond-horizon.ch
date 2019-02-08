@@ -35,3 +35,19 @@ Galleryteaser5: teaser_mountains_500x500.jpg
 ----
 
 Galleryteaser6: teaser_beach_500x500.jpg
+
+----
+
+Introgallery: Entdecke unsere Galerie und lass dich von unseren Reisefotos inspirieren!
+
+----
+
+Textbuttonposts: Entdecke mehr
+
+----
+
+Textbuttongallery: Jetzt angucken
+
+----
+
+Teasertextbuttongallery: Hier klicken um mehr von %s und %s zu sehen!

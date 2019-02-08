@@ -65,7 +65,7 @@
 
     <div class="container container-teaser">
 
-      <div class="row">
+      <!-- <div class="row">
         <div class="col-md-12" style="text-align: center;">
           <h1 style="margin-top: 40px;">Beyond Horizon Travel Blog</h1>
         </div>
@@ -75,7 +75,7 @@
         <div class="col-md-12" style="text-align: center; margin-bottom: 60px; margin-top: 30px;">
             <p style="font-family: black_jackregular; font-size: 1.6em;">Reise jenseits des Horizonts. Erlebnisberichte und Fotos aus der reichen Kultur Japans, der schillernden Tierwelt Australiens, der imposanten Natur Neuseelands und dem hektischen Treiben Hong Kongs.</p>
         </div>
-      </div>
+      </div> -->
 
       <div class="row">
         <div class="col-md-12">
@@ -97,14 +97,13 @@
         <?php } else { ?>
 
         <?php foreach($page->parent()->index()->visible()->filterBy('template', 'post')->filterBy('picsonly', '!=', '1')->sortBy('date', 'desc')->limit(3) as $post): ?>
-          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 col-xxs-12 home">
+          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 home">
             <div class="teaser-image-container">
               <p>
                 <img src="<?php echo $post->contentURL() ?>/<?php echo $post->imageteaser() ?>" class="teaser-image" alt="<?php echo $post->title() ?>" title="<?php echo $post->title() ?>" />
                 <a class="" href="<?php echo $post->url() ?>">
                   <span class="darkener"></span>
                   <span class="helper"></span>
-                  <!-- <img src="/Frontend/img/icon_<?php echo $post->parent()->teasericon() ?>.svg" onerror="this.src='/Frontend/img/placeholder.png'" alt="<?php echo $post->title() ?>" title="<?php echo $post->title() ?>" /> -->
                   <span class="teaser-text"><?php echo $post->title()->html() ?></span>
                 </a>
               </p>
@@ -117,27 +116,25 @@
 
       <div class="row">
         <div class="col-sm-12" style="text-align: center;">
-          <button type="button" class="btn btn-secondary btn-more" onclick="location.href='/posts'">Mehr anzeigen</button>
+          <button type="button" class="btn btn-secondary btn-more" onclick="location.href='/posts'"><?php echo $page->textbuttonposts() ?></button>
         </div>
       </div>
 
     </div>
 
-    <div id="home-gallery-teaser" class="container">
 
-      <div class="row">
-        <div class="col-sm-12 hidden-sm hidden-md hidden-lg" style="margin-bottom: 40px;">
-          <h1>Galerie</h2>
-          <p>Entdecke unsere Galerie und lass dich von unseren Reisefotos inspirieren!</p>
-        </div>
-      </div>
+
+
+
+    <!-- Gallery Teaser >= screen-sm -->
+    <div id="home-gallery-teaser-big" class="container hidden-xs">
 
       <div class="row clearfix">
 
         <div class="col-sm-12">
-          <div class="text-box hidden-xs">
+          <div class="text-box">
             <h1>Galerie</h1>
-            <p>Entdecke unsere Galerie und lass dich von unseren Reisefotos inspirieren!</p>
+            <p><?php echo $page->introgallery() ?></p>
           </div>
         </div>
         <div class="col-xs-3 gallery-col-1">
@@ -150,12 +147,12 @@
         <div class="col-xs-3">
           <img src="<?php echo $galleryTeasers[3] ?>" />
           <img src="<?php echo $galleryTeasers[4] ?>" class="second-entry" />
-          <div id="button-container" class="hidden-xs">
-            <button type="button" class="btn btn-secondary btn-more" onclick="location.href='/gallery?filter=<?php echo urlencode($filterString) ?>'">Tolle Bilder goat</button>
+          <div id="button-container">
+            <button type="button" class="btn btn-secondary btn-more" onclick="location.href='/gallery?filter=<?php echo urlencode($filterString) ?>'"><?php echo $page->textbuttongallery() ?></button>
             <div id="arrow">
               <img src="/Frontend/img/arrow_gallery_teaser.png" />
               <div id="click-teaser">
-                Hier klicken um mehr von <strong><?php echo $lastLocations[0] ?></strong> und <strong><?php echo $lastLocations[1] ?></strong> zu sehen!
+                <?php echo sprintf($page->teasertextbuttongallery(), '<strong>' . $lastLocations[0] . '</strong>', '<strong>' . $lastLocations[1] . '</strong>') ?>
               </div>
             </div>
 
@@ -166,24 +163,61 @@
         </div>
 
       </div>
-
-      <div class="row">
-        <div class="col-sm-12" style="text-align: center;">
-          <div id="button-container" class="hidden-sm hidden-md hidden-lg">
-            <button type="button" class="btn btn-secondary btn-more" onclick="location.href='/gallery?filter=<?php echo urlencode($filterString) ?>'">Tolle Bilder goat</button>
-            <div id="arrow">
-              <img src="/Frontend/img/arrow_gallery_teaser.png" />
-              <div id="click-teaser">
-                Hier klicken um mehr von <strong><?php echo $lastLocations[0] ?></strong> und <strong><?php echo $lastLocations[1] ?></strong> zu sehen!
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
 
 
 
+
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 hidden-sm hidden-md hidden-lg" style="margin-bottom: 40px;">
+          <h1>Galerie</h2>
+          <p><?php echo $page->introgallery() ?></p>
+        </div>
+      </div>
+    </div>
+    
+
+    <!-- Gallery Teaser < screen-sm -->
+    <div id="home-gallery-teaser-small" class="hidden-sm hidden-md hidden-lg">
+
+      </style>
+
+      <div id="centered-container">
+
+        <div id="centered-content">
+
+          <div class="col-xs-3 gallery-col gallery-col-1">
+            <img src="<?php echo $galleryTeasers[0] ?>" />
+          </div>
+          <div class="col-xs-3 gallery-col gallery-col-2">
+            <img src="<?php echo $galleryTeasers[1] ?>" />
+            <img src="<?php echo $galleryTeasers[2] ?>" class="second-entry" />
+          </div>
+          <div class="col-xs-3 gallery-col">
+            <img src="<?php echo $galleryTeasers[3] ?>" />
+            <img src="<?php echo $galleryTeasers[4] ?>" class="second-entry" />
+          </div>
+          <div class="col-xs-3 gallery-col gallery-col-4">
+            <img src="<?php echo $galleryTeasers[5] ?>" />
+          </div>
+
+        </div>
+      </div>
+
+      <div class="col-sm-12" style="text-align: center;">
+        <div id="button-container">
+          <button type="button" class="btn btn-secondary btn-more" onclick="location.href='/gallery?filter=<?php echo urlencode($filterString) ?>'"><?php echo $page->textbuttongallery() ?></button>
+          <div id="arrow">
+            <img src="/Frontend/img/arrow_gallery_teaser.png" />
+            <div id="click-teaser">
+              <?php echo sprintf($page->teasertextbuttongallery(), '<strong>' . $lastLocations[0] . '</strong>', '<strong>' . $lastLocations[1] . '</strong>') ?>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
 
 
 

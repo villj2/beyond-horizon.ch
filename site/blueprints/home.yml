@@ -5,7 +5,7 @@ pages:
     - newsletter
 fields:
   title:
-    label: Title
+    label: Titel
     type:  text
   titlemenu:
     label: Titel Menu
@@ -13,9 +13,19 @@ fields:
   intro:
   	label: Intro
   	type:  textarea
-  introbuttons:
-  	label: Einleitungstext Buttons
+  textbuttonposts:
+  	label: Text Button Posts
   	type:  text
+  introgallery:
+    label: Einleitungstext Gallery
+    type: text
+  textbuttongallery:
+    label: Text Button Gallery
+    type:  text
+  teasertextbuttongallery:
+    label: Teaser Text Button Gallery
+    type: text
+    help: Use %s as placeholders
   galleryteaser1:
     label: Gallery Teaser Image 1 <i>(500 x 500px)</i>
     type: image

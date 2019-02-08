@@ -1,4 +1,4 @@
-#home-gallery-teaser {
+#home-gallery-teaser-big, #home-gallery-teaser-small {
 
 	position: relative;
 	margin-bottom: 50px;
@@ -90,7 +90,7 @@
 			position: absolute;
 		    top: 40%;
 		    left: 90%;
-		    width: 200%;
+		    width: 260%;
 		    text-align: left;
 
 		    @media (max-width: @screen-xs-max) {
@@ -115,4 +115,18 @@
 		margin-left: -5px;
 		margin-right: -5px;
 	}
+}
+
+#home-gallery-teaser-small {
+	#centered-container {
+      width: 100%;
+      overflow: hidden;
+      text-align: center;
+    }
+
+    #centered-content {
+      width: 150%;
+      margin-left: -25%;
+      background-color: red;
+    }
 }
