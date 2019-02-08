@@ -1,6 +1,12 @@
 <?php snippet('header') ?>
 
-	<div class="container container-teaser no-jumbotron">
+	<div id="posts" class="container container-teaser no-jumbotron">
+
+		<div class="row">
+			<div class="col-md-12">
+				<h1>Beiträge</h1>
+			</div>
+		</div>
 
 		<div class="row">
 			<div class="col-md-12">

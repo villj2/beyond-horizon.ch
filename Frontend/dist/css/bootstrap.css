@@ -7478,6 +7478,9 @@ button:disabled {
     margin-top: 15px;
   }
 }
+#posts {
+  padding-bottom: 40px;
+}
 /* -------- Custom Styling END -------- */
 /* -------- Scroll to top -------- */
 .scrollToTop {
@@ -8032,6 +8035,9 @@ time.icon:focus {
   vertical-align: middle;
 }
 /* Horizon Gallery */
+#gallery {
+  padding-bottom: 40px;
+}
 .gallery-title-container {
   text-align: left;
   margin: 30px 0;
