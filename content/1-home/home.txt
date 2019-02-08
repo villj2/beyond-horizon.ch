@@ -51,3 +51,7 @@ Textbuttongallery: Jetzt angucken
 ----
 
 Teasertextbuttongallery: Hier klicken um mehr von %s und %s zu sehen!
+
+----
+
+Textnewsletter: Jetzt anmelden, um auf dem neusten Stand zu bleiben.

@@ -13,3 +13,18 @@ Registrations:
   lastname: sakldfj
   email: lajsdfl@ajsdlf.ch
   date: 2019-02-06 20:36:28
+- 
+  firstname: dasjflasdf
+  lastname: asdfasdf
+  email: alfj@jasdlf.ch
+  date: 2019-02-08 13:56:38
+- 
+  firstname: dasjflasdf
+  lastname: asdfasdf
+  email: alfj@jasdlf.ch
+  date: 2019-02-08 13:57:38
+- 
+  firstname: dasjflasdf
+  lastname: asdfasdf
+  email: alfj@jasdlf.ch
+  date: 2019-02-08 13:58:03

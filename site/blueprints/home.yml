@@ -26,6 +26,9 @@ fields:
     label: Teaser Text Button Gallery
     type: text
     help: Use %s as placeholders
+  textnewsletter:
+    label: Text Newsletter
+    type:  text
   galleryteaser1:
     label: Gallery Teaser Image 1 <i>(500 x 500px)</i>
     type: image

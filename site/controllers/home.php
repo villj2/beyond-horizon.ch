@@ -150,6 +150,9 @@ return function($site, $pages, $page) {
       'date'      => 'Date is missing'
     );
 
+    //$data['firstname'] = '';
+    $data['email'] = '';
+
     // some of the data is invalid
     if($invalid = invalid($data, $rules, $messages)) {
       $alert = $invalid;

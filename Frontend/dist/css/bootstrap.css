@@ -7436,6 +7436,49 @@ ul.nav a:hover {
   display: block;
   margin: 0 auto;
 }
+button {
+  display: inline-block;
+  border: 1px solid black;
+  background: none;
+  padding: 10px 20px;
+  margin: 10px 5px;
+}
+button.active {
+  background-color: #E6E6E6;
+}
+button:active,
+button:focus {
+  outline: none;
+}
+button:disabled {
+  opacity: 0.4;
+}
+#newsletter-registration {
+  margin: 30px 15px 0;
+}
+#newsletter-registration .form-element {
+  padding-right: 30px;
+}
+#newsletter-registration input {
+  height: 42px;
+}
+#newsletter-registration button {
+  margin-right: 0;
+}
+#newsletter-registration .form-row {
+  margin-top: 15px;
+}
+#newsletter-registration .button {
+  text-align: right;
+}
+#newsletter-registration .error {
+  border-color: red;
+}
+@media (max-width: 479px) {
+  #newsletter-registration .second-element {
+    margin-top: 15px;
+  }
+}
 /* -------- Custom Styling END -------- */
 /* -------- Scroll to top -------- */
 .scrollToTop {
@@ -8065,23 +8108,6 @@ time.icon:focus {
 #continent-map-filtering {
   margin-top: 80px;
   /*margin-bottom: 30px;*/
-}
-#continent-map-filtering #list-countries button {
-  display: inline-block;
-  border: 1px solid black;
-  background: none;
-  padding: 10px 20px;
-  margin: 10px 5px;
-}
-#continent-map-filtering #list-countries button.active {
-  background-color: #E6E6E6;
-}
-#continent-map-filtering #list-countries button:active,
-#continent-map-filtering #list-countries button:focus {
-  outline: none;
-}
-#continent-map-filtering #list-countries button:disabled {
-  opacity: 0.4;
 }
 #continent-map-filtering #list-countries #list-countries-loader {
   margin-left: 10px;
