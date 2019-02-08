@@ -71,3 +71,7 @@ Aboutustext: Wohnhaft in Bern, Schweiz fühlen wir uns ebenso in der weiten Welt
 ----
 
 Aboutusbutton: Mehr erfahren
+
+----
+
+Textnewslettersuccess: Vielen Dank für die Anmeldung. Schon bald kriegst du spannende News!

@@ -7510,6 +7510,9 @@ map area {
   outline: none;
 }
 /* -------- Image Map END -------- */
+#home {
+  padding-bottom: 100px;
+}
 #posts-teaser {
   margin-top: 100px;
   margin-bottom: 150px;
@@ -7678,6 +7681,8 @@ map area {
 }
 #home-about-us .part-right {
   width: 40%;
+  height: 350px;
+  background-color: gray;
 }
 #home-about-us .part-right img {
   max-width: 100%;
@@ -7686,6 +7691,10 @@ map area {
 #home-about-us .part-button-mobile {
   text-align: center;
   padding-top: 20px;
+}
+#home-about-us .part-picture-mobile {
+  height: 350px;
+  background-color: gray;
 }
 #home-about-us .container {
   display: flex;

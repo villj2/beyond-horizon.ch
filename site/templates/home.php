@@ -1,5 +1,7 @@
 <?php snippet('header') ?>
 
+<div id="home">
+
   <!-- Main jumbotron for a primary marketing message or call to action -->
   <div id="carousel-home" class="carousel slide jumbotron-slider" data-ride="carousel">
 
@@ -244,7 +246,7 @@
           <button type="button" class="btn btn-secondary btn-more" onclick="location.href='/about'"><?= $page->aboutusbutton() ?></button>
         </span>
         <span class="part part-right">
-          <img src="<?= $page->contentURL() . '/' . $page->aboutuspic() ?>" />
+          <!-- <img src="<?= $page->contentURL() . '/' . $page->aboutuspic() ?>" /> -->
         </span>
       </div>
     </div>
@@ -254,7 +256,7 @@
           <?= $page->aboutustext() ?>
       </div>
       <div class="col-sm-12 part-picture-mobile">
-        <img src="<?= $page->contentURL() . '/' . $page->aboutuspic() ?>" />
+        <!-- <img src="<?= $page->contentURL() . '/' . $page->aboutuspic() ?>" /> -->
       </div>
       <div class="col-sm-12 part-button-mobile">
         <button type="button" class="btn btn-secondary btn-more" onclick="location.href='/about'"><?= $page->aboutusbutton() ?></button>
@@ -315,6 +317,6 @@
 
 
 
-
+</div>
 
 <?php snippet('footer') ?>

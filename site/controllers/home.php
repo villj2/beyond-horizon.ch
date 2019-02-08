@@ -151,7 +151,7 @@ return function($site, $pages, $page) {
     );
 
     //$data['firstname'] = '';
-    $data['email'] = '';
+    //$data['email'] = '';
 
     // some of the data is invalid
     if($invalid = invalid($data, $rules, $messages)) {
@@ -163,7 +163,7 @@ return function($site, $pages, $page) {
 
         addToStructure($page->parent()->find('newsletter'), 'registrations', $data);
 
-        $success = 'Vielen Dank für die Anmeldung. Schon bald kriegst du spannende News!';
+        $success = $page->textnewslettersuccess();
         $data = array();
 
       } catch(Exception $e) {

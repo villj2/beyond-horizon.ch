@@ -94,3 +94,6 @@ fields:
   textnewsletter:
     label: Text Newsletter
     type:  text
+  textnewslettersuccess:
+    label: Text Newsletter success
+    type:  text
