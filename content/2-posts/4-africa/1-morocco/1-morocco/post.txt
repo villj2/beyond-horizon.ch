@@ -1,0 +1,52 @@
+Title: Marokko
+
+----
+
+Textcolor: 
+
+----
+
+Picsonly: 0
+
+----
+
+Hidetitle: 0
+
+----
+
+Date: 2017-10-21
+
+----
+
+Text: 
+
+#Marokko
+Hihi marokko camel goats.
+
+----
+
+Imagejumbotron: p1410799_jumbotron.jpg
+
+----
+
+Imageteaser: p1410799_teaser.jpg
+
+----
+
+Imagemap: marokko_map.png
+
+----
+
+Googlemapsimage: p1410799_map.jpg
+
+----
+
+Googlemapstwolines: 0
+
+----
+
+Lat: 31.6332050232659
+
+----
+
+Lng: -7.976295869255182

@@ -9,4 +9,7 @@ password: >
 language: en
 role: admin
 history:
+  - posts/africa/morocco/morocco
+  - posts/africa/morocco/morocco/gallery
+  - posts/africa/morocco
   - home
