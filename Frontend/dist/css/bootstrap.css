@@ -7134,9 +7134,11 @@ footer .row .socialbutton.pinterest {
   padding-top: 0;
   background: none !important;
 }
+#posts .teaser > div {
+  margin-bottom: 20px;
+}
 .teaser > div {
   text-align: center;
-  /*margin-bottom: 20px;*/
 }
 .teaser .teaser-image {
   width: 100%;

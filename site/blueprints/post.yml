@@ -8,12 +8,14 @@ fields:
   textcolor:
     label: Textfarbe
     type: text
+    help: Z.B. "#F92"
   picsonly:
     label: Nur Bilder
     type:  checkbox
   hidetitle:
     label: Titel verstecken
     type:  checkbox
+    help: Titel im Jumbotron verstecken
   date:
     label: Datum
     type:  date
@@ -22,17 +24,21 @@ fields:
     type:  textarea
     help:  Polaroid -> 266 x 277px<br />customimage -> 750 x ???px
   imagejumbotron:
-    label: Jumbotron <i>(ca. 1960 x 1000px)</i>
+    label: Jumbotron
     type: image
+    help: ca. 1960 x 1000
   imageteaser:
-    label: Teaser Image <i>(720 x 499px)</i>
+    label: Teaser Image
     type: image
+    help: 500 x 500
   imagemap:
-    label: Map Image <i>(320 x 320px)</i>
+    label: Map Image
     type: image
+    help: 320 x 320
   googlemapsimage:
-    label: Google Maps Bubble Image <i>(235 x 163px)</i>
+    label: Google Maps Bubble Image
     type: image
+    help: 235 x 163
   googlemapstwolines:
     label: Zweizeiliger Titel (Google Maps Bubble)
     type: checkbox

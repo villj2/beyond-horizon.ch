@@ -32,7 +32,7 @@
           ?>
 
           <?php foreach($page->children() as $subpage): ?>
-            <?php foreach($subpage->images()->sortBy('sort', 'asc')->limit($subpage->postlimit()->value() * 2) as $image): ?>
+            <?php foreach($subpage->images()->sortBy('sort', 'asc') as $image): ?>
               <?php if (strpos($image->filename(), 'preview') == false): ?>
 
                 <?php
@@ -49,7 +49,7 @@
 
             <?php $picNumber = 0; ?>
 
-            <?php foreach($subpage->images()->sortBy('sort', 'asc')->limit($subpage->postlimit()->value() * 2) as $image): ?>
+            <?php foreach($subpage->images()->sortBy('sort', 'asc') as $image): ?>
 
               <?php if (strpos($image->filename(), 'preview') == false): ?>
 

@@ -13,15 +13,12 @@ fields:
   title:
     label: Title
     type:  text
-  postlimit:
-  	label: Limit in Post
-  	type:  number
   info:
     label: Bildrichtlinien
     type: info
     text: >
-      <strong>bild_horizontal.jpg</strong> -> 1680 x 1260 <br />
-      <strong>bild_horizontal_preview.jpg</strong> -> 360 x 230 (+ unten 20px weisser Rand)
+      <strong>bild_horizontal.jpg</strong> -> 1960 x 1470 <br />
+      <strong>bild_horizontal_preview.jpg</strong> -> 555 x 400
       <br /><br />
-      <strong>bild_vertikal.jpg</strong> -> 1260 x 1680 <br />
-      <strong>bild_vertikal_preview</strong> -> 360 x 480 (+ unten 20px weisser Rand)
+      <strong>bild_vertikal.jpg</strong> -> 1470 x 1960 <br />
+      <strong>bild_vertikal_preview</strong> -> 400 x 555

@@ -10,4 +10,4 @@ Titlefrontend: Afrika
 
 ----
 
-Hideonmap: 1
+Hideonmap: 0

@@ -586,7 +586,7 @@
 			          			<!-- Loop over POSTS -->
 			      				<?php foreach($country->children()->posts()->sortby('sort', 'desc') as $post): ?>
 
-							      	<div class="col-lg-3 col-md-4 col-sm-4 col-xs-6 col-xxs-12">
+							      	<div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 col-xxs-12">
 						          		<div class="teaser-image-container">
 
 											<p class="posts-entry">
