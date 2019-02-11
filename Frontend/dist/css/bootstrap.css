@@ -6979,11 +6979,11 @@ body h1 {
   /*font-size: 80px !important;
   	font-family: 'amaticbold';*/
   font-family: 'ralewaysemibold';
-  font-size: 2.6em;
+  font-size: 2em;
 }
 body h2 {
   font-family: 'ralewaysemibold';
-  font-size: 1.7em;
+  font-size: 1.4em;
 }
 body h3 {
   font-family: 'ralewaysemibold';
@@ -7522,6 +7522,11 @@ map area {
   margin-top: 100px;
   margin-bottom: 150px;
 }
+@media (max-width: 767px) {
+  #posts-teaser {
+    margin-top: 0;
+  }
+}
 #home-gallery-teaser-big,
 #home-gallery-teaser-small {
   position: relative;
@@ -7861,6 +7866,7 @@ time.icon:focus {
 .container.map .infobubble h2 {
   margin-top: 10px;
   margin-bottom: 0;
+  font-size: 1.7em;
 }
 .container.map .infobubble p {
   margin-bottom: 0;
@@ -8148,6 +8154,7 @@ time.icon:focus {
   height: 0;
   padding-top: 48%;
   position: relative;
+  margin-top: 30px;
 }
 #continent-map svg {
   position: absolute;
@@ -8178,11 +8185,6 @@ time.icon:focus {
   fill: #999 !important;
   cursor: pointer !important;
 }
-@media (min-width: 768px) {
-  #continent-map {
-    margin-top: 30px;
-  }
-}
 #continent-map-filtering {
   margin-top: 80px;
   /*margin-bottom: 30px;*/
@@ -8193,7 +8195,7 @@ time.icon:focus {
 #continent-map-filtering #arrow {
   position: absolute;
   left: 55%;
-  top: -80px;
+  top: -50px;
 }
 #continent-map-filtering #arrow img {
   width: 30%;
