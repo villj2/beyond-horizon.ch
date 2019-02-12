@@ -31,7 +31,16 @@ function qs(key) {
     return match && decodeURIComponent(match[1].replace(/\+/g, " "));
 }
 
-
+function updateQueryStringParameter(uri, key, value) {
+  var re = new RegExp("([?&])" + key + "=.*?(&|$)", "i");
+  var separator = uri.indexOf('?') !== -1 ? "&" : "?";
+  if (uri.match(re)) {
+    return uri.replace(re, '$1' + key + "=" + value + '$2');
+  }
+  else {
+    return uri + separator + key + "=" + value;
+  }
+}
 
 
 
@@ -245,8 +254,6 @@ function postsUpdate() {
 
     });
 
-    //console.log(selectedList);
-
     // Check if any continent has been selected
     if(selectedList.length > 0) {
         $('#arrow').addClass('hide');
@@ -261,6 +268,17 @@ function postsUpdate() {
         if(!lastClickedFilterButton.hasClass('active')) {
 
             setFilterButtonsActive(true);
+        }
+    }
+
+    //console.log(selectedList);
+
+    // Add gallery-url to history in order to enable the browsers back-functionality
+    if (history.pushState) {
+
+        if(selectedList.length > 0) {
+            var newurl = window.location.protocol + "//" + window.location.host + window.location.pathname + '?filter=' + encodeURIComponent(JSON.stringify(selectedList));
+            window.history.pushState({path:newurl},'',newurl);
         }
     }
 }
@@ -318,9 +336,6 @@ function countryExistsInSelectedList(country) {
 
     return false;
 }
-
-
-
 
 
 /******** UNITE GALLERY ********/
