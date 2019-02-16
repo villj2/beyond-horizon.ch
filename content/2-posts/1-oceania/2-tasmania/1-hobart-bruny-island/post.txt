@@ -32,11 +32,11 @@ Tags darauf ging es mit der Fähre zur nahegelegenen Bruny Island und damit endl
 
 ----
 
-Imagejumbotron: jumbo.jpg
+Imagejumbotron: jumbo_neu.jpg
 
 ----
 
-Imageteaser: teaser.jpg
+Imageteaser: teaser_square.jpg
 
 ----
 
@@ -44,7 +44,7 @@ Imagemap: map2.png
 
 ----
 
-Googlemapsimage: bubble.jpg
+Googlemapsimage: bubble_neu.jpg
 
 ----
 

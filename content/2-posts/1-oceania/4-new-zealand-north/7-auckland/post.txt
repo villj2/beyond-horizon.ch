@@ -28,7 +28,7 @@ Etwas wehmütig gaben wir am nächsten Tag nach sechs Wochen unseren Camper zur�
 
 ----
 
-Imagejumbotron: jumbo.jpg
+Imagejumbotron: jumbo_neu.jpg
 
 ----
 
@@ -40,7 +40,7 @@ Imagemap: map.png
 
 ----
 
-Googlemapsimage: bubble.jpg
+Googlemapsimage: bubble_neu.jpg
 
 ----
 

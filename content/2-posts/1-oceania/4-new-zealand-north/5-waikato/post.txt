@@ -34,7 +34,7 @@ Wieder im strahlenden und blendenden Tageslicht besuchten wir eine nahegelegene 
 
 ----
 
-Imagejumbotron: jumbo_waikato.jpg
+Imagejumbotron: jumbo_neu.jpg
 
 ----
 
@@ -46,7 +46,7 @@ Imagemap: waikato.png
 
 ----
 
-Googlemapsimage: bubble_waikato.jpg
+Googlemapsimage: bubble_neu.jpg
 
 ----
 

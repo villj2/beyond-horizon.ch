@@ -42,11 +42,11 @@ Weiter ging unsere Reise Richtung Airlie Beach durch die wunderschönen, hügeli
 
 ----
 
-Imagejumbotron: jumbo.jpg
+Imagejumbotron: jumbo_neu.jpg
 
 ----
 
-Imageteaser: teaser.jpg
+Imageteaser: teaser_square.jpg
 
 ----
 
@@ -54,7 +54,7 @@ Imagemap: map.png
 
 ----
 
-Googlemapsimage: bubble.jpg
+Googlemapsimage: bubble_neu.jpg
 
 ----
 

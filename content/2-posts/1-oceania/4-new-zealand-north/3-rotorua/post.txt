@@ -30,7 +30,7 @@ Neben den geothermalen Gebieten hat Rotorua den Whakarewarewa Forest zu bieten, 
 
 ----
 
-Imagejumbotron: jumbo.jpg
+Imagejumbotron: jumbo_neu.jpg
 
 ----
 
@@ -42,7 +42,7 @@ Imagemap: map.png
 
 ----
 
-Googlemapsimage: bubble.jpg
+Googlemapsimage: bubble_neu.jpg
 
 ----
 

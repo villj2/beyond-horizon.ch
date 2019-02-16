@@ -6,4 +6,4 @@ Titlemenu: Galerie
 
 ----
 
-Arrowtext: Wähle einen Kontinent aus und gucke Bilder trolol aus cms
+Arrowtext: Wähle ein oder mehrere Kontinente aus, um die Bilder der entsprechenden Länder anzuzeigen

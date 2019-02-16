@@ -1,8 +1,4 @@
-Title: Gallery
-
-----
-
-Postlimit: 99
+Title: gallery
 
 ----
 

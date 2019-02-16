@@ -37,11 +37,11 @@ Nach nur wenigen Stunden Schlaf nahmen wir den letzten Strassenabschnitt Austral
 
 ----
 
-Imagejumbotron: jumbo2.jpg
+Imagejumbotron: jumbo_neu.jpg
 
 ----
 
-Imageteaser: teaser.jpg
+Imageteaser: teaser_square.jpg
 
 ----
 
@@ -49,7 +49,7 @@ Imagemap: map.png
 
 ----
 
-Googlemapsimage: bubble.jpg
+Googlemapsimage: bubble_neu.jpg
 
 ----
 

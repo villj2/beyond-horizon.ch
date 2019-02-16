@@ -29,11 +29,11 @@ Die knapp zwanzig Kilometer lange Wanderung am nächsten Tag führte zum ersten 
 
 ----
 
-Imagejumbotron: jumbotron_kumano.jpg
+Imagejumbotron: jumbo_neu.jpg
 
 ----
 
-Imageteaser: teaser_kumano.jpg
+Imageteaser: teaser_square.jpg
 
 ----
 
@@ -41,7 +41,7 @@ Imagemap: kumano_map.png
 
 ----
 
-Googlemapsimage: bubble_kumano.jpg
+Googlemapsimage: bubble_neu.jpg
 
 ----
 

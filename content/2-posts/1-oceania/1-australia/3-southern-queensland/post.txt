@@ -32,11 +32,11 @@ Weil wir nie genug Begegnungen mit Vögeln und anderen Tieren haben können, sta
 
 ----
 
-Imagejumbotron: jumbo4.jpg
+Imagejumbotron: jumbo_neu.jpg
 
 ----
 
-Imageteaser: teaser4.jpg
+Imageteaser: teaser_square.jpg
 
 ----
 
@@ -44,7 +44,7 @@ Imagemap: map.png
 
 ----
 
-Googlemapsimage: bubble4.jpg
+Googlemapsimage: bubble_neu.jpg
 
 ----
 

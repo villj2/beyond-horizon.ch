@@ -34,11 +34,11 @@ Unser erster Halt war der windige, wolkenverhangene und regnerische Aoraki / Mou
 
 ----
 
-Imagejumbotron: jumbo.jpg
+Imagejumbotron: jumbo_neu.jpg
 
 ----
 
-Imageteaser: teaser_neu.jpg
+Imageteaser: teaser_square.jpg
 
 ----
 
@@ -46,7 +46,7 @@ Imagemap: map.png
 
 ----
 
-Googlemapsimage: bubble.jpg
+Googlemapsimage: bubble_neu.jpg
 
 ----
 
