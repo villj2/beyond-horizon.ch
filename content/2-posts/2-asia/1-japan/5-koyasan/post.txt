@@ -28,11 +28,11 @@ Am darauffolgenden, frühen Morgen durften wir und die anderen Tempelgäste eine
 
 ----
 
-Imagejumbotron: jumbotron_koyasan.jpg
+Imagejumbotron: jumbo_neu.jpg
 
 ----
 
-Imageteaser: teaser_koyasan.jpg
+Imageteaser: teaser_square.jpg
 
 ----
 
@@ -40,7 +40,7 @@ Imagemap: map_koyasan.png
 
 ----
 
-Googlemapsimage: bubble_koyasan.jpg
+Googlemapsimage: bubble_neu.jpg
 
 ----
 

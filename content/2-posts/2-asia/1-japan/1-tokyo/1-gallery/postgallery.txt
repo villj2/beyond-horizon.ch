@@ -1,5 +1,5 @@
-Title: Gallery
+Title: gallery
 
 ----
 
-Postlimit: 99
+Info: 

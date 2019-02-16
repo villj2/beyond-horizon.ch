@@ -35,11 +35,11 @@ Mapimage: australie.png
 
 ----
 
-Imagejumbotron: tokyo_jumbotron.jpg
+Imagejumbotron: jumbo_neu.jpg
 
 ----
 
-Imageteaser: tokyo_teaser_image.jpg
+Imageteaser: teaser_square.jpg
 
 ----
 
@@ -63,7 +63,7 @@ Hidetitle: 0
 
 ----
 
-Googlemapsimage: tokyo_google_maps.jpg
+Googlemapsimage: bubble_neu.jpg
 
 ----
 

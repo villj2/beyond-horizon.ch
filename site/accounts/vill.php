@@ -9,8 +9,9 @@ password: >
 language: en
 role: admin
 history:
-  - about
-  - posts/africa/morocco/morocco
-  - posts/africa
-  - posts/africa/morocco/morocco/gallery
-  - posts/africa/morocco
+  - >
+    posts/oceania/new-zealand-north/coromandel-peninsula/galler
+  - posts/oceania/new-zealand-north/auckland
+  - posts/oceania/new-zealand-north/auckland/gallery
+  - posts/oceania/new-zealand-north/northland
+  - posts/oceania/new-zealand-north/northland/gallery

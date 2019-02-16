@@ -1,0 +1,13 @@
+Title: Thailand
+
+----
+
+Countrycode: th
+
+----
+
+Teasericon: preparation
+
+----
+
+Trip: 

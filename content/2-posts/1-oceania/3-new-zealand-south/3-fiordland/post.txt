@@ -28,11 +28,11 @@ Am Weihnachtstag hatten wir eine morgendliche Bootstour über den Fjord gebucht,
 
 ----
 
-Imagejumbotron: jumbo.jpg
+Imagejumbotron: jumbo_neu.jpg
 
 ----
 
-Imageteaser: teaser.jpg
+Imageteaser: teaser_square.jpg
 
 ----
 
@@ -40,7 +40,7 @@ Imagemap: map.png
 
 ----
 
-Googlemapsimage: bubble.jpg
+Googlemapsimage: bubble_neu.jpg
 
 ----
 

@@ -10,4 +10,4 @@ Map:
 
 ----
 
-Arrowtext: Klicke auf einen Kontinent und wähle einen Post trolol cms
+Arrowtext: Klicke auf einen oder mehrere Kontinente, um die Beiträge der entsprechenden Länder anzuzeigen

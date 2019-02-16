@@ -36,11 +36,11 @@ Glücklicherweise hat der Sturm in der Nacht das schlechte Wetter davongefegt, w
 
 ----
 
-Imagejumbotron: fujikawaguchiko_jumbotron2.jpg
+Imagejumbotron: jumbo_neu.jpg
 
 ----
 
-Imageteaser: fuji_teaser.jpg
+Imageteaser: teaser_square.jpg
 
 ----
 
@@ -48,7 +48,7 @@ Imagemap: fuji_map.png
 
 ----
 
-Googlemapsimage: fuji_googlemaps.jpg
+Googlemapsimage: bubble_neu.jpg
 
 ----
 

@@ -1,0 +1,53 @@
+Title: Bangkok
+
+----
+
+Textcolor: 
+
+----
+
+Picsonly: 1
+
+----
+
+Hidetitle: 0
+
+----
+
+Date: 2018-02-21
+
+----
+
+Text: 
+
+#Bangkok
+
+Such monkeys.
+
+----
+
+Imagejumbotron: 
+
+----
+
+Imageteaser: 
+
+----
+
+Imagemap: 
+
+----
+
+Googlemapsimage: 
+
+----
+
+Googlemapstwolines: 0
+
+----
+
+Lat: 
+
+----
+
+Lng: 

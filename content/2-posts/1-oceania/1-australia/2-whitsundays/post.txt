@@ -31,11 +31,11 @@ Tags darauf hoben wir bei perfekten Wetterkonditionen mit einem kleinen Flieger 
 
 ----
 
-Imagejumbotron: jumbo.jpg
+Imagejumbotron: jumbo_neu.jpg
 
 ----
 
-Imageteaser: teaser.jpg
+Imageteaser: teaser_square.jpg
 
 ----
 
@@ -43,7 +43,7 @@ Imagemap: map.png
 
 ----
 
-Googlemapsimage: bubble.jpg
+Googlemapsimage: bubble_neu.jpg
 
 ----
 
