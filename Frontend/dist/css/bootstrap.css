@@ -7871,6 +7871,10 @@ time.icon:focus {
 .container.map .infobubble p {
   margin-bottom: 0;
 }
+.container.map .infobubble img {
+  max-width: 235px;
+  max-height: 163px;
+}
 /*!
  * Lightbox for Bootstrap 3 by @ashleydw
  * https://github.com/ashleydw/lightbox
