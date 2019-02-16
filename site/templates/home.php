@@ -233,7 +233,7 @@
 
     <div class="row">
       <div class="col-sm-12">
-        <h1>Über uns</h1>
+        <h1>Über Beyond Horizon</h1>
       </div>
     </div>
 
@@ -245,8 +245,9 @@
           </span>
           <button type="button" class="btn btn-secondary btn-more" onclick="location.href='/about'"><?= $page->aboutusbutton() ?></button>
         </span>
-        <span class="part part-right">
-          <!-- <img src="<?= $page->contentURL() . '/' . $page->aboutuspic() ?>" /> -->
+        <span class="part part-right" >
+          <div class="content" style="background-image: url(<?= $page->contentURL() . '/' . $page->aboutuspic() ?>);">
+          </div>
         </span>
       </div>
     </div>
@@ -256,7 +257,8 @@
           <?= $page->aboutustext() ?>
       </div>
       <div class="col-sm-12 part-picture-mobile">
-        <!-- <img src="<?= $page->contentURL() . '/' . $page->aboutuspic() ?>" /> -->
+        <div class="content" style="background-image: url(<?= $page->contentURL() . '/' . $page->aboutuspic() ?>);">
+        </div>
       </div>
       <div class="col-sm-12 part-button-mobile">
         <button type="button" class="btn btn-secondary btn-more" onclick="location.href='/about'"><?= $page->aboutusbutton() ?></button>

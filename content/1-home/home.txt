@@ -54,7 +54,7 @@ Teasertextbuttongallery: Hier klicken um mehr von %s und %s zu sehen!
 
 ----
 
-Textnewsletter: Jetzt anmelden, um auf dem neusten Stand zu bleiben.
+Textnewsletter: Jetzt anmelden und bei Neuigkeiten sofort informiert werden!
 
 ----
 
@@ -62,15 +62,19 @@ Aboutus: wir_bw.jpg
 
 ----
 
-Aboutuspic: wir_bw.jpg
+Aboutuspic: desert.jpg
 
 ----
 
-Aboutustext: Wohnhaft in Bern, Schweiz fühlen wir uns ebenso in der weiten Welt draussen Zuhause. Wenn immer möglich lassen wir den eintönigen Alltag hinter uns und brechen zu neuen Abenteuern in neuen Ländern auf und versuchen mit unserer Kamera die besten Momente festzuhalten. Wir sind gespannt, was wir auf unseren Reisen noch alles entdecken werden. Wir sind gespannt, was wir auf unseren Reisen noch alles entdecken werden. Wir sind gespannt, was wir auf unseren Reisen noch alles entdecken werden.
+Aboutustext: 
+
+Unsere Reisen jenseits des Horizonts. Erlebnisberichte und Fotos aus der reichen Kultur Japans, der schillernden Tierwelt Australiens, der imposanten Natur Neuseelands, dem märchenhaften Charme Marokkos und vielen weiteren traumhaften Destinationen, die unsere Welt zu bieten hat.
+<br /><br />
+Wir sind wohnhaft in Bern, Schweiz fühlen uns aber ebenso in der weiten Welt draussen Zuhause. Wenn immer möglich brechen wir zu Abenteuern in neuen Ländern auf und versuchen, mit unserer Kamera die besten Momente festzuhalten. Wir sind gespannt, was wir auf unseren Reisen noch alles entdecken werden und lassen dich gerne teilhaben.
 
 ----
 
-Aboutusbutton: Mehr erfahren
+Aboutusbutton: Mehr über uns
 
 ----
 
