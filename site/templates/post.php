@@ -88,15 +88,13 @@
         <div class="col-md-8">
           <div class="row">
             <div class="col-xs-6 post-button-navigate" style="text-align: left;">
-              <?php if($page->hasPrevVisible('date', 'desc')): ?>
-                <button type="button" class="btn btn-secondary btn-more btn-post-sibling" onclick="location.href='<?php echo $page->prevVisible('date', 'desc')->url() ?>'">neuerer Beitrag</button>
-                <!-- <a href="<?php echo $page->prevVisible('date', 'desc')->url() ?>"><img src="/Frontend/img/left-arrow-posts.png"/> letzter Beitrag</a> -->
+              <?php if(!empty($prev)): ?>
+                <button type="button" class="btn btn-secondary btn-more btn-post-sibling" onclick="location.href='<?= $prev ?>'">neuerer Beitrag</button>
               <?php endif ?>
             </div>
             <div class="col-xs-6 post-button-navigate" style="text-align: right;">
-              <?php if($page->hasNextVisible('date', 'desc')): ?>
-                <button type="button" class="btn btn-secondary btn-more btn-post-sibling" onclick="location.href='<?php echo $page->nextVisible('date', 'desc')->url() ?>'">älterer Beitrag</button>
-                <!-- <a href="<?php echo $page->nextVisible('date', 'desc')->url() ?>">nächster Beitrag <img src="/Frontend/img/right-arrow-posts.png"/></a> -->
+              <?php if(!empty($next)): ?>
+                <button type="button" class="btn btn-secondary btn-more btn-post-sibling" onclick="location.href='<?= $next ?>'">älterer Beitrag</button>
               <?php endif ?>
             </div>
           </div>
