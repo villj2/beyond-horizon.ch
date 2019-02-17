@@ -14,27 +14,27 @@ Titlemenu: Home
 
 ----
 
-Galleryteaser1: gallery-teaser-1.jpg
+Galleryteaser1: p1590020_gallery.jpg
 
 ----
 
-Galleryteaser2: gallery-teaser-2.jpg
+Galleryteaser2: p1550875_gallery.jpg
 
 ----
 
-Galleryteaser3: gallery-teaser-3.jpg
+Galleryteaser3: p1590341_gallery.jpg
 
 ----
 
-Galleryteaser4: gallery-teaser-4.jpg
+Galleryteaser4: p1590718_gallery.jpg
 
 ----
 
-Galleryteaser5: gallery-teaser-5.jpg
+Galleryteaser5: p1580165_gallery.jpg
 
 ----
 
-Galleryteaser6: gallery-teaser-6.jpg
+Galleryteaser6: p1620435_gallery.jpg
 
 ----
 
@@ -62,7 +62,7 @@ Aboutus: wir_bw.jpg
 
 ----
 
-Aboutuspic: desert.jpg
+Aboutuspic: p1410747_home.jpg
 
 ----
 

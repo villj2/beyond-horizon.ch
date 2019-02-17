@@ -35,11 +35,11 @@ Auf dem Weg zu den bekannten römischen Ruinen von Volubilis und der heiligen St
 
 ----
 
-Imagejumbotron: p1410799_jumbotron.jpg
+Imagejumbotron: jumbo_neu.jpg
 
 ----
 
-Imageteaser: p1410799_teaser.jpg
+Imageteaser: teaser_square.jpg
 
 ----
 
@@ -47,7 +47,7 @@ Imagemap: marokko_map.png
 
 ----
 
-Googlemapsimage: p1410799_map.jpg
+Googlemapsimage: bubble_neu.jpg
 
 ----
 
