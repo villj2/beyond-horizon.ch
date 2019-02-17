@@ -7142,6 +7142,9 @@ footer .row .socialbutton.pinterest {
   padding-top: 0;
   background: none !important;
 }
+.jumbotron h1 {
+  font-family: 'gloss-and-bloomregular';
+}
 #posts .teaser > div {
   margin-bottom: 20px;
 }
@@ -7525,9 +7528,6 @@ map area {
 /* -------- Image Map END -------- */
 #home {
   padding-bottom: 100px;
-}
-#home .jumbotron h1 {
-  font-family: 'gloss-and-bloomregular';
 }
 #posts-teaser {
   margin-top: 100px;
