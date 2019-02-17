@@ -54,7 +54,7 @@ Teasertextbuttongallery: Hier klicken um mehr von %s und %s zu sehen!
 
 ----
 
-Textnewsletter: Jetzt anmelden und bei Neuigkeiten sofort informiert werden!
+Textnewsletter: Jetzt anmelden und mit uns virtuell mitreisen!
 
 ----
 
@@ -66,11 +66,7 @@ Aboutuspic: desert.jpg
 
 ----
 
-Aboutustext: 
-
-Unsere Reisen jenseits des Horizonts. Erlebnisberichte und Fotos aus der reichen Kultur Japans, der schillernden Tierwelt Australiens, der imposanten Natur Neuseelands, dem märchenhaften Charme Marokkos und vielen weiteren traumhaften Destinationen, die unsere Welt zu bieten hat.
-<br /><br />
-Wir sind wohnhaft in Bern, Schweiz fühlen uns aber ebenso in der weiten Welt draussen Zuhause. Wenn immer möglich brechen wir zu Abenteuern in neuen Ländern auf und versuchen, mit unserer Kamera die besten Momente festzuhalten. Wir sind gespannt, was wir auf unseren Reisen noch alles entdecken werden und lassen dich gerne teilhaben. Änderung Macbook Air, funzt nice.
+Aboutustext: Wenn immer möglich machen wir uns zu neuen Abenteuern jenseits unseres gewohnten Horizontes auf und versuchen, mit unserer Kamera die besten Momente festzuhalten. Unsere Reisen führten uns bereits in das traditionsreiche Japan, zur imposanten Unterwasserwelt Australiens, zu eindrücklichen Landschaften Neuseelands und in das märchenhafte Marokko, um nur einige Beispiele zu nennen. Wir sind gespannt, was wir auf unseren Reisen noch alles entdecken werden und lassen dich mit Erlebnisberichten und Fotos gerne daran teilhaben.
 
 ----
 
