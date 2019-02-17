@@ -4,11 +4,32 @@ fields:
   title:
     label: Titel
     type:  text
-  tag:
-  	label: Tag
-  	type: text
-  link:
-    label: Link (Alternative zu Tag)
+  #tag:
+  #	label: Tag
+  #	type: text
+  showlink1:
+    label: Show Link 1
+    type: checkbox
+  link1:
+    label: Link 1
+    type: text
+  linktext1:
+    label: Text Link 1
+    type: text
+  linkfilter1:
+    label: Filter Link 1
+    type: text
+  showlink2:
+    label: Show Link 1
+    type: checkbox
+  link2:
+    label: Link 2
+    type: text
+  linktext2:
+    label: Text Link 2
+    type: text
+  linkfilter2:
+    label: Filter Link 2
     type: text
   image:
   	label: Bild

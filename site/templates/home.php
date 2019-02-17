@@ -34,7 +34,8 @@
                   <div class="label" style="text-align: center;">
                     <h1 style="color: <?php if($slider->textcolor() == ""){echo "white";} else { echo $slider->textcolor(); } ?>;"><?php echo $slider->title() ?></h1>
                     <div>
-                      <button type="button" class="btn btn-secondary btn-more btn-slider" style="<?php if($slider->textcolor() == ""){} else { echo "border-color: " . $slider->textcolor() . ";" . " color: " . $slider->textcolor() . ";"; } ?>;" onclick="<?php if($slider->link() == ""){ echo "location.href='/posts?scrollto=posts-" . $slider->tag() . "'"; } else { echo "location.href='" . $slider->link() . "'"; } ?>">Mehr anzeigen</button>
+                      <button type="button" class="btn btn-secondary btn-more btn-slider" style="<?= $slider->showlink1() == '1' ? '' : 'display: none;' ?><?php if($slider->textcolor() == ""){} else { echo "border-color: " . $slider->textcolor() . ";" . " color: " . $slider->textcolor() . "; margin-right: 10px;"; } ?>;" onclick="<?= "location.href='" . $slider->link1() . urlencode($slider->linkfilter1()) . "'" ?>"><?= $slider->linktext1() ?></button>
+                      <button type="button" class="btn btn-secondary btn-more btn-slider" style="<?= $slider->showlink2() == '1' ? '' : 'display: none;' ?><?php if($slider->textcolor() == ""){} else { echo "border-color: " . $slider->textcolor() . ";" . " color: " . $slider->textcolor() . ";"; } ?>;" onclick="<?= "location.href='" . $slider->link2() . urlencode($slider->linkfilter2()) . "'" ?>"><?= $slider->linktext2() ?></button>
                     </div>
                   </div>
                 </div>

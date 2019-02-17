@@ -9,9 +9,8 @@ password: >
 language: en
 role: admin
 history:
-  - >
-    posts/oceania/new-zealand-north/coromandel-peninsula/galler
+  - home/reiseroute
+  - posts/america-north/costa-rica/monteverde
+  - posts/america-north/costa-rica
+  - posts/oceania/new-zealand-north/coromandel-peninsula/galler
   - posts/oceania/new-zealand-north/auckland
-  - posts/oceania/new-zealand-north/auckland/gallery
-  - posts/oceania/new-zealand-north/northland
-  - posts/oceania/new-zealand-north/northland/gallery

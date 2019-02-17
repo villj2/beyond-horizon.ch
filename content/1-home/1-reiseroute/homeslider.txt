@@ -14,4 +14,36 @@ Textcolor: black
 
 ----
 
-Link: /journey
+Link: /posts
+
+----
+
+Link2: /gallery?filter=
+
+----
+
+Link1: /posts?filter=
+
+----
+
+Linktext1: Beiträge
+
+----
+
+Linktext2: Bilder
+
+----
+
+Linkfilter1: [{"id":"america-north","countries":["cr"]}]
+
+----
+
+Linkfilter2: [{"id":"america-north","countries":["cr"]}]
+
+----
+
+Showlink1: 1
+
+----
+
+Showlink2: 1
