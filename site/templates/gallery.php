@@ -528,7 +528,7 @@
 
           <?php foreach($continents->sortBy('titlefrontend', 'asc') as $continent): ?>
 
-            <?php foreach($continent->children()->sortBy('title', 'asc') as $country): ?>
+            <?php foreach($continent->children()->visible()->sortBy('title', 'asc') as $country): ?>
 
               <button id="<?php echo strtolower($continent->title()) ?>-<?php echo strtolower($country->countrycode()) ?>" data-continent="<?php echo strtolower($continent->title()) ?>" data-country="<?php echo strtolower($country->countrycode()) ?>" class="list-country hide">
                 <?php echo $country->title()->html() ?>
