@@ -81,7 +81,16 @@
          url('../../fonts/gloss-and-bloom-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+}
 
+@font-face {
+    font-family: 'ralewayregular';
+    src: url('../../fonts/Raleway-Regular.eot');
+    src: url('../../fonts/Raleway-Regular.eot?#iefix') format('embedded-opentype'),
+         url('../../fonts/Raleway-Regular.woff2') format('woff2'),
+         url('../../fonts/Raleway-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
 
 html {
@@ -91,6 +100,8 @@ html {
 body {
   /* Margin bottom by footer height */
   margin-bottom: 110px;
+  font-family: 'ralewayregular', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 14px;
 
   h1 {
   	/*font-size: 80px !important;
@@ -170,7 +181,12 @@ h1, h2, h3, h4 {
     }
 
     &.btn-post-sibling {
-    	margin: 0 0 10px 0;
+    	margin: 20px 10px 30px;
+
+    	@media(max-width:@screen-xs-max){
+			margin-left: 7px;
+			margin-right: 7px;
+		}
     }
 }
 
@@ -262,7 +278,7 @@ footer {
 	height: 450px;
 
 	@media(max-width: @screen-xs-max){
-		max-height: 350px;
+		max-height: 300px;
 	}
 
 	background-size:cover;
@@ -279,7 +295,7 @@ footer {
 			margin-top: 100px;
 
 			@media(max-width: @screen-xs-max){
-				margin-top: 80px;
+				margin-top: 50px;
 				font-size: 36px;
 			}
 		}

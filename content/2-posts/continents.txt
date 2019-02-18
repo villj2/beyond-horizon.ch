@@ -10,4 +10,4 @@ Map:
 
 ----
 
-Arrowtext: Klicke auf einen oder mehrere Kontinente, um die Beiträge der entsprechenden Länder anzuzeigen
+Arrowtext: Klicke auf einen oder mehrere Kontinente, um die Beiträge der Länder anzuzeigen

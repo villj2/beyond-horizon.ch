@@ -6,4 +6,4 @@ Titlemenu: Galerie
 
 ----
 
-Arrowtext: Wähle ein oder mehrere Kontinente aus, um die Bilder der entsprechenden Länder anzuzeigen
+Arrowtext: Wähle ein oder mehrere Kontinente aus, um die Bilder der Länder anzuzeigen

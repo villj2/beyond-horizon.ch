@@ -4,6 +4,9 @@ fields:
   title:
     label: Titel
     type:  text
+  introtext:
+    label: Introtext
+    type: text
   #tag:
   #	label: Tag
   #	type: text

@@ -9,8 +9,8 @@ password: >
 language: en
 role: admin
 history:
+  - gallery
+  - posts
   - home/reiseroute
   - posts/america-north/costa-rica/monteverde
   - posts/america-north/costa-rica
-  - posts/oceania/new-zealand-north/coromandel-peninsula/galler
-  - posts/oceania/new-zealand-north/auckland

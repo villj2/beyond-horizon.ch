@@ -31,6 +31,7 @@
             <div class="jumbotron" style="background-image: url(<?php echo $slider->image()->url(); ?>);">
               <div class="page-header">
                 <div class="container">
+                  <div><h2><?= $slider->introtext() ?></h2></div>
                   <div class="label" style="text-align: center;">
                     <h1 style="color: <?php if($slider->textcolor() == ""){echo "white";} else { echo $slider->textcolor(); } ?>;"><?php echo $slider->title() ?></h1>
                     <div>
