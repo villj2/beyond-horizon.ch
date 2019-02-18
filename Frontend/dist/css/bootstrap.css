@@ -7128,6 +7128,11 @@ footer .row .socialbutton.pinterest {
     margin-top: 117px;
   }
 }
+@media (max-width: 767px) {
+  .jumbotron {
+    max-height: 350px;
+  }
+}
 .jumbotron .page-header {
   border: none;
 }
@@ -7136,6 +7141,12 @@ footer .row .socialbutton.pinterest {
 }
 .jumbotron .label h1 {
   margin-top: 100px;
+}
+@media (max-width: 767px) {
+  .jumbotron .label h1 {
+    margin-top: 80px;
+    font-size: 36px;
+  }
 }
 .jumbotron.empty {
   height: 0;
