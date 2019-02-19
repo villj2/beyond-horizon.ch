@@ -9,8 +9,8 @@ password: >
 language: en
 role: admin
 history:
+  - home
+  - posts/africa/morocco/morocco
+  - posts/europe/preparation/stuff
   - gallery
   - posts
-  - home/reiseroute
-  - posts/america-north/costa-rica/monteverde
-  - posts/america-north/costa-rica
