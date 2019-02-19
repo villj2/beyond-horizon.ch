@@ -7184,16 +7184,14 @@ footer .row .socialbutton.pinterest {
   width: 100%;
 }
 .jumbotron-slider {
-  height: 450px;
+  /*height: 450px;*/
+  /*@media(max-width:@screen-xs-max){
+		height: 500px;
+	}*/
 }
 @media (min-width: 768px) {
   .jumbotron-slider {
     margin-top: 117px;
-  }
-}
-@media (max-width: 767px) {
-  .jumbotron-slider {
-    height: 500px;
   }
 }
 .jumbotron-slider .carousel-inner {
@@ -7567,7 +7565,7 @@ map area {
   text-align: center;
 }
 #posts-teaser {
-  margin-top: 100px;
+  margin-top: 40px;
   margin-bottom: 150px;
 }
 @media (max-width: 767px) {
