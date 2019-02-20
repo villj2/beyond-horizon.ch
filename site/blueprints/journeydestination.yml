@@ -8,3 +8,42 @@ fields:
   description:
     label: Description
     type:  textarea
+  picpreview:
+    label: Vorschaubild
+    type: image
+  pic:
+    label: Bild
+    type: image
+
+  showlinkposts:
+    label: Show Link Posts
+    type: checkbox
+    width: 1/4
+  textlinkposts:
+    label: Text Link Posts
+    type: text
+    width: 3/4
+  filterlinkposts:
+    label: Filter Link Posts
+    type: text
+
+  showlinkgallery:
+    label: Show Link Gallery
+    type: checkbox
+    width: 1/4
+  textlinkgallery:
+    label: Text Link Gallery
+    type: text
+    width: 3/4
+  filterlinkgallery:
+    label: Filter Link Gallery
+    type: text
+
+  showlinkjourney:
+    label: Show Link Journey
+    type: checkbox
+    width: 1/4
+  textlinkjourney:
+    label: Text Link Journey
+    type: text
+    width: 3/4

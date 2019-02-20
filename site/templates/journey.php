@@ -1,31 +1,46 @@
 <?php snippet('header') ?>
 
-	<div class="container container-teaser no-jumbotron">
+	<div id="journey" class="container container-teaser no-jumbotron">
 
 		<div class="row">
-	      	<div class="col-md-12">
+			<div class="col-sm-12">
+				<h1><?= $page->title() ?></h1>
+			</div>
+		</div>
 
-	      		<?php echo $page->imageMapIntro()->text()->kirbytext() ?>
-	          	<br />
+		<?php foreach($page->index()->visible()->filterBy('intendedtemplate', 'journeydestination') as $jd): ?>
 
-	      		<img class="journey-image" src="/Frontend/img/journey/journey_ganz_ps_panda.png" style="width: 100%;"  alt="Reise" title="Reise" />
+			<div class="row">
+		      	<div class="col-md-6 text-area">
+		      		<div class="row">
+		      			<div class="col-md-12">
+		      				<h2><?= $jd->title() ?></h2>
+		      			</div>
+		      		</div>
+			      	<div class="row">
+			      		<div class="col-md-12">
+				      		<?= $jd->description()->html() ?>
+				      	</div>
+			      	</div>
+			      	<br />
+	      			<div class="row">
+	      				<div class="col-md-12">
+			      			<button type="button" class="btn btn-secondary btn-more" style="<?= $jd->showlinkjourney() == '1' ? '' : 'display: none;' ?>" onclick="location.href='<?= $jd->url() ?>'"><?= $jd->textlinkjourney() ?>
+			      			</button>
+			      			<br />
+			      			<button type="button" class="btn btn-secondary btn-more" style="<?= $jd->showlinkposts() == '1' ? '' : 'display: none;' ?>" onclick="location.href='/posts?filter=<?= urlencode($jd->filterlinkposts()) ?>'"><?= $jd->textlinkposts() ?>
+			      			</button>
+			      			<button type="button" class="btn btn-secondary btn-more" style="<?= $jd->showlinkgallery() == '1' ? '' : 'display: none;' ?>" onclick="location.href='/gallery?filter=<?= urlencode($jd->filterlinkgallery()) ?>'"><?= $jd->textlinkgallery() ?>
+			      			</button>
+			      		</div>
+		      		</div>
+		      	</div>
+		      	<div class="col-md-6 pic-area">
+		      		<img src="<?= $jd->contentURL() . "/" . $jd->picpreview() ?>" />
+		      	</div>
+	      	</div>
 
-	          	
-	        </div>
-	    </div>
-	    <!-- <div class="row">
-	        <div class="col-sm-8 col-xs-12" style="position: relative;">
-	          <?php echo $page->imageMap()->html() ?>
-	        </div>
-	        <div class="col-sm-4 col-xs-0"></div>
-	    </div>
-
-	    <?php foreach($page->index() as $journeydestination): ?>
-
-	    	<?php echo $journeydestination->description()->html() ?>
-
-		<?php endforeach ?> -->
-
+		<?php endforeach ?>
 
 	</div>
 

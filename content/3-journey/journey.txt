@@ -1,4 +1,4 @@
-Title: Journey
+Title: Reisen
 
 ----
 
@@ -21,4 +21,4 @@ Imagemap:
 
 ----
 
-Titlemenu: Reise
+Titlemenu: Reisen

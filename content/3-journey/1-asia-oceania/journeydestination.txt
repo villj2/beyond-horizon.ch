@@ -1,0 +1,45 @@
+Title: Asien und Ozeanien (4 Monate)
+
+----
+
+Description: Im Herbst 2016 brachen wir zu unserer bisher weitesten und längsten Reise auf. Wir starteten im Land der aufgehenden Sonne und waren sowohl von der modernen als auch der traditionsreichen Seite <strong>Japans</strong> fasziniert. Bei so viel Kultur traten wir natürlich auch in das eine oder andere Fettnäpfchen. In <strong>Australien</strong> lernten wir beim Schnorcheln am Great Barrier Reef eine völlig neue Dimension kennen. Besonders die Tierwelt des roten Kontinents hat es uns besonders angetan. Das benachbarte <strong>Neuseeland</strong> erkundeten wir mit einem uralten Camper und schafften es sogar bis zum Schicksalsberg. Zum Schluss liessen wir uns im Wolkenkratzerdschungel von <strong>Hong Kong</strong> von der Grossstadthektik mitreissen.
+
+----
+
+Showlinkposts: 1
+
+----
+
+Textlinkposts: Beiträge anzeigen
+
+----
+
+Filterlinkposts: [{"id":"asia","countries":["jp","hk"]},{"id":"oceania","countries":["au","nzn","nzs","tas"]}]
+
+----
+
+Showlinkgallery: 1
+
+----
+
+Textlinkgallery: Bilder anzeigen
+
+----
+
+Filterlinkgallery: [{"id":"asia","countries":[]},{"id":"oceania","countries":[]}]
+
+----
+
+Showlinkjourney: 1
+
+----
+
+Textlinkjourney: Route anzeigen
+
+----
+
+Pic: journey_ganz_ps_panda.png
+
+----
+
+Picpreview: reiseroute-slider-mittelamerika_3.jpg

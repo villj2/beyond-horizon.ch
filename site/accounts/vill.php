@@ -9,8 +9,8 @@ password: >
 language: en
 role: admin
 history:
+  - journey/asia-oceania
+  - journey
+  - home/reiseroute
   - home
   - posts/africa/morocco/morocco
-  - posts/europe/preparation/stuff
-  - gallery
-  - posts

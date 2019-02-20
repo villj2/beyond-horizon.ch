@@ -8295,4 +8295,19 @@ time.icon:focus {
 #filtered-content {
   padding-bottom: 30px;
 }
+#journey button {
+  margin-top: 10px;
+  margin-right: 5px;
+}
+#journey .text-area {
+  margin-bottom: 30px;
+}
+#journey .pic-area {
+  text-align: center;
+  margin-bottom: 50px;
+}
+#journey .pic-area img {
+  width: 100%;
+  max-width: 450px;
+}
 /*# sourceMappingURL=bootstrap.css.map */
