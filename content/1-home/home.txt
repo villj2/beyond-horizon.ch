@@ -66,7 +66,7 @@ Aboutuspic: p1410747_home.jpg
 
 ----
 
-Aboutustext: Wenn immer möglich machen wir uns zu neuen Abenteuern jenseits des Horizontes auf und versuchen, mit unserer Kamera die besten Momente festzuhalten. Unsere Reisen führten uns bereits in das traditionsreiche Japan, zur imposanten Unterwasserwelt Australiens, zu eindrücklichen Landschaften Neuseelands, in das märchenhafte Marokko und weitere magische Orte. Wir sind gespannt, was wir auf unseren Reisen noch alles entdecken werden und lassen dich mit Erlebnisberichten und Fotos gerne daran teilhaben.
+Aboutustext: Wenn immer möglich machen wir uns zu neuen Abenteuern jenseits des Horizontes auf und versuchen, mit unserer Kamera die besten Momente festzuhalten. Unsere Reisen führten uns bereits in das traditionsreiche Japan, zur imposanten Unterwasserwelt Australiens, zu eindrücklichen Landschaften Neuseelands, in das märchenhafte Marokko und viele weitere magische Orte. Wir sind gespannt, was wir auf unseren Reisen noch alles entdecken werden und lassen dich mit Erlebnisberichten und Fotos gerne daran teilhaben.
 
 ----
 
