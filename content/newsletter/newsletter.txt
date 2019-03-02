@@ -5,36 +5,12 @@ Title: Newsletter
 Registrations: 
 
 - 
-  firstname: test
-  lastname: test
-  email: atast@sajdfl.ch
+  firstname: Karin
+  lastname: Lüthi
+  email: karin.luethi@gmail.com
+  date: 2019-02-20 21:05:35
 - 
-  firstname: asdf
-  lastname: sakldfj
-  email: lajsdfl@ajsdlf.ch
-  date: 2019-02-06 20:36:28
-- 
-  firstname: dasjflasdf
-  lastname: asdfasdf
-  email: alfj@jasdlf.ch
-  date: 2019-02-08 13:56:38
-- 
-  firstname: dasjflasdf
-  lastname: asdfasdf
-  email: alfj@jasdlf.ch
-  date: 2019-02-08 13:57:38
-- 
-  firstname: dasjflasdf
-  lastname: asdfasdf
-  email: alfj@jasdlf.ch
-  date: 2019-02-08 13:58:03
-- 
-  firstname: sdaköf
-  lastname: saldfjal
-  email: alsdjfl@jasdklf.ch
-  date: 2019-02-08 23:25:50
-- 
-  firstname: sdaköf
-  lastname: saldfjal
-  email: alsdjfl@jasdklf.ch
-  date: 2019-02-08 23:28:11
+  firstname: Neue Anmeldung
+  lastname: testchen
+  email: hihiohnegsdata@flatus.com
+  date: 2019-03-02 08:50:41
