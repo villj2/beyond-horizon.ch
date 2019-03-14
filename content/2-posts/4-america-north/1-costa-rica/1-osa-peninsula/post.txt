@@ -1,0 +1,56 @@
+Title: Osa Peninsula
+
+----
+
+Textcolor: 
+
+----
+
+Picsonly: 0
+
+----
+
+Hidetitle: 0
+
+----
+
+Date: 2019-03-12
+
+----
+
+Text: 
+
+##Osa Peninsula, Costa Rica
+Unsere Zentralamerikareise starteten wir in San José, der Hauptstadt Costa Ricas. Aufgrund der hohen Mauern und den unzähligen Gittern wirkte sie auf uns nicht sehr einladend. Auch unser Hostel erinnerte mehr an ein Gefängnis. Der Garten war zwar schön, aber der Stacheldraht darum wirkte doch etwas übertrieben. Wir schnappten uns deshalb so bald wie möglich ein SUV und brausten damit erstmal in die Nähe des höchsten Berges des Landes, des Cerro Chirripó. Doch vorerst liessen wir uns vom Navi mehrfach in die Irre führen, welches hier in Costa Rica Einbahnstrassen und blockierte Schotterstrassen gerne übergeht. Endlich dort angekommen, verbrachten wir einige ruhige Tage und beobachteten Vögel von unserer Veranda aus oder kämpften chancenlos gegen eine Invasion Insekten aller Art und Grösse. So kam es, dass wir eines Nachts einige Glühwürmchen in der Hütte hatten, dessen Hinterteile an blinkende LEDs erinnerten.
+
+Unser erstes Highlight war eine Tagestour in den Corcovado Nationalpark. Bereits während der Fahrt in den Ausgangsort Puerto Jiménez auf der Osa Halbinsel sahen wir die ersten Vorboten des Nationalparks: Prächtige rote Aras, die in Zweierformationen majestätisch über den Himmel zogen und einen immensen Krach veranstalten. Mit einem Guide machten wir bei sengender, schon fast tödlicher Hitze, eine etwa 14 Kilometer lange Wanderung an diesen faszinierenden Flecken Erde. Der Trail führte uns an der rauen Pazifikküste entlang und durch überwucherten, sekundären Regenwald. Dabei konnten wir neben Aras jede Menge andere Tiere beobachten: Mehrere Nasenbären, einen Tayra, einen Tukan, alle vier Arten von Affen, die in Costa Rica vorkommen (Klammeraffen, Brüllaffen, Totenkopfäffchen, Kapuzineraffen) und viele Leguane und Echsen. Einmal wurden wir sogar fast von einer über zwei Meter langen Schlange überrannt. Eine andere hätten wir ohne unseren Guide gar nicht erst gesehen, da wir sie schlicht für einen Ast gehalten hätten. Da der Ort aufgrund seiner Abgelegenheit lange Zeit von den Menschen unberührt blieb, entwickelte er sich zu einem der biologisch vielfältigsten Orte der Welt. Mit der Entdeckung von Gold in den 1960er Jahren änderte sich dies jedoch rasch. Seit 1975 seht der Ort mit mehreren Ökosystemen zum Glück unter Naturschutz und kann sich von Neuem entfalten.
+
+<br />
+
+----
+
+Imagejumbotron: jumbo2.jpg
+
+----
+
+Imageteaser: teaser2.jpg
+
+----
+
+Imagemap: map.png
+
+----
+
+Googlemapsimage: bubble2.jpg
+
+----
+
+Googlemapstwolines: 0
+
+----
+
+Lat: 8.562297886349105
+
+----
+
+Lng: -83.50538076407673

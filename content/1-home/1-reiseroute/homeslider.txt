@@ -42,11 +42,11 @@ Linkfilter2: [{"id":"america-north","countries":["cr"]}]
 
 ----
 
-Showlink1: 0
+Showlink1: 1
 
 ----
 
-Showlink2: 0
+Showlink2: 1
 
 ----
 
