@@ -2,7 +2,7 @@
 
 return function($site, $pages, $page) {
 
-	$siblings = $page->siblings(true)->filterBy('picsonly', '!=', '1')->sortby('sort', 'desc');
+	$siblings = $page->siblings(true)->visible()->filterBy('picsonly', '!=', '1')->sortby('sort', 'desc');
 	$next = '';
 	$prev = '';
 
