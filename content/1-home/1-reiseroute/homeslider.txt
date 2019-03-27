@@ -1,4 +1,4 @@
-Title: Mittelamerika
+Title: Zentralamerika
 
 ----
 
@@ -50,4 +50,4 @@ Showlink2: 1
 
 ----
 
-Introtext: Unsere nächste Reise führt uns nach
+Introtext: Wir entdecken gerade

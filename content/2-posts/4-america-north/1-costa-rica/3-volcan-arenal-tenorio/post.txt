@@ -1,0 +1,64 @@
+Title: Volcán Arenal & Tenorio
+
+----
+
+Textcolor: 
+
+----
+
+Picsonly: 0
+
+----
+
+Hidetitle: 0
+
+----
+
+Date: 2019-03-22
+
+----
+
+Text: 
+
+##Volcán Arenal & Tenorio, Costa Rica
+Nach dem nebligen und kühlen Monteverde machten wir uns auf zum wärmeren Tenorio Volcano National Park. Dieser ist nicht nur wegen seinem Vulkan, sondern vor allem wegen seinem kitschig blauen Fluss Rio Celeste bekannt. Wir trauten unseren Augen kaum, da die Farbe dermassen surreal wirkte. Der Legende nach soll Gott die Pinsel in diesem Fluss ausgewaschen haben, nachdem er den Himmel blau gefärbt hatte. Dies klingt für uns aufgeklärte Personen etwas weit hergeholt, da wir nicht an Pinsel glauben...
+
+Einen längeren Aufenthalt hatten wir in La Fortuna eingeplant. Trotzdem konnten wir die Hauptattraktion, den Vulkan Arenal, nie vollständig sehen. Immer versperrte uns irgendeine Wolke die perfekte Sicht. Der Wetterbericht stimmte auch hinten und vorne nicht, da sich Sonnenschein und Regen im Minutentakt abzuwechseln schienen. Das kleine Städtchen wurde bei Touristen vor allem deshalb berühmt, da bis vor einigen Jahren in der Nacht noch ausfliessende Lava des damals aktiven Vulkans beobachtet werden konnte. Heute können hier ähnlich wie in Monteverde alle möglichen Touren unternommen und Wanderungen über ehemalige Lavafelder unternommen werden. Auch gibt es unzählige natürliche heisse Quellen, in denen man den Abend mit einem kühlen Drink in der Hand gemütlich ausklingen lassen kann.
+
+(polaroidstart: )
+(polaroid: butterfly1_polaroid.jpg type: 1)
+(polaroid: butterfly2_polaroid.jpg type: 2)
+(polaroid: butterfly3_polaroid.jpg type: 3)
+(polaroidend: )
+
+Besonders beeindruckt waren wir von zwei ehemaligen Ackerflächen, die Privatpersonen vor rund zwanzig Jahren wieder aufgeforstet haben (Bogarin Trail und Ecocentro Danaus). Es ist unglaublich, welche Artenvielfalt dadurch auf natürlichem Wege in dieser kurzen Zeit wieder entstehen konnte. Besonders auf den geführten Touren konnten wir praktisch auf jedem Quadratmeter irgendeine Spezies entdecken. Und wir hatten sogar das Glück, dass vor unseren Augen ein Three-Toed Sloth vom Baum kletterte. Dies kommt nur gerade einmal in der Woche vor, wenn diese unglaublich langsamen Geschöpfe aufs Töpfchen müssen und dann aus Sicherheitsgründen einen neuen Schlafplatz für die nächste Woche suchen. Wir haben aus Diskretionsgründen nicht das gesamte Spektakel mitverfolgt, das hätte sonst wahrscheinlich auch den ganzen Tag gedauert.
+
+<br />
+
+----
+
+Imagejumbotron: jumbo.jpg
+
+----
+
+Imageteaser: teaser.jpg
+
+----
+
+Imagemap: map.png
+
+----
+
+Googlemapsimage: bubble.jpg
+
+----
+
+Googlemapstwolines: 0
+
+----
+
+Lat: 10.471416
+
+----
+
+Lng: -84.645125
