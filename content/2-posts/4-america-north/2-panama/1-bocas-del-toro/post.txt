@@ -1,0 +1,60 @@
+Title: Bocas del Toro
+
+----
+
+Textcolor: 
+
+----
+
+Picsonly: 0
+
+----
+
+Hidetitle: 0
+
+----
+
+Date: 2019-04-03
+
+----
+
+Text: 
+
+##Bocas del Toro, Panama
+Für den Grenzübertritt nach Panama hatten wir einen Shuttle mit Guide gebucht, der uns durch die wirren Formalitäten an der Grenze führte. Wir mussten etliche Male das Gefährt wechseln und den eigentlichen Übertritt erfolgte zu Fuss über eine kleine Brücke des Rio Sixaola. In Panama ging es mit einem anderen Bus auf auffällig besseren Strassen als in Costa Rica nach Almirante und von dort mit dem Boot nach Bocas Town mit seinen bunten, aufs Wasser gebauten Häusern. Immer mit dabei: Dunkle, und tiefhängende Regenwolken.
+
+Diese waren auch am nächsten Tag noch immer präsent. Es schüttete aus Kübeln, als wir zu unserer vorgebuchten Tagestour zu einigen Orten dieses Archipels aufbrachen. Zum Glück liessen sich die Delfine von diesem Sauwetter nicht abschrecken und spielten vergnügt in der Nähe unseres Bootes. Ohne Sonnenschein wollte beim anschliessenden Besuch der Isla Zapatilla allerdings kein so richtiges Standfeeling aufkommen. Immerhin überzeugte das Riff, das wir wenig später zum Schnorcheln ansteuerten. Und die Küche unserer fast selbstversorgten Lodge, in der wir untergebracht waren.
+
+Tags darauf wurden wir zu einer sehr rustikalen und abgelegeneren Hütte auf der Isla Cristóbal getuckert. Die beiden Tage dort verbrachten wir mit Kayak und SUP fahren, Dschungelwanderungen, Schnorcheln am eigenen Hausriff, das ganz anders war als die bisher besuchten Riffs in Asien und Australien. Die beim Schwimmen plötzlich aufgetauchten Quallen haben uns kurzerhand aus dem Meer vertrieben und ein mulmiges Gefühl hinterlassen, da wir eigentlich geplant hatten, nachts baden zu gehen. Denn an diesem Ort sei die Biolumineszenz extrem ausgeprägt, was bedeutet, dass das Meerwasser durch einen chemischen Prozess, ausgelöst durch Bewegungen, bei völliger Dunkelheit aufleuchtet. Schliesslich überwanden wir uns und sprangen ins stockdunkle, badewannenwarme Meerwasser und waren total verblüfft: Wir fühlten uns wie in einer Szene aus Avatar, als unsere Körper durch die Bewegung von kleinen, blauen Leuchtkörpern bedeckt zu sein schienen. Was für ein einmaliges Erlebnis, inmitten dieser Funken zu schwimmen!
+
+Am nächsten Morgen wurden wir zum ersten Mal in Panama von Sonnenstrahlen geweckt und konnten diesen Ort noch einmal in seiner vollen Pracht erleben. Wir waren wirklich traurig, als wir dieses magische Stückchen Erde bereits wieder verlassen mussten. Was aber blieb, sind die einmaligen Erinnerungen und unzähligen Sandfliegen-Stiche, die sich erst im Nachhinein bemerkbar machten und immer noch höllisch jucken. Damn Sandflies!
+
+<br />
+
+----
+
+Imagejumbotron: jumbo_test.jpg
+
+----
+
+Imageteaser: teaser_test.jpg
+
+----
+
+Imagemap: map2.png
+
+----
+
+Googlemapsimage: bubble_test.jpg
+
+----
+
+Googlemapstwolines: 0
+
+----
+
+Lat: 9.339542694663015
+
+----
+
+Lng: -82.24233782408635

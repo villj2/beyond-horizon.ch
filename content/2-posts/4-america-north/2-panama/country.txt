@@ -1,0 +1,13 @@
+Title: Panama
+
+----
+
+Countrycode: pa
+
+----
+
+Teasericon: 
+
+----
+
+Trip: centralamerica2019

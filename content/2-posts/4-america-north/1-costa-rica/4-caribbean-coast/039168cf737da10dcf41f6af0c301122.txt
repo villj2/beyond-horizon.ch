@@ -1,0 +1,75 @@
+Title: Caribbean Coast
+
+----
+
+Textcolor: 
+
+----
+
+Picsonly: 0
+
+----
+
+Hidetitle: 0
+
+----
+
+Date: 2019-03-30
+
+----
+
+Text: 
+
+##Caribbean Coast, Costa Rica
+Eingeklemmt zwischen Meer und Fluss versprach der abgelegene und nur mit dem Boot oder Flugzeug erreichbare Tortuguero Nationalpark einmalige Natur und Tierbegegnungen. Auf dem Weg dorthin passierten wir riesige Bananenplantagen und mussten sogar einmal anhalten, um einer mit Bananen beladenen Seilbahn den Vortritt zu lassen. In La Pavona liessen wir unser Auto zurück und stiegen auf ein kleines Böötchen um, das uns ins karibische Dorf Tortuguero brachte. Schon nur die Flussfahrt war einmalig und atemberaubend schön. Berühmt ist dieser Ort vor allem für die hunderten Schildkröten, die während der Regenzeit am Strand schlüpfen und ins Meer zu kriechen versuchen. In der zurzeit vorherrschenden Trockenzeit konnten wir dieses Spektakel leider nicht mitverfolgen.  
+
+Um unseren kurzen Aufenthalt möglichst auszureizen, gings auf eine Nachtwanderung, frühmorgens auf eine Kanufahrt und eine Tageswanderung im Nationalpark. Wir durften wieder einiges dazulernen, zum Beispiel, dass Stachelschweine in der Nacht auf Bäumen rumklettern und durch die Beleuchtung der Taschenlampen völlig schockiert, ewigs lange nach unten starren. Am Strand hatten wir die seltene Gegenheit, eine ungefähr 1.5 Meter lange Schildkröte zu bestaunen. Einziger Wehrmutstropfen: Sie wurde kürzlich von einem Jaguar umgebracht und diente bereits etlichen Geiern als Snack. Wieso wir wissen, dass es ein Jaguar war? Unser Guide hat den Tatort fachmännisch analysiert und tatsächlich frische Jaguarspuren entdeckt. Zumindest konnte sie vor ihrem Tode noch Eier im Sand vergraben.
+
+Direkt vor unserer Unterkunft waren wir dabei, Fotos von prächtigen Tukanen zu schiessen, als der Besitzer unseres Hostels uns darauf aufmerksam machte, dass etliche grüne Aras sich in einem Baum in unmittelbarer Nähe niedergelassen hätten. Der Ort war schnell ausfindig gemacht, da mindestens 40 weitere Leute bereits dabei waren, das Spektakel zu beobachten. Sowas passiert wohl auch nur in Costa Rica; Während dem Fotografieren eines herrlich schönen Tieres unterbrochen zu werden, um zu einem noch selteneren und interessanteren Tier zu eilen.
+
+Nach der Abgabe unseres Autos war ursprünglich geplant, mit dem öffentlichen Verkehr von San José nach Cahuita zu fahren. Bis wir feststellten, dass sich der Busbahnhof ausgerechnet mitten in einem üblen Quartier befindet und angeblich sogar Uber-Fahrer sich weigern können, dorthin zu fahren. Deshalb erschien es uns unkomplizierter, einen Shuttle zu buchen, welcher uns direkt von Hotel zu Hotel chauffierte. In Cahuita verbrachten wir zwei Nächte in einem von zwei Franzosen liebevoll gebauten Baumhaus. Wie nicht anders zu erwarten, ging auch dort fast jede Aktivität mit einer Tierbegegnung einher. Beim Warten aufs Taxi ins Städtchen sind uns Green and Black Poison Dart Frogs über den Weg gesprungen, im Pool durften wir mit Kröten planschen und im Zimmer spendete ein grosser Käfer mit zwei Scheinwerfern Licht. 
+
+Da dies unser letzter Beitrag von Costa Rica ist, haben wir unsere Eindrücke von diesem Land einmal zusammengefasst:
+
+<ul style="font-family: 'ralewaylight'; font-size: 1.15em; color: black;">
+<li>Die Tier- und Pflanzenwelt ist hier vielfältiger und farbiger, als in jedem bisher von uns besuchten Land.</li>
+<li>Vor allem in und um San José ist nahezu jedes Gebäude vergittert. Besonders Schulhäuser und Universitäten werden noch zusätzlich durch einen massiven Zaun geschützt und erinnern stark an Gefängnisse.</li>
+<li>Velofahren tun die Ticos nur seeehr langsam und haben alle Mühe, nicht seitlich umzukippen.</li>
+<li>Obwohl Avocados hier heimisch und im Überfluss vorhanden sind, sind diese grünen Beeren noch fast teurer als in der Schweiz. Dafür sind sie unglaublich köstlich. Und ja, es sind Beeren.</li>
+<li>Einen funktionierenden Geldautomaten zu finden, der mit den Schweizer Karten fertig wird, ist ein Ding der Unmöglichkeit.</li>
+<li>Toilettenpapier darf nicht runtergespült werden. Eklig.</li>
+<li>Nahezu alle Grundstücke stehen zum Verkauf.</li>
+<li>Autofahren dauert fast immer doppelt so lange, wie das Navi behauptet. Gründe dafür sind: Laster im Schneckentempo, schlechte, löchrige Strassen und die Ahnungslosigkeit des Navi.</li>
+<li>Auf jedem noch so kleinen Hügel windet es abartig.</li>
+<li>Wir haben gelernt, was Granadillas sind. Und dass eine einzelne Ananas ein bis zwei Jahre heranreifen muss.</li>
+</ul> 
+
+<br />
+
+----
+
+Imagejumbotron: jumbo.jpg
+
+----
+
+Imageteaser: teaser.jpg
+
+----
+
+Imagemap: map.png
+
+----
+
+Googlemapsimage: bubble.jpg
+
+----
+
+Googlemapstwolines: 0
+
+----
+
+Lat: 10.54178741750402
+
+----
+
+Lng: -83.50233233092229
