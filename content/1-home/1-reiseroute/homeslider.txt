@@ -34,11 +34,11 @@ Linktext2: Bilder
 
 ----
 
-Linkfilter1: [{"id":"america-north","countries":["cr"]}]
+Linkfilter1: [{"id":"america-north","countries":["cr", "pa"]}]
 
 ----
 
-Linkfilter2: [{"id":"america-north","countries":["cr"]}]
+Linkfilter2: [{"id":"america-north","countries":["cr", "pa"]}]
 
 ----
 
