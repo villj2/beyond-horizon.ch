@@ -1,0 +1,13 @@
+Title: Mexiko
+
+----
+
+Countrycode: mx
+
+----
+
+Teasericon: 
+
+----
+
+Trip: centralamerica2019

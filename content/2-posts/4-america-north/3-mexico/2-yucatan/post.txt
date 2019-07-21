@@ -1,0 +1,80 @@
+Title: Yucatán
+
+----
+
+Textcolor: 
+
+----
+
+Picsonly: 0
+
+----
+
+Hidetitle: 0
+
+----
+
+Date: 2019-04-21
+
+----
+
+Text: 
+
+##Yucatán, Mexiko
+Nur etwa zwei Autostunden von Tulum entfernt, verbrachten wir zwei Nächte in Valladolid und hatten das erste Mal das Gefühl, in Mexiko angekommen zu sein. Die Häuser waren plötzlich bunter, der Verputz blätterte ab, die Autos waren älter und Touristen nicht mehr omnipräsent. Von diesem Städtchen aus erkundeten wir die berühmteste aller Ruinen, Chichén Itzá, die zu einem der neuen sieben Weltwundern erklärt wurde und darum mehr als fünfmal soviel kostete wie die anderen Ruinen. Plötzlich kam aus unerklärlichen Gründen das starke Verlangen auf, das Game "Age of Empires II" zu spielen. Überall auf dem Gelände wimmelte es von Hunderten von Verkaufsständen, die von handgeschnitzten Skulpturen über Miniatur-Ruinen aus Fischknochen alles an den Mann bringen wollten. Und für alles hatten sie den gleichen Spruch auf Lager: «¡Hola! One Dollar! Good Price! Good Material!» Ganz bestimmt…
+
+Auf dem Weg nach Mérida, der Kulturhauptstadt Yucatáns, machten wir einen Abstecher in das gelbe Städtchen Izamal. Egal wo man im Kern dieser Ortschaft auch hinsah, alles erschien knallgelb, als hätte man zu lange in die Sonne gestarrt. In Mérida bezogen wir für drei Nächte ein Zimmer in einem ultraschicken altertümlichen Haus. Es war traumhaft, allerdings für unseren Geschmack etwas zu dekadent. Obwohl wir eine Zeit lang die einzigen Gäste waren, wimmelte es nur so von Hausmädchen – und aggressiven Mücken. Wir konnten den tollen Pool gar nicht wirklich geniessen, ohne andauernd gepikst zu werden. Von Mérida aus besuchten wir die Ruinen von Uxmal, die uns von allen am besten gefielen. Die Mayas hatten sich bei der Verzierung dieser Ruine etwas mehr ins Zeug gelegt und durch das weitläufige Gelände verteilten sich auch die Besucher besser. Die Gebäude sind ausserdem in relativ gutem Zustand, was einen zu einer besseren Vorstellung der damals blühenden Stadt verhilft. Neben dem Herumkraxeln auf Ruinen machten wir auch immer mal wieder einen Abstecher in fantastisch anmutende Cenotes. Bei Temperaturen von bis zu 39 Grad eine absolute Wohltat.
+
+(polaroidstart: )
+(polaroid: cenote2_polaroid.jpg type: 1)
+(polaroid: cenote1_polaroid.jpg type: 2)
+(polaroid: cenote3_polaroid.jpg type: 3)
+(polaroidend: )
+
+Den letzten Abend verbrachten wir in Río Lagartos, ganz im Norden von Yucatán. Dort in der Nähe gibt es kitschige pinkene Seen zu bestaunen (dank Selfietouristen, die in 15cm tiefem Wasser wohl ersaufen würden, nur noch mit Guide), die so gar nicht in die Landschaft zu passen scheinen. Tatsächlich rührt die Farbe von Los Colorados nicht von einem natürlichen Prozess her, sondern ist auf den Zusatz von Chemikalien bei der Salzgewinnung von der daneben stehenden Salzfabrik zurückzuführen. Natürlich sei dieser Cocktail für Mensch und Umwelt komplett ungefährlich, mit dem Wasser in Berührung zu kommen ist aber strikt untersagt... Zurück in Río Lagartos hatten wir eine Sonnenuntergangstour durch das Naturreservat gebucht, die uns zu Hunderten von pinkenen Flamingos und etlichen anderen Vogelarten führte. Eigentlich wollten wir den Abend dann gemütlich in diesem kleinen Hafenstädtchen ausklingen lassen. Leider machte uns das vorgebuchte Hotel einen Strich durch die Rechnung, da sie nichts von unserer Buchung wissen wollten (An dieser Stelle auch herzlichen Dank an Booking.com für die immer noch nicht eingetroffene Unterstützung und das Blockieren eines entsprechenden Ratings). Da die restlichen beiden Unterkünfte in diesem Kaff an diesem Osterwochenende restlos ausgebucht waren, waren wir gezwungen, in der anbrechenden Dunkelheit zur nächstgelegenen Unterkunft in fünfzig Kilometern Entfernung zu düsen. Dort landeten wir in einem mexikanischen Städtchen, wo wir wahrscheinlich die einzigen Touristen weit und breit waren und sogar so exotisch wirkten, dass wir vom Rezeptionisten fotografiert wurden. Auch einmal etwas anderes im touristischen Yucatán.
+
+Unsere Eindrücke nach knapp zwei Wochen Mexiko:
+
+<ul style="font-family: 'ralewaylight'; font-size: 1.15em; color: black;">
+<li>Tequila wird mit einer Limette serviert, nicht mit Salz und Zitrone.</li>
+<li>Fast in jedem mexikanischen Essen steckt Koriander.</li>
+<li>Polizisten sind wirklich korrupt, wir haben es am eigenen Leib erlebt. Zum Glück hatten wir in weiser Voraussicht zu diesem Zeitpunkt praktisch kein Geld im Portemonnaie gehabt, so dass es für uns ziemlich günstig und für die Polizistin nicht sehr lukrativ verlief.</li>
+<li>Es gibt in Mexiko immer noch viele Mayas.</li>
+<li>Mexikanische Autobahnen sind richtig teuer.</li>
+<li>Im Radio läuft häufig klassische mexikanische Musik, genau wie wir uns dies vorgestellt haben.</li>
+<li>Wir haben während unserem ganzen Aufenthalt nicht einen Esel gesehen. Stattdessen scheinen Tuktuks recht verbreitet zu sein.</li>
+<li>Die Mexikaner lieben scharfe Saucen. In jedem Supermarkt gibt es mindestens ein grosses Regal davon. Klar haben wir Saucen jeder Geschmacksrichtung und Farbe als Souvenir heimgeflogen.</li>
+<li>Ohne Saucen ist mexikanisches Essen statt wie erhofft feurig würzig meist fade und langweilig.</li>
+<li>Statt Radarfallen gibt es sehr pragmatisch in jedem Dorf Bremsschwellen (sogenannte "Topes"), die leicht zu einem Achsenbruch führen könnten.</li>
+<li>Englisch ist kaum ein Thema.</li>
+</ul>
+
+</br>
+
+----
+
+Imagejumbotron: jumbo.jpg
+
+----
+
+Imageteaser: teaser.jpg
+
+----
+
+Imagemap: map.png
+
+----
+
+Googlemapsimage: bubble.jpg
+
+----
+
+Googlemapstwolines: 0
+
+----
+
+Lat: 20.967143
+
+----
+
+Lng: -89.623093

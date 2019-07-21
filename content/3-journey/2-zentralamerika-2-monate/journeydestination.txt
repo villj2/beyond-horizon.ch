@@ -1,0 +1,45 @@
+Title: Zentralamerika (2 Monate)
+
+----
+
+Description: Im Frühjahr 2019 machten wir uns auf den Weg, um Zentralamerika zu entdecken. Wir begannen unser Abenteuer in <strong>Costa Rica</strong> und waren hin und weg von der Artenvielfalt, die dieses Land zu bieten hat. Noch nie hatten wir innerhalb so kurzer Zeit so viele verschiedene Tiere gesehen. In <strong>Panama</strong> verbrachten wir einige entspannte Tage auf selbstversorgten, einsamen Inseln und badeten an den paradiesischsten Stränden, die wir je gesehen haben. Altertümliche Maya-Ruinen und traumhafte Cenotes lockten uns anschliessend nach <strong>Mexiko</strong>, bevor wir unsere Reise in <strong>New York City</strong> inmitten der alten und neuen Wolkenkratzer und umgeben von gelben Taxis ausklingen liessen.
+
+----
+
+Picpreview: reisen_zentralamerika-2.jpg
+
+----
+
+Pic: 
+
+----
+
+Showlinkposts: 1
+
+----
+
+Textlinkposts: Beiträge anzeigen
+
+----
+
+Filterlinkposts: [{"id":"america-north","countries":["cr","pa","mx","us"]}]
+
+----
+
+Showlinkgallery: 1
+
+----
+
+Textlinkgallery: Bilder anzeigen
+
+----
+
+Filterlinkgallery: [{"id":"america-north","countries":[]}]
+
+----
+
+Showlinkjourney: 0
+
+----
+
+Textlinkjourney: Route anzeigen

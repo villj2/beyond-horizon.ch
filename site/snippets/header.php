@@ -62,6 +62,8 @@
     <!-- Pinterest -->
     <!--<script async defer src="//assets.pinterest.com/js/pinit.js"></script>-->
 
+    <meta name="p:domain_verify" content="a8abe03c6ae6f1e32d6481a562113248"/>
+
     <!-- Facebook -->
     <!--<div id="fb-root"></div>
     <script>(function(d, s, id) {

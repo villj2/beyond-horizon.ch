@@ -1,0 +1,13 @@
+Title: USA
+
+----
+
+Countrycode: us
+
+----
+
+Teasericon: preparation
+
+----
+
+Trip: centralamerica2019

@@ -34,11 +34,11 @@ Linktext2: Bilder
 
 ----
 
-Linkfilter1: [{"id":"america-north","countries":["cr", "pa"]}]
+Linkfilter1: [{"id":"america-north","countries":["cr", "pa", "mx", "us"]}]
 
 ----
 
-Linkfilter2: [{"id":"america-north","countries":["cr", "pa"]}]
+Linkfilter2: [{"id":"america-north","countries":["cr", "pa", "mx", "us"]}]
 
 ----
 
@@ -50,4 +50,4 @@ Showlink2: 1
 
 ----
 
-Introtext: Wir entdecken gerade
+Introtext: Unsere letzte Reise führte uns nach

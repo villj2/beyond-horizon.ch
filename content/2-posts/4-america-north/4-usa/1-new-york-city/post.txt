@@ -1,0 +1,62 @@
+Title: New York City
+
+----
+
+Textcolor: 
+
+----
+
+Picsonly: 0
+
+----
+
+Hidetitle: 0
+
+----
+
+Date: 2019-04-25
+
+----
+
+Text: 
+
+##New York City, USA
+Auf dem Rückweg von Zentralamerika unternahmen wir einen kleinen Umweg über New York City, da diese Stadt schon länger auf unserer Bucket Liste stand. Nach einem wunderschönen Anflug bei Sonnenuntergangsstimmung landeten wir am JFK International Airport und waren total überrascht, dass wir innerhalb einer halben Stunde den Zoll passiert hatten und unser Gepäck nicht noch wie in Mexiko völlig durchgekämmt wurde. Wir bezogen unser Hotel in der Nähe des Times Squares und freuten uns riesig, dass wir ein Upgrade und damit ein grösseres Zimmer im obersten Stock zugeteilt bekamen. Das Zimmer war für New Yorker-Verhältnisse sicher ganz in Ordnung, der Ausblick von unserem Fenster auf einen 28. Stockwerke tiefen Schacht fiel allerdings etwas bescheiden aus. Auch die langen Liftfahrten in diesen alten, klapprigen und unglaublich lauten Fahrstühlen waren nichts für klaustrophobische Personen. 
+
+Aber genau dies macht den Charme dieser Stadt unserer Meinung nach aus: Hier gibt es nicht nur topmoderne Wolkenkratzer aus Glas, sondern geschichtsträchtige, vor Jahrzehnten mühsam erbaute Hochhäuser und Brücken aus Stahl. Beeindruckt von diesen menschenerbauten Meisterwerken genossen wir das Umherschlendern zwischen all diesen hohen Häusern und entdeckten dabei ganz unterschiedliche Nachbarschaften: Quartiere aus Backsteinbauten mit den klassischen Vortreppen, die Wall Street, die uns aus Filmen bekannt vorkam, das trendige Soho und das chaotische China Town sowie das mafiöse Little Italy, wo wir urplötzlich Lust auf eine mediterrane Pizza bekamen. Unser kulinarisches Highlight dieser Reise erlebten wir aber im hipsterigen Chelsea Market. Bei diesem Markt handelt es sich um eine Art Markthalle, wie sie früher in Bern anzutreffen war. Per Zufall bestellten wir in einem der kleinen Restaurants einen Impossible Burger und können immer noch nicht glauben, dass es sich dabei um einen Veggie-Burger handelte, so authentisch war dieses Imitat! Das Burger-Handwerk verstehen die New Yorker in der Tat.
+
+Dem Grossstadttrubel konnten wir im Central Park wunderbar entfliegen. Inmitten von hübschen Wegen durch kleine Wälder, künstlich angelegten Wasserfällen und umgeben von Vogelgezwitscher und Eichhörnchen hatten wir nicht mehr das Gefühl, uns in einer Grossstadt zu befinden. Der Park war sogar grösser und weitläufiger, als wir erwartet hatten. Unser Vorhaben, diesen von oben bis unten zu durchlaufen, mussten wir aus Zeitgründen vorzeitig abbrechen, um noch die restlichen Sehenswürdigkeiten «abarbeiten» zu können.
+
+Pflicht war natürlich ein Sightseeing der Freiheitsstatue. Die Gratisfähre zur Staten Island dient offensichtlich nur dazu, hunderte Touristen neben der Statue durchtuckern zu lassen. Niemand interessierte sich für die eigentliche Destination, alle stürmten nach dem Landen sofort wieder den Pier für die Rückfahrt. Erstaunlicherweise ist die Fähre auch nicht gekippt, da sich alle auf die Seite der Statue zwängen mussten. Weiter zum Programm gehörte die Aussicht von oben auf das Wolkenkratzermeer, welche wir bei einem Drink im Restaurant «The View» genossen, das sich ähnlich wie das Restaurant auf dem Schilthorn einmal in der Stunde dreht. Nur dass man von dort nicht die Berglandschaft, sondern das Lichtermeer, bestehend aus hunderten von Hochhäusern, bestaunen kann. Ebenfalls besuchten wir die Plattform «Top of the Rock» auf dem Rockefeller Center, wo wir um einen der heiss begehrten Plätze für das Fotografieren des Sonnenunterganges richtiggehend kämpfen mussten.
+
+Leider vergingen die vier Tage in New York City wie auch unsere ganze Zentralamerikareise wie im Flug. Um sehr viele schöne Erlebnisse und Erfahrungen reicher, werden wir uns noch lange an dieses Reisekapitel zurückerinnern.
+
+</br>
+
+----
+
+Imagejumbotron: jumbo-test1.jpg
+
+----
+
+Imageteaser: teaser-test11.jpg
+
+----
+
+Imagemap: map.png
+
+----
+
+Googlemapsimage: bubble-test1.jpg
+
+----
+
+Googlemapstwolines: 0
+
+----
+
+Lat: 40.7419439742894
+
+----
+
+Lng: -73.97583887008545
