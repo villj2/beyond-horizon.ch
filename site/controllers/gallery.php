@@ -60,19 +60,19 @@ function createContinentURL($currentContinentUID, $qsContinents) {
 	$url = "";
 	$key = array_search($currentContinentUID, $qsContinents);
 
-	if(isset($key))
+	// If current continent exists in query-string continents, remove it from array. Because when clicking on already active continent, the own continent should disappear.
+	// Otherwise add to array.
+	if(is_int($key))
 	{
     	unset($qsContinents[$key]);
     	// TODO re-index array?
 	}
 	else
 	{
-
+		array_push($qsContinents, $currentContinentUID);
 	}
-
-	print_r($qsContinents);
 	
-	//$url = "continents".explode(',', $qsContinents);
+	$url = "?continents=" . ltrim(implode(',', $qsContinents), ',');
 
 	return $url;
 }
