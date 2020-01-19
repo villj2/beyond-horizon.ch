@@ -7472,6 +7472,7 @@ ul.nav a:hover {
   display: block;
   margin: 0 auto;
 }
+#list-countries a,
 button {
   display: inline-block;
   border: 1px solid black;
@@ -7479,13 +7480,17 @@ button {
   padding: 10px 20px;
   margin: 10px 5px;
 }
+#list-countries a.active,
 button.active {
   background-color: #E6E6E6;
 }
+#list-countries a:active,
 button:active,
+#list-countries a:focus,
 button:focus {
   outline: none;
 }
+#list-countries a:disabled,
 button:disabled {
   opacity: 0.4;
 }
@@ -8156,6 +8161,9 @@ time.icon:focus {
 }
 .ug-textpanel {
   overflow: visible;
+}
+#list-countries a {
+  color: black;
 }
 .about .polaroid {
   margin-top: 50px;

@@ -4,23 +4,22 @@ return function($site, $pages, $page) {
 
 	$debug = "";
 
-	// Get all continent entries
+	// Get all CMS continent entries
 	$continents = page('posts')->children()->sortBy('sort', 'desc');
 
-	// Get query strings
+	// Get query string continents
 	$qsContinents = array();
-	$qsContinentsString = "";
 	if(isset($_GET["continents"])) {
 		$qsContinents = explode(',', $_GET["continents"]);
-		$qsContinentsString = $_GET["continents"];
 	}
 	
+	// Get query string countries
 	$qsCountries = array();
 	if(isset($_GET["countries"])) {
 		$qsCountries = explode(',', $_GET["countries"]);
 	}
 
-	$countries = array(); //[[ma, Marokko, <url>], [us, USA, <url>], [cr, Costa Rica, <url>]]
+	$countries = array(); //[[<countrycode>, <title>, <continent>, <url>, "active"|""], [...]]
 
 	$continentDict = array();
 
@@ -39,7 +38,15 @@ return function($site, $pages, $page) {
 			// Get all COUNTRIES from selected continent
 			foreach($continent->children()->visible() as $country) {
 
-				array_push($countries, [$country->countrycode(), $country->title(), "/goat"]); //[countrycode, title, url]
+				$countryCode = strtolower($country->countrycode());
+				$countryDict = array();
+				$countryDict["countrycode"] = $countryCode;
+				$countryDict["title"] = $country->title();
+				$countryDict["continent"] = $continentUID;
+				$countryDict["url"] = createCountryURL($countryCode, $qsCountries, $qsContinents);
+				$countryDict["active"] = in_array($countryCode, $qsCountries) ? "active" : "";
+
+				array_push($countries, $countryDict);
 			}
 		}
 		else
@@ -48,11 +55,10 @@ return function($site, $pages, $page) {
 		}
 	}
 
-	return compact('continents',
-		'qsContinents',
-		'continentDict',
-		'countries',
-		'debug');
+	// Grab galleries
+
+
+	return compact('continentDict', 'countries', 'debug');
 };
 
 function createContinentURL($currentContinentUID, $qsContinents) {
@@ -66,13 +72,37 @@ function createContinentURL($currentContinentUID, $qsContinents) {
 	{
     	unset($qsContinents[$key]);
     	// TODO re-index array?
+
+    	// TODO create country query string without countries belonging to just removed continent
 	}
 	else
 	{
 		array_push($qsContinents, $currentContinentUID);
 	}
 	
-	$url = "?continents=" . ltrim(implode(',', $qsContinents), ',');
+	$url = "?continents=" . trim(implode(',', $qsContinents), ',');
+
+	return $url;
+}
+
+function createCountryURL($countryCode, $qsCountries, $qsContinents) {
+
+	$urlContinentPrefix = createContinentURL("", $qsContinents);
+
+	$url = "";
+	$key = array_search($countryCode, $qsCountries);
+
+	if(is_int($key))
+	{
+    	unset($qsCountries[$key]);
+    	// TODO re-index array?
+	}
+	else
+	{
+		array_push($qsCountries, $countryCode);
+	}
+
+	$url = $urlContinentPrefix . "&countries=" . trim(implode(',', $qsCountries), ',');
 
 	return $url;
 }

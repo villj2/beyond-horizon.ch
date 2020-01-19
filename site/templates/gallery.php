@@ -5,24 +5,6 @@
     <div class="row">
         <div class="col-md-12">
             <h1>Galerie</h1>
-            <p>
-                
-                <?php foreach($qsContinents as $qsContinent): ?>
-
-                    <?php echo $qsContinent ?>
-                
-                <?php endforeach ?>
-            </p>
-
-            <p>
-                <?php foreach($countries as $country): ?>
-
-                    <?php echo $country[0] . ": " . $country[1] ?>
-
-                    <br/>
-                
-                <?php endforeach ?>
-            </p>
 
             <p>
                 Debug: 
@@ -557,12 +539,23 @@
 
                 <?php foreach($countries as $country): ?>
 
-                    <button class="list-country" data-url="<?=$country[2];?>"><?=$country[1];?></button>
+                    <a href="<?=$country['url'];?>" target="_self" class="<?=$country['active'];?>"><?=$country['title'];?></a>
 
                 <?php endforeach ?>
           
             </div>
 
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <div id="filtered-content">
+                <div class="gallery-title-container">
+                    <h2>Hiroshima</h2>
+                    <h4>Japan</h4>
+                </div>
+            </div>
         </div>
     </div>
 
