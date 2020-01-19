@@ -7,3 +7,7 @@ Title: America-North
 ----
 
 Titlefrontend: Nordamerika
+
+----
+
+Showonmap: 1

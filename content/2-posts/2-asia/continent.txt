@@ -11,3 +11,7 @@ Titlefrontend: Asien
 ----
 
 Hideonmap: 0
+
+----
+
+Showonmap: 1

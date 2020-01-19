@@ -11,3 +11,7 @@ Titlefrontend: Afrika
 ----
 
 Hideonmap: 0
+
+----
+
+Showonmap: 1

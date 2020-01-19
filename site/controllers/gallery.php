@@ -2,14 +2,77 @@
 
 return function($site, $pages, $page) {
 
-	$continents = $pages->index()->filterBy('intendedTemplate', 'continent')->sortBy('sort', 'desc');
-	$hasEntriesDict = array();
-	$galleryIndex = 0;
+	$debug = "";
 
-	foreach($continents as $continent) {
+	// Get all continent entries
+	$continents = page('posts')->children()->sortBy('sort', 'desc');
 
-		$hasEntriesDict[strtolower($continent->title())] = $continent->children()->visible()->count() > 0 ? 'has-entries' : '';
+	// Get query strings
+	$qsContinents = array();
+	$qsContinentsString = "";
+	if(isset($_GET["continents"])) {
+		$qsContinents = explode(',', $_GET["continents"]);
+		$qsContinentsString = $_GET["continents"];
+	}
+	
+	$qsCountries = array();
+	if(isset($_GET["countries"])) {
+		$qsCountries = explode(',', $_GET["countries"]);
 	}
 
-	return compact('continents', 'hasEntriesDict', 'galleryIndex');
+	$countries = array(); //[[ma, Marokko, <url>], [us, USA, <url>], [cr, Costa Rica, <url>]]
+
+	$continentDict = array();
+
+	// Loop over CONTINENTS
+	foreach($continents as $continent) {
+
+		$continentUID = strtolower($continent->uid());
+		$continentDict[$continentUID."-hasEntries"] = $continent->children()->visible()->count() > 0 ? 'has-entries' : '';
+		$continentDict[$continentUID."-url"] = createContinentURL($continentUID, $qsContinents);
+		
+		// Check if looped continent exists in selected continents (from map)
+		if(in_array($continentUID, $qsContinents)) {
+
+			$continentDict[$continentUID."-isActive"] = "active";
+
+			// Get all COUNTRIES from selected continent
+			foreach($continent->children()->visible() as $country) {
+
+				array_push($countries, [$country->countrycode(), $country->title(), "/goat"]); //[countrycode, title, url]
+			}
+		}
+		else
+		{
+			$continentDict[$continentUID."-isActive"] = "";
+		}
+	}
+
+	return compact('continents',
+		'qsContinents',
+		'continentDict',
+		'countries',
+		'debug');
 };
+
+function createContinentURL($currentContinentUID, $qsContinents) {
+
+	$url = "";
+	$key = array_search($currentContinentUID, $qsContinents);
+
+	if(isset($key))
+	{
+    	unset($qsContinents[$key]);
+    	// TODO re-index array?
+	}
+	else
+	{
+
+	}
+
+	print_r($qsContinents);
+	
+	//$url = "continents".explode(',', $qsContinents);
+
+	return $url;
+}
