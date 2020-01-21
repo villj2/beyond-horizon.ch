@@ -522,7 +522,7 @@
     <div id="continent-map-filtering" class="row">
       <div class="col-md-12">
 
-        <div id="arrow" class="hide">
+        <div id="arrow" class="<?php echo !$showInstructions ? "hide" : ""; ?>">
           <img src="/Frontend/img/arrow_gallery_teaser_mirrored.png" />
           <div id="click-teaser">
             <?php echo $page->arrowtext() ?>
@@ -551,10 +551,6 @@
     <div class="row">
         <div class="col-md-12">
             <div id="filtered-content">
-                <!-- <div class="gallery-title-container">
-                    <h2>Hiroshima</h2>
-                    <h4>Japan</h4>
-                </div> -->
 
                 <?= $galleryEntriesHtml; ?>
 

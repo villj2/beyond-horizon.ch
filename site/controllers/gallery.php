@@ -19,9 +19,9 @@ return function($site, $pages, $page) {
 		$qsCountries = explode(',', $_GET["countries"]);
 	}
 
-	$countries = array(); //[[<countrycode>, <title>, <continent>, <url>, "active"|""], [...]]
+	$countries = array();
 	$continentDict = array();
-
+	$showInstructions = true;
 	$galleryEntriesHtml = "";
 
 	// Loop over CONTINENTS
@@ -36,6 +36,8 @@ return function($site, $pages, $page) {
 		// Check if looped continent exists in selected continents (from map)
 		if(in_array($continentUID, $qsContinents))
 		{
+			$showInstructions = false;
+
 			$continentDict[$continentUID."-isActive"] = "active";
 
 			// Get all COUNTRIES from selected continent
@@ -44,9 +46,7 @@ return function($site, $pages, $page) {
 				$countryCode = strtolower($country->countrycode());
 				$countrySelected = in_array($countryCode, $qsCountries);
 				$countryDict = array();
-				$countryDict["countrycode"] = $countryCode;
 				$countryDict["title"] = $country->title();
-				$countryDict["continent"] = $continentUID;
 				$countryDict["url"] = createCountryURL($countryCode, $qsCountries, $qsContinents);
 				$countryDict["active"] = $countrySelected ? "active" : "";
 
@@ -116,7 +116,7 @@ return function($site, $pages, $page) {
 	}
 
 
-	return compact('continentDict', 'countries', 'galleryEntriesHtml', 'debug');
+	return compact('continentDict', 'countries', 'galleryEntriesHtml', 'showInstructions', 'debug');
 };
 
 function createContinentURL($currentContinentUID, $qsContinents) {
