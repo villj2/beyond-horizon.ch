@@ -8128,7 +8128,6 @@ time.icon:focus {
 .gallery-title-container {
   text-align: left;
   margin: 30px 0;
-  padding: 0 8px;
 }
 .gallery-title-container h2,
 .gallery-title-container h3,
@@ -8138,10 +8137,6 @@ time.icon:focus {
 .gallery-title-container img {
   margin-bottom: 5px;
   height: 15px;
-}
-#filtered-content h1,
-#filtered-content h3 {
-  padding-left: 8px;
 }
 #filtered-content h2,
 #filtered-content h3,
@@ -8164,6 +8159,36 @@ time.icon:focus {
 }
 #list-countries a {
   color: black;
+}
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+@media screen and (max-width: 991px) {
+  .grid-sizer,
+  .grid-item {
+    width: 48%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .grid-sizer,
+  .grid-item {
+    width: 31%;
+  }
+}
+.gutter-sizer {
+  width: 10px;
+}
+.grid-item {
+  float: left;
+  /*margin-bottom: 10px;*/
+}
+.grid-item img {
+  padding: 0;
+  display: block;
+  width: 100%;
+  margin-bottom: 4%;
 }
 .about .polaroid {
   margin-top: 50px;

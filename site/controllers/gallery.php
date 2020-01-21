@@ -20,45 +20,103 @@ return function($site, $pages, $page) {
 	}
 
 	$countries = array(); //[[<countrycode>, <title>, <continent>, <url>, "active"|""], [...]]
-
 	$continentDict = array();
 
-	// Loop over CONTINENTS
-	foreach($continents as $continent) {
+	$galleryEntriesHtml = "";
 
+	// Loop over CONTINENTS
+	foreach($continents as $continent)
+	{
 		$continentUID = strtolower($continent->uid());
 		$continentDict[$continentUID."-hasEntries"] = $continent->children()->visible()->count() > 0 ? 'has-entries' : '';
 		$continentDict[$continentUID."-url"] = createContinentURL($continentUID, $qsContinents);
-		
-		// Check if looped continent exists in selected continents (from map)
-		if(in_array($continentUID, $qsContinents)) {
 
+		$continentTitleWritten = false;
+
+		// Check if looped continent exists in selected continents (from map)
+		if(in_array($continentUID, $qsContinents))
+		{
 			$continentDict[$continentUID."-isActive"] = "active";
 
 			// Get all COUNTRIES from selected continent
-			foreach($continent->children()->visible() as $country) {
-
+			foreach($continent->children()->visible() as $country)
+			{
 				$countryCode = strtolower($country->countrycode());
+				$countrySelected = in_array($countryCode, $qsCountries);
 				$countryDict = array();
 				$countryDict["countrycode"] = $countryCode;
 				$countryDict["title"] = $country->title();
 				$countryDict["continent"] = $continentUID;
 				$countryDict["url"] = createCountryURL($countryCode, $qsCountries, $qsContinents);
-				$countryDict["active"] = in_array($countryCode, $qsCountries) ? "active" : "";
+				$countryDict["active"] = $countrySelected ? "active" : "";
 
 				array_push($countries, $countryDict);
+
+				// Get galleries from selected country
+				if($countrySelected)
+				{
+					if(!$continentTitleWritten)
+					{
+						$continentTitleWritten = true;
+						$galleryEntriesHtml .= '<div class="row"><div class="col-md-12"><h1>' . $continent->title() . '</h1>';
+					}
+
+					foreach($country->children()->visible() as $post)
+					{
+						$galleryEntriesHtml .= '<div class="gallery-title-container">
+													<h2>' . $post->title() . '</h2>
+													<h4>' . $country->title() . '</h4>';
+
+						if(!$post->picsonly()->bool())
+						{
+							$galleryEntriesHtml .= '<a href="'. $post->url() . '" target="_self" title="Zum Beitrag">
+														<img src="/assets/images/link.png">
+													</a>';
+						}
+
+						$galleryEntriesHtml .= '</div>
+												<div class="grid">
+													<div class="grid-sizer"></div>
+													<div class="gutter-sizer"></div>';
+
+						$gallery = $post->children()->filterBy('intendedTemplate', 'postgallery');
+
+						foreach($gallery->images()->sortBy('sort', 'asc') as $image)
+						{
+                            if(!strpos($image->filename(), 'preview'))
+                            {
+                            	$imgUrl = $image->url();
+                            	$imgUrlPreview = str_replace(".jpg", "_preview.jpg", $imgUrl);
+
+								$galleryEntriesHtml .= '
+									<div class="grid-item">
+					                  <a href="' . $imgUrl . '" data-fancybox="images" data-caption="' . $image->description() . '">
+					                  	<img src="' . $imgUrlPreview . '" alt="" />
+					                  </a>
+					                </div>';
+                            }
+						}
+
+						// Close grid div
+						$galleryEntriesHtml .= "</div>";
+					}
+				}
+			}
+
+			if($continentTitleWritten)
+			{
+				$galleryEntriesHtml .= "</div></div>";
 			}
 		}
 		else
 		{
 			$continentDict[$continentUID."-isActive"] = "";
 		}
+
 	}
 
-	// Grab galleries
 
-
-	return compact('continentDict', 'countries', 'debug');
+	return compact('continentDict', 'countries', 'galleryEntriesHtml', 'debug');
 };
 
 function createContinentURL($currentContinentUID, $qsContinents) {

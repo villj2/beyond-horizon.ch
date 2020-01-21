@@ -6,10 +6,10 @@
         <div class="col-md-12">
             <h1>Galerie</h1>
 
-            <p>
+            <!-- <p>
                 Debug: 
                 <?php echo $debug ?>
-            </p>
+            </p> -->
 
         </div>
     </div>
@@ -551,10 +551,13 @@
     <div class="row">
         <div class="col-md-12">
             <div id="filtered-content">
-                <div class="gallery-title-container">
+                <!-- <div class="gallery-title-container">
                     <h2>Hiroshima</h2>
                     <h4>Japan</h4>
-                </div>
+                </div> -->
+
+                <?= $galleryEntriesHtml; ?>
+
             </div>
         </div>
     </div>
