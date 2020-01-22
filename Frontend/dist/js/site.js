@@ -312,7 +312,6 @@ $(document).ready(function() {
         $grid.masonry('layout');
     });
 
-
     $('[data-fancybox="images"]').fancybox({
         buttons : [
             'close'

@@ -5,6 +5,11 @@
 		<div class="row">
 			<div class="col-md-12">
 				<h1>Beiträge</h1>
+
+				<!-- <p>
+	                Debug: 
+	                <?php echo $debug ?>
+	            </p> -->
 			</div>
 		</div>
 
@@ -13,7 +18,7 @@
 				<div id="continent-map">
 					<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="200 200 1200 600">
 						<g>
-							<path id="america-south" class="continent <?php echo $hasEntriesDict['america-south'] ?>" d="M505.703,557.02c0,0,4.3,4.301,3.899,8.6c-0.399,4.301,2.601,6.801-0.399,9.4s-7.7,6.801-8.601,9.801
+							<path id="america-south" class="continent <?php echo $continentDict['america-south-hasEntries'] ?> <?php echo $continentDict['america-south-isActive'] ?>" data-url="<?php echo $continentDict['america-south-url'] ?>" d="M505.703,557.02c0,0,4.3,4.301,3.899,8.6c-0.399,4.301,2.601,6.801-0.399,9.4s-7.7,6.801-8.601,9.801
 								c-0.899,3-3,8.1-0.399,9c2.6,0.898-5.101,3.398-2.601,7.699c2.601,4.301,5.101,7.301,7.3,12c2.101,4.699,8.101,14.1,9,18
 								c0.9,3.9,2.601,3.9,6.9,6.4c4.3,2.6,10.7,7.299,10.7,7.299s1.7,10.701,0,21c-1.7,10.301-2.2,16.201-3,18.801s0,15-4.3,24
 								c-4.301,9-2.601,12.801-3,18.801c-0.4,6-3,8.5-1.301,9c1.7,0.398,3-8.5,4.301-5.102c1.3,3.4-0.4,6.4-1.7,9.801
@@ -28,7 +33,7 @@
 								c0.4-2.602-2.1-7.301-6.9-11.102c-4.699-3.799-10.3-1.699-16.699-6c-6.4-4.299-8.601-9.398-12-9.398c-3.4,0-3-2.602-6.4-4.701
 								s-9.4,3.4-14.1,0c-4.7-3.4-6.801-0.9-9-3c-2.101-2.1-7.301,2.1-8.5,2.1c-1.301,0,4.3-7.299,0.899-5.1c-3.399,2.1-9.8,3.801-12,6.4
 								c-2.1,2.6-3,7.699-6.8,6C504.802,554.02,504.402,555.32,505.703,557.02z"/>
-							<path id="america-north" class="continent <?php echo $hasEntriesDict['america-north'] ?>" d="M217.702,312.02c0,0,2.9-2.6,6.1-2.2c3.2,0.3,6.4-2.2,8-4.5c1.6-2.2,5.8-5.1,8.3-5.1
+							<path id="america-north" class="continent <?php echo $continentDict['america-north-hasEntries'] ?> <?php echo $continentDict['america-north-isActive'] ?>" data-url="<?php echo $continentDict['america-north-url'] ?>" d="M217.702,312.02c0,0,2.9-2.6,6.1-2.2c3.2,0.3,6.4-2.2,8-4.5c1.6-2.2,5.8-5.1,8.3-5.1
 								c2.6,0,8.7-2.6,11.2-3.2c2.6-0.6,5.1,0.6,5.1,0.6s-5.1,2.2-3.8,2.6c1.3,0.3,8.3-1.3,9.3-1.3s5.1,3.2,8.7,2.6c3.5-0.6,9,0,9.9,0
 								c1,0,3.2,3.5,7.1,3.2c3.9-0.3,9-0.3,10.6,0c1.6,0.3,2.9,3.2,5.8,2.9c2.9-0.3,4.5,3.8,9.3,3.8s7.7,0.6,7.7,0.6s0.3-4.2,2.6-4.2
 								c2.2,0,4.8-1,5.8-1.3c1-0.3,6.7-2.9,8.7-2.9c1.9,0,1.5,1.8-0.399,2c-1.9,0.2-3.4,1.5-4.9,2.1c-1.5,0.7-3-0.2-3.6,1.1
@@ -222,7 +227,7 @@
 								c0.9,0.2,3-0.2,5.8-0.6c2.801-0.4,5.801,1.1,3,2.4c-2.8,1.3-6.199,1.3-8.3,0.9C536.002,259.319,529.203,258.52,530.802,260.419z"/>
 						</g>
 						<g>
-							<path id="oceania" class="continent <?php echo $hasEntriesDict['oceania'] ?>" d="M1133.902,673.719c0,0,2.1-2.6,0.4-4.699c-1.701-2.1-0.9-3.4,0.4-6.801
+							<path id="oceania" class="continent <?php echo $continentDict['oceania-hasEntries'] ?> <?php echo $continentDict['oceania-isActive'] ?>" data-url="<?php echo $continentDict['oceania-url'] ?>" d="M1133.902,673.719c0,0,2.1-2.6,0.4-4.699c-1.701-2.1-0.9-3.4,0.4-6.801
 								c1.299-3.398,3.398-1.299,4.699-3.398c1.301-2.102,2.6-5.102,6.4-5.102c3.9,0,6.9,0.9,9.4-1.699c2.6-2.6,6.398-1.301,6.799-4.301
 								s-0.9-6,2.1-7.299c3-1.301,1.301,5.1,3.9,2.6c2.6-2.6,1.301-2.6,3-5.1c1.701-2.6,1.301-5.1,4.701-5.6
 								c3.398-0.4,6.398,0.398,6.799,3c0.4,2.6,3.9,3.898,5.1,0.898c1.301-3-1.699-3,0.9-4.699s0.9-3.801,3.9-4.699
@@ -274,7 +279,7 @@
 								C1312.496,739.57,1312.357,739.215,1312.82,738.871z"/>
 						</g>
 						<g>
-							<path id="asia" class="continent <?php echo $hasEntriesDict['asia'] ?>" d="M1157.002,537.02c0,0-2.199-4.199-1.6-4.6c0.6-0.5,1.4,1.6,1.6,0.299c0.201-1.299,0-2.6,0-3.799
+							<path id="asia" class="continent <?php echo $continentDict['asia-hasEntries'] ?> <?php echo $continentDict['asia-isActive'] ?>" data-url="<?php echo $continentDict['asia-url'] ?>" d="M1157.002,537.02c0,0-2.199-4.199-1.6-4.6c0.6-0.5,1.4,1.6,1.6,0.299c0.201-1.299,0-2.6,0-3.799
 								c0-1.301-1.1-1.6-0.199-2.9c1-1.301,1-1.9,2.299-1.9c1.301,0,1.602,0.301,2.701,0.701c1.1,0.299,1.9-1.4,1.9,0.5
 								c0,1.898-1,2.398-0.5,3.398s1.299,1.4,1.6,2.4c0.299,1-2.4,1.6-2.701,2.9c-0.299,1.301-1.1,3-0.6,4s-0.199,1.6,0.6,1.9
 								c0.801,0.299,1.102-1,1.801-1.1c0.6-0.201,1.1-0.301,1.6,0.199s0.6,1.4,1.4,1.4s1.1-1,1.4,0.299c0.299,1.301,0.6,1.801,0.799,2.602
@@ -428,7 +433,7 @@
 								c0.082-0.75,0.416-1.125,0.666-1.582C1162.303,510.543,1162.396,510.799,1162.594,510.127z"/>
 						</g>
 						<g>
-							<path id="europe" class="continent <?php echo $hasEntriesDict['europe'] ?>" d="M732.502,390.62c0,0-2.9-4.5-1.3-4.5c1.6,0,4.8,0.6,4.8-1c0-1.6-0.3-3.2,2.2-3.2c2.6,0,5.1,0.6,5.399,1.6
+							<path id="europe" class="continent <?php echo $continentDict['europe-hasEntries'] ?> <?php echo $continentDict['europe-isActive'] ?>" data-url="<?php echo $continentDict['europe-url'] ?>" d="M732.502,390.62c0,0-2.9-4.5-1.3-4.5c1.6,0,4.8,0.6,4.8-1c0-1.6-0.3-3.2,2.2-3.2c2.6,0,5.1,0.6,5.399,1.6
 								s1.601,2.6,0.3,5.4c-1.3,2.9-2.6,2.9-1.899,5.1c0.7,2.2,1.3,3.9-1.601,3.9c-2.899,0-4.5-2.3-5.8-1s-3.8,2.6-4.8,0.6
 								C729.002,395.719,733.802,392.52,732.502,390.62z M748.902,365.919c0,0-3.5,1-4.199,4.2c-0.7,3.2-0.301,6.4-0.301,6.4
 								s0.301,1,2.601,2.6c2.2,1.6,2.899,2.2,1.6,4.2c-1.3,1.9,0.601-0.6,2.601,1.3c1.899,1.9,3.899,3.8,2.6,4.8s-6.1,1.6-5.1,3.2
@@ -488,7 +493,7 @@
 								c-3.201-3.8-3.201-3.8-3.201-3.8s5.801-4.5,0,0c-5.799,4.5-11.1,8.4-12.299,9c0,0-5.1-0.9-6.301-2.6"/>
 						</g>
 						<g>
-							<path id="africa" class="continent <?php echo $hasEntriesDict['africa'] ?>" d="M929.402,547.619c-1.301-0.9-3-0.9-6,1.301c-3,2.1-8.1,1.299-10.699,0.9c-2.602-0.4-4.701,1.299-8.5-1.701
+							<path id="africa" class="continent <?php echo $continentDict['africa-hasEntries'] ?> <?php echo $continentDict['africa-isActive'] ?>" data-url="<?php echo $continentDict['africa-url'] ?>" d="M929.402,547.619c-1.301-0.9-3-0.9-6,1.301c-3,2.1-8.1,1.299-10.699,0.9c-2.602-0.4-4.701,1.299-8.5-1.701
 								c-3.9-3-0.4-6-4.301-8.1c-3.801-2.199-5.1-3.4-6.801-6.9c-1.699-3.4-3-4.699-5.6-6.4c-2.6-1.699-3.4-4.299-4.699-11.1
 								c-1.301-6.9-6-15.799-8.5-19.2c-1.201-1.6-2.4-5.6-3.201-9.3c-0.898-4.1-1.5-7.8-1.5-7.8l-3.398,0.6l-1.801,0.3
 								c0,0-10.301-1.3-15-1.7s-13.301-4.7-18-5.1s-2.6,5.1-6,7.3c-3.4,2.1,0,0-5.6,0s-4.301-0.9-6.801-3c-2.6-2.1-8.1-4.7-12.799-4.7
@@ -514,105 +519,40 @@
 		</div>
 
 		<div id="continent-map-filtering" class="row">
+	    	<div class="col-md-12">
+
+	        	<div id="arrow" class="<?php echo !$showInstructions ? "hide" : ""; ?>">
+	          <img src="/Frontend/img/arrow_gallery_teaser_mirrored.png" />
+	          <div id="click-teaser">
+	            <?php echo $page->arrowtext() ?>
+	          </div>
+	        </div>
+	      </div>
+	    </div>
+
+		<div id="continent-map-filtering" class="row">
 			<div class="col-md-12">
-
-				<div id="arrow" class="hide">
-		          <img src="/Frontend/img/arrow_gallery_teaser_mirrored.png" />
-		          <div id="click-teaser">
-		            <?php echo $page->arrowtext() ?>
-		          </div>
-		        </div>
-
-				<!-- List with countries -->
 				<div id="list-countries">
 
-					<?php foreach($continents->sortBy('titlefrontend', 'asc') as $continent): ?>
+					<?php foreach($countries as $country): ?>
 
-						<?php foreach($continent->children()->sortBy('title', 'asc') as $country): ?>
+	                    <a href="<?=$country['url'];?>" target="_self" class="<?=$country['active'];?>"><?=$country['title'];?></a>
 
-							<?php
+	                <?php endforeach ?>
 
-								/* Check if country has pics-only-children only. If thats the case, don't add the country-filter button. */
-
-								$childrenWithoutAnyValidPosts = $country->children()->filterBy('template', 'post')->filterBy('picsonly', '!=', '0')->count();
-								$children = $country->children()->filterBy('template', 'post')->count();
-
-								if($childrenWithoutAnyValidPosts == $children) {
-									break;
-								}
-
-							?>
-
-							<button id="<?php echo strtolower($continent->title()) ?>-<?php echo strtolower($country->countrycode()) ?>" data-continent="<?php echo strtolower($continent->title()) ?>" data-country="<?php echo strtolower($country->countrycode()) ?>" class="list-country hide">
-								<?php echo $country->title()->html() ?>
-							</button>
-
-						<?php endforeach ?>
-
-					<?php endforeach ?>
-					
-				</div>
+	            </div>
 			</div>
 		</div>
 
-      	<div id="filtered-content">
+      	<div class="row">
+	        <div class="col-md-12">
+	            <div id="filtered-content">
 
-      		<!-- Loop over CONTINENTS -->
-      		<?php foreach($continents->sortBy('titlefrontend', 'asc') as $continent): ?>
+	                <?= $galleryEntriesHtml; ?>
 
-      			<div id="posts-<?php echo strtolower($continent->title()->text()) ?>" class="hide">
-      				
-      				<div class="row">
-				        <div class="col-md-12">
-				          <h1><?php echo $continent->titlefrontend()->html() ?></h1>
-				        </div>
-				      </div>
-
-
-		      		<!-- Loop over COUNTRIES -->
-		      		<?php foreach($continent->children()->sortby('title', 'asc') as $country): ?>
-
-		      			<div id="posts-<?php echo $country->countrycode()->text() ?>" data-continent="<?php echo strtolower($continent->title()->text()) ?>" data-country="<?php echo $country->countrycode()->text() ?>" class="posts-country hide">
-
-		      				<div class="row">
-		      					<div class="col-md-12">
-						          <h3><?php echo $country->title()->text() ?></h3>
-						          <br />
-						        </div>
-		      				</div>
-
-					      <div class="row teaser">
-
-			          			<!-- Loop over POSTS -->
-			      				<?php foreach($country->children()->posts()->sortby('sort', 'desc') as $post): ?>
-
-							      	<div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 col-xxs-12">
-						          		<div class="teaser-image-container">
-
-											<p class="posts-entry">
-									      		<img src="#" data-src="<?php echo $post->contentURL() ?>/<?php echo $post->imageteaser() ?>" class="teaser-image" alt="<?php echo $post->title() ?>" title="<?php echo $post->title() ?>" />
-								              	<a class="" href="<?php echo $post->url() ?>" style="">
-									                <span class="darkener"></span>
-									                <span class="helper"></span>
-									                <!-- <img src="/Frontend/img/icon_<?php echo $country->teasericon() ?>.svg" onerror="this.src='/Frontend/img/placeholder.png'" alt="<?php echo $post->title() ?>" title="<?php echo $post->title() ?>" /> -->
-									                <span class="teaser-text"><?php echo $post->title()->html() ?></span>
-								              	</a>
-											</p>
-						          		</div>
-						          	</div>
-
-			      				<?php endforeach ?>
-					      </div>
-
-		      			</div>
-
-		      		<?php endforeach ?>
-
-		      </div>
-
-			<?php endforeach ?>
-
-      	</div>
+	            </div>
+	        </div>
+	    </div>
 
     </div>
 

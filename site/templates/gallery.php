@@ -532,9 +532,7 @@
     </div>
 
     <div class="row">
-
         <div class="col-md-12">
-
             <div id="list-countries">
 
                 <?php foreach($countries as $country): ?>
@@ -544,7 +542,6 @@
                 <?php endforeach ?>
           
             </div>
-
         </div>
     </div>
 
