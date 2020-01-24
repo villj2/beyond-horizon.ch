@@ -25,58 +25,40 @@
         </div>
         <div class="col-md-8">
 
-        	<?php echo $page->text()->kirbytext() ?>
-
-          <?php
-            $imagesources = array();
+        	<?php 
+            echo $page->text()->kirbytext();
+            $subpage = $page->children()->find('gallery');
           ?>
 
-          <?php foreach($page->children() as $subpage): ?>
-            <?php foreach($subpage->images()->sortBy('sort', 'asc') as $image): ?>
-              <?php if (strpos($image->filename(), 'preview') == false): ?>
-
-                <?php
-                  array_push($imagesources, str_replace(".jpg", "_preview.jpg", $image->url()));
-                ?>
-                
-              <?php endif ?>
-            <?php endforeach ?>
-          <?php endforeach ?>
-          
-          <div id="horizon-gallery-1" data-image-sources="<?php echo implode("|", $imagesources) ?>" style="display:none;" class="horizon-gallery" data-images-replaced="false">
-
-          <?php foreach($page->children() as $subpage): ?>
-
-            <?php $picNumber = 0; ?>
+          <div class="grid" style="position: relative; height: 1758.13px;">
+            <div class="grid-sizer"></div>
+            <div class="gutter-sizer"></div>
 
             <?php foreach($subpage->images()->sortBy('sort', 'asc') as $image): ?>
 
-              <?php if (strpos($image->filename(), 'preview') == false): ?>
+              <?php if (!strpos($image->filename(), 'preview')): ?>
 
                 <?php
-                  $dummyPicture = kirby()->urls()->index() . "/assets/images/" . ($image->isLandscape() ? "landscape" : "portrait") . "_dummy_unite.jpg";
-                  $picNumber++;
+                  $imgUrl = $image->url();
+                  $imgUrlPreview = str_replace(".jpg", "_preview.jpg", $imgUrl);
+                  $imgDescription = $image->description();
                 ?>
 
-                <a href="#">
-                  <img alt="<?php echo $image->description() ?>"
-                   src="<?php echo $dummyPicture ?>"
-                   data-src="<?php echo str_replace(".jpg", "_preview.jpg", $image->url()) ?>"
-                   data-image="<?php echo $image->url() ?>"
-                   data-description=""
-                   style="display:none;">
-                </a>
+                <div class="grid-item">
+                  <a href="<?= $imgUrl ?>" data-fancybox="images" data-caption="<?= $imgDescription ?>">
+                    <img src="<?= $imgUrlPreview ?>" alt="<?= $imgDescription ?>" />
+                  </a>
+                </div>;
 
               <?php endif ?>
 
             <?php endforeach ?>
 
-          <?php endforeach ?>
+          </div>
 
-        </div>
         <br />
         
-       </div>
+        </div>
         <div class="col-md-3">
           <img class="blog-map hidden-sm hidden-xs" alt="Karte" title="Karte" src="<?php echo $page->contentURL() ?>/<?php echo $page->imagemap() ?>" />
         </div>
