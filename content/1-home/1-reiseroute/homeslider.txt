@@ -18,11 +18,11 @@ Link: /posts
 
 ----
 
-Link2: /gallery?filter=
+Link2: /gallery?continents=america-north&countries=cr,pa,mx,us
 
 ----
 
-Link1: /posts?filter=
+Link1: /posts?continents=america-north&countries=cr,pa,mx,us
 
 ----
 
@@ -34,7 +34,7 @@ Linktext2: Bilder
 
 ----
 
-Linkfilter1: [{"id":"america-north","countries":["cr", "pa", "mx", "us"]}]
+Linkfilter1: 
 
 ----
 

@@ -35,8 +35,8 @@
                   <div class="label" style="text-align: center;">
                     <h1 style="color: <?php if($slider->textcolor() == ""){echo "white";} else { echo $slider->textcolor(); } ?>;"><?php echo $slider->title() ?></h1>
                     <div>
-                      <button type="button" class="btn btn-secondary btn-more btn-slider" style="<?= $slider->showlink1() == '1' ? '' : 'display: none;' ?><?php if($slider->textcolor() == ""){} else { echo "border-color: " . $slider->textcolor() . ";" . " color: " . $slider->textcolor() . "; margin-right: 10px;"; } ?>;" onclick="<?= "location.href='" . $slider->link1() . urlencode($slider->linkfilter1()) . "'" ?>"><?= $slider->linktext1() ?></button>
-                      <button type="button" class="btn btn-secondary btn-more btn-slider" style="<?= $slider->showlink2() == '1' ? '' : 'display: none;' ?><?php if($slider->textcolor() == ""){} else { echo "border-color: " . $slider->textcolor() . ";" . " color: " . $slider->textcolor() . ";"; } ?>;" onclick="<?= "location.href='" . $slider->link2() . urlencode($slider->linkfilter2()) . "'" ?>"><?= $slider->linktext2() ?></button>
+                      <button type="button" class="btn btn-secondary btn-more btn-slider" style="<?= $slider->showlink1() == '1' ? '' : 'display: none;' ?><?php if($slider->textcolor() == ""){} else { echo "border-color: " . $slider->textcolor() . ";" . " color: " . $slider->textcolor() . "; margin-right: 10px;"; } ?>;" onclick="<?= "location.href='" . $slider->link1() . "'" ?>"><?= $slider->linktext1() ?></button>
+                      <button type="button" class="btn btn-secondary btn-more btn-slider" style="<?= $slider->showlink2() == '1' ? '' : 'display: none;' ?><?php if($slider->textcolor() == ""){} else { echo "border-color: " . $slider->textcolor() . ";" . " color: " . $slider->textcolor() . ";"; } ?>;" onclick="<?= "location.href='" . $slider->link2() . "'" ?>"><?= $slider->linktext2() ?></button>
                     </div>
                   </div>
                 </div>
@@ -47,17 +47,6 @@
           <?php $index++ ?>
 
         <?php endforeach ?>
-
-      <?php if($page->index()->filterBy('intendedTemplate', 'homeslider')->visible()->count() > 1){ ?>
-        <a class="left carousel-control" href="#carousel-home" role="button" data-slide="prev">
-          <span class="arrow-left" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="right carousel-control" href="#carousel-home" role="button" data-slide="next">
-          <span class="arrow-right" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
-      <?php } ?>
         
       </div>
 
@@ -68,18 +57,6 @@
   <!-- Begin page content -->
 
   <div id="posts-teaser" class="container container-teaser">
-
-    <!-- <div class="row">
-      <div class="col-md-12" style="text-align: center;">
-        <h1 style="margin-top: 40px;">Beyond Horizon Travel Blog</h1>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-md-12" style="text-align: center; margin-bottom: 60px; margin-top: 30px;">
-          <p style="font-family: black_jackregular; font-size: 1.6em;">Reise jenseits des Horizonts. Erlebnisberichte und Fotos aus der reichen Kultur Japans, der schillernden Tierwelt Australiens, der imposanten Natur Neuseelands und dem hektischen Treiben Hong Kongs.</p>
-      </div>
-    </div> -->
 
     <div class="row">
       <div class="col-md-12">
