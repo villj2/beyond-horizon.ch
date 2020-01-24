@@ -58,7 +58,7 @@ return function($site, $pages, $page) {
 					if(!$continentTitleWritten)
 					{
 						$continentTitleWritten = true;
-						$galleryEntriesHtml .= '<div class="row"><div class="col-md-12"><h1>' . $continent->title() . '</h1>';
+						$galleryEntriesHtml .= '<div class="row"><div class="col-md-12"><h1>' . $continent->titlefrontend() . '</h1>';
 					}
 
 					foreach($country->children()->visible() as $post)

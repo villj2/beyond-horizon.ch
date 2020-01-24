@@ -7585,6 +7585,14 @@ map area {
 #home .jumbotron h2 {
   text-align: center;
 }
+#home .container-teaser .home {
+  padding-left: 0.9%;
+  padding-right: 0.9%;
+}
+#home .container-teaser .teaser {
+  margin-left: -5px;
+  margin-right: -5px;
+}
 #posts-teaser {
   margin-top: 40px;
   margin-bottom: 150px;
@@ -7714,14 +7722,6 @@ map area {
 }
 .home-gallery-teaser {
   margin-bottom: 100px;
-}
-.container-teaser .home {
-  padding-left: 0.9%;
-  padding-right: 0.9%;
-}
-.container-teaser .teaser {
-  margin-left: -5px;
-  margin-right: -5px;
 }
 #home-gallery-teaser-small #centered-container {
   width: 100%;

@@ -85,7 +85,7 @@ return function($site, $pages, $page) {
 						$continentTitleWritten = true;
 						$galleryEntriesHtml .= '<div class="row">
 													<div class="col-md-12">
-														<h1>' . $continent->title() . '</h1>
+														<h1>' . $continent->titlefrontend() . '</h1>
 													</div>
 												</div>';
 					}
