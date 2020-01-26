@@ -135,7 +135,7 @@
         <img src="<?php echo $galleryTeasers[3] ?>" />
         <img src="<?php echo $galleryTeasers[4] ?>" class="second-entry" />
         <div id="button-container">
-          <button type="button" class="btn btn-secondary btn-more" onclick="location.href='/gallery?filter=<?php echo urlencode($filterString) ?>'"><?php echo $page->textbuttongallery() ?></button>
+          <button type="button" class="btn btn-secondary btn-more" onclick="location.href='/gallery?continents=<?= implode(",", $continents) ?>&countries=<?= implode(",", $countries) ?>'"><?php echo $page->textbuttongallery() ?></button>
           <div id="arrow">
             <img src="/Frontend/img/arrow_gallery_teaser.png" />
             <div id="click-teaser">
@@ -194,7 +194,7 @@
 
     <div class="col-sm-12" style="text-align: center;">
       <div id="button-container">
-        <button type="button" class="btn btn-secondary btn-more" onclick="location.href='/gallery?filter=<?php echo urlencode($filterString) ?>'"><?php echo $page->textbuttongallery() ?></button>
+        <button type="button" class="btn btn-secondary btn-more" onclick="location.href='/gallery?continents=<?= implode(",", $continents) ?>&countries=<?= implode(",", $countries) ?>'"><?php echo $page->textbuttongallery() ?></button>
         <div id="arrow">
           <img src="/Frontend/img/arrow_gallery_teaser.png" />
           <div id="click-teaser">
