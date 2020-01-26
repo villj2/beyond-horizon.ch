@@ -2,14 +2,7 @@
 
 return function($site, $pages, $page) {
 
-	//$continents = $page->children()->visible()->filterBy('intendedTemplate', 'continent')->filterBy('hideonmap', '<', '1'); /**/
-	/*$hasEntriesDict = array();
-	foreach($continents as $continent) {
-
-		$hasEntriesDict[strtolower($continent->title())] = $continent->children()->visible()->count() > 0 ? 'has-entries' : '';
-	}*/
-
-	$debug = "";
+	$debug = "<br />";
 
 	// Get all CMS continent entries
 	$continents = page('posts')->children()->sortBy('sort', 'desc');
@@ -36,7 +29,7 @@ return function($site, $pages, $page) {
 	{
 		$continentUID = strtolower($continent->uid());
 		$continentDict[$continentUID."-hasEntries"] = $continent->children()->visible()->count() > 0 ? 'has-entries' : '';
-		$continentDict[$continentUID."-url"] = createContinentURL($continentUID, $qsContinents); // Method declared in /plugins/pages-methods.php
+		$continentDict[$continentUID."-url"] = createContinentURL($continentUID, $qsContinents, $qsCountries); // Method declared in /plugins/pages-methods.php
 
 		$continentTitleWritten = false;
 
@@ -100,11 +93,6 @@ return function($site, $pages, $page) {
 
 					foreach($posts as $post)
 					{
-						/*if($post->picsonly()->bool())
-						{
-							continue;
-						}*/
-
 						$galleryEntriesHtml .= '<div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 col-xxs-12">
 									          		<div class="teaser-image-container">
 														<p class="posts-entry">
@@ -122,6 +110,10 @@ return function($site, $pages, $page) {
 					$galleryEntriesHtml .= '</div>';
 				}
 			}
+		}
+		else
+		{
+			$continentDict[$continentUID."-isActive"] = "";
 		}
 	}
 

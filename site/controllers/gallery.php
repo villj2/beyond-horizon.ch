@@ -29,7 +29,7 @@ return function($site, $pages, $page) {
 	{
 		$continentUID = strtolower($continent->uid());
 		$continentDict[$continentUID."-hasEntries"] = $continent->children()->visible()->count() > 0 ? 'has-entries' : '';
-		$continentDict[$continentUID."-url"] = createContinentURL($continentUID, $qsContinents); // Method declared in /plugins/pages-methods.php
+		$continentDict[$continentUID."-url"] = createContinentURL($continentUID, $qsContinents, $qsCountries); // Method declared in /plugins/pages-methods.php
 
 		$continentTitleWritten = false;
 
