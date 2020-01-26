@@ -41,12 +41,12 @@ return function($site, $pages, $page) {
 			$continentDict[$continentUID."-isActive"] = "active";
 
 			// Get all COUNTRIES from selected continent
-			foreach($continent->children()->visible() as $country)
+			foreach($continent->children()->visible()->sortBy('sort', 'desc') as $country)
 			{
 				// Check if at least one child has not picsonly flag
 				$posts = array();
 				$picsonly = true;
-				foreach($country->children()->visible() as $post)
+				foreach($country->children()->visible()->sortBy('sort', 'desc') as $post)
 				{
 					if(!$post->picsonly()->bool())
 					{

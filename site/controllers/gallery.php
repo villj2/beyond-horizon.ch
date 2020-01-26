@@ -41,7 +41,7 @@ return function($site, $pages, $page) {
 			$continentDict[$continentUID."-isActive"] = "active";
 
 			// Get all COUNTRIES from selected continent
-			foreach($continent->children()->visible() as $country)
+			foreach($continent->children()->visible()->sortBy('sort', 'desc') as $country)
 			{
 				$countryCode = strtolower($country->countrycode());
 				$countrySelected = in_array($countryCode, $qsCountries);
@@ -61,7 +61,7 @@ return function($site, $pages, $page) {
 						$galleryEntriesHtml .= '<div class="row"><div class="col-md-12"><h1>' . $continent->titlefrontend() . '</h1>';
 					}
 
-					foreach($country->children()->visible() as $post)
+					foreach($country->children()->visible()->sortBy('sort', 'desc') as $post)
 					{
 						$galleryEntriesHtml .= '<div class="gallery-title-container">
 													<h2>' . $post->title() . '</h2>

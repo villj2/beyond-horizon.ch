@@ -70,13 +70,13 @@
         <div class="col-md-8">
           <div class="row">
             <div class="col-xs-6 post-button-navigate" style="text-align: left;">
-              <?php if(!empty($prev)): ?>
-                <button type="button" class="btn btn-secondary btn-more btn-post-sibling" onclick="location.href='<?= $prev ?>'">neuerer Beitrag</button>
+              <?php if(isset($newer)): ?>
+                <button type="button" class="btn btn-secondary btn-more btn-post-sibling" onclick="location.href='<?= $newer->url() ?>'">Neuerer Beitrag</button>
               <?php endif ?>
             </div>
             <div class="col-xs-6 post-button-navigate" style="text-align: right;">
-              <?php if(!empty($next)): ?>
-                <button type="button" class="btn btn-secondary btn-more btn-post-sibling" onclick="location.href='<?= $next ?>'">älterer Beitrag</button>
+              <?php if(isset($older)): ?>
+                <button type="button" class="btn btn-secondary btn-more btn-post-sibling" onclick="location.href='<?= $older->url() ?>'">Älterer Beitrag</button>
               <?php endif ?>
             </div>
           </div>

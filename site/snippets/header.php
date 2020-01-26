@@ -78,7 +78,7 @@
 
   </head>
 
-  <body ontouchstart="" data-initgallery="<?php echo (isset($blockGallery) ? 'false' : 'true') ?>">
+  <body ontouchstart="">
 
     <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container">

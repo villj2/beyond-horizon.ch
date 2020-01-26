@@ -2,25 +2,40 @@
 
 return function($site, $pages, $page) {
 
-	$siblings = $page->siblings(true)->visible()->filterBy('picsonly', '!=', '1')->sortby('sort', 'desc');
-	$next = '';
-	$prev = '';
-
-	$found = false;
-	foreach ($siblings as $key => $value) {
-
-		if($value == $page) {
-			$found = true;
-			continue;
+	// Get all CMS posts
+	$posts = array();
+	foreach(page('posts')->children()->sortBy('sort', 'desc') as $continent)
+	{
+		foreach($continent->children()->visible()->sortBy('sort', 'desc') as $country)
+		{
+			foreach($country->children()->visible()->filterBy('picsonly', '!=', '1')->sortBy('sort', 'desc') as $post)
+			{
+				array_push($posts, $post);
+			}
 		}
+	}
 
-		if($found) {
-			$next = $value->url();
+	$currentUID = page()->uid();
+	$found = false;
+	$older;
+	$newer;
+	foreach($posts as $p)
+	{
+		if($found)
+		{
+			$older = $p;
 			break;
 		}
 
-		$prev = $value->url();
+		if($p->uid() == $currentUID)
+		{
+			$found = true;
+		}
+		else
+		{
+			$newer = $p;
+		}
 	}
 
-	return compact('siblings', 'prev', 'next');
+	return compact('older', 'newer');
 };

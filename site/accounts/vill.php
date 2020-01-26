@@ -9,8 +9,8 @@ password: >
 language: en
 role: admin
 history:
+  - posts/asia/japan/koyasan/gallery
   - journey/zentralamerika-2-monate
   - journey/asia-oceania
   - home/reiseroute
   - posts/africa
-  - posts/america-north
