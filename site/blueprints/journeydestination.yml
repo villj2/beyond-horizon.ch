@@ -23,8 +23,8 @@ fields:
     label: Text Link Posts
     type: text
     width: 3/4
-  filterlinkposts:
-    label: Filter Link Posts
+  linkposts:
+    label: Link Posts
     type: text
 
   showlinkgallery:
@@ -35,8 +35,8 @@ fields:
     label: Text Link Gallery
     type: text
     width: 3/4
-  filterlinkgallery:
-    label: Filter Link Gallery
+  linkgallery:
+    label: Link Gallery
     type: text
 
   showlinkjourney:

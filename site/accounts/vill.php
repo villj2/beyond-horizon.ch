@@ -9,8 +9,8 @@ password: >
 language: en
 role: admin
 history:
+  - journey/zentralamerika-2-monate
+  - journey/asia-oceania
   - home/reiseroute
   - posts/africa
   - posts/america-north
-  - posts/asia
-  - posts/africa/morocco/morocco

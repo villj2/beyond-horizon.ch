@@ -22,10 +22,6 @@ Textlinkposts: Beiträge anzeigen
 
 ----
 
-Filterlinkposts: [{"id":"america-north","countries":["cr","pa","mx","us"]}]
-
-----
-
 Showlinkgallery: 1
 
 ----
@@ -34,12 +30,16 @@ Textlinkgallery: Bilder anzeigen
 
 ----
 
-Filterlinkgallery: [{"id":"america-north","countries":[]}]
-
-----
-
 Showlinkjourney: 0
 
 ----
 
 Textlinkjourney: Route anzeigen
+
+----
+
+Linkposts: ?continents=america-north&countries=cr,pa,mx,us
+
+----
+
+Linkgallery: ?continents=america-north

@@ -1,4 +1,4 @@
-Title: Asien und Ozeanien (4 Monate)
+﻿Title: Asien und Ozeanien (4 Monate)
 
 ----
 
@@ -14,19 +14,11 @@ Textlinkposts: Beiträge anzeigen
 
 ----
 
-Filterlinkposts: [{"id":"asia","countries":["jp","hk"]},{"id":"oceania","countries":["au","nzn","nzs","tas"]}]
-
-----
-
 Showlinkgallery: 1
 
 ----
 
 Textlinkgallery: Bilder anzeigen
-
-----
-
-Filterlinkgallery: [{"id":"asia","countries":[]},{"id":"oceania","countries":[]}]
 
 ----
 
@@ -43,3 +35,11 @@ Pic: journey_ganz_ps_panda.png
 ----
 
 Picpreview: reiseroute-slider-mittelamerika_3.jpg
+
+----
+
+Linkposts: ?continents=asia,oceania&countries=jp,hk,au,nzn,nzs,tas
+
+----
+
+Linkgallery: ?continents=asia,oceania

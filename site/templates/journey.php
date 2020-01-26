@@ -28,9 +28,9 @@
 			      			<button type="button" class="btn btn-secondary btn-more" style="<?= $jd->showlinkjourney() == '1' ? '' : 'display: none;' ?>" onclick="location.href='<?= $jd->url() ?>'"><?= $jd->textlinkjourney() ?>
 			      			</button>
 			      			<br />
-			      			<button type="button" class="btn btn-secondary btn-more" style="<?= $jd->showlinkposts() == '1' ? '' : 'display: none;' ?>" onclick="location.href='/posts?filter=<?= urlencode($jd->filterlinkposts()) ?>'"><?= $jd->textlinkposts() ?>
+			      			<button type="button" class="btn btn-secondary btn-more" style="<?= $jd->showlinkposts() == '1' ? '' : 'display: none;' ?>" onclick="location.href='/posts/<?= $jd->linkposts() ?>'"><?= $jd->textlinkposts() ?>
 			      			</button>
-			      			<button type="button" class="btn btn-secondary btn-more" style="<?= $jd->showlinkgallery() == '1' ? '' : 'display: none;' ?>" onclick="location.href='/gallery?filter=<?= urlencode($jd->filterlinkgallery()) ?>'"><?= $jd->textlinkgallery() ?>
+			      			<button type="button" class="btn btn-secondary btn-more" style="<?= $jd->showlinkgallery() == '1' ? '' : 'display: none;' ?>" onclick="location.href='/gallery<?= $jd->linkgallery() ?>'"><?= $jd->textlinkgallery() ?>
 			      			</button>
 			      		</div>
 		      		</div>
