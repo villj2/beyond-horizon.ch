@@ -9,8 +9,8 @@ password: >
 language: en
 role: admin
 history:
+  - posts/africa/morocco/morocco/gallery
+  - posts/asia/hong-kong/hong-kong/gallery
   - posts/asia/japan/koyasan/gallery
   - journey/zentralamerika-2-monate
   - journey/asia-oceania
-  - home/reiseroute
-  - posts/africa
