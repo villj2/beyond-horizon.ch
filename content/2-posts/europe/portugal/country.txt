@@ -1,0 +1,13 @@
+Title: Portugal
+
+----
+
+Countrycode: pt
+
+----
+
+Teasericon: preparation
+
+----
+
+Trip: oceania2016

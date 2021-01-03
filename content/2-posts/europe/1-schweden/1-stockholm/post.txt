@@ -1,0 +1,49 @@
+Title: Stockholm
+
+----
+
+Textcolor: 
+
+----
+
+Picsonly: 1
+
+----
+
+Hidetitle: 0
+
+----
+
+Date: 2019-09-30
+
+----
+
+Text: 
+
+----
+
+Imagejumbotron: 
+
+----
+
+Imageteaser: 
+
+----
+
+Imagemap: 
+
+----
+
+Googlemapsimage: p1750340.jpg
+
+----
+
+Googlemapstwolines: 0
+
+----
+
+Lat: 59.32508000942699
+
+----
+
+Lng: 18.072144284893042

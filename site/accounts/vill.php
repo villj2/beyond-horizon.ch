@@ -9,8 +9,8 @@ password: >
 language: en
 role: admin
 history:
-  - posts/asia/macau/macau
-  - posts/europe/preparation/ostschweiz
-  - posts/europe/preparation/ostschweiz/gallery
-  - posts/africa/morocco/morocco/gallery
-  - posts/asia/hong-kong/hong-kong/gallery
+  - posts/europe/portugal/madeira
+  - posts/europe/schweden/stockholm
+  - posts/europe/portugal
+  - posts/europe/schweden
+  - posts/europe/portugal/madeira/gallery

@@ -1,0 +1,49 @@
+Title: Madeira
+
+----
+
+Textcolor: 
+
+----
+
+Picsonly: 0
+
+----
+
+Hidetitle: 0
+
+----
+
+Date: 
+
+----
+
+Text: 
+
+----
+
+Imagejumbotron: 
+
+----
+
+Imageteaser: 
+
+----
+
+Imagemap: 
+
+----
+
+Googlemapsimage: 
+
+----
+
+Googlemapstwolines: 0
+
+----
+
+Lat: 
+
+----
+
+Lng: 

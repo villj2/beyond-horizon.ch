@@ -1,0 +1,13 @@
+Title: Schweden
+
+----
+
+Countrycode: se
+
+----
+
+Teasericon: preparation
+
+----
+
+Trip: oceania2016
