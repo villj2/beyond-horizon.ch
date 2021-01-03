@@ -8177,6 +8177,12 @@ time.icon:focus {
     width: 31%;
   }
 }
+.grid-item img {
+  padding: 0;
+  display: block;
+  width: 100%;
+  margin-bottom: 4%;
+}
 .gutter-sizer {
   width: 10px;
 }
@@ -8184,11 +8190,46 @@ time.icon:focus {
   float: left;
   /*margin-bottom: 10px;*/
 }
-.grid-item img {
+/*** Pano ***/
+.grid-item--pano img {
   padding: 0;
   display: block;
-  width: 100%;
-  margin-bottom: 4%;
+}
+@media screen and (max-width: 767px) {
+  .grid-item--pano {
+    width: 100%;
+  }
+  .grid-item--pano img {
+    width: 98%;
+    margin-bottom: 2%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .grid-item--pano {
+    width: 100%;
+  }
+  .grid-item--pano img {
+    width: 97.9%;
+    margin-bottom: 2%;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .grid-item--pano {
+    width: 63.4%;
+  }
+  .grid-item--pano img {
+    width: 100%;
+    margin-bottom: 2.5%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .grid-item--pano {
+    width: 63.2%;
+  }
+  .grid-item--pano img {
+    width: 100%;
+    margin-bottom: 2.5%;
+  }
 }
 .about .polaroid {
   margin-top: 50px;

@@ -87,9 +87,16 @@ return function($site, $pages, $page) {
                             {
                             	$imgUrl = $image->url();
                             	$imgUrlPreview = str_replace(".jpg", "_preview.jpg", $imgUrl);
+                            	$gridClass = "grid-item";
+
+                            	// Check if pano image
+                            	if(strpos($image->filename(), "pano") !== false)
+                            	{
+									$gridClass = "grid-item grid-item--pano";
+                            	}
 
 								$galleryEntriesHtml .= '
-									<div class="grid-item">
+									<div class="' . $gridClass . '">
 					                  <a href="' . $imgUrl . '" data-fancybox="images" data-caption="' . $image->description() . '">
 					                  	<img src="' . $imgUrlPreview . '" alt="" />
 					                  </a>

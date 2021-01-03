@@ -21,4 +21,7 @@ fields:
       <strong>bild_horizontal_preview.jpg</strong> -> 555 x 400
       <br /><br />
       <strong>bild_vertikal.jpg</strong> -> 1470 x 1960 <br />
-      <strong>bild_vertikal_preview</strong> -> 400 x 555
+      <strong>bild_vertikal_preview</strong> -> 400 x 591
+      <br /><br />
+      <strong>bild_panorama.jpg</strong> -> xxx x xxx <br />
+      <strong>bild_panorama_preview</strong> ->  x 
