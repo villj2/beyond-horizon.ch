@@ -12,7 +12,7 @@
 		}
 
 	};
-
+	
 	function createContinentURL($currentContinentUID, $qsContinents, $qsCountries) {
 
 		$url = "";

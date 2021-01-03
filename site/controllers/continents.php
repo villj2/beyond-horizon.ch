@@ -5,7 +5,7 @@ return function($site, $pages, $page) {
 	$debug = "<br />";
 
 	// Get all CMS continent entries
-	$continents = page('posts')->children()->sortBy('sort', 'desc');
+	$continents = page('posts')->children()->visible()->sortBy('sort', 'desc');
 
 	// Get query string continents
 	$qsContinents = array();

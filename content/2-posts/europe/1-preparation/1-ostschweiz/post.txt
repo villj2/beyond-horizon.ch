@@ -1,4 +1,4 @@
-Title: Macau
+Title: Ostschweiz
 
 ----
 
@@ -14,7 +14,7 @@ Hidetitle: 0
 
 ----
 
-Date: 2017-02-04
+Date: 2020-06-01
 
 ----
 
@@ -34,7 +34,7 @@ Imagemap:
 
 ----
 
-Googlemapsimage: macau_preview.jpg
+Googlemapsimage: ostschweiz_preview.jpg
 
 ----
 
@@ -42,8 +42,8 @@ Googlemapstwolines: 0
 
 ----
 
-Lat: 22.200852596602534
+Lat: 47.260864119403465
 
 ----
 
-Lng: 113.54507780463886
+Lng: 9.114046164600458
