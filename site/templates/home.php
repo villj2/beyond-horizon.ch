@@ -79,13 +79,25 @@
 
       <?php $index = 0; ?>
 
-      <?php foreach($page->parent()->index()->visible()->filterBy('template', 'post')->filterBy('picsonly', '!=', '1')->sortBy('date', 'desc')->limit(4) as $post): ?>
+      <?php foreach($page->parent()->index()->visible()->filterBy('template', 'post')->sortBy('date', 'desc')->limit(4) as $post): ?>
 
         <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 <?= $index >= 3 ? 'hidden-sm hidden-md hidden-lg' : '' ?> home">
           <div class="teaser-image-container">
             <p>
               <img src="<?php echo $post->contentURL() ?>/<?php echo $post->imageteaser() ?>" class="teaser-image" alt="<?php echo $post->title() ?>" title="<?php echo $post->title() ?>" />
-              <a class="" href="<?php echo $post->url() ?>">
+              
+              <?php
+                $url = $post->url();
+
+                if($post->picsonly() == "1")
+                {
+                  $countrycode = $post->parent()->countrycode();
+                  $continent = $post->parent()->parent()->uid();
+                  $url = "/gallery?continents=" . $continent . "&countries=" . $countrycode;
+                }
+              ?>
+
+              <a class="" href="<?php echo $url ?>">
                 <span class="darkener"></span>
                 <span class="helper"></span>
                 <span class="teaser-text"><?php echo $post->title()->html() ?></span>

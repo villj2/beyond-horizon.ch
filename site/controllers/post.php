@@ -21,19 +21,19 @@ return function($site, $pages, $page) {
 
 
 	// TODO Sort posts by date
-	foreach($posts as $post)
+	/*foreach($posts as $post)
 	{
 		//echo(date("d-m-Y", $post->date())) . " - ";
-	}
+	}*/
 
-	echo("---------------------- after sort ----------------------");
+	//echo("---------------------- after sort ----------------------");
 
-	usort($posts, "compare_function");
+	//usort($posts, "compare_function");
 
-	foreach($posts as $post)
+	/*foreach($posts as $post)
 	{
 		//echo(date("d-m-Y", $post->date())) . " - ";
-	}
+	}*/
 
 
 

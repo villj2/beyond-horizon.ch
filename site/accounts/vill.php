@@ -9,8 +9,8 @@ password: >
 language: en
 role: admin
 history:
-  - posts/europe/portugal/madeira
   - posts/europe/schweden/stockholm
+  - posts/europe/portugal/madeira
   - posts/europe/portugal
   - posts/europe/schweden
   - posts/europe/portugal/madeira/gallery
