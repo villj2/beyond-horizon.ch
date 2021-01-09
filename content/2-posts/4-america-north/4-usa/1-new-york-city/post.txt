@@ -35,11 +35,11 @@ Leider vergingen die vier Tage in New York City wie auch unsere ganze Zentralame
 
 ----
 
-Imagejumbotron: jumbo-test1.jpg
+Imagejumbotron: jumbo_neu3.jpg
 
 ----
 
-Imageteaser: teaser-test11.jpg
+Imageteaser: teaser_neu3.jpg
 
 ----
 
@@ -47,7 +47,7 @@ Imagemap: map.png
 
 ----
 
-Googlemapsimage: bubble-test1.jpg
+Googlemapsimage: bubble_neu3.jpg
 
 ----
 
