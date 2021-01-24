@@ -26,7 +26,7 @@ Imagejumbotron:
 
 ----
 
-Imageteaser: 
+Imageteaser: taiwan_teaser.jpg
 
 ----
 
@@ -34,7 +34,7 @@ Imagemap:
 
 ----
 
-Googlemapsimage: 
+Googlemapsimage: taiwan_google_maps_image.jpg
 
 ----
 
@@ -42,8 +42,8 @@ Googlemapstwolines: 0
 
 ----
 
-Lat: 
+Lat: 23.79821652438089
 
 ----
 
-Lng: 
+Lng: 120.94399100490733

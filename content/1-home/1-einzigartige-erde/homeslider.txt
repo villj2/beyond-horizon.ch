@@ -1,0 +1,53 @@
+Title: einzigartige Welt
+
+----
+
+Tag: 
+
+----
+
+Image: home_map_with_pins.png
+
+----
+
+Textcolor: black
+
+----
+
+Link: /posts
+
+----
+
+Link2: /posts
+
+----
+
+Link1: /gallery
+
+----
+
+Linktext1: Bilder
+
+----
+
+Linktext2: Beiträge
+
+----
+
+Linkfilter1: 
+
+----
+
+Linkfilter2: [{"id":"america-north","countries":["cr", "pa", "mx", "us"]}]
+
+----
+
+Showlink1: 1
+
+----
+
+Showlink2: 1
+
+----
+
+Introtext: Entdecke zusammen mit uns unsere
