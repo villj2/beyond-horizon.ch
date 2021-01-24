@@ -1,4 +1,4 @@
-Title: Einzigartige Welt
+Title: Einzigartigen Welt
 
 ----
 
@@ -50,4 +50,4 @@ Showlink2: 1
 
 ----
 
-Introtext: Entdecke zusammen mit uns unsere
+Introtext: Erweitere deinen Horizont unserer
