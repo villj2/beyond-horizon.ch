@@ -38,7 +38,7 @@ Imagemap:
 
 ----
 
-Googlemapsimage: 
+Googlemapsimage: thailand_google_maps_image.jpg
 
 ----
 
@@ -46,8 +46,8 @@ Googlemapstwolines: 0
 
 ----
 
-Lat: 
+Lat: 13.769574441552516
 
 ----
 
-Lng: 
+Lng: 100.50175685135248
