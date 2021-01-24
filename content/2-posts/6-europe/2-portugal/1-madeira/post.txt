@@ -14,7 +14,7 @@ Hidetitle: 0
 
 ----
 
-Date: 
+Date: 2020-09-26
 
 ----
 
@@ -35,15 +35,15 @@ Obwohl die Reise abrupt endete, haben wir die Zeit auf der Insel voll ausgekoste
 
 ----
 
-Imagejumbotron: 
+Imagejumbotron: jumbo2.jpg
 
 ----
 
-Imageteaser: 
+Imageteaser: teaser2.jpg
 
 ----
 
-Imagemap: 
+Imagemap: madeira.png
 
 ----
 
