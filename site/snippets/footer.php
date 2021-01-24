@@ -11,7 +11,6 @@
             </p>
           </div> -->
           <div class="col-sm-8 content-right">
-            <p class="text-muted"><a href="http://bommeli.it" target="_blank" class="bommeli text-muted">Hosting sponsored by <img src="/Frontend/img/logo_bommeli_it_40px.png" alt="Bommeli IT" title="Bommeli IT" /> bommeli IT GmbH</a></p>
           </div>
         </div>
       </div>
