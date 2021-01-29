@@ -1,4 +1,4 @@
-Title: Ostschweiz
+Title: Appenzell
 
 ----
 
@@ -26,7 +26,7 @@ Imagejumbotron:
 
 ----
 
-Imageteaser: 
+Imageteaser: appenzell_teaser.jpg
 
 ----
 
@@ -34,7 +34,7 @@ Imagemap:
 
 ----
 
-Googlemapsimage: ostschweiz_preview.jpg
+Googlemapsimage: appenzell_google_maps_bubble.jpg
 
 ----
 

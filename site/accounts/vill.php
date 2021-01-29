@@ -9,8 +9,8 @@ password: >
 language: en
 role: admin
 history:
+  - posts/europe/schweiz/appenzell
+  - posts/europe/portugal/madeira
   - home/einzigartige-erde
   - posts/asia/thailand/thailand
   - posts/asia/taiwan/taiwan
-  - posts/europe/portugal/madeira
-  - posts/america-north/usa/new-york-city

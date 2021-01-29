@@ -6,7 +6,7 @@ Textcolor:
 
 ----
 
-Picsonly: 0
+Picsonly: 1
 
 ----
 
