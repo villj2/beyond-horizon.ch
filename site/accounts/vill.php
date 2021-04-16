@@ -9,8 +9,8 @@ password: >
 language: en
 role: admin
 history:
-  - about
   - posts/europe/portugal/madeira
+  - posts/europe/portugal/madeira/gallery
+  - about
   - posts/europe/schweiz/stuff
   - posts/europe/schweiz/appenzell
-  - home/einzigartige-erde
