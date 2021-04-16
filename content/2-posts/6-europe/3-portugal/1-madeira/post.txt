@@ -2,11 +2,11 @@ Title: Madeira
 
 ----
 
-Textcolor: 
+Textcolor: #000
 
 ----
 
-Picsonly: 1
+Picsonly: 0
 
 ----
 
@@ -33,13 +33,15 @@ Gerade als wir uns dem nördlichen Teil der Insel widmen wollten, traf dann die 
 
 Obwohl die Reise abrupt endete, haben wir die Zeit auf der Insel voll ausgekostet. Wir sind uns aber sicher, dass es noch viel mehr zu entdecken gibt und wir so bald wie möglich unsere Reise fortsetzen möchten. Immerhin haben wir nicht nur eine kleine Insel im Atlantik kennen und lieben gelernt, sondern auch einen Ort, wo Reisen noch sicher ist – wenn auch nicht von den unberechenbaren Risikolisten der Schweiz.
 
-----
-
-Imagejumbotron: jumbo2.jpg
+</br>
 
 ----
 
-Imageteaser: teaser2.jpg
+Imagejumbotron: jumbo4.jpg
+
+----
+
+Imageteaser: teaser4.jpg
 
 ----
 

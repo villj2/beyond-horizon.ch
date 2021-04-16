@@ -9,8 +9,8 @@ password: >
 language: en
 role: admin
 history:
-  - posts/europe/schweiz/appenzell
+  - about
   - posts/europe/portugal/madeira
+  - posts/europe/schweiz/stuff
+  - posts/europe/schweiz/appenzell
   - home/einzigartige-erde
-  - posts/asia/thailand/thailand
-  - posts/asia/taiwan/taiwan
